@@ -1,0 +1,8 @@
+.two-element-overlap-container {
+    position: relative;
+    width: available;
+    height: available;
+}
+.two-element-overlap-container div{
+    position: absolute;
+}
