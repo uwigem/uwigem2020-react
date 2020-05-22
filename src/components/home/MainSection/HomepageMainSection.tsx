@@ -23,8 +23,8 @@ const HomepageMainSection = () => {
     }
 
     let rightComponent = () => {
-        let foreground = <img style={{ width: "50%"}} src={MAIN_SECTION_IMG_STACKED_FOREGROUND} alt={"Foreground"}/>
-        let background = <img style={{ width: "50%"}}src={MAIN_SECTION_IMG_STACKED_BACKGROUND} alt={"Background"}/>
+        let foreground = <img style={{ width: "30%"}} src={MAIN_SECTION_IMG_STACKED_FOREGROUND} alt={"Foreground"}/>
+        let background = <img style={{ width: "30%"}} src={MAIN_SECTION_IMG_STACKED_BACKGROUND} alt={"Background"}/>
         return <TwoElementOverlapComponent childForeground={foreground} childBackground={background}/>
     }
 
