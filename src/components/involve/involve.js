@@ -34,7 +34,7 @@ const GetInvolve = props => {
             </div>
 		</div>
         <div className="involve-reason">
-            <div>
+            <div className="reason-text">
                 <h2>3 Reasons to join.</h2>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid enim dolore ipsa nihil blanditiis consectetur dolorem atque sint molestiae, ut dolores soluta perspiciatis temporibus quibusdam accusantium? Quo est dicta consequuntur.
