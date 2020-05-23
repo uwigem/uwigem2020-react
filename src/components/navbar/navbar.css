@@ -1,6 +1,7 @@
 .nav-bar-container {
   height: 30px;
   padding-top: 10px;
+  padding-right: 20px;
   background-color: white;
   position: -webkit-sticky;
   position: sticky;
