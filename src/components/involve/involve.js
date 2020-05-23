@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
-import TwoElementOverlapComponent from "../common-components/TwoElementOverlapComponent/TwoElementOverlapComponent"
+import TwoElementOverlapComponent from '../common-components/TwoElementOverlapComponent/TwoElementOverlapComponent'
+import ImageCluster from '../common-components/ImageCluster/ImageCluster'
 import './involve.css';
 
 
@@ -11,6 +12,12 @@ const GetInvolve = props => {
         let frontImage = <div className="involve-image"></div>
         let backImage = <div className="involve-image"></div>
         return <TwoElementOverlapComponent childForeground={frontImage} childBackground={backImage}/>
+    }
+
+    let imageCluster2 = () => {
+        let sample1 = <div className="involve-image"></div>
+        let sample2 = <img class="imageEnterAnimate image priority-2 order-3 cluster-design-1" src="../common-components/ImageCluster/sample-images/mountain-1" alt="gudetama-1" />
+        return <ImageCluster imageElements={sample2} />
     }
 
     return <>
