@@ -1,10 +1,18 @@
 import React, {useState, useEffect} from 'react';
+import TwoElementOverlapComponent from "../common-components/TwoElementOverlapComponent/TwoElementOverlapComponent"
 import './involve.css';
+
 
 /**
  * @returns {React.Component}
  */
 const GetInvolve = props => {
+    let imageCluster = () => {
+        let frontImage = <div className="involve-image"></div>
+        let backImage = <div className="involve-image"></div>
+        return <TwoElementOverlapComponent childForeground={frontImage} childBackground={backImage}/>
+    }
+
     return <>
         <h1>Involvement</h1>
         <div className="involve-main">
