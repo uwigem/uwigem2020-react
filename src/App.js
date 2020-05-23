@@ -6,10 +6,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import {
   Route,
-  Link,
   Switch,
-  Redirect,
-  BrowserRouter
+  HashRouter
 } from 'react-router-dom';
 
 import NavBar from './components/navbar/navbar';
@@ -20,7 +18,7 @@ import GetInvolve from './components/involve/involve'
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <NavBar />
       <Switch>
         <Route path='/' exact><HomePage /></Route>
@@ -28,27 +26,7 @@ function App() {
         <Route path='/involvement' exact><GetInvolve /></Route>
       </Switch>
       <Footer />
-    </BrowserRouter>
-    
-    /*
-    <div className="App">
-      
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-    */
+    </HashRouter>
   );
 }
 
