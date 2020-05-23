@@ -1,33 +1,104 @@
-import React from 'react';
+import React, {useState, useEffect, useRef} from 'react';
 import './TwoElementOverlapComponent.css'
 
 type TwoElementOverlapProps = {
     childForeground: JSX.Element,
     childBackground: JSX.Element,
-    xOffsetPx?: number,
-    yOffsetPx?: number,
-    margin?: number
+    xOffset?: number,
+    yOffset?: number,
+    unit?: string  // Cannot reference parent
 }
 
 const TwoElementOverlapComponent: React.FC<TwoElementOverlapProps> = ({ childForeground,
                                                                         childBackground,
-                                                                        xOffsetPx,
-                                                                        yOffsetPx}) => {
-    const defaultOffset = 30;
-    let foregroundStyle = {
-        left: (50 - (xOffsetPx||defaultOffset) / 2) + "%",
-        top: (50 + (yOffsetPx||defaultOffset) / 2) + "%"
+                                                                        xOffset,
+                                                                        yOffset,
+                                                                        unit}) => {
+    // const [foreChildSize, setForeChildSize] = useState({width: 0, height: 0});
+    // const [backChildSize, setBackChildSize] = useState({width: 0, height: 0});
+    const [containerStyle, setContainerStyle] = useState({
+        "--offset-y": "0",
+        "--offset-x": "0",
+        paddingLeft: "0",
+        paddingRight: "0",
+        paddingTop: "0",
+        paddingBottom: "0",
+        height: "0",
+        width: "0"
+    })
+    const foreChildRef = useRef(null);
+    const backChildRef = useRef(null);
+    const backChildStyle = {
+        left: "var(--offset-x)",
+        top: "var(--offset-y)",
+        zIndex: -1
     }
 
-    let backgroundStyle = {
-        left: (50 + (xOffsetPx||defaultOffset) / 4) + "%",
-        top: (50 - (yOffsetPx||defaultOffset) / 4) + "%"
+    let setAllStyles = (width: number, height: number) => {
+        let containerStyle = {
+            "--offset-y": "0",
+            "--offset-x": "0",
+            paddingLeft: "0",
+            paddingRight: "0",
+            paddingTop: "0",
+            paddingBottom: "0",
+            height: "0",
+            width: "0"
+        }
+        unit = unit||"px";
+        yOffset = yOffset||-100;
+        xOffset = xOffset||100;
+        containerStyle.height = height + unit;
+        containerStyle.width = width + unit;
+        console.log("container height" + containerStyle.height)
+        if (yOffset > 0) {
+            containerStyle.paddingBottom = yOffset + unit;
+            containerStyle.paddingTop = 0 + unit;
+            containerStyle["--offset-y"] = yOffset + unit;
+        } else {
+            containerStyle.paddingBottom = 0 + unit;
+            containerStyle.paddingTop = -yOffset + unit;
+        }
+        if (xOffset > 0) {
+            containerStyle.paddingRight = xOffset + unit;
+            containerStyle.paddingLeft = 0 + unit;
+            containerStyle["--offset-x"] = xOffset + unit;
+        } else {
+            containerStyle.paddingRight = 0 + unit;
+            containerStyle.paddingLeft = -xOffset + unit;
+        }
+        setContainerStyle(containerStyle)
     }
+
+    // @ts-ignore
+    let getDimensions = ref => {
+        return [
+            ref.current.offsetWidth,
+            ref.current.offsetHeight
+        ]
+    }
+    useEffect(() => {
+        console.log("-------------------")
+        // @ts-ignore
+        console.log(foreChildRef.current.offsetWidth)
+        // @ts-ignore
+        console.log(foreChildRef.current.offsetHeight)
+        let [fChildWidth, fChildHeight] = getDimensions(foreChildRef)
+        let [bChildWidth, bChildHeight] = getDimensions(backChildRef)
+        let containerWidth = fChildWidth > bChildWidth ? fChildWidth : bChildWidth;
+        let containerHeight = fChildHeight > bChildHeight ? fChildHeight : bChildHeight;
+        setAllStyles(containerWidth, containerHeight);
+        // @ts-ignore
+        console.log(foreChildRef.current.offsetWidth)
+        // @ts-ignore
+        console.log(foreChildRef.current.offsetHeight)
+    }, [foreChildRef.current, backChildRef.current])
+
 
     return (
-        <div className={"two-element-overlap-container"}>
-            <div style={backgroundStyle} className={"two-element-overlap-back"}>{childBackground}</div>
-            <div style={foregroundStyle} className={"two-element-overlap-front"}>{childForeground}</div>
+        <div style={containerStyle} className={"two-element-overlap-container"}>
+            <div ref={foreChildRef}>{childForeground}</div>
+            <div ref={backChildRef} style={backChildStyle}>{childBackground}</div>
         </div>
     )
 
