@@ -3,7 +3,7 @@ import './navbar.css';
 
 import { Link } from 'react-router-dom';
 
-const tabs = ['Project', 'About', 'Get Involved'];
+const tabs = ['Home', 'About', 'Get Involved'];
 
 const NavBar = props => {
 	return (
