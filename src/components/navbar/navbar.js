@@ -9,7 +9,8 @@ const NavBar = props => {
 	return (
 		<div className='nav-bar-container'>
 			<Link className='nav-tab' to='/'>Home</Link>
-			<Link className='nav-tab' to='/about'>about</Link>
+			<Link className='nav-tab' to='/about'>About</Link>
+			<Link className='nav-tab' to='/involvement'>Get Involved</Link>
 		</div>
 	)
 }
