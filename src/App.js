@@ -14,7 +14,7 @@ import NavBar from './components/navbar/navbar';
 import HomePage from './components/home/home';
 import TeamPage from './components/team/teamPage';
 import Footer from './components/footer/footer';
-
+import GetInvolve from './components/involve/involve'
 
 function App() {
   return (
@@ -23,6 +23,7 @@ function App() {
       <Switch>
         <Route path='/' exact><HomePage /></Route>
         <Route path='/about' exact><TeamPage /></Route>
+        <Route path='/involvement' exact><GetInvolve /></Route>
       </Switch>
       <Footer />
     </BrowserRouter>
