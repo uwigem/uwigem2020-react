@@ -77,21 +77,13 @@ const TwoElementOverlapComponent: React.FC<TwoElementOverlapProps> = ({ childFor
             ref.current.offsetHeight
         ]
     }
+
     useEffect(() => {
-        console.log("-------------------")
-        // @ts-ignore
-        console.log(foreChildRef.current.offsetWidth)
-        // @ts-ignore
-        console.log(foreChildRef.current.offsetHeight)
         let [fChildWidth, fChildHeight] = getDimensions(foreChildRef)
         let [bChildWidth, bChildHeight] = getDimensions(backChildRef)
         let containerWidth = fChildWidth > bChildWidth ? fChildWidth : bChildWidth;
         let containerHeight = fChildHeight > bChildHeight ? fChildHeight : bChildHeight;
         setAllStyles(containerWidth, containerHeight);
-        // @ts-ignore
-        console.log(foreChildRef.current.offsetWidth)
-        // @ts-ignore
-        console.log(foreChildRef.current.offsetHeight)
     }, [foreChildRef.current, backChildRef.current])
 
 
