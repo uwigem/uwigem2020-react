@@ -1,11 +1,6 @@
 import './teamPage.css';
 import TeamMember from './teamMember';
 import React, {useState, useEffect} from 'react';
-//import { Grid, Col, Row } from 'react-flexbox-grid';
-//import Fade from 'react-reveal/Fade';
-//import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-//import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-//import { Scrollbars } from 'react-custom-scrollbars';
 
 /**
  * @returns {React.Component}
@@ -16,6 +11,17 @@ const TeamPage = props => {
     const [filter, setFilter] = useState('All');
     const [year, setYear] = useState(currentYear);
     let data = require('./team_members.json');
+    let years = [2019, 2020];
+    let teams = ["All",
+        "Drylab",
+        "Wetlab",
+        "Human Practices",
+        "Outreach",
+        "Web Development",
+        "Fundraising",
+        "Design",
+        "Adviser",
+        "PIs"]
 
     
     // const fetchData = () => {
@@ -43,60 +49,20 @@ const TeamPage = props => {
             <div class="dropdown">
                 <button class="dropbtn">{year}</button>
                 <div class="dropdown-content">
-                    <button onClick={() => setYear(2019)}>2019</button>
-                    <button onClick={() => setYear(2020)}>2020</button>
+                    {years.map(y => {
+                        return <button onClick={() => setYear(y)}>{y}</button>
+                    })}
                 </div>
             </div>Team</h1>
         </div>
         
-        <body>
+        <body >
             <div className="teams">
-                <seciton className="col-xs">
-                    <button onClick={() => setFilter('Adviser')}>
-                        Adviser
-                    </button>
-                </seciton>
-                <seciton className="col-xs">
-                    <button onClick={() => setFilter('All')}>
-                    All
-                    </button>
-                </seciton>
-                <seciton className="col-xs">
-                    <button onClick={() => setFilter('Business')}>
-                        Business
-                    </button>
-                </seciton>
-                <seciton className="col-xs">
-                    Collaborations
-                </seciton>
-                <seciton className="col-xs">
-                    Design
-                </seciton>
-                <seciton className="col-xs">
-                    Drylab
-                </seciton>
-                <seciton className="col-xs">
-                    Leadership
-                </seciton>
-                <seciton className="col-xs">
-                    Outreach
-                </seciton>
-                <seciton className="col-xs">
-                    PI
-                </seciton>
-                <seciton className="col-xs">
-                    Presenters
-                </seciton>
-                <seciton className="col-xs">
-                    <button onClick={() => setFilter('Wetlab')}>
-                        Wetlab
-                    </button>
-                </seciton>
-                <seciton className="col-xs">
-                    <button onClick={() => setFilter('Web Developer')}>
-                        Web Development
-                    </button>
-                </seciton>
+                {teams.map(team => {
+                    return <button 
+                        onClick={() => setFilter(team)}
+                        class="team-button">{team}</button>
+                })}
             </div>
             <div className="team-members">
                 {teamMembers.filter(
