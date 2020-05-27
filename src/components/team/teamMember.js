@@ -17,7 +17,7 @@ const TeamMember = props => {
             onMouseEnter={() => toggleHover(true)}
             onMouseLeave={() => toggleHover(false)}
             style={{
-                backgroundColor: hover || expanded ? 'blueviolet' : 'white',
+                backgroundColor: hover || expanded ? '#4D2393' : 'white',
                 transition: 'height 0.5s, background-color 0.5s, color 0.5s',
                 color: hover || expanded ? 'white' : 'black',}}
             >
