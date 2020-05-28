@@ -1,8 +1,7 @@
 .nav-bar-container {
-  height: 30px;
-  padding-top: 20px;
-  padding-right: 20px;
-  background-color: white;
+  height: 50px;
+  padding-top: 15px;
+  background-color: #C1C1C1;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -13,4 +12,8 @@
   margin: 20px;
   text-decoration: none;
   color: black;
+}
+
+.nav-tab:hover {
+  color: white;
 }
