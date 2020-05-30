@@ -15,6 +15,7 @@ import HomePage from './components/home/home';
 import TeamPage from './components/team/teamPage';
 import Footer from './components/footer/footer';
 import GetInvolve from './components/involve/involve'
+import Card from './components/card/card'
 
 function App() {
   return (
@@ -25,8 +26,10 @@ function App() {
         <Route path='/about' exact><TeamPage /></Route>
         <Route path='/involvement' exact><GetInvolve /></Route>
       </Switch>
+      <Card></Card>
       <Footer />
     </HashRouter>
+    
   );
 }
 
