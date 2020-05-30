@@ -9,13 +9,51 @@ type TwoElementOverlapProps = {
     unit?: string  // Cannot reference parent
 }
 
+let calcStyles = (width: number,
+                  height: number,
+                  xOffset: number|undefined,
+                  yOffset: number|undefined,
+                  unit: string|undefined) => {
+    let containerStyle = {
+        "--offset-y": "0",
+        "--offset-x": "0",
+        paddingLeft: "0",
+        paddingRight: "0",
+        paddingTop: "0",
+        paddingBottom: "0",
+        height: "0",
+        width: "0"
+    }
+    unit = unit||"px";
+    yOffset = yOffset||-100;
+    xOffset = xOffset||100;
+    containerStyle.height = height + Math.abs(yOffset) + unit;
+    containerStyle.width = width + Math.abs(xOffset) + unit;
+    console.log("container height" + containerStyle.height)
+    if (yOffset > 0) {
+        containerStyle.paddingBottom = yOffset + unit;
+        containerStyle.paddingTop = 0 + unit;
+        containerStyle["--offset-y"] = yOffset + unit;
+    } else {
+        containerStyle.paddingBottom = 0 + unit;
+        containerStyle.paddingTop = -yOffset + unit;
+    }
+    if (xOffset > 0) {
+        containerStyle.paddingRight = xOffset + unit;
+        containerStyle.paddingLeft = 0 + unit;
+        containerStyle["--offset-x"] = xOffset + unit;
+    } else {
+        containerStyle.paddingRight = 0 + unit;
+        containerStyle.paddingLeft = -xOffset + unit;
+    }
+    return containerStyle;
+}
+
 const TwoElementOverlapComponent: React.FC<TwoElementOverlapProps> = ({ childForeground,
                                                                         childBackground,
                                                                         xOffset,
                                                                         yOffset,
                                                                         unit}) => {
-    // const [foreChildSize, setForeChildSize] = useState({width: 0, height: 0});
-    // const [backChildSize, setBackChildSize] = useState({width: 0, height: 0});
     const [containerStyle, setContainerStyle] = useState({
         "--offset-y": "0",
         "--offset-x": "0",
@@ -34,41 +72,6 @@ const TwoElementOverlapComponent: React.FC<TwoElementOverlapProps> = ({ childFor
         zIndex: -1
     }
 
-    let setAllStyles = (width: number, height: number) => {
-        let containerStyle = {
-            "--offset-y": "0",
-            "--offset-x": "0",
-            paddingLeft: "0",
-            paddingRight: "0",
-            paddingTop: "0",
-            paddingBottom: "0",
-            height: "0",
-            width: "0"
-        }
-        unit = unit||"px";
-        yOffset = yOffset||-100;
-        xOffset = xOffset||100;
-        containerStyle.height = height + unit;
-        containerStyle.width = width + unit;
-        console.log("container height" + containerStyle.height)
-        if (yOffset > 0) {
-            containerStyle.paddingBottom = yOffset + unit;
-            containerStyle.paddingTop = 0 + unit;
-            containerStyle["--offset-y"] = yOffset + unit;
-        } else {
-            containerStyle.paddingBottom = 0 + unit;
-            containerStyle.paddingTop = -yOffset + unit;
-        }
-        if (xOffset > 0) {
-            containerStyle.paddingRight = xOffset + unit;
-            containerStyle.paddingLeft = 0 + unit;
-            containerStyle["--offset-x"] = xOffset + unit;
-        } else {
-            containerStyle.paddingRight = 0 + unit;
-            containerStyle.paddingLeft = -xOffset + unit;
-        }
-        setContainerStyle(containerStyle)
-    }
 
     // @ts-ignore
     let getDimensions = ref => {
@@ -83,8 +86,8 @@ const TwoElementOverlapComponent: React.FC<TwoElementOverlapProps> = ({ childFor
         let [bChildWidth, bChildHeight] = getDimensions(backChildRef)
         let containerWidth = fChildWidth > bChildWidth ? fChildWidth : bChildWidth;
         let containerHeight = fChildHeight > bChildHeight ? fChildHeight : bChildHeight;
-        setAllStyles(containerWidth, containerHeight);
-    }, [foreChildRef.current, backChildRef.current])
+        setContainerStyle(calcStyles(containerWidth, containerHeight, xOffset, yOffset, unit));
+    }, [foreChildRef.current, backChildRef.current, xOffset, yOffset, unit])
 
 
     return (
