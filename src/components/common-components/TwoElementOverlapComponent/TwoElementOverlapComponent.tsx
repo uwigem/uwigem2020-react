@@ -14,8 +14,6 @@ const TwoElementOverlapComponent: React.FC<TwoElementOverlapProps> = ({ childFor
                                                                         xOffset,
                                                                         yOffset,
                                                                         unit}) => {
-    // const [foreChildSize, setForeChildSize] = useState({width: 0, height: 0});
-    // const [backChildSize, setBackChildSize] = useState({width: 0, height: 0});
     const [containerStyle, setContainerStyle] = useState({
         "--offset-y": "0",
         "--offset-x": "0",
@@ -48,8 +46,8 @@ const TwoElementOverlapComponent: React.FC<TwoElementOverlapProps> = ({ childFor
         unit = unit||"px";
         yOffset = yOffset||-100;
         xOffset = xOffset||100;
-        containerStyle.height = height + unit;
-        containerStyle.width = width + unit;
+        containerStyle.height = height + Math.abs(yOffset) + unit;
+        containerStyle.width = width + Math.abs(xOffset) + unit;
         console.log("container height" + containerStyle.height)
         if (yOffset > 0) {
             containerStyle.paddingBottom = yOffset + unit;
