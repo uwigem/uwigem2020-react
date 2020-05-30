@@ -1,0 +1,35 @@
+.container{
+    width: 100%;
+    margin: 0px;
+    min-height: 200px;
+}
+
+.row{
+    vertical-align: top;
+    min-width: auto;
+
+}
+
+.column{
+    float: left;
+    width: 33.3%;
+    margin: 5px;
+    padding: 10px;
+    text-align: left;
+    background-color: #C4C4C4;
+
+}
+
+.column :after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.date{
+    margin-bottom: -5px;
+}
+
+.content{
+    width: 100%;
+}
