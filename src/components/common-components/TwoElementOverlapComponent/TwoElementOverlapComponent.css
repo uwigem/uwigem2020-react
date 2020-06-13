@@ -1,0 +1,7 @@
+.two-element-overlap-container {
+    position: relative;
+    height: 100%;
+}
+.two-element-overlap-container div {
+    position: absolute;
+}

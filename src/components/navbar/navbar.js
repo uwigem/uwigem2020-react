@@ -3,13 +3,15 @@ import './navbar.css';
 
 import { Link } from 'react-router-dom';
 
-const tabs = ['Project', 'About', 'Get Involved'];
+const tabs = ['Home', 'About', 'Projects', 'Get Involved'];
 
 const NavBar = props => {
 	return (
 		<div className='nav-bar-container'>
 			<Link className='nav-tab' to='/'>Home</Link>
-			<Link className='nav-tab' to='/about'>about</Link>
+			<Link className='nav-tab' to='/projects'>Projects</Link>
+			<Link className='nav-tab' to='/about'>About</Link>
+			<Link className='nav-tab' to='/involvement'>Get Involved</Link>
 		</div>
 	)
 }

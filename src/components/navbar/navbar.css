@@ -1,8 +1,19 @@
 .nav-bar-container {
-  height: 30px;
-  background-color: grey;
+  height: 50px;
+  padding-top: 15px;
+  background-color: #C1C1C1;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  text-align: right;
 }
 
 .nav-tab {
   margin: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+.nav-tab:hover {
+  color: white;
 }

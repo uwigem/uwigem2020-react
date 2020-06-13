@@ -1,0 +1,272 @@
+.img-container {
+    display: flex;
+    margin-bottom: 3rem;
+    height: 30%;
+    justify-content: center;
+    overflow-x: hidden;
+    /* overflow-x: hidden results in scrolling */
+    width: 100%;
+    /* height: 100%; */
+    flex-grow: 1;
+}
+
+.image {
+    max-width: 40%;
+    vertical-align: top;
+    height: auto;
+    position: relative;
+    border: 1px lightgray solid;
+    align-self: center;
+    margin: 0.5rem;
+}
+
+/* Exit Animation */
+
+@keyframes imageExitAnimateTopLeft {
+    from { 
+        /* max-width: 40%;  */
+        opacity: 1;
+        transform: scale(1);
+        transform-origin: top left;
+    }
+    to { 
+        /* max-width: 0%; */
+        opacity: 0;
+        transform: scale(0);
+        transform-origin: top left;
+    }
+}
+
+@keyframes imageExitAnimateTopRight {
+    from { 
+        /* max-width: 40%;  */
+        opacity: 1;
+        transform: scale(1);
+        transform-origin: top right;
+    }
+    to { 
+        /* max-width: 0%; */
+        opacity: 0;
+        transform: scale(0);
+        transform-origin: top right;
+    }
+}
+
+@keyframes imageExitAnimateBottomRight {
+    from { 
+        /* max-width: 40%;  */
+        opacity: 1;
+        transform: scale(1);
+        transform-origin: bottom right;
+    }
+    to { 
+        /* max-width: 0%; */
+        opacity: 0;
+        transform: scale(0);
+        transform-origin: bottom right;
+    }
+}
+
+@keyframes imageExitAnimateBottomLeft {
+    from { 
+        /* max-width: 40%;  */
+        opacity: 1;
+        transform: scale(1);
+        transform-origin: bottom left;
+    }
+    to { 
+        /* max-width: 0%; */
+        opacity: 0;
+        transform: scale(0);
+        transform-origin: bottom left;
+    }
+}
+
+/* Enter Animation */
+@keyframes imageEnterAnimateTopLeft {
+    from {
+        opacity: 0;
+        transform: scale(0);
+        transform-origin: top left;
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+        transform-origin: top left;
+    }
+}
+
+@keyframes imageEnterAnimateTopRight {
+    from {
+        opacity: 0;
+        transform: scale(1);
+        transform-origin: top right;
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(5);
+        transform-origin: top right;
+    }
+}
+
+@keyframes imageEnterAnimateBottomLeft {
+    from {
+        opacity: 0;
+        transform: scale(0);
+        transform-origin: bottom left;
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+        transform-origin: bottom left;
+    }
+}
+
+@keyframes imageEnterAnimateBottomRight {
+    from {
+        opacity: 0;
+        transform: scale(0);
+        transform-origin: bottom right;
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+        transform-origin: bottom right;
+    }
+}
+
+.imageEnterAnimateBottomLeft, .imageEnterAnimateBottomRight, .imageEnterAnimateTopLeft, .imageEnterAnimateTopRight 
+.imageExitAnimateTopRight, .imageExitAnimateTopLeft, .imageExitAnimateBottomRight, .imageExitAnimateBottomLeft {
+    animation-duration: 0.3s;
+}
+
+.imageEnterAnimateBottomRight {
+    animation-name: imageEnterAnimateBottomRight;
+}
+
+.imageEnterAnimateBottomLeft {
+    animation-name: imageEnterAnimateBottomLeft;
+}
+
+.imageEnterAnimateTopLeft {
+    animation-name: imageEnterAnimateTopLeft;
+}
+
+.imageEnterAnimateTopRight {
+    animation-name: imageEnterAnimateTopRight;
+}
+
+.imageExitAnimateTopRight {
+    animation-name: imageExitAnimateTopRight;
+}
+
+.imageExitAnimateTopLeft {
+    animation-name: imageExitAnimateTopLeft;
+}
+
+.imageExitAnimateBottomLeft {
+    animation-name: imageExitAnimateBottomLeft;
+}
+
+.imageExitAnimateBottomRight {
+    animation-name: imageExitAnimateBottomRight;
+}
+
+.image.order-2 { 
+    /* change to priority-2 */
+    max-width: 50%;
+}
+
+@media(min-width: 600px) {
+    
+    .img-container {
+        /* width: 50%; Change based on content on right */
+        justify-content: flex-start;
+        margin-right: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .image {
+        max-width: 30%;
+    }
+
+    .image.order-2 {
+        /* change to priority-2 */
+        max-width: 30%;
+    }
+
+}
+
+.priority-0 {
+    z-index: 2;
+}
+
+.priority-1 {
+    z-index: 1;
+}
+
+.priority-2 {
+    z-index: 0;
+}
+
+.priority-1, .priority-2 {
+    filter: grayscale(100%);
+}
+
+.order-1 {
+    order: 1;
+}
+
+.order-2 {
+    order: 2;
+}
+
+.order-3 {
+    order: 3;
+}
+
+/* 
+ * Below are the cluster designs
+ * Please add additional designs below
+*/
+
+.cluster-design-1.order-1, .cluster-design-2.order-1 {
+    top: 1rem;
+    margin-right: 1rem;
+} 
+
+.cluster-design-1.order-3, .cluster-design-2.order-3 {
+    bottom: 1rem;
+    margin-left: 1rem;
+} 
+
+@media (min-width: 600px) {
+
+    .cluster-design-1.order-1, .cluster-design-2.order-1, .cluster-design-3.order-1 {
+        margin-right: 0rem;
+    } 
+
+    .cluster-design-1.order-3, .cluster-design-2.order-3, .cluster-design-3.order-3 {
+        margin-left: 0rem;
+    } 
+
+    /* Cluster Design One */
+
+    .cluster-design-1.order-1 {
+        top: 5rem;
+    }
+
+    .cluster-design-1.order-2 {
+        left: -3rem;
+    }
+
+    .cluster-design-1.order-3 {
+        left: -3rem;
+        bottom: 2.5rem;
+    }
+
+}
