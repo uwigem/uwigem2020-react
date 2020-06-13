@@ -1,0 +1,26 @@
+.announcements{
+    background-color: #C4C4C4;
+    width: 100%;
+}
+
+.card{
+    background-color: #C4C4C4;
+    border: none;
+}
+
+.card{
+    margin: 2rem 6rem;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    text-align: left;
+}
+
+.card p{
+    padding-left: 0px;
+}
+
+.date {
+    font-weight: bold;
+}
