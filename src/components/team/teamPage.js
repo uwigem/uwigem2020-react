@@ -28,6 +28,10 @@ const TeamPage = props => {
 
     useEffect(() => {
         let data = require('./team_members.json');
+
+        // sort by name
+        data.sort((a, b) => a.name.localeCompare(b.name));
+        
         setTeamMembers(data);
       }, []);
 
