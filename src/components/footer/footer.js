@@ -1,7 +1,7 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import './footer.css';
 
-const Footer = props => {
+const Footer = () => {
   return (
     <div id="foot">
       <div class="jumbotron-fluid bg-dark jumbotron-light bottomBar" style={{minWidth: '335px'}}>

@@ -1,11 +1,11 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import './navbar.css';
 
 import { Link } from 'react-router-dom';
 
 const tabs = ['Home', 'About', 'Projects', 'Get Involved'];
 
-const NavBar = props => {
+const NavBar = () => {
 	return (
 		<div className='nav-bar-container'>
 			<Link className='nav-tab' to='/'>Home</Link>

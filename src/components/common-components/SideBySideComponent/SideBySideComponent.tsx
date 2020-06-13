@@ -16,13 +16,13 @@ const SideBySideComponent: React.FunctionComponent<SideBySideProps> = ({leftChil
                                                                         leftStyle,
                                                                         rightStyle,
                                                                         style}) => {
-    if (leftStyle != undefined) {
+    if (leftStyle !== undefined) {
         leftStyle.width = leftWidth ? leftWidth + "%" : "50%"
     } else {
         leftStyle = { width: leftWidth ? leftWidth + "%" : "50%" }
     }
 
-    if (rightStyle != undefined) {
+    if (rightStyle !== undefined) {
         rightStyle.width = leftWidth ? 100 - leftWidth + "%" : "50%"
     } else {
         rightStyle = {

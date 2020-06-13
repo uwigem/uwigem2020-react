@@ -10,8 +10,9 @@ const TeamPage = props => {
     const [teamMembers, setTeamMembers] = useState([]);
     const [filter, setFilter] = useState('All');
     const [year, setYear] = useState(currentYear);
-    let data = require('./team_members.json');
+
     let years = [2019, 2020];
+
     let teams = [
         "All",
         "Drylab",
@@ -24,10 +25,11 @@ const TeamPage = props => {
         "Adviser",
         "PIs"]
 
+
     useEffect(() => {
+        let data = require('./team_members.json');
         setTeamMembers(data);
       }, []);
-
 
     return <>
         <div>

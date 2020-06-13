@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './ImageCluster.css';
 
 export const ImageCluster = (props) => {
@@ -29,7 +29,7 @@ export const ImageCluster = (props) => {
       setimageExitAnimate(false);
 
       let newImageOrder = [...imageOrdering];
-      if (imageClickedLocation == 0) {
+      if (imageClickedLocation === 0) {
         let saveValue = newImageOrder[0];
         
         newImageOrder[0] = newImageOrder[2];
@@ -41,7 +41,7 @@ export const ImageCluster = (props) => {
         newImageOrder[1] = saveValue;
         newImageOrder[1].priority = 0;
 
-      } else if (imageClickedLocation == 2) {
+      } else if (imageClickedLocation === 2) {
 
         let saveValue = newImageOrder[2];
         newImageOrder[2] = newImageOrder[0];
@@ -63,7 +63,7 @@ export const ImageCluster = (props) => {
     setImageClickedLocation(eventLocation)
     if (!event.target.classList.contains("priority-0")) {
       setimageExitAnimate(true);
-      if (eventLocation == 0) {
+      if (eventLocation === 0) {
         setAnimationName("imageEnterAnimateBottomLeft");
       } else {
         setAnimationName("imageEnterAnimateTopRight");
@@ -73,7 +73,7 @@ export const ImageCluster = (props) => {
 
   let exitAnimate = "";
   if (imageExitAnimate) {
-    if (animationName == "imageEnterAnimateBottomLeft") {
+    if (animationName === "imageEnterAnimateBottomLeft") {
       exitAnimate = "imageExitAnimateTopRight";
     } else { // animationName == "imageEnterAnimateTopRight"
       exitAnimate = "imageExitAnimateBottomLeft";

@@ -1,8 +1,8 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import './card.css';
 
-const Cards = props => {
+const Cards = () => {
   return (
    <Grid className = 'announcements' fliud>
       <Row lg={12}>
