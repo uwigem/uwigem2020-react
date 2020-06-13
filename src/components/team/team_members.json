@@ -1,14 +1,14 @@
 [
     {
         "id": 1,
-        "name": "William Kwok",
+        "name": "Chris",
         "teams": [
             "All",
-            "DryLab Lead Engineer",
-            "Web Development"
+            "Web Development",
+            "Design"
         ],
         "year": [
-            2019
+            2020
         ],
         "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborumExcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
         "linkedin": "https://www.linkedin.com",
@@ -16,14 +16,14 @@
     },
     {
         "id": 2,
-        "name": "Allison Lee",
+        "name": "Diana",
         "teams": [
             "All",
             "Web Development",
             "Business"
         ],
         "year": [
-            2019
+            2020
         ],
         "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         "linkedin": "https://www.linkedin.com",
@@ -31,13 +31,14 @@
     },
     {
         "id": 3,
-        "name": "Elisa Truong",
+        "name": "Jaden",
         "teams": [
             "All",
-            "Web Development"
+            "Web Development",
+            "Human Practices"
         ],
         "year": [
-            2019
+            2020
         ],
         "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         "linkedin": "https://www.linkedin.com",
@@ -45,10 +46,11 @@
     },
     {
         "id": 4,
-        "name": "Jennifer Tao",
+        "name": "Jennifer",
         "teams": [
             "All",
-            "Web Development"
+            "Web Development",
+            "Adviser"
         ],
         "year": [
             2019,
@@ -60,13 +62,13 @@
     },
     {
         "id": 5,
-        "name": "Laura Lan",
+        "name": "Victor",
         "teams": [
             "All",
             "Web Development"
         ],
         "year": [
-            2019
+            2020
         ],
         "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         "linkedin": "https://www.linkedin.com",
@@ -74,21 +76,7 @@
     },
     {
         "id": 6,
-        "name": "Nitesh Chetry",
-        "teams": [
-            "All",
-            "Web Development"
-        ],
-        "year": [
-            2019
-        ],
-        "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "linkedin": "https://www.linkedin.com",
-        "github": "https://github.com/"
-    },
-    {
-        "id": 7,
-        "name": "Max Zhou",
+        "name": "Max",
         "teams": [
             "All",
             "Web Development"

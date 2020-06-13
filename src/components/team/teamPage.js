@@ -6,13 +6,14 @@ import React, {useState, useEffect} from 'react';
  * @returns {React.Component}
  */
 const TeamPage = props => {
-    const currentYear = 2019;
+    const currentYear = 2020;
     const [teamMembers, setTeamMembers] = useState([]);
     const [filter, setFilter] = useState('All');
     const [year, setYear] = useState(currentYear);
     let data = require('./team_members.json');
     let years = [2019, 2020];
-    let teams = ["All",
+    let teams = [
+        "All",
         "Drylab",
         "Wetlab",
         "Human Practices",
@@ -23,22 +24,7 @@ const TeamPage = props => {
         "Adviser",
         "PIs"]
 
-    
-    // const fetchData = () => {
-    //     fetch('https://jsonplaceholder.typicode.com/posts')
-    //       .then(response => {
-    //         return response.json();
-    //       })
-    //       .then(people => {
-    //         setLoadedPeople(people);
-    //       })
-    //       .catch(err => {
-    //         console.log(err);
-    //       });
-    // };
-
     useEffect(() => {
-        //fetchData();
         setTeamMembers(data);
       }, []);
 
