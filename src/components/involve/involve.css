@@ -25,6 +25,10 @@ h2 {
     margin-right: 2rem;
 }
 
+.main-text, .reason-text {
+    margin: 2rem;
+}
+
 p {
     padding: 0.5rem;
     font-size: 18px;
