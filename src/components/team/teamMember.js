@@ -26,6 +26,7 @@ const TeamMember = props => {
                     <img src="http://placekitten.com/380/380"></img>
                 </section>
                 <section className="person-name">{props.person.name}</section>
+                {/* first element of person.teams is always 'all' */}
                 <section className="person-team">{props.person.teams.slice(1).toString()}</section>
             </Fade>
             <section className="person-bio">
