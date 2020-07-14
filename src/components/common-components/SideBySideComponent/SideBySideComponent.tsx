@@ -7,7 +7,8 @@ type SideBySideProps = {
     leftWidth?: number,
     leftStyle?: {[key: string]: any},
     rightStyle?: {[key: string]: any},
-    style?: {[key: string]: any}
+    style?: {[key: string]: any},
+    classNames?: string
 }
 
 const SideBySideComponent: React.FunctionComponent<SideBySideProps> = ({leftChild,
@@ -15,7 +16,8 @@ const SideBySideComponent: React.FunctionComponent<SideBySideProps> = ({leftChil
                                                                         leftWidth,
                                                                         leftStyle,
                                                                         rightStyle,
-                                                                        style}) => {
+                                                                        style,
+                                                                        classNames}) => {
     if (leftStyle !== undefined) {
         leftStyle.width = leftWidth ? leftWidth + "%" : "50%"
     } else {
@@ -33,7 +35,7 @@ const SideBySideComponent: React.FunctionComponent<SideBySideProps> = ({leftChil
     rightStyle.height = "auto"
 
     return (
-        <div style={style} className="sbs-container">
+        <div style={style} className={"sbs-container " + classNames}>
             <div style={leftStyle}>
                 {leftChild}
             </div>
