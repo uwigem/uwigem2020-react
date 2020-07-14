@@ -54,16 +54,8 @@ const TwoElementOverlapComponent: React.FC<TwoElementOverlapProps> = ({ childFor
                                                                         xOffset,
                                                                         yOffset,
                                                                         unit}) => {
-    const [containerStyle, setContainerStyle] = useState({
-        "--offset-y": "0",
-        "--offset-x": "0",
-        paddingLeft: "0",
-        paddingRight: "0",
-        paddingTop: "0",
-        paddingBottom: "0",
-        height: "0",
-        width: "0"
-    })
+    const [containerStyle, setContainerStyle] = useState(calcStyles(0,0,0,0, undefined))
+    const [childrenLoaded, setChildrenLoaded] = useState(false)
     const foreChildRef = useRef(null);
     const backChildRef = useRef(null);
     const backChildStyle = {
@@ -82,12 +74,16 @@ const TwoElementOverlapComponent: React.FC<TwoElementOverlapProps> = ({ childFor
     }
 
     useEffect(() => {
-        let [fChildWidth, fChildHeight] = getDimensions(foreChildRef)
-        let [bChildWidth, bChildHeight] = getDimensions(backChildRef)
-        let containerWidth = fChildWidth > bChildWidth ? fChildWidth : bChildWidth;
-        let containerHeight = fChildHeight > bChildHeight ? fChildHeight : bChildHeight;
-        setContainerStyle(calcStyles(containerWidth, containerHeight, xOffset, yOffset, unit));
-    }, [foreChildRef.current, backChildRef.current, xOffset, yOffset, unit])
+        if (!childrenLoaded) {
+            setChildrenLoaded(true)
+        } else {
+            let [fChildWidth, fChildHeight] = getDimensions(foreChildRef)
+            let [bChildWidth, bChildHeight] = getDimensions(backChildRef)
+            setContainerStyle(calcStyles(Math.max(fChildWidth, bChildWidth),
+                                     Math.max(fChildHeight, bChildHeight),
+                                     xOffset, yOffset, unit))
+        }
+    }, [childrenLoaded, unit, yOffset, xOffset])
 
 
     return (
