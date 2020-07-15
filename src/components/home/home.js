@@ -13,8 +13,9 @@ const HomePage = props => {
         imageSrc={"/logo512.png"} 
         imageAlt={"React Logo"}
         title={"Competition"}
-        subtitle={"Getting things done"}
-        bodyText={"This is the body text. Maybe it has a newline here.\n Otherwise, this will appear on the same line"}
+        linkLocation={"/about"}
+        bodyText={"Lorem ipsum dolor sit amet, consectetur adipiscing \
+         elit. Scelerisque non nulla varius a egestas arcu. Fames aliquam nullam cum risus arcu, in malesuada gravida tincidunt. Mi ut dignissim fringilla in sit morbi. Congue nunc, laoreet quis aliquam eu tincidunt libero. Eget et ullamcorper pretium."}
       />
     </>
   )

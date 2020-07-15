@@ -4,29 +4,25 @@ import './SideBySideStyle.css'
 type SideBySideProps = {
     leftChild: JSX.Element,
     rightChild: JSX.Element,
-    leftWidth?: number,
-    leftStyle?: {[key: string]: any},
-    rightStyle?: {[key: string]: any},
+    leftWidth?: number,                 // used when no leftStyle is given
+    leftStyle?: {[key: string]: any},   // used by default and ignores leftWidth if present
+    rightStyle?: {[key: string]: any},  // used by default and ignores leftWidth if present
     style?: {[key: string]: any},
     classNames?: string
 }
 
-const SideBySideComponent: React.FunctionComponent<SideBySideProps> = ({leftChild,
-                                                                        rightChild,
-                                                                        leftWidth,
-                                                                        leftStyle,
-                                                                        rightStyle,
-                                                                        style,
-                                                                        classNames}) => {
-    if (leftStyle !== undefined) {
-        leftStyle.width = leftWidth ? leftWidth + "%" : "50%"
-    } else {
+export default function SideBySideComponent({leftChild,
+                                            rightChild,
+                                            leftWidth,
+                                            leftStyle,
+                                            rightStyle,
+                                            style,
+                                            classNames}: SideBySideProps) {
+    if (leftStyle === undefined) {
         leftStyle = { width: leftWidth ? leftWidth + "%" : "50%" }
     }
 
-    if (rightStyle !== undefined) {
-        rightStyle.width = leftWidth ? 100 - leftWidth + "%" : "50%"
-    } else {
+    if (rightStyle === undefined) {
         rightStyle = {
             width: leftWidth ? leftWidth + "%" : "50%",
             height: "100%"
@@ -46,5 +42,3 @@ const SideBySideComponent: React.FunctionComponent<SideBySideProps> = ({leftChil
     )
 
 }
-
-export default SideBySideComponent;
