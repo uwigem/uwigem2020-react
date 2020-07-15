@@ -16,29 +16,29 @@ const layoutStyle = {
 }
 
 let imageContainerStyle = {
-  "text-align": "center",
+  textAlign: "center",
   width: "50%"
 }
 
 const textTopBarStyle = {
   height: "10%",
-  "background-color": "#4B2E83"
+  backgroundColor: "#4B2E83"
 }
 
 const linkStyle = {
   padding: "1em",
-  "align-self": "flex-end",
+  alignSelf: "flex-end",
   color: "#4B2E83",
   border: "solid"
 }
 
 const articleStyle ={
   display: "flex",
-  "flex-flow": "column nowrap",
-  "align-items": "flex-start",
+  flexFlow: "column nowrap",
+  alignItems: "flex-start",
   padding: "2em",
   height: "90%",
-  "justify-content": "flex-between"
+  justifyContent: "flex-between"
 }
 
 export default function Competition(props: CompetitionProps) {
