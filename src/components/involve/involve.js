@@ -1,6 +1,7 @@
 import React from 'react';
 import TwoElementOverlapComponent from '../common-components/TwoElementOverlapComponent/TwoElementOverlapComponent'
 import ImageCluster from '../common-components/ImageCluster/ImageCluster'
+import LargeTextBlock from '../common-components/LargeTextBlock/LargeTextBlock'
 import './involve.css';
 
 
@@ -8,6 +9,8 @@ import './involve.css';
  * @returns {React.Component}
  */
 const GetInvolve = props => {
+    let text = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid enim dolore ipsa nihil blanditiis consectetur dolorem atque sint molestiae, ut dolores soluta perspiciatis temporibus quibusdam accusantium? Quo est dicta consequuntur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate laboriosam voluptas nam vel corporis? Cumque, aliquam ea, tempora, quos soluta eum esse delectus sunt quod perspiciatis rerum deserunt dolorum sint?    "
+
     let imageCluster = () => {
         let frontImage = <div className="involve-image"></div>
         let backImage = <div className="involve-image"></div>
@@ -43,6 +46,13 @@ const GetInvolve = props => {
             </div>
             <div className="involve-image"></div>
         </div>
+        <LargeTextBlock 
+            title="title"
+            text={text}
+        />
+        <LargeTextBlock 
+            text={text}
+        />
     </>;
 }
 
