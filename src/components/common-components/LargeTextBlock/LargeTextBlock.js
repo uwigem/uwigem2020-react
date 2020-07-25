@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import './LargeTextBlock.css';
-
+import Fade from 'react-reveal/Fade';
 
 /**
  * @returns {React.Component}
@@ -17,19 +17,31 @@ const LargeTextBlock = props => {
             onMouseEnter={() => toggleHover(true)}
             onMouseLeave={() => toggleHover(false)}
             style={{
-                backgroundColor: hover ? '#4D2393' : '#f0eafa',
+                backgroundColor: props.clickable && (hover || expanded) ? '#4D2393' : '#f0eafa',
                 transition: 'background-color 0.5s, color 0.5s',
-                color: hover ? 'white' : 'black',}}
+                color: props.clickable && (hover || expanded) ? 'white' : 'black',}}
         >
             <section className="large-text-content">
                 <h1
                     style={{
                         transition: 'color 0.5s',
-                        color: hover ? 'white' : '#4D2393', }}
+                        color: props.clickable && hover ? 'white' : '#4D2393', }}
                 >
                     {props.title}
                 </h1>
-                <p>{props.text}</p>
+                {
+                    props.hidePrev && expanded ? null : <p>{props.text}</p>
+                }
+                {
+                    props.clickable && expanded?
+                        <div>
+                            
+                            <Fade duration={500} bottom>
+                            <p>{props.expand}</p>
+                            </Fade>
+                        </div> 
+                        : null
+                }
             </section>
 		</div>
     </>;

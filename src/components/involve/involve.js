@@ -9,7 +9,10 @@ import './involve.css';
  * @returns {React.Component}
  */
 const GetInvolve = props => {
-    let text = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid enim dolore ipsa nihil blanditiis consectetur dolorem atque sint molestiae, ut dolores soluta perspiciatis temporibus quibusdam accusantium? Quo est dicta consequuntur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate laboriosam voluptas nam vel corporis? Cumque, aliquam ea, tempora, quos soluta eum esse delectus sunt quod perspiciatis rerum deserunt dolorum sint?    "
+    let text = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid enim dolore ipsa nihil blanditiis consectetur dolorem atque sint molestiae, ut dolores soluta perspiciatis temporibus quibusdam accusantium? Quo est dicta consequuntur. Voluptate laboriosam voluptas nam vel corporis? Cumque, aliquam ea, tempora, quos soluta eum esse delectus sunt quod perspiciatis rerum deserunt dolorum sint?"
+    let prompt = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid enim dolore ipsa nihil blanditiis consectetur dolorem atque sint molestiae, ut dolores soluta perspiciatis temporibus quibusdam accusantium? Quo est dicta consequuntur. Voluptate laboriosam voluptas nam vel corporis? Cumque, aliquam ea, tempora, quos soluta eum esse delectus sunt quod perspiciatis rerum deserunt dolorum sint?    (CLICK TO VIEW MORE)";
+    let text2 = "2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid enim dolore ipsa nihil blanditiis consectetur dolorem atque sint molestiae, ut dolores soluta perspiciatis temporibus quibusdam accusantium? Quo est dicta consequuntur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate laboriosam voluptas nam vel corporis? Cumque, aliquam ea, tempora, quos soluta eum esse delectus sunt quod perspiciatis rerum deserunt dolorum sint?"
+
 
     let imageCluster = () => {
         let frontImage = <div className="involve-image"></div>
@@ -46,12 +49,37 @@ const GetInvolve = props => {
             </div>
             <div className="involve-image"></div>
         </div>
+        
         <LargeTextBlock 
-            title="title"
             text={text}
         />
         <LargeTextBlock 
+            title="Title"
             text={text}
+        />
+        <LargeTextBlock 
+            text={prompt}
+            expand={text2}
+            clickable={true}
+        />
+        <LargeTextBlock 
+            title="Title"
+            text={prompt}
+            expand={text2}
+            clickable={true}
+        />
+        <LargeTextBlock 
+            text={prompt}
+            expand={text2}
+            clickable={true}
+            hidePrev={true}
+        />
+        <LargeTextBlock 
+            title="Title"
+            text={prompt}
+            expand={text2}
+            clickable={true}
+            hidePrev={true}
         />
     </>;
 }
