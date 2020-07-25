@@ -1,0 +1,135 @@
+.timeline-content {
+	text-align: center;
+	border: 5px;
+	border-style: solid;
+	border-color: black;
+	height: 20em;
+	width: 90%;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.timeline-header {
+	font-size: 2em;
+}
+
+.timeline {
+	position: relative;
+	border: 5px;
+	border-style: solid;
+	border-color: gray;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.timeline:before {
+	content: ' ';
+	position: absolute;
+	width: 90%;
+	top: 1.5em;
+	left: 5%;
+	height: 2px;
+	margin-top: 0em;
+	background: red;
+}
+
+.events-wrapper::after, .events-wrapper::before {
+	/* these are used to create a shadow effect at the sides of the timeline */
+	content: '';
+	position: absolute;
+	z-index: 1;
+	top: 1.5em;
+	height: 2px;
+	width: 10%;
+}
+
+.events-wrapper::before {
+	left: 5%;
+	background-image: -webkit-linear-gradient( left , #f8f8f8, rgba(248, 248, 248, 0));
+	background-image: linear-gradient(to right, #f8f8f8, rgba(248, 248, 248, 0));
+}
+.events-wrapper::after {
+	right: 5%;
+	background-image: -webkit-linear-gradient( right , #f8f8f8, rgba(248, 248, 248, 0));
+	background-image: linear-gradient(to left, #f8f8f8, rgba(248, 248, 248, 0));
+}
+
+.events li {
+	position: relative;
+	display: inline-block;
+	margin: 0 13.9%;
+}
+
+.events .prev{
+	display: inline-block;
+	margin: 0;
+}
+
+.events .next{
+	display: inline-block;
+	margin: 0;
+}
+
+.events a {
+  position: relative;
+  bottom: 0;
+  z-index: 2;
+  text-align: center;
+  color: #505050;
+  text-decoration: none;
+}
+
+.events a::after {
+  content: ' ';
+  position: absolute;
+  left: 1em;
+  bottom: -11px;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  border: 1px solid #000000;
+  background-color: #f8f8f8;
+}
+
+.events .prev a::after, .events .next a::after {
+	z-index: 3;
+	content: ' ';
+	position: absolute;
+	bottom: -18px;
+	height: 24px;
+	width: 24px;
+	border-radius: 50%;
+	border: 1px solid #000000;
+	background-color: #f8f8f8;
+  }
+  
+
+.timeline {cursor: pointer;}
+
+
+
+@media screen and (max-width: 800px) {
+  .timeline-content {
+		width: 70%;
+    float: left;
+	}
+	.timeline {
+		margin-left: 70%;
+		height: 20em;
+		position: relative;
+	}
+
+	.timeline li {
+		display: block;
+		margin: 3em 0;
+	}
+
+	.timeline:before {
+		content: '';
+		position: absolute;
+		width: 3px;
+		background-color: red;
+		height: 80%;
+		top: 0;
+	}
+}

@@ -14,13 +14,16 @@ import NavBar from './components/navbar/navbar';
 import HomePage from './components/home/home';
 import TeamPage from './components/team/teamPage';
 import Footer from './components/footer/footer';
-import GetInvolve from './components/involve/involve'
+import GetInvolve from './components/involve/involve';
+
+import TeamHistory from './components/team-history/teamHistory';
 
 function App() {
   return (
     <HashRouter>
       <NavBar />
       <Switch>
+        <Route path='/test' exact><TeamHistory /></Route>
         <Route path='/' exact><HomePage /></Route>
         <Route path='/projects' exact></Route>
         <Route path='/about' exact><TeamPage /></Route>
