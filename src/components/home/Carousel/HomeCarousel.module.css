@@ -1,0 +1,76 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.root {
+  top: 50px;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  margin: 3% 5%;
+}
+
+/* carousel on the left */
+.carouselContainer {
+  width: 50%;
+}
+
+.captionContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.caption {
+  width: 75%;
+  background-color: rgba(255, 255, 255, .15);  
+  backdrop-filter: blur(10px);
+
+  border-radius: 5px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
+
+  color: black;
+}
+
+/* text on the right */
+
+.textContainer {
+  width: 50%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.title {
+  font-family: 'Roboto';
+  color: black;
+}
+
+.intro {
+
+  margin: auto;
+
+}
+
+.more {
+
+  margin: 0px auto;
+
+}
+
+.more button {
+  width: 200px;
+  height: 50px;
+  background-color: #4B2E83;
+  color: white;
+  border: none;
+}
