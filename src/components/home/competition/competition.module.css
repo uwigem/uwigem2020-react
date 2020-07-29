@@ -1,15 +1,22 @@
 .textTopBarStyle {
-  height: 0.5em;
+  height: .75em;
   width: 35%;
   background-color: #4B2E83;
 }
 
 .linkStyle {
-  padding: 1em;
+  padding: 0.5em 1em;
   align-self: flex-end;
   color:white;
   background-color: #4B2E83;
   border-radius: 0.5em;
+  text-decoration: none;
+}
+
+.linkStyle:hover {
+  color: white;
+  text-decoration: none;
+  box-shadow: 2px 2px 5px gray;
 }
 
 .articleStyle {
