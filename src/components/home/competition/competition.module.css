@@ -1,5 +1,5 @@
 .textTopBarStyle {
-  height: .5em;
+  height: 0.5em;
   width: 35%;
   background-color: #4B2E83;
 }
@@ -7,8 +7,9 @@
 .linkStyle {
   padding: 1em;
   align-self: flex-end;
-  color: #4B2E83;
-  border: solid;
+  color:white;
+  background-color: #4B2E83;
+  border-radius: 0.5em;
 }
 
 .articleStyle {
@@ -20,7 +21,7 @@
 
 .imageContainer {
   text-align: center;
-  margin: .5em;
+  margin: 0.5em;
   margin: 10% 30% 10% 10%;
 }
 
