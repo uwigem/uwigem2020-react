@@ -1,66 +1,33 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import SideBySideComponent from '../../common-components/SideBySideComponent/SideBySideComponent'
+import styles from './competition.module.css'
 
-type CompetitionProps = {
-  imageSrc: string,
-  imageAlt: string,
-  title: string,
-  linkLocation: string,
-  bodyText: string
-}
+const title: string = "Do you know iGEM?"
+const bodyText: string = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus rhoncus, ut facilisi condimentum nisi morbi in id. Orci, convallis dui urna, cursus."
+const imageSrc: string = "/logo512.png"
+const imageAlt: string = "React Logo"
+const linkLocation: string = "/about"
 
-const layoutStyle = {
-  margin: "5vh 5vw",
-  padding: "5vh 5vw"
-}
-
-let imageContainerStyle = {
-  textAlign: "center",
-  width: "50%"
-}
-
-const textTopBarStyle = {
-  height: "10%",
-  backgroundColor: "#4B2E83"
-}
-
-const linkStyle = {
-  padding: "1em",
-  alignSelf: "flex-end",
-  color: "#4B2E83",
-  border: "solid"
-}
-
-const articleStyle ={
-  display: "flex",
-  flexFlow: "column nowrap",
-  alignItems: "flex-start",
-  padding: "2em",
-  height: "90%",
-  justifyContent: "flex-between"
-}
-
-export default function Competition(props: CompetitionProps) {
-  let image = <img className={"rounded img-fluid"} src={props.imageSrc} alt={props.imageAlt} />
+export default function Competition() {
+  let image = <div className={styles.imageContainer}><img className={"rounded img-fluid"} src={imageSrc} alt={imageAlt} /></div>
   let text = (
     <>
-      <div style={textTopBarStyle}/>
-      <article style={articleStyle}>
-        <h3>{props.title}</h3>
-        <p tabIndex={4}>{props.bodyText}</p>
-        <Link style={linkStyle} to={props.linkLocation}>Learn More</Link>
+      <article className={styles.articleStyle}>
+        <div className={styles.textTopBarStyle}/>
+        <h3>{title}</h3>
+        <p tabIndex={4}>{bodyText}</p>
+        <Link className={styles.linkStyle} to={linkLocation}>Learn More</Link>
       </article>
     </>
   )
 
   return (
-    <article>
+    <article className={styles.layout}>
       <SideBySideComponent
-        leftChild={image}
-        rightChild={text}
-        style={layoutStyle}
-        leftStyle={imageContainerStyle}
+        rightChild={image}
+        leftChild={text}
+        leftWidth={"50%"}
       />
     </article>
   )
