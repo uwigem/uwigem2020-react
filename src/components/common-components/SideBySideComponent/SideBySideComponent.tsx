@@ -4,9 +4,7 @@ import './SideBySideStyle.css'
 type SideBySideProps = {
     leftChild: JSX.Element,
     rightChild: JSX.Element,
-    leftWidth?: number,                 // used when no leftStyle is given
-    leftStyle?: {[key: string]: any},   // used by default and ignores leftWidth if present
-    rightStyle?: {[key: string]: any},  // used by default and ignores leftWidth if present
+    leftWidth?: string,
     style?: {[key: string]: any},
     classNames?: string
 }
@@ -14,24 +12,17 @@ type SideBySideProps = {
 export default function SideBySideComponent({leftChild,
                                             rightChild,
                                             leftWidth,
-                                            leftStyle,
-                                            rightStyle,
-                                            style,
                                             classNames}: SideBySideProps) {
-    if (leftStyle === undefined) {
-        leftStyle = { width: leftWidth ? leftWidth + "%" : "50%" }
-    }
 
-    if (rightStyle === undefined) {
-        rightStyle = {
-            width: leftWidth ? leftWidth + "%" : "50%",
-            height: "100%"
-        }
+    let leftStyle = { 
+        width: leftWidth ? leftWidth : "50%",  
     }
-    rightStyle.height = "auto"
+    let rightStyle = {
+            width: leftWidth ? "calc(100% - " + leftWidth + ")" : "50%",
+    }
 
     return (
-        <div style={style} className={"sbs-container " + classNames}>
+        <div className={"sbs-container " + (classNames ? classNames : "")}>
             <div style={leftStyle}>
                 {leftChild}
             </div>
