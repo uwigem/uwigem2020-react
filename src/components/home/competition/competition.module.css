@@ -2,6 +2,8 @@
   height: .75em;
   width: 35%;
   background-color: #4B2E83;
+  transform-origin: left;
+  animation: scale-right 3s ease;
 }
 
 .linkStyle {
@@ -10,7 +12,7 @@
   color:white;
   background-color: #4B2E83;
   border-radius: 0.5em;
-  text-decoration: none;
+  transition: all 0.1s ease-in;
 }
 
 .linkStyle:hover {
@@ -24,15 +26,36 @@
   flex-flow: column nowrap;
   align-items: flex-start;
   margin: 10% 10% 10% 30%;
+  animation: fade-in 3s cubic-bezier(.65,.15,.59,.81);
 }
 
 .imageContainer {
   text-align: center;
   margin: 0.5em;
   margin: 10% 30% 10% 10%;
+  animation: fade-in 3s cubic-bezier(.65,.15,.59,.81);
 }
 
 .layout {
   margin: 5vh 5vw;
 }
 
+@keyframes scale-right {
+  0% {
+    transform: scaleX(0);
+  }
+
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0%;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
