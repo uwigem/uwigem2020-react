@@ -1,0 +1,38 @@
+
+
+.root {
+}
+
+.title {
+  height: 100px;
+  
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+}
+
+.cardContainer {
+  min-width: 248px;
+  max-width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.image {
+  margin-bottom: 10%;
+}
+
+.image img {
+  border-radius: 50%;
+}
