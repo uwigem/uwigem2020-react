@@ -1,0 +1,25 @@
+.text-button-div {
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: #F5F5F5;
+}
+
+.text-button-content {
+    padding: 1rem;
+}
+
+.text-button-content h1 {
+    display: flex;
+    color: #4D2393;
+    margin-bottom: 0rem;
+    margin-left: 0.5rem;
+    margin-right: auto;
+}
+
+.text-button-content button {
+    display: flex;
+    margin-left: auto;
+    margin-right: 0.5rem;
+}

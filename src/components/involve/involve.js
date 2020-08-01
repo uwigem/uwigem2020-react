@@ -2,6 +2,7 @@ import React from 'react';
 import TwoElementOverlapComponent from '../common-components/TwoElementOverlapComponent/TwoElementOverlapComponent'
 import ImageCluster from '../common-components/ImageCluster/ImageCluster'
 import LargeTextBlock from '../common-components/LargeTextBlock/LargeTextBlock'
+import TextBlockButton from '../common-components/TextBlockButton/TextBlockButton'
 import './involve.css';
 
 
@@ -80,6 +81,16 @@ const GetInvolve = props => {
             expand={text2}
             clickable={true}
             hidePrev={true}
+        />
+
+        <TextBlockButton 
+            text={prompt}
+            expand={text2}
+        />
+        <TextBlockButton 
+            title="Title"
+            text={prompt}
+            expand={text2}
         />
     </>;
 }
