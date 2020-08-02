@@ -18,8 +18,14 @@
     margin-right: auto;
 }
 
-.text-button-content button {
+.text-button-button {
     display: flex;
+}
+
+.text-button-button button {
+    margin-right: 0px;
     margin-left: auto;
-    margin-right: 0.5rem;
+    align-self: flex-end;
+    border: solid;
+    border-radius: 0.5em;
 }

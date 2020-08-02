@@ -17,13 +17,13 @@ const TextBlockButton = props => {
                     {props.title}
                 </h1>
                 <p>{props.text}</p>
-                <div>
+                <div className="text-button-button">
                     <button
                         onClick={() => toggleExpand(!expanded)}
                         style={{
-                            backgroundColor: (hover || expanded) ? '#4D2393' : '#f0eafa',
+                            backgroundColor: (hover || expanded) ? '#f0eafa' : '#4D2393',
                             transition: 'background-color 0.5s, color 0.5s',
-                            color: (hover || expanded) ? 'white' : 'black',}}
+                            color: (hover || expanded) ? 'black' : 'white',}}
                     >More</button>
                 </div>
                 {
