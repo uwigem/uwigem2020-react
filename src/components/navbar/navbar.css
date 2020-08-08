@@ -1,19 +1,35 @@
 .nav-bar-container {
-  height: 50px;
-  padding-top: 15px;
-  background-color: #C1C1C1;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  text-align: right;
+  background-color: white;
+  height: 9vh;
+  border-top: 1.5vh solid #4B2E83;
+  border-bottom: 0.1vh solid #C4C4C4;
+  padding-top: 3vh;
+  text-align: center;
 }
 
 .nav-tab {
-  margin: 20px;
+  margin: 2vh;
   text-decoration: none;
+  padding-top: 2vh;
   color: black;
+  font-weight: bold;
+  padding-bottom: 1vh;
 }
 
 .nav-tab:hover {
-  color: white;
+  color: #C4C4C4;
+}
+
+.left-logo {
+  height: 7vh;
+  float: left;
+  padding-left: 1vh;
+  padding-top: 3vh;
+}
+
+.right-logo {
+  height: 7vh;
+  float: right;
+  padding-right: 1vh;
+  padding-top: 3vh;
 }

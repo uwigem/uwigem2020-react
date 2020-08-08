@@ -22,7 +22,7 @@ function App() {
       <NavBar />
       <Switch>
         <Route path='/' exact><HomePage /></Route>
-        <Route path='/projects' exact><ProjectPage /></Route>
+        <Route path='/archive' exact><ProjectPage /></Route>
         <Route path='/about' exact><TeamPage /></Route>
         <Route path='/involvement' exact><GetInvolve /></Route>
       </Switch>
