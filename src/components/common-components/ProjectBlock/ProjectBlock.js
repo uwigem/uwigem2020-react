@@ -37,7 +37,7 @@ const ProjectBlock = props => {
                             <div className="project-block-details">
                                 <Fade duration={500} bottom>
                                 <h2>Award Winning</h2>
-                                <p>{props.details}</p>
+                                {props.details.map(detail => <li>{detail}</li>)}
                                 </Fade>
                             </div> 
                             : null

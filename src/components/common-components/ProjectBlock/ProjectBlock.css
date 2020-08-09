@@ -21,6 +21,7 @@
     width: 50%;
     padding-left: 1rem;
     padding-right: 1rem;
+    padding-bottom: 1rem;
 }
 
 .project-block-award {
@@ -53,9 +54,14 @@
     padding-top: 2rem;
 }
 
-.project-block-main p {
+.project-block-main p, .project-block-main li {
     font-size: 14px;
     font-weight: lighter;
+    padding: 0rem;
+}
+
+.project-block-main li {
+    list-style: none;
 }
 
 .project-block-award {
@@ -63,4 +69,21 @@
     font-weight: bold;
     font-family: 'Open Sans', sans-serif;
     color: #C7C3C3;
+}
+
+.project-block-details h2 {
+    font-style: italic;
+}
+
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
 }

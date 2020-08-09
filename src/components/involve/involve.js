@@ -15,7 +15,7 @@ const GetInvolve = props => {
     let prompt = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid enim dolore ipsa nihil blanditiis consectetur dolorem atque sint molestiae, ut dolores soluta perspiciatis temporibus quibusdam accusantium? Quo est dicta consequuntur. Voluptate laboriosam voluptas nam vel corporis? Cumque, aliquam ea, tempora, quos soluta eum esse delectus sunt quod perspiciatis rerum deserunt dolorum sint?    (CLICK TO VIEW MORE)";
     let text2 = "2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid enim dolore ipsa nihil blanditiis consectetur dolorem atque sint molestiae, ut dolores soluta perspiciatis temporibus quibusdam accusantium? Quo est dicta consequuntur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate laboriosam voluptas nam vel corporis? Cumque, aliquam ea, tempora, quos soluta eum esse delectus sunt quod perspiciatis rerum deserunt dolorum sint?";
     let project= "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum iaculis facilisi leo venenatis natoque vivamus ultricies faucibus sed. Leo sit tristique scelerisque cursus egestas aenean. ";
-    const project2= "Gold Medal, Best Educational Project";
+    var project2= ["Gold Medal", "Best Educational Project"];
 
     // let imageCluster = () => {
     //     let frontImage = <div className="involve-image"></div>
@@ -29,7 +29,7 @@ const GetInvolve = props => {
     //     return <ImageCluster imageElements={sample2} />
     // }
 
-    return <>
+    return <div>
         <h1>Involvement</h1>
         <div className="involve-main">
             <div className="involve-image"></div>
@@ -113,7 +113,7 @@ const GetInvolve = props => {
             details={project2}
             award="Silver"
         />
-    </>;
+    </div>;
 }
 
 export default GetInvolve;
