@@ -23,7 +23,8 @@ function App() {
       <Switch>
         <Route path='/' exact><HomePage /></Route>
         <Route path='/archive' exact><ProjectPage /></Route>
-        <Route path='/about' exact><TeamPage /></Route>
+        <Route path='/team' exact><TeamPage /></Route>
+        <Route path='about' exact></Route>
         <Route path='/involvement' exact><GetInvolve /></Route>
       </Switch>
       <Footer />
