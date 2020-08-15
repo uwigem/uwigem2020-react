@@ -1,0 +1,111 @@
+@keyframes slide-right {
+  0% {
+    transform: translate(0%, -50%);
+  }
+
+  100% {
+    transform: translate(200%, -50%);
+  }
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translate(-100%, -50%);
+  }
+
+  100% {
+    transform: translate(-300%, -50%);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+
+div {
+  --animation-duration: 1s;
+  --animation-timing: ease;
+}
+
+.fadeIn {
+  animation: fade-in var(--animation-duration) var(--animation-timing) forwards;
+}
+
+.fadeOut {
+  animation: fade-in var(--animation-duration) var(--animation-timing) reverse forwards;
+}
+
+.rightSlide {
+  animation: slide-right var(--animation-duration) var(--animation-timing) forwards;
+}
+
+.rightSlideBack {
+  animation: slide-right var(--animation-duration) var(--animation-timing) reverse forwards;
+}
+
+.leftSlide {
+  animation: slide-left var(--animation-duration) var(--animation-timing) forwards;
+}
+
+.leftSlideBack {
+  animation: slide-left var(--animation-duration) var(--animation-timing) reverse forwards;
+}
+
+.block {
+  height: 300px;
+  width: 150px;
+  z-index: 1;
+  position: absolute;
+  background-color: indigo;
+}
+
+.leftBlock {
+  transform-origin: right center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-100%, -50%)
+}
+
+.rightBlock {
+  transform-origin: left center;
+  left: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.article {
+  position: relative;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* https://css-tricks.com/the-shapes-of-css/ */
+.topRightTri {
+  width: 0;
+  height: 0;
+  border-top: 100px solid white;
+  border-left: 150px solid transparent;
+}
+
+.flipH {
+  transform: scaleX(-1);
+}

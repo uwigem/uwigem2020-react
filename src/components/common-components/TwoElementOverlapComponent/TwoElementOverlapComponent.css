@@ -4,4 +4,5 @@
 }
 .two-element-overlap-container div {
     position: absolute;
+    z-index: -1;
 }
