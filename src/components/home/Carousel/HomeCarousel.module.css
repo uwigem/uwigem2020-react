@@ -7,21 +7,34 @@
 }
 
 .container {
+  /*
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  */
+  position: relative;
 
-  margin: 3% 5%;
+  margin: 0% 0%;
 }
 
 /* carousel on the left */
 .carouselContainer {
-  width: 50%;
+  position: absolute;
+
+  width: 100%;
 }
 
 .captionContainer {
+  position: absolute;
+  top: 0px;
+
+  height: 100%;
+
+  z-index: 1;
+
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .caption {
@@ -40,23 +53,58 @@
   color: black;
 }
 
-/* text on the right */
-
-.textContainer {
+.captionLeft {
   width: 50%;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 .title {
-  
+  margin: auto;
+
+  width: 25%;
 }
 
 .title h1 {
   font-family: 'Roboto';
+  font-weight: 900;
+  font-size: xx-large;
   color: black;
+}
+
+.captionRight {
+  width: 50%;
+
+  display: flex;
+  flex-direction: column;
+
+  overflow-y: scroll;
+}
+
+.text {
+  margin: auto;
+
+  width: 50%;
+}
+
+.text p {
+  font-family: 'Roboto';
+  color: white;
+}
+
+.wikiButton {
+  margin: 5% auto;
+}
+
+.wikiButton button {
+  margin: auto;
+
+  width: 200px;
+  height: 50px;
+
+  font-family: 'Roboto';
+  color: black;
+
+  background-color: white;
+  border: none;
 }
 
 .intro {
