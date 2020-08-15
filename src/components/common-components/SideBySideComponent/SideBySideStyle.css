@@ -1,4 +1,6 @@
-.sbs-container{
+.sbs-container {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    height: inherit;
 }
