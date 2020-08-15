@@ -1,0 +1,19 @@
+.main {
+  height: 75vh;
+  margin: 5vh 10vw;
+}
+
+.leftStyle {
+  height: inherit;
+  display: flex;
+  align-items: center;
+  padding-left: 10%;
+  flex-direction: column;
+}
+
+.rightStyle {
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
