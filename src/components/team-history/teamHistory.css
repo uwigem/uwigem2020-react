@@ -1,13 +1,92 @@
 .timeline-content {
 	text-align: center;
-	border: 5px;
+	position: relative;
+	border: 1px;
 	border-style: solid;
 	border-color: black;
 	height: 20em;
-	width: 90%;
-	max-width: 800px;
+	width: 80%;
 	margin: 0 auto;
 }
+
+.timeline-page {
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+	margin: auto;
+}
+
+.page-in-left {
+	animation-name: fade-in-left;
+	animation-duration: 1s;
+}
+
+@keyframes fade-in-left {
+	from {
+		visibility: hidden;
+		opacity: 0;
+		left: 100%;
+	}
+	to {
+		visibility: visible;
+		opacity: 1;
+		left: 0;
+	}
+}
+
+.page-out-left {
+	animation-name: fade-out-left;
+	animation-duration: 1s;
+}
+
+@keyframes fade-out-left {
+	from {
+		visibility: visible;
+		opacity: 1;
+		left: 0;
+	}
+	to {
+		visibility: hidden;
+		opacity: 0;
+		left: 100%;
+	}
+}
+
+.page-in-right {
+	animation-name: fade-in-right;
+	animation-duration: 1s;
+}
+
+@keyframes fade-in-right {
+	from {
+		visibility: hidden;
+		opacity: 0;
+		right: 100%;
+	}
+	to {
+		visibility: visible;
+		opacity: 1;
+		right: 0;
+	}
+}
+
+.page-out-right {
+	animation-name: fade-out-right;
+	animation-duration: 1s;
+}
+
+@keyframes fade-out-right {
+	from {
+		visibility: visible;
+		opacity: 1;
+		right: 0;
+	}
+	to {
+		visibility: hidden;
+		opacity: 0;
+		right: 100%;
+	}
+}
+
 
 .timeline-header {
 	font-size: 2em;
@@ -15,11 +94,12 @@
 
 .timeline {
 	position: relative;
-	border: 5px;
+	border: 2px;
 	border-style: solid;
-	border-color: gray;
+	border-color: rgb(184, 180, 180);
 	width: 90%;
-	margin: 0 auto;
+	height: 3em;
+	margin: 10px auto;
 }
 
 .timeline:before {
@@ -28,9 +108,9 @@
 	width: 90%;
 	top: 1.5em;
 	left: 5%;
-	height: 2px;
+	height: 4px;
 	margin-top: 0em;
-	background: red;
+	background: rgb(216, 216, 216);
 }
 
 .events-wrapper::after, .events-wrapper::before {
@@ -39,8 +119,8 @@
 	position: absolute;
 	z-index: 1;
 	top: 1.5em;
-	height: 2px;
-	width: 10%;
+	height: 4px;
+	width: 15%;
 }
 
 .events-wrapper::before {
@@ -57,21 +137,19 @@
 .events li {
 	position: relative;
 	display: inline-block;
-	margin: 0 13.9%;
+	margin: 0 9%;
 }
 
-.events .prev{
-	display: inline-block;
+.events .prev {
 	margin: 0;
 }
 
-.events .next{
-	display: inline-block;
-	margin: 0;
+.events .next {
+	margin: 0 5%;
 }
 
 .events a {
-  position: relative;
+  position: absolute;
   bottom: 0;
   z-index: 2;
   text-align: center;
@@ -80,30 +158,63 @@
 }
 
 .events a::after {
-  content: ' ';
-  position: absolute;
-  left: 1em;
-  bottom: -11px;
-  height: 12px;
-  width: 12px;
-  border-radius: 50%;
-  border: 1px solid #000000;
-  background-color: #f8f8f8;
+	/* these are used to create the event dots */
+	content: ' ';
+	position: absolute;
+	left: 12px;
+	bottom: -13px;
+	height: 12px;
+	width: 12px;
+	border-radius: 50%;
+	border: none;
+	background-color: #d1b879;
+}
+
+.events .active a::after {
+	border: none;
+	border-radius: 0;
+	bottom: -13px;
+	background-color: transparent;
+	border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 16px solid #4B2E83;
 }
 
 .events .prev a::after, .events .next a::after {
+	/* these are used to create the prev and next buttons */
 	z-index: 3;
 	content: ' ';
 	position: absolute;
-	bottom: -18px;
+	bottom: -18px;	
 	height: 24px;
 	width: 24px;
-	border-radius: 50%;
-	border: 1px solid #000000;
-	background-color: #f8f8f8;
-  }
-  
+	border-radius: 0;
+	border: none;
+	background-color: transparent;
+	border-top: 12px solid transparent;
+	border-bottom: 12px solid transparent;
+}
 
+.events .prev a::after {
+	border-right: 24px solid #4B2E83; 
+}
+
+.events .next a::after {
+	border-left: 24px solid #4B2E83;
+}
+
+.events .disable a::after {
+	visibility: hidden;
+}
+
+.events .disable {
+	visibility: hidden;
+}
+
+.events .prev a::after, .events .next a::after{
+	left: 0;
+}
+  
 .timeline {cursor: pointer;}
 
 
