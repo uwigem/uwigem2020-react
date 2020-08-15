@@ -113,6 +113,7 @@ const GetInvolve = props => {
             details={project2}
             award="Silver"
         />
+
     </div>;
 }
 

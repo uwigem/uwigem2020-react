@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import './ProjectBlock.css';
-import Fade from 'react-reveal/Fade';
+import ProjectModal from '../ProjectModal/ProjectModal'
 
 /**
  * @returns {React.Component}
@@ -32,22 +32,22 @@ const ProjectBlock = props => {
                     </div>
                     <h2 className="project-block-professor">PI: Professor {props.professor}</h2>
                     <p className="project-block-description">{props.description}</p>
-                    {
-                        expanded?
-                            <div className="project-block-details">
-                                <Fade duration={500} bottom>
-                                <h2>Award Winning</h2>
-                                {props.details.map(detail => <li>{detail}</li>)}
-                                </Fade>
-                            </div> 
-                            : null
-                    }
                 </div>
+                <div className="project-block-award">{props.award}</div>
                 {
                     expanded?
-                        <div className="project-block-award"></div>
+                        <ProjectModal 
+                            show={true} 
+                            name={props.name}
+                            year={props.year}
+                            professor={props.professor}
+                            img={props.img}
+                            description={props.description}
+                            details={props.details}
+                            award={props.award}
+                        />
                         :
-                        <div className="project-block-award">{props.award}</div>
+                        null
                 }
             </section>
 		</div>
