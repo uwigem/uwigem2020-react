@@ -7,40 +7,18 @@
 }
 
 .container {
+  /*
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  */
 
-  margin: 3% 5%;
+  margin: 3% 0%;
+
+  height: 100px;
+
+  background-image: url('/public/ocean.png');
 }
-
-/* carousel on the left */
-.carouselContainer {
-  width: 50%;
-}
-
-.captionContainer {
-  display: flex;
-  justify-content: center;
-}
-
-.caption {
-  width: 75%;
-  background-color: rgba(255, 255, 255, .15);  
-  backdrop-filter: blur(10px);
-
-  border-radius: 5px;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: space-around;
-
-  color: black;
-}
-
-/* text on the right */
 
 .textContainer {
   width: 50%;
