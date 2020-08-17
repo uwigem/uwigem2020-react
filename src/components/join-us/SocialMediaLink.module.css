@@ -1,0 +1,20 @@
+.img {
+  width: 2em;
+  height: 2em;
+  margin-right: 1em;
+}
+
+.link {
+  display: flex;
+  flex-direction: row;
+  min-width: 10em;
+  padding: .5em;
+  margin: .5em;
+  border: solid 3px indigo;
+}
+
+.p {
+  padding: 0;
+  margin: 0;
+}
+
