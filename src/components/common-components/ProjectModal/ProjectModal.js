@@ -1,18 +1,25 @@
 import React, {useState} from 'react';
 import Modal from "react-bootstrap/Modal";
+import { Header, Title, Body, Footer } from "react-bootstrap/Modal";
 import { Button} from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./ProjectModal.css"
 
 /**
+ * @param award award of the project (the best one)
+ * @param description description of the project
+ * @param details detail information about the awards
+ * @param img image of the project
+ * @param name project name
+ * @param professor professor name
+ * @param year the year of the project
  * @returns {React.Component}
  */
-const ProjectModal = props => { 
+const ProjectModal = (props) => { 
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
 
     return <>
         <Modal 

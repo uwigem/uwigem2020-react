@@ -3,9 +3,16 @@ import './ProjectBlock.css';
 import ProjectModal from '../ProjectModal/ProjectModal'
 
 /**
+ * @param award award of the project (the best one)
+ * @param description description of the project
+ * @param details detail information about the awards
+ * @param img image of the project
+ * @param name project name
+ * @param professor professor name
+ * @param year the year of the project
  * @returns {React.Component}
  */
-const ProjectBlock = props => {
+const ProjectBlock = (props) => {
 
     const [expanded, toggleExpand] = useState(false);
     const [hover, toggleHover] = useState(false);
