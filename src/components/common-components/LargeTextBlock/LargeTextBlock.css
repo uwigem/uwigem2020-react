@@ -1,0 +1,14 @@
+.large-text-div {
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+.large-text-content p {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.large-text-content h1 {
+    color: black;
+    margin-bottom: 0rem;
+}
