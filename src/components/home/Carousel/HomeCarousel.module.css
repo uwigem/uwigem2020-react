@@ -49,6 +49,8 @@
   align-items: center;
   justify-items: space-around;
   justify-content: space-around;
+
+  margin-bottom: 5%;
 }
 
 .right div {
