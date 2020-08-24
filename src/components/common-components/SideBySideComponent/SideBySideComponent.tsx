@@ -4,36 +4,25 @@ import './SideBySideStyle.css'
 type SideBySideProps = {
     leftChild: JSX.Element,
     rightChild: JSX.Element,
-    leftWidth?: number,
-    leftStyle?: {[key: string]: any},
-    rightStyle?: {[key: string]: any},
-    style?: {[key: string]: any}
+    leftWidth?: string,
+    style?: {[key: string]: any},
+    classNames?: string
 }
 
-const SideBySideComponent: React.FunctionComponent<SideBySideProps> = ({leftChild,
-                                                                        rightChild,
-                                                                        leftWidth,
-                                                                        leftStyle,
-                                                                        rightStyle,
-                                                                        style}) => {
-    if (leftStyle !== undefined) {
-        leftStyle.width = leftWidth ? leftWidth + "%" : "50%"
-    } else {
-        leftStyle = { width: leftWidth ? leftWidth + "%" : "50%" }
-    }
+export default function SideBySideComponent({leftChild,
+                                            rightChild,
+                                            leftWidth,
+                                            classNames}: SideBySideProps) {
 
-    if (rightStyle !== undefined) {
-        rightStyle.width = leftWidth ? 100 - leftWidth + "%" : "50%"
-    } else {
-        rightStyle = {
-            width: leftWidth ? leftWidth + "%" : "50%",
-            height: "100%"
-        }
+    let leftStyle = { 
+        width: leftWidth ? leftWidth : "50%",  
     }
-    rightStyle.height = "auto"
+    let rightStyle = {
+            width: leftWidth ? "calc(100% - " + leftWidth + ")" : "50%",
+    }
 
     return (
-        <div style={style} className="sbs-container">
+        <div className={"sbs-container " + (classNames ? classNames : "")}>
             <div style={leftStyle}>
                 {leftChild}
             </div>
@@ -44,5 +33,3 @@ const SideBySideComponent: React.FunctionComponent<SideBySideProps> = ({leftChil
     )
 
 }
-
-export default SideBySideComponent;

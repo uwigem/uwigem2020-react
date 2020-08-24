@@ -14,7 +14,8 @@ import HomePage from './components/home/home';
 import TeamPage from './components/team/teamPage';
 import Footer from './components/footer/footer';
 import GetInvolve from './components/involve/involve';
-import ProjectPage from './components/project/ProjectPage';
+import ProjectPage from './components/construction/UnderConstruction';
+import UnderConstruction from './components/construction/UnderConstruction';
 
 function App() {
   return (
@@ -22,9 +23,10 @@ function App() {
       <NavBar />
       <Switch>
         <Route path='/' exact><HomePage /></Route>
-        <Route path='/projects' exact><ProjectPage /></Route>
-        <Route path='/about' exact><TeamPage /></Route>
-        <Route path='/involvement' exact><GetInvolve /></Route>
+        <Route path='/archive' exact><UnderConstruction /></Route>
+        <Route path='/team' exact><UnderConstruction /></Route>
+        <Route path='/about' exact><UnderConstruction /></Route>
+        <Route path='/involvement' exact><UnderConstruction /></Route>
       </Switch>
       <Footer />
     </HashRouter>
