@@ -1,36 +1,38 @@
-.nav-bar-container {
+#nav-bar-container {
   display: flex;
-  flex-flow: row wrap;
   background-color: white;
-  border-top: 2vh solid #4B2E83;
+  border-top: 1vw solid #4B2E83;
   justify-content: space-between;
   border-bottom: solid #C4C4C4;
+  min-width: 365px;
 }
 
 .nav-tab {
   text-decoration: none;
   color: black;
   font-weight: bold;
-  padding-bottom: .5vh;
-  padding-top: 4vh;
-  padding-left: .5vh;
-  padding-right: .5vh;
+  white-space: nowrap;
+  font-size: calc(6px + 1vw);
+  padding-top: 2.5vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
 }
 
 .nav-tab:hover {
   color: #C4C4C4;
 }
 
-.logo-left {
-  height: 7vh;
-  padding-top: 2vh;
-  padding-left: 2vw;
-  padding-right: 7vw;
+.logo {
+  height: 6vw;
+  padding-top: 1.5vw;
 }
 
-.logo-right {
-  height: 7vh;
-  padding-top: 2vh;
-  padding-left: 7vw;
+#logo-left {
+  padding-left: 2vw;
+  padding-right: 5vw;
+}
+
+#logo-right {
+  padding-left: 5vw;
   padding-right: 2vw;
 }
