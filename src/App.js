@@ -15,6 +15,7 @@ import TeamPage from './components/team/teamPage';
 import Footer from './components/footer/footer';
 import GetInvolve from './components/involve/involve';
 import ProjectPage from './components/project/ProjectPage';
+import SponsorsPage from './components/sponsors/sponsorsPage';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path='/projects' exact><ProjectPage /></Route>
         <Route path='/about' exact><TeamPage /></Route>
         <Route path='/involvement' exact><GetInvolve /></Route>
+        <Route path='/sponsors' exact><SponsorsPage /></Route>
       </Switch>
       <Footer />
     </HashRouter>

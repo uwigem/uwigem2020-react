@@ -1,0 +1,37 @@
+.sponsor {
+    position: relative;
+	background-color: white;
+	color: black;
+    box-shadow: 5px 5px 5px 0px #212121;
+    cursor: pointer;
+    border-radius: 20px;
+	overflow: hidden;
+	text-align: center;
+}
+
+.sponsor-name {
+	
+}
+
+.sponsor:hover {
+	color: white;
+	background-color: #4D2393;
+}
+
+.sponsor-wrapper:hover {
+	text-decoration: none;
+}
+
+.sponsor-img {
+	display: block;
+	background-color: white;
+	position: relative;
+}
+
+.sponsor-img img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 0 5px;
+}

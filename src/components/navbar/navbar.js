@@ -3,7 +3,7 @@ import './navbar.css';
 
 import { Link } from 'react-router-dom';
 
-const tabs = ['Home', 'About', 'Projects', 'Get Involved'];
+const tabs = ['Home', 'About', 'Projects', 'Get Involved', 'Sponsors'];
 
 const NavBar = () => {
 	return (
@@ -12,6 +12,7 @@ const NavBar = () => {
 			<Link className='nav-tab' to='/projects'>Projects</Link>
 			<Link className='nav-tab' to='/about'>About</Link>
 			<Link className='nav-tab' to='/involvement'>Get Involved</Link>
+			<Link className='nav-tab' to='/sponsors'>Sponsors</Link>
 		</div>
 	)
 }
