@@ -33,7 +33,7 @@ const ProjectModal = (props) => {
         </Modal.Header>
         <Modal.Body>
           <section className="project-block-content">
-          <Fade duration={500} left>
+          <Fade duration={500}>
             <img 
                 className="project-block-img" 
                 src={props.img}
