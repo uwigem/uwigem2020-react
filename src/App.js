@@ -14,6 +14,7 @@ import HomePage from './components/home/home';
 import TeamPage from './components/team/teamPage';
 import Footer from './components/footer/footer';
 import GetInvolve from './components/involve/involve';
+import ArchivePage from './components/archive/archive'
 import ProjectPage from './components/construction/UnderConstruction';
 import UnderConstruction from './components/construction/UnderConstruction';
 
@@ -23,7 +24,7 @@ function App() {
       <NavBar />
       <Switch>
         <Route path='/' exact><HomePage /></Route>
-        <Route path='/archive' exact><UnderConstruction /></Route>
+        <Route path='/archive' exact><ArchivePage /></Route>
         <Route path='/team' exact><UnderConstruction /></Route>
         <Route path='/about' exact><UnderConstruction /></Route>
         <Route path='/involvement' exact><UnderConstruction /></Route>

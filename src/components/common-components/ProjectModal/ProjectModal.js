@@ -8,8 +8,9 @@ import "./ProjectModal.css"
 
 /**
  * @param award award of the project (the best one)
+ * @param awardWinning detail information about the awards
  * @param description description of the project
- * @param details detail information about the awards
+ * @param details details of the description, shown in modal only
  * @param img image of the project
  * @param name project name
  * @param professor professor name
@@ -47,7 +48,7 @@ const ProjectModal = (props) => {
                 <p className="project-block-description">{props.description}</p>
                 <div className="project-block-details">
                     <h2>Award Winning</h2>
-                    {props.details.map(detail => <li>{detail}</li>)}
+                    {props.awardWinning.map(award => <li>{award}</li>)}
                 </div> 
             </div>
             </Fade>
