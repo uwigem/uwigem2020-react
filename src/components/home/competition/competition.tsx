@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import SideBySideComponent from '../../common-components/SideBySideComponent/SideBySideComponent'
+import { Grid, Row, Col } from 'react-flexbox-grid';
 import styles from './competition.module.css'
 
 const title: string = "Do you know iGEM?"
@@ -10,25 +10,21 @@ const imageAlt: string = "React Logo"
 const linkLocation: string = "/about"
 
 export default function Competition() {
-  let image = <div className={styles.imageContainer}><img className={"rounded img-fluid"} src={imageSrc} alt={imageAlt} /></div>
-  let text = (
-    <>
-      <article className={styles.articleStyle}>
-        <div className={styles.textTopBarStyle}/>
-        <h3>{title}</h3>
-        <p tabIndex={4}>{bodyText}</p>
-        <Link className={styles.linkStyle} to={linkLocation}>Learn More</Link>
-      </article>
-    </>
-  )
-
   return (
-    <article className={styles.layout}>
-      <SideBySideComponent
-        rightChild={image}
-        leftChild={text}
-        leftWidth={"50%"}
-      />
-    </article>
+    <Grid className={styles.layout} fluid>
+      <Row middle="lg">
+        <Col lg>
+          <article className={styles.articleStyle}>
+            <div className={styles.textTopBarStyle}/>
+            <h3>{title}</h3>
+            <p tabIndex={4}>{bodyText}</p>
+            <Link className={styles.linkStyle} to={linkLocation}>Learn More</Link>
+          </article>
+        </Col>
+        <Col lg>
+          <img className={"rounded img-fluid"} src={imageSrc} alt={imageAlt} />
+        </Col>
+      </Row>
+    </Grid>
   )
 }
