@@ -8,13 +8,6 @@ type propsType = {
   progress: number
 }
 
-const computeAnimationProgress = (viewRatio: number) => {
-  // Graph this function to get a better idea of the animation
-  let result = 1/(1+20*Math.exp(-15*(viewRatio - 0.42)))
-  result = Math.round(result * 100) / 100 // Remove floating points after 0.01
-  return result
-}
-
 export default function SlidingDoors({ width, height, maxInnerSpace, progress }: propsType) {
 
   const blockStyle = {
@@ -27,7 +20,7 @@ export default function SlidingDoors({ width, height, maxInnerSpace, progress }:
         <div className={`${styles.block} ${styles.flipH}`} style={blockStyle}>
           <div className={styles.topRightTri}/>  
         </div>
-        <div style={{ width: `calc(${maxInnerSpace} * ${computeAnimationProgress(progress)})`}}/>
+        <div style={{ width: `calc(${maxInnerSpace} * ${progress})`}}/>
         <div className={styles.block} style={blockStyle}>
           <div className={styles.topRightTri}/>  
         </div>

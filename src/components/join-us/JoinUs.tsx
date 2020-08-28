@@ -10,6 +10,13 @@ const observerOption = {
   threshold: Array.from(Array(101), (_,x) => x/100) // [0.0,0.01,0.02,...,1.0]
 }
 
+const animationProg = (viewRatio: number) => {
+  // Graph this function to get a better idea of the animation
+  let result = 1/(1+20*Math.exp(-15*(viewRatio - 0.42)))
+  result = Math.round(result * 100) / 100 // Remove floating points after 0.01
+  return result
+}
+
 
 export default function JoinUs() {
   const [animationProgress, setAnimationProgress] = useState(0)
@@ -45,8 +52,13 @@ export default function JoinUs() {
           <h3>Join Us</h3>
       </header>
       <section className={styles.section}>
-        <SlidingDoors width={"300px"} maxInnerSpace={"500px"} progress={animationProgress}/>
-        <SocialMediaLinks animationProgress={animationProgress} linksList={[links.github, links.facebook, links.placeHolder]}/>
+        <SlidingDoors 
+          width={"300px"}
+          maxInnerSpace={"500px"}
+          progress={animationProg(animationProgress)}/>
+        <SocialMediaLinks 
+          animationProgress={animationProg(animationProgress)}
+          linksList={[links.github, links.facebook, links.placeHolder]}/>
       </section>
     </article>
   )
