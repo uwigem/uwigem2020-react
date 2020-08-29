@@ -6,66 +6,70 @@ import React, {useState, useEffect} from 'react';
  * @returns {React.Component}
  */
 const TeamPage = props => {
-    const currentYear = 2020;
-    const [teamMembers, setTeamMembers] = useState([]);
-    const [filter, setFilter] = useState('All');
-    const [year, setYear] = useState(currentYear);
-
-    let years = [2019, 2020];
-
-    let teams = [
-        "All",
-        "Drylab",
-        "Wetlab",
-        "Human Practices",
-        "Outreach",
-        "Web Development",
-        "Fundraising",
-        "Design",
-        "Adviser",
-        "PIs"]
+  // switch between team & members
+  const [membersPage, setMembersPage] = useState(false);
 
 
-    useEffect(() => {
-        let data = require('./team_members.json');
+  const currentYear = 2020;
+  const [teamMembers, setTeamMembers] = useState([]);
+  const [filter, setFilter] = useState('All');
+  const [year, setYear] = useState(currentYear);
 
-        // sort by name
-        data.sort((a, b) => a.name.localeCompare(b.name));
-        
-        setTeamMembers(data);
-      }, []);
+  let years = [2019, 2020];
 
-    return <>
-        <div>
-            <h1 className="header">Meet the 
-            <div class="dropdown">
-                <button class="dropbtn">{year}</button>
-                <div class="dropdown-content">
-                    {years.map(y => {
-                        return <button onClick={() => setYear(y)}>{y}</button>
-                    })}
-                </div>
-            </div>Team</h1>
-        </div>
-        
-        <body >
-            <div className="teams">
-                {teams.map(team => {
-                    return <button 
-                        onClick={() => setFilter(team)}
-                        class="team-button">{team}</button>
-                })}
-            </div>
-            <div className="team-members">
-                {teamMembers.filter(
-                    person => person.year.indexOf(year) >= 0 
-                    && person.teams.indexOf(filter) >= 0)
-                .map(person => {
-                    return <TeamMember key={person.id} person={person} filter={filter}/>;
-                })}
-            </div>
-        </body>
-    </>;
+  let teams = [
+    "All",
+    "Drylab",
+    "Wetlab",
+    "Human Practices",
+    "Outreach",
+    "Web Development",
+    "Fundraising",
+    "Design",
+    "Adviser",
+    "PIs"]
+
+
+  useEffect(() => {
+    let data = require('./team_members.json');
+
+    // sort by name
+    data.sort((a, b) => a.name.localeCompare(b.name));
+    
+    setTeamMembers(data);
+    }, []);
+
+  const switchPage = () => {
+    setMembersPage(!membersPage);
+  }
+
+  return <>
+    <div className='team-root'>
+      <div className='team-header'>
+      {
+        membersPage?
+          <>
+          <h1>Our Team</h1>
+          <button onClick={switchPage}>Members</button>
+          </>
+        :
+          <>
+          <h1>Our Members</h1>
+          <button onClick={switchPage}>Team</button>
+          </>
+      }
+      </div>
+
+      <div className='team-body'>
+        {
+          membersPage?
+            <></>
+          :
+            <></>
+        }
+      </div>
+    </div>
+  </>;
 }
 
 export default TeamPage;
