@@ -1,80 +1,65 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import styles from './JoinUs.module.css'
-import SocialMediaLink from './SocialMediaLink'
+import SocialMediaLinks from './SocialMediaLinks'
+import SlidingDoors from '../common-components/SlidingDoors/SlidingDoors'
+import links from './linksData'
 
-const baseLeftClasses = `${styles.block} ${styles.leftBlock}`
-const baseRightClasses = `${styles.block} ${styles.rightBlock}`
+
+const observerOption = {
+  root: null, // Uses viewport as reference for ratios
+  threshold: Array.from(Array(101), (_,x) => x/100) // [0.0,0.01,0.02,...,1.0]
+}
+
+const animationProg = (viewRatio: number) => {
+  // Graph this function to get a better idea of the animation
+  let result = 1/(1+20*Math.exp(-15*(viewRatio - 0.42)))
+  result = Math.round(result * 100) / 100 // Remove floating points after 0.01
+  return result
+}
+
 
 export default function JoinUs() {
-  const [isOpen , setOpen] = useState(2)
-  const [isAnimating, setIsAnimating] = useState(false)
+  const [animationProgress, setAnimationProgress] = useState(0)
 
-  let handleClick = () => {
-    if (isAnimating) return
-    if (isOpen === 1) {
-      setOpen(0)
-    } else {
-      setOpen(1)
-    }
+  const handleRatioChange = (entries: IntersectionObserverEntry[], observer: IntersectionObserver) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        setAnimationProgress(entry.intersectionRatio)
+      } else {
+        if (animationProgress !== 0) {
+          setAnimationProgress(0)
+        }
+      }
+    })
   }
 
-  const leftBlockClasses = () => {
-    if (isOpen === 0) {
-      return `${baseLeftClasses} ${styles.leftSlideBack}`
-    } else if (isOpen === 1) {
-      return `${baseLeftClasses} ${styles.leftSlide}`
-    } else {
-      return baseLeftClasses
-    }
-  } 
+  const viewportObserver = new IntersectionObserver(handleRatioChange, observerOption)
+  
+  useEffect(() => {
+    let target = document.querySelector("#join-us section")
+    if (target)
+      viewportObserver.observe(target)
 
-  const rightBlockClasses = () => {
-    if (isOpen === 0) {
-      return `${baseRightClasses} ${styles.rightSlideBack}`
-    } else if (isOpen === 1) {
-      return `${baseRightClasses} ${styles.rightSlide}`
-    } else {
-      return baseRightClasses
+    return function cleanup() {
+      viewportObserver.disconnect()
     }
-  }
-
-  const linksClasses = () => {
-    if (isOpen === 0) {
-      return `${styles.links} ${styles.fadeOut}`
-    } else if (isOpen === 1) {
-      return `${styles.links} ${styles.fadeIn}`
-    } else {
-      return styles.links
-    }
-  }
+  }, [viewportObserver]);
  
   return (
-    <article className={styles.article}>
-      <div
-        className={leftBlockClasses()}
-        key={isOpen ? "left-open" : "left-closed"}
-        onClick={handleClick}
-      >
-        <div className={`${styles.topRightTri} ${styles.flipH}`}/>  
-      </div>
-      <div
-        className={linksClasses()}
-        key={isOpen === 1 ? "links-open" : "links-closed"}
-        onAnimationStart={() => setIsAnimating(true)}
-        onAnimationEnd={() => setIsAnimating(false)}
-      >
-        <SocialMediaLink label={"Github"} url={"https://github.com/uwigem"} iconSrc={"https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"}/>
-        <SocialMediaLink label={"Facebook"} url={"https://www.facebook.com/WashingtoniGEM"} iconSrc={"https://image.flaticon.com/icons/svg/124/124010.svg"}/>
-        <SocialMediaLink label={"Github"} url={"https://github.com/uwigem"} iconSrc={"https://avatars2.githubusercontent.com/u/22042397?s=200&v=4"}/>
-        <SocialMediaLink label={"Github"} url={"https://github.com/uwigem"} iconSrc={"https://avatars2.githubusercontent.com/u/22042397?s=200&v=4"}/>
-      </div>
-      <div
-        className={rightBlockClasses()}
-        key={isOpen ? "right-open" : "right-closed"}
-        onClick={handleClick}
-      >
-        <div className={styles.topRightTri}/>  
-      </div>
+    <article id={"join-us"} className={styles.article}>
+      <header className={styles.header}>
+          <div className={styles.topBar}></div>
+          <h3>Join Us</h3>
+      </header>
+      <section className={styles.section}>
+        <SlidingDoors 
+          width={"300px"}
+          maxInnerSpace={"500px"}
+          progress={animationProg(animationProgress)}/>
+        <SocialMediaLinks 
+          animationProgress={animationProg(animationProgress)}
+          linksList={[links.github, links.facebook, links.placeHolder]}/>
+      </section>
     </article>
   )
 }
