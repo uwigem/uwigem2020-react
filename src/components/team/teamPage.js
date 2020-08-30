@@ -43,9 +43,21 @@ const TeamPage = props => {
     setMembersPage(!membersPage);
   }
 
+  let mentors = [
+    {
+      name: 'a',
+      description: 'a description'
+    },
+    {
+      name: 'b',
+      description: 'b description'
+    }
+  ];
+
   return <>
     <div className='team-root'>
       <div className='team-header'>
+
       {
         membersPage?
           <>
@@ -67,15 +79,32 @@ const TeamPage = props => {
           <div className='team-header-button'>
             <button onClick={switchPage}>Team</button>
           </div>
-          
+
           </>
       }
+
       </div>
 
       <div className='team-body'>
         {
           membersPage?
-            <></>
+            <>
+            
+            <div className='team-mentors'>
+              <div className='team-mentors-title'>
+                <h3>Mentors</h3>
+              </div>
+
+              <div className='team-mentors-card-container'>
+              {
+                mentors.map(m => (<div className='team-mentors-card'>
+                  
+                </div>))
+              }
+              </div>
+            </div>
+            
+            </>
           :
             <></>
         }

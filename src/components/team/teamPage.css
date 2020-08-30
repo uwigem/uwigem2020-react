@@ -1,7 +1,9 @@
 
 .team-root {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .team-header {
@@ -35,11 +37,23 @@
 
 
 /* mentors */
+
+.team-mentors {
+    max-width: 1000px;
+}
+
 .team-mentors-card-container {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     overflow: scroll;
+}
+
+.team-mentors-card {
+    background-color: yellow;
+    height: 300px;
+    width: 200px;
+    margin: 10px;
 }
 
 /* old */
