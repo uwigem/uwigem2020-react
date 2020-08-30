@@ -1,0 +1,23 @@
+.team-statement-div {
+    background-color: #dbdbdb;
+    margin: 2em;
+    padding: 1.5em 2em 1.5em 2em;
+    font-size: 20px;
+}
+
+.team-statement-title {
+    font-weight: bold;
+}
+
+.team-statement-main {
+    text-align: center;
+    margin: 1em;
+}
+
+.team-statement-link {
+    margin-top: 0.5em;
+    font-size: 18px;
+    text-decoration: underline;
+    text-align: right;
+    color: #0000EE;
+}

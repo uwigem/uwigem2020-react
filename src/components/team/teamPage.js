@@ -1,6 +1,9 @@
 import './teamPage.css';
 import TeamMember from './teamMember';
+import OurTeamPage from './OurTeamPage'
+import TeamOverview from './teamOverview/teamOverview'
 import React, {useState, useEffect} from 'react';
+import TeamStructure from './teamStructure/teamStructure';
 
 /**
  * @returns {React.Component}
@@ -89,24 +92,21 @@ const TeamPage = props => {
         {
           membersPage?
             <>
-            
-            <div className='team-mentors'>
-              <div className='team-mentors-title'>
-                <h3>Mentors</h3>
-              </div>
-
-              <div className='team-mentors-card-container'>
-              {
-                mentors.map(m => (<div className='team-mentors-card'>
-                  
-                </div>))
-              }
-              </div>
-            </div>
-            
+              
             </>
           :
-            <></>
+            <>
+
+            <hr></hr>
+            <TeamOverview 
+              overview="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim integer sit lacinia ac tempus enim libero, sed nisl. Mattis integer consectetur vel, cursus lacus, consequat, adipiscing. Risus, id id bibendum turpis sit sit. Duis tortor sed erat sed arcu at."
+              imgSrc="PlaceholderImage/arknights5.jpg"
+              imgAlt="Placeholder Image"
+              caption="Caption: caption goes here"
+            />
+            <TeamStructure></TeamStructure>
+
+            </>
         }
       </div>
     </div>
