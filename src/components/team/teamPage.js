@@ -49,13 +49,25 @@ const TeamPage = props => {
       {
         membersPage?
           <>
-          <h1>Our Team</h1>
-          <button onClick={switchPage}>Members</button>
+          <div className='team-header-title'>
+            <h1>Our Team</h1>
+          </div>
+
+          <div className='team-header-button'>
+            <button onClick={switchPage}>Members</button>
+          </div>
           </>
         :
           <>
-          <h1>Our Members</h1>
-          <button onClick={switchPage}>Team</button>
+
+          <div className='team-header-title'>
+            <h1>Our Members</h1>
+          </div>
+
+          <div className='team-header-button'>
+            <button onClick={switchPage}>Team</button>
+          </div>
+          
           </>
       }
       </div>
