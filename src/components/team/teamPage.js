@@ -1,71 +1,100 @@
 import './teamPage.css';
 import TeamMember from './teamMember';
+import OurTeamPage from './OurTeamPage'
+import TeamOverview from './teamOverview/teamOverview'
 import React, {useState, useEffect} from 'react';
+import TeamStructure from './teamStructure/teamStructure';
 
 /**
  * @returns {React.Component}
  */
 const TeamPage = props => {
-    const currentYear = 2020;
-    const [teamMembers, setTeamMembers] = useState([]);
-    const [filter, setFilter] = useState('All');
-    const [year, setYear] = useState(currentYear);
-
-    let years = [2019, 2020];
-
-    let teams = [
-        "All",
-        "Drylab",
-        "Wetlab",
-        "Human Practices",
-        "Outreach",
-        "Web Development",
-        "Fundraising",
-        "Design",
-        "Adviser",
-        "PIs"]
+  // switch between team & members
+  const [membersPage, setMembersPage] = useState(false);
 
 
-    useEffect(() => {
-        let data = require('./team_members.json');
+  const currentYear = 2020;
+  const [teamMembers, setTeamMembers] = useState([]);
+  const [filter, setFilter] = useState('All');
+  const [year, setYear] = useState(currentYear);
 
-        // sort by name
-        data.sort((a, b) => a.name.localeCompare(b.name));
-        
-        setTeamMembers(data);
-      }, []);
+  let years = [2019, 2020];
 
-    return <>
-        <div>
-            <h1 className="header">Meet the 
-            <div class="dropdown">
-                <button class="dropbtn">{year}</button>
-                <div class="dropdown-content">
-                    {years.map(y => {
-                        return <button onClick={() => setYear(y)}>{y}</button>
-                    })}
-                </div>
-            </div>Team</h1>
-        </div>
-        
-        <body >
-            <div className="teams">
-                {teams.map(team => {
-                    return <button 
-                        onClick={() => setFilter(team)}
-                        class="team-button">{team}</button>
-                })}
-            </div>
-            <div className="team-members">
-                {teamMembers.filter(
-                    person => person.year.indexOf(year) >= 0 
-                    && person.teams.indexOf(filter) >= 0)
-                .map(person => {
-                    return <TeamMember key={person.id} person={person} filter={filter}/>;
-                })}
-            </div>
-        </body>
-    </>;
+  let teams = [
+    "All",
+    "Drylab",
+    "Wetlab",
+    "Human Practices",
+    "Outreach",
+    "Web Development",
+    "Fundraising",
+    "Design",
+    "Adviser",
+    "PIs"]
+
+
+  useEffect(() => {
+    let data = require('./team_members.json');
+
+    // sort by name
+    data.sort((a, b) => a.name.localeCompare(b.name));
+    
+    setTeamMembers(data);
+    }, []);
+
+  const switchPage = () => {
+    setMembersPage(!membersPage);
+  }
+
+  return <>
+    <div className='team-root'>
+      <div className='team-header'>
+      {
+        membersPage?
+          <>
+          <div className='team-header-title'>
+            <h1>Our Team</h1>
+          </div>
+
+          <div className='team-header-button'>
+            <button onClick={switchPage}>Members</button>
+          </div>
+          </>
+        :
+          <>
+
+          <div className='team-header-title'>
+            <h1>Our Members</h1>
+          </div>
+
+          <div className='team-header-button'>
+            <button onClick={switchPage}>Team</button>
+          </div>
+          
+          </>
+      }
+      </div>
+
+      <div className='team-body'>
+        {
+          membersPage?
+            <>
+              <hr></hr>
+              <TeamOverview 
+                overview="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim integer sit lacinia ac tempus enim libero, sed nisl. Mattis integer consectetur vel, cursus lacus, consequat, adipiscing. Risus, id id bibendum turpis sit sit. Duis tortor sed erat sed arcu at."
+                imgSrc="PlaceholderImage/arknights5.jpg"
+                imgAlt="Placeholder Image"
+                caption="Caption: caption goes here"
+              />
+              <TeamStructure></TeamStructure>
+            </>
+          :
+            <>
+            </>
+        }
+      </div>
+    </div>
+  </>;
 }
 
 export default TeamPage;
