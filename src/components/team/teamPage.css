@@ -1,12 +1,5 @@
-
-.team-root {
-    display: flex;
-    justify-content: center;
-}
-
 .team-header {
     width: 100%;
-
     display: grid;
     grid-template-areas: ". heading button";
     grid-template-columns: auto 40% 30%;
