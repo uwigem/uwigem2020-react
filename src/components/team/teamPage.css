@@ -1,3 +1,48 @@
+
+.team-root {
+    display: flex;
+    justify-content: center;
+}
+
+.team-header {
+    width: 100%;
+
+    display: grid;
+    grid-template-areas: ". heading button";
+    grid-template-columns: auto 40% 30%;
+}
+
+.team-header-title {
+    grid-area: heading;
+    display: flex;
+    justify-content: center;
+}
+
+.team-header-button {
+    grid-area: button;
+    display: flex;
+    justify-content: center;
+}
+
+.team-header-button button {
+    margin: auto auto auto;
+    width: 150px;
+    height: 40px;
+    background-color: purple;
+    border: none;
+    color: white;
+}
+
+
+/* mentors */
+.team-mentors-card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: scroll;
+}
+
+/* old */
 .header {
     font-family: Arial, Helvetica, sans-serif;
     margin-left: 2rem;
