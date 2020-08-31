@@ -1,0 +1,25 @@
+
+.root {
+  width: 100%;
+}
+
+.container {
+  max-width: 1000px;
+  height: 350;
+  margin: auto;
+
+  display: flex;
+  overflow-x: auto;
+  align-items: center;
+}
+
+.card {
+  flex-shrink: 0;
+
+  width: 200px;
+  height: 300px;
+  margin: 10px;
+
+  background-color: yellow;
+
+}

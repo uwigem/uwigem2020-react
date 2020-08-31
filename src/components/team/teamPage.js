@@ -1,9 +1,11 @@
 import './teamPage.css';
-import TeamMember from './teamMember';
+import TeamMember from './membersPage/teamMember';
 import OurTeamPage from './OurTeamPage'
 import TeamOverview from './teamOverview/teamOverview'
 import React, {useState, useEffect} from 'react';
 import TeamStructure from './teamStructure/teamStructure';
+
+import Mentors from './membersPage/Mentors';
 
 /**
  * @returns {React.Component}
@@ -34,7 +36,7 @@ const TeamPage = props => {
 
 
   useEffect(() => {
-    let data = require('./team_members.json');
+    let data = require('./membersPage/team_members.json');
 
     // sort by name
     data.sort((a, b) => a.name.localeCompare(b.name));
@@ -64,16 +66,6 @@ const TeamPage = props => {
       {
         membersPage?
           <>
-          <div className='team-header-title'>
-            <h1>Our Team</h1>
-          </div>
-
-          <div className='team-header-button'>
-            <button onClick={switchPage}>Members</button>
-          </div>
-          </>
-        :
-          <>
 
           <div className='team-header-title'>
             <h1>Our Members</h1>
@@ -81,6 +73,18 @@ const TeamPage = props => {
 
           <div className='team-header-button'>
             <button onClick={switchPage}>Team</button>
+          </div>
+
+          </>
+        :
+          <>
+
+          <div className='team-header-title'>
+            <h1>Our Team</h1>
+          </div>
+
+          <div className='team-header-button'>
+            <button onClick={switchPage}>Members</button>
           </div>
 
           </>
@@ -92,6 +96,16 @@ const TeamPage = props => {
         {
           membersPage?
             <>
+
+            <Mentors />
+
+            <div className='team-members-container'>
+
+            {
+              teamMembers.map(p => <TeamMember person={p} />)
+            }
+
+            </div>
               
             </>
           :
