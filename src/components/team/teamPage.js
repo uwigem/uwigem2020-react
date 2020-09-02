@@ -1,4 +1,6 @@
+import 'bootstrap/dist/css/bootstrap.css';
 import './teamPage.css';
+
 import TeamMember from './membersPage/teamMember';
 import OurTeamPage from './OurTeamPage'
 import TeamOverview from './teamOverview/teamOverview'
@@ -6,6 +8,7 @@ import React, {useState, useEffect} from 'react';
 import TeamStructure from './teamStructure/teamStructure';
 
 import Mentors from './membersPage/Mentors';
+import Members from './membersPage/Members';
 
 /**
  * @returns {React.Component}
@@ -34,16 +37,6 @@ const TeamPage = props => {
     "Adviser",
     "PIs"]
 
-
-  useEffect(() => {
-    let data = require('./membersPage/team_members.json');
-
-    // sort by name
-    data.sort((a, b) => a.name.localeCompare(b.name));
-    
-    setTeamMembers(data);
-    }, []);
-
   const switchPage = () => {
     setMembersPage(!membersPage);
   }
@@ -63,32 +56,15 @@ const TeamPage = props => {
     <div className='team-root'>
       <div className='team-header'>
 
-      {
-        membersPage?
-          <>
+        <div className='team-header-title'>
+          <h1>Our {membersPage? 'Members' : 'Team'}</h1>
+        </div>
 
-          <div className='team-header-title'>
-            <h1>Our Members</h1>
-          </div>
-
-          <div className='team-header-button'>
-            <button onClick={switchPage}>Team</button>
-          </div>
-
-          </>
-        :
-          <>
-
-          <div className='team-header-title'>
-            <h1>Our Team</h1>
-          </div>
-
-          <div className='team-header-button'>
-            <button onClick={switchPage}>Members</button>
-          </div>
-
-          </>
-      }
+        <div className='team-header-button'>
+          <button onClick={switchPage}>
+            {membersPage? 'Team' : 'Members'}
+          </button>
+        </div>
 
       </div>
 
@@ -99,14 +75,8 @@ const TeamPage = props => {
 
             <Mentors />
 
-            <div className='team-members-container'>
+            <Members />
 
-            {
-              teamMembers.map(p => <TeamMember person={p} />)
-            }
-
-            </div>
-              
             </>
           :
             <>

@@ -29,28 +29,48 @@ const Mentors = () => {
       photo: 'url',
       name: '',
       description: 'hello'
+    },
+    {
+      photo: 'url',
+      name: '',
+      description: 'hello'
+    },
+    {
+      photo: 'url',
+      name: '',
+      description: 'hello'
     }
   ];
 
   return (
     <div className={s.root}>
       <div className={s.container}>
+
+      <div className={s.title}>
+        <h2>
+          Mentors
+        </h2>
+      </div>
+
+      <div className={s.list}>
       
       {
-        mentors.map(m => 
-          <div className={s.card}>
+        mentors.map((m, i) => 
+          <div key={i} className={s.card}>
             <div className={s.photo}>
 
             </div>
             <div className={s.name}>
-              {m.name}
+              
             </div>
             <div className={s.desc}>
-              {m.description}
+              
             </div>
           </div>  
         )
       }
+
+      </div>
       
       </div>
     </div>
