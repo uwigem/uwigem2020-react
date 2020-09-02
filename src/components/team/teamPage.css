@@ -1,3 +1,13 @@
+.team-body {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.team-body main {
+    flex-grow: 1;
+}
+
 .team-header {
     width: 100%;
     display: grid;
