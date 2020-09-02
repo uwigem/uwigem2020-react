@@ -27,12 +27,16 @@
 
 .filterCard {
   margin: 5px;
+  padding: 1px;
   background-color: azure;
+  cursor: pointer;
 }
 
 .filterCardSelected {
   margin: 5px;
-  background-color: grey;
+  padding: 1px;
+  background-color: orange;
+  cursor: pointer;
 }
 
 .body {
