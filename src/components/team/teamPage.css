@@ -21,6 +21,20 @@
     justify-content: center;
 }
 
+.team-header-title h1{
+    color: #000000;
+    text-align: center;
+    font-size: 40px;
+    margin: 2rem;
+    font-style: normal;
+}
+
+.team-header-linebar {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 3rem;
+}
+
 .team-header-button {
     grid-area: button;
     display: flex;
@@ -31,7 +45,7 @@
     margin: auto auto auto;
     width: 150px;
     height: 40px;
-    background-color: purple;
+    background-color: #4b2e83;
     border: none;
     color: white;
 }

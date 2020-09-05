@@ -27,7 +27,7 @@ function App() {
         <Route path='/' exact><HomePage /></Route>
         <Route path='/archive' exact><ArchivePage /></Route>
         <Route path='/team' exact><TeamPage /></Route>
-        <Route path='/about' exact><UnderConstruction /></Route>
+        <Route path='/endorsement' exact><UnderConstruction /></Route>
         <Route path='/involvement' exact><UnderConstruction /></Route>
       </Switch>
       <Footer />
