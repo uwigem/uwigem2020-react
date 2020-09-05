@@ -1,9 +1,11 @@
-
-.team-root {
+.team-body {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
+    position: relative;
+}
+
+.team-body main {
+    flex-grow: 1;
 }
 
 .team-header {
