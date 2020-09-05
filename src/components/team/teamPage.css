@@ -1,11 +1,9 @@
-.team-body {
-    display: flex;
-    flex-direction: row;
-    position: relative;
-}
 
-.team-body main {
-    flex-grow: 1;
+.team-root {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .team-header {
@@ -36,14 +34,23 @@
     color: white;
 }
 
+.team-body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-/* mentors */
-.team-mentors-card-container {
+/* members */
+
+.team-members-container {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    overflow: scroll;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
 }
+
 
 /* old */
 .header {
@@ -123,15 +130,13 @@ body {
 }
 
 .person {
+    flex-shrink: 0;
     position: relative;
     background-color: #4D2393;
-    box-shadow: 5px 5px 5px 0px #212121;
     max-width: 300px;
     max-height: 24rem;
-    padding-bottom: 4rem;
     margin: 1rem;
     cursor: pointer;
-    border-radius: 20px;
     overflow: hidden;
 }
 
@@ -140,9 +145,13 @@ body {
 }
 
 .person-name {
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     text-align: center;
+    background-color: rgba(235, 235, 235, 0.8);
+    font-size: 1.25rem;
+    font-family: Arial, Helvetica, sans-serif;
     padding: 5px;
 }
 
@@ -202,4 +211,15 @@ body {
     flex: 1;
     text-align: center;
     padding: 8px;
+}
+
+.modal-body {
+    padding-left: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+.modal-content {
+    border-radius: 0px;
+    border: none;
 }
