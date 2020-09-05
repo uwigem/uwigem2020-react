@@ -3,8 +3,8 @@ import './navbar.css';
 
 import {Link} from 'react-router-dom';
 
-const tabs = ['Homepage', 'Archive', 'Get Involved', 'Team', 'About'];
-const paths = ['/', '/archive', '/involvement', '/team', '/about'];
+const tabs = ['Homepage', 'Archive', 'Get Involved', 'Team', 'Endorsement'];
+const paths = ['/', '/archive', '/involvement', '/team', '/endorsement'];
 const leftLogo = "https://2019.igem.org/wiki/images/3/32/T--Washington--HLogo2.png";
 const rightLogo = "https://2019.igem.org/wiki/images/3/32/T--Washington--HLogo2.png";
 

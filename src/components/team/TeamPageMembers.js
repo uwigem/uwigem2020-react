@@ -51,9 +51,10 @@ export default function TeamPageMembers({ onSwitchClick }) {
             <h1>Our Members</h1>
           </div>
           <div className='team-header-button'>
-            <button onClick={onSwitchClick}>Team</button>
+            <button onClick={onSwitchClick}>View Team</button>
           </div>
       </header>
+      <hr className="team-header-linebar"></hr>
       <div className='team-body'>
         <TeamPageSideBar sectionList={[]} />
         <UnderConstruction/>
