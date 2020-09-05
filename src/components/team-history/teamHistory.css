@@ -1,4 +1,10 @@
+.timeline-card {
+	position: relative;
+}
+
 .timeline-content {
+	color: white;
+	margin: 1em auto;
 	text-align: center;
 	position: relative;
 	border: 1px;
@@ -6,107 +12,49 @@
 	border-color: black;
 	height: 20em;
 	width: 80%;
-	margin: 0 auto;
+	background-image: url("https://cdn.pixabay.com/photo/2016/11/29/05/45/astronomy-1867616__340.jpg");
 }
 
-.timeline-page {
+.timeline-background {
+	position: relative;
+	margin: 2em;
+	background: rgb(196, 196, 196);
+	opacity: 0.7;
+	top:0; bottom: 0; left: 0; right: 0;
+}
+
+.exit-motto-button {
+	color: white;
+	margin: 5px;
+	padding: 10px;
 	position: absolute;
-	top: 0; left: 0; bottom: 0; right: 0;
-	margin: auto;
+	top: 2em; 
+	left: 2em;
+	border: none;
+	background-color: #A8A8A8;
 }
-
-.page-in-left {
-	animation-name: fade-in-left;
-	animation-duration: 1s;
-}
-
-@keyframes fade-in-left {
-	from {
-		visibility: hidden;
-		opacity: 0;
-		left: 100%;
-	}
-	to {
-		visibility: visible;
-		opacity: 1;
-		left: 0;
-	}
-}
-
-.page-out-left {
-	animation-name: fade-out-left;
-	animation-duration: 1s;
-}
-
-@keyframes fade-out-left {
-	from {
-		visibility: visible;
-		opacity: 1;
-		left: 0;
-	}
-	to {
-		visibility: hidden;
-		opacity: 0;
-		left: 100%;
-	}
-}
-
-.page-in-right {
-	animation-name: fade-in-right;
-	animation-duration: 1s;
-}
-
-@keyframes fade-in-right {
-	from {
-		visibility: hidden;
-		opacity: 0;
-		right: 100%;
-	}
-	to {
-		visibility: visible;
-		opacity: 1;
-		right: 0;
-	}
-}
-
-.page-out-right {
-	animation-name: fade-out-right;
-	animation-duration: 1s;
-}
-
-@keyframes fade-out-right {
-	from {
-		visibility: visible;
-		opacity: 1;
-		right: 0;
-	}
-	to {
-		visibility: hidden;
-		opacity: 0;
-		right: 100%;
-	}
-}
-
 
 .timeline-header {
 	font-size: 2em;
 }
 
+
 .timeline {
 	position: relative;
+	top: -21em;
 	border: 2px;
 	border-style: solid;
 	border-color: rgb(184, 180, 180);
-	width: 90%;
-	height: 3em;
-	margin: 10px auto;
+	margin: 1em auto;
+	height: 20em;
+	width: 80%;
 }
 
 .timeline:before {
 	content: ' ';
 	position: absolute;
 	width: 90%;
-	top: 1.5em;
+	top: 10em;
 	left: 5%;
 	height: 4px;
 	margin-top: 0em;
@@ -118,7 +66,7 @@
 	content: '';
 	position: absolute;
 	z-index: 1;
-	top: 1.5em;
+	top: 10em;
 	height: 4px;
 	width: 15%;
 }
@@ -150,7 +98,7 @@
 
 .events a {
   position: absolute;
-  bottom: 0;
+  top: 7em;
   z-index: 2;
   text-align: center;
   color: #505050;
@@ -162,7 +110,7 @@
 	content: ' ';
 	position: absolute;
 	left: 12px;
-	bottom: -13px;
+	top: 2em;
 	height: 12px;
 	width: 12px;
 	border-radius: 50%;
@@ -173,7 +121,7 @@
 .events .active a::after {
 	border: none;
 	border-radius: 0;
-	bottom: -13px;
+	top: 2em;
 	background-color: transparent;
 	border-left: 8px solid transparent;
     border-right: 8px solid transparent;
@@ -185,7 +133,7 @@
 	z-index: 3;
 	content: ' ';
 	position: absolute;
-	bottom: -18px;	
+	top: 2em;	
 	height: 24px;
 	width: 24px;
 	border-radius: 0;
