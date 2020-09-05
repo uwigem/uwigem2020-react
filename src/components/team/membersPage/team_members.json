@@ -2,6 +2,7 @@
     {
         "id": 1,
         "name": "Chris",
+        "major": "Informatics",
         "teams": [
             "All",
             "Web Development",
@@ -17,6 +18,7 @@
     {
         "id": 2,
         "name": "Diana",
+        "major": "Computer Science",
         "teams": [
             "All",
             "Web Development",
@@ -32,6 +34,7 @@
     {
         "id": 3,
         "name": "Jaden",
+        "major":"Computer Science",
         "teams": [
             "All",
             "Web Development",
@@ -47,6 +50,7 @@
     {
         "id": 4,
         "name": "Jennifer",
+        "major":"Computer Science",
         "teams": [
             "All",
             "Web Development",
@@ -63,6 +67,7 @@
     {
         "id": 5,
         "name": "Victor",
+        "major":"Computer Science",
         "teams": [
             "All",
             "Web Development"
@@ -77,6 +82,7 @@
     {
         "id": 6,
         "name": "Max",
+        "major":"Computer Science",
         "teams": [
             "All",
             "Web Development"
