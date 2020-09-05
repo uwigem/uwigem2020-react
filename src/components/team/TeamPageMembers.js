@@ -12,14 +12,16 @@ export default function TeamPageMembers({ onSwitchClick }) {
   const [filter, setFilter] = useState('All');
   const [year, setYear] = useState(currentYear);
 
+  const mentorsRef = useRef(null);
+  const membersRef = useRef(null);
   const sections = [
     {
-      name: 'sectionName1',
-      ref: useRef()
+      name: 'Mentors',
+      ref: mentorsRef
     },
     {
-      name: 'sectionName2',
-      ref: useRef()
+      name: 'Members',
+      ref: membersRef
     }
   ]
 
@@ -60,10 +62,16 @@ export default function TeamPageMembers({ onSwitchClick }) {
           </div>
       </header>
       <div className='team-body'>
-        <TeamPageSideBar sectionList={[]} />
+        <TeamPageSideBar sectionList={sections} />
         
-        <Mentors />
-        <Members />
+        <main>
+          <section ref={mentorsRef} >
+            <Mentors />
+          </section>
+          <section ref={membersRef} >
+            <Members />
+          </section>
+        </main>
 
       </div>  
     </main>
