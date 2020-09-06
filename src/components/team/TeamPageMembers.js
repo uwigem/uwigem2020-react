@@ -2,6 +2,9 @@ import React, { useState, useEffect, useRef } from 'react'
 import UnderConstruction from '../construction/UnderConstruction'
 import TeamPageSideBar from './TeamPageSideBar';
 
+import Mentors from './membersPage/Mentors';
+import Members from './membersPage/Members';
+
 export default function TeamPageMembers({ onSwitchClick }) {
 
   const currentYear = 2020;
@@ -9,14 +12,16 @@ export default function TeamPageMembers({ onSwitchClick }) {
   const [filter, setFilter] = useState('All');
   const [year, setYear] = useState(currentYear);
 
+  const mentorsRef = useRef(null);
+  const membersRef = useRef(null);
   const sections = [
     {
-      name: 'sectionName1',
-      ref: useRef()
+      name: 'Mentors',
+      ref: mentorsRef
     },
     {
-      name: 'sectionName2',
-      ref: useRef()
+      name: 'Members',
+      ref: membersRef
     }
   ]
 
@@ -35,6 +40,7 @@ export default function TeamPageMembers({ onSwitchClick }) {
     "PIs"]
 
 
+  /*
   useEffect(() => {
     let data = require('./team_members.json');
 
@@ -43,6 +49,7 @@ export default function TeamPageMembers({ onSwitchClick }) {
     
     setTeamMembers(data);
   }, []);
+  */
 
   return (
     <main>
@@ -51,12 +58,22 @@ export default function TeamPageMembers({ onSwitchClick }) {
             <h1>Our Members</h1>
           </div>
           <div className='team-header-button'>
-            <button onClick={onSwitchClick}>Team</button>
+            <button onClick={onSwitchClick}>View Team</button>
           </div>
       </header>
+      <hr className="team-header-linebar"></hr>
       <div className='team-body'>
-        <TeamPageSideBar sectionList={[]} />
-        <UnderConstruction/>
+        <TeamPageSideBar sectionList={sections} />
+        
+        <main>
+          <section ref={mentorsRef} >
+            <Mentors />
+          </section>
+          <section ref={membersRef} >
+            <Members />
+          </section>
+        </main>
+
       </div>  
     </main>
   )
