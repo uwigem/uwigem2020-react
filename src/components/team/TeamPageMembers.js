@@ -1,5 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react'
-import UnderConstruction from '../construction/UnderConstruction'
+import React, { useState, useRef } from 'react'
 import TeamPageSideBar from './TeamPageSideBar';
 
 import Mentors from './membersPage/Mentors';
@@ -43,17 +42,6 @@ export default function TeamPageMembers({ onSwitchClick }) {
     "Adviser",
     "PIs"]
 
-
-  /*
-  useEffect(() => {
-    let data = require('./team_members.json');
-
-    // sort by name
-    data.sort((a, b) => a.name.localeCompare(b.name));
-    
-    setTeamMembers(data);
-  }, []);
-  */
 
   return (
     <main>
