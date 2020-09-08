@@ -4,6 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { Scrollbars } from 'react-custom-scrollbars';
 
+// expects a "person" prop
+
 /**
  * @returns {React.Component}
  */

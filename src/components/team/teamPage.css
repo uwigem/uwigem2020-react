@@ -21,6 +21,20 @@
     justify-content: center;
 }
 
+.team-header-title h1{
+    color: #000000;
+    text-align: center;
+    font-size: 40px;
+    margin: 2rem;
+    font-style: normal;
+}
+
+.team-header-linebar {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 3rem;
+}
+
 .team-header-button {
     grid-area: button;
     display: flex;
@@ -31,19 +45,22 @@
     margin: auto auto auto;
     width: 150px;
     height: 40px;
-    background-color: purple;
+    background-color: #4b2e83;
     border: none;
     color: white;
 }
 
 
-/* mentors */
-.team-mentors-card-container {
+/* members */
+
+.team-members-container {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    overflow: scroll;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
 }
+
 
 /* old */
 .header {
@@ -123,6 +140,8 @@ body {
 }
 
 .person {
+    flex-shrink: 0;
+
     position: relative;
     background-color: #4D2393;
     box-shadow: 5px 5px 5px 0px #212121;

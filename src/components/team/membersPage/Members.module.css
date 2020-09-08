@@ -1,0 +1,44 @@
+.root {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  margin-top: 50px;
+}
+
+.container {
+  max-width: 1400px;
+}
+
+.title {
+}
+
+.filter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.filterCardContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.filterCard {
+  margin: 5px;
+  background-color: azure;
+}
+
+.filterCardSelected {
+  margin: 5px;
+  background-color: grey;
+}
+
+.body {
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
