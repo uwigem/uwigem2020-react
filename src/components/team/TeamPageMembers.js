@@ -14,13 +14,17 @@ export default function TeamPageMembers({ onSwitchClick }) {
 
   const mentorsRef = useRef(null);
   const membersRef = useRef(null);
+  const mentorsId = 'team-page-mentors'
+  const membersId = 'team-page-members'
   const sections = [
     {
       name: 'Mentors',
+      id: mentorsId,
       ref: mentorsRef
     },
     {
       name: 'Members',
+      id: membersId,
       ref: membersRef
     }
   ]
@@ -66,10 +70,10 @@ export default function TeamPageMembers({ onSwitchClick }) {
         <TeamPageSideBar sectionList={sections} />
         
         <main>
-          <section ref={mentorsRef} >
+          <section ref={mentorsRef} id={mentorsId} >
             <Mentors />
           </section>
-          <section ref={membersRef} >
+          <section ref={membersRef} id={membersId}>
             <Members />
           </section>
         </main>
