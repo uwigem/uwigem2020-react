@@ -12,13 +12,17 @@ export default function TeamPageTeam({ onSwitchClick }) {
   
   const overviewRef = useRef(null)
   const teamStructRef = useRef(null)
+  const overviewId = 'team-page-team-overview'
+  const teamStructureId = 'team-page-team-structure'
   const sections = [
     {
       name: 'Overview',
+      id: overviewId,
       ref: overviewRef
     },
     {
       name: 'Team Structure',
+      id: teamStructureId,
       ref: teamStructRef
     }
   ]
@@ -35,14 +39,14 @@ export default function TeamPageTeam({ onSwitchClick }) {
       <div className='team-body'>
         <TeamPageSideBar sectionList={sections} />
         <main>
-          <section ref={overviewRef}>
+          <section ref={overviewRef} id={overviewId}>
             <TeamOverview
               overview="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim integer sit lacinia ac tempus enim libero, sed nisl. Mattis integer consectetur vel, cursus lacus, consequat, adipiscing. Risus, id id bibendum turpis sit sit. Duis tortor sed erat sed arcu at."
               imgSrc="PlaceholderImage/arknights5.jpg"
               imgAlt="Placeholder Image"
               caption="Caption: caption goes here"/>
           </section>
-          <section ref={teamStructRef}>
+          <section ref={teamStructRef} id={teamStructureId}>
             <TeamStructure />
           </section>
         </main>
