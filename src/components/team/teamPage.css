@@ -229,7 +229,7 @@ body {
     padding-top: 0px;
 }
 
-.member-card {
+.modal-content {
     border-radius: 0px;
     border: none;
 }
@@ -264,6 +264,14 @@ body {
 
 .card-logo {
     margin: 0.5vw;
+}
+
+.contact-logo {
+    height: 44px;
+    display: inline-block;
+    vertical-align: 0.1em;
+    padding-left: 1vw;
+    padding-right: 1vw;
 }
 
 .card-bio {

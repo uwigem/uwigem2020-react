@@ -15,6 +15,7 @@
         "pronouns": null,
         "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         "linkedin": "https://www.linkedin.com",
+        "contact": null,
         "github": "https://github.com/"
     },
     {
@@ -31,6 +32,7 @@
         "picture": "http://placekitten.com/380/380",
         "pronouns": null,
         "bio": null,
+        "contact": null,
         "linkedin": "https://www.linkedin.com",
         "github": "https://github.com/"
     },
@@ -50,6 +52,7 @@
         "pronouns": "he/him",
         "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         "linkedin": null,
+        "contact": "uwigem@uw.edu",
         "github": "https://github.com/"
     },
     {
@@ -69,6 +72,7 @@
         "pronouns": null,
         "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         "linkedin": "https://www.linkedin.com",
+        "contact": null,
         "github": null
     },
     {
@@ -86,6 +90,7 @@
         "pronouns": null,
         "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         "linkedin": null,
+        "contact": null,
         "github": null
     },
     {
@@ -104,6 +109,7 @@
         "pronouns": null,
         "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         "linkedin": "https://www.linkedin.com",
+        "contact": null,
         "github": "https://github.com/"
     }
 ]
