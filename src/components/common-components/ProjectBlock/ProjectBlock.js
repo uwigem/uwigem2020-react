@@ -16,17 +16,22 @@ import ProjectModal from '../ProjectModal/ProjectModal'
  */
 const ProjectBlock = (props) => {
 
-    const [expanded, toggleExpand] = useState(false);
-    const [hover, toggleHover] = useState(false);
+    // const [expanded, toggleExpand] = useState(false);
+    // const [hover, toggleHover] = useState(false);
+    const [effect, setEffect] = useState({
+        expanded: false,
+        hover: false
+    });
 
     return <>
         <div 
             className="project-block-div"
-            onClick={() => toggleExpand(!expanded)}
-            onMouseEnter={() => toggleHover(true)}
-            onMouseLeave={() => toggleHover(false)}
+            onClick={() => setEffect({expanded: !effect.expanded})}
+            onMouseEnter={() => setEffect({hover: true})}
+            onMouseLeave={() => setEffect({hover: false})}
             style={{
-                boxShadow: hover ? '2px 2px 2px 2px #dbdbdb' : '2px 2px 2px 2px white', }}
+                boxShadow: effect.hover ? '2px 2px 2px 2px #dbdbdb' : '2px 2px 2px 2px white',
+                cursor: effect.hover? 'pointer' : 'auto' }}
         >
             <section className="project-block-content">
                 <img 
@@ -44,7 +49,7 @@ const ProjectBlock = (props) => {
                 </div>
                 <div className="project-block-award">{props.award}</div>
                 {
-                    expanded?
+                    effect.expanded?
                         <ProjectModal 
                             show={true} 
                             name={props.name}
