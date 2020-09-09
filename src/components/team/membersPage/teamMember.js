@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { Scrollbars } from 'react-custom-scrollbars';
 import { Modal } from 'react-bootstrap';
 import gmail from '../../../gmail.svg';
 import gmailInactive from '../../../gmailInactive.svg';
+import './teamMember.css';
 
 // expects a "person" prop
 
@@ -15,6 +15,7 @@ const TeamMember = props => {
     const [expanded, toggleExpand] = useState(false);
     
     return <>
+        {/* Member card */}
         <div className="person" onClick={() => toggleExpand(!expanded)}>
             <section className="person-image">
                 <img src={props.person.picture}></img>
@@ -28,6 +29,7 @@ const TeamMember = props => {
                 size="lg"
                 centered
             >
+                {/* Pop-up when clicking member */}
                 <Modal.Body className="card-body">
                     <img className="card-image" src={props.person.picture}></img>
                     <div className="card-content">
