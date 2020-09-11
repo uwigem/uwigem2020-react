@@ -9,17 +9,6 @@
     overflow: hidden;
 }
 
-.person-name {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    background-color: rgba(235, 235, 235, 0.8);
-    font-size: 1.25rem;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 5px;
-}
-
 .person-image {
     width: 300px;
 }
@@ -51,9 +40,10 @@
     margin-left: 1vw;
 }
 
-.member-section {
-    font-weight: 300;
-    margin: 0.25rem;
+.mentor-section {
+    font-weight: normal;
+    font-size: 1rem;
+    margin-bottom: 0;
     padding: 0;
 }
 
@@ -78,9 +68,4 @@
     vertical-align: 0.1em;
     padding-left: 1vw;
     padding-right: 1vw;
-}
-
-.card-bio {
-    margin-top: 1rem;
-    color: #8C8C8C;
 }
