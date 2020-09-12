@@ -17,6 +17,7 @@
 }
 
 .list {
+  /*
   max-width: 95%;
 
   height: 350;
@@ -25,9 +26,14 @@
   display: flex;
   overflow-x: auto;
   align-items: center;
+  
+  scroll-behavior: smooth;
+  */
+  background-image: linear-gradient(to bottom right, white,  #d3d3d3);
 }
 
 .card {
+
   flex-shrink: 0;
 
   width: 200px;
@@ -37,4 +43,14 @@
 
   background-color: grey;
 
+}
+
+.arrowRoot {
+  position: inherit;
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
