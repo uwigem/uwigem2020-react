@@ -52,7 +52,7 @@ const Members = () => {
       <div className={s.container}>
 
         <div className={s.title}>
-          <h2>Team Members</h2>
+          <h3>Team Members</h3>
         </div>
 
         <div className={s.filter}>

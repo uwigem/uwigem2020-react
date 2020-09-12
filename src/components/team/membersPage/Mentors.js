@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import ScrollMenu from 'react-horizontal-scrolling-menu';
 
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+import TeamMentor from './teamMentor';
 
 import s from './Mentors.module.css';
 
@@ -13,57 +15,18 @@ const Arrow = props => {
 }
 
 const Mentors = () => {
-  
-  const mentors = [
-    {
-      photo: 'url',
-      name: '',
-      description: 'hello'
-    },
-    {
-      photo: 'url',
-      name: '',
-      description: 'hello'
-    },
-    {
-      photo: 'url',
-      name: '',
-      description: 'hello'
-    },
-    {
-      photo: 'url',
-      name: '',
-      description: 'hello'
-    },
-    {
-      photo: 'url',
-      name: '',
-      description: 'hello'
-    },
-    {
-      photo: 'url',
-      name: '',
-      description: 'hello'
-    },
-    {
-      photo: 'url',
-      name: '',
-      description: 'hello'
-    }
-  ];
+  const [mentorData, setMentorData] = useState([]);
 
-  let mentorElems = mentors.map((m, i) => 
-    <div key={i} className={s.card}>
-      <div className={s.photo}>
+    useEffect(() => {
+        let data = require('./team_mentors.json');
+    
+        // sort by name
+        data.sort((a, b) => a.name.localeCompare(b.name));
+        
+        setMentorData(data);
+        }, []);
 
-      </div>
-      <div className={s.name}>
-        
-      </div>
-      <div className={s.desc}>
-        
-      </div>
-    </div>  
+  let mentorElems = mentorData.map(m => <TeamMentor key={m.id} person={m} />
   )
 
   return (

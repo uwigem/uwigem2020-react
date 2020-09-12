@@ -1,0 +1,71 @@
+.person {
+    flex-shrink: 0;
+    position: relative;
+    background-color: #4D2393;
+    max-width: 300px;
+    max-height: 24rem;
+    margin: 1rem;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.person-image {
+    width: 300px;
+}
+
+.modal-content {
+    border-radius: 0px;
+    border: none;
+}
+
+.card-body {
+    padding: 0;
+}
+
+.card-image {
+    float: left;
+    margin-right: 2vw;
+}
+
+.card-name {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-pronouns {
+    font-weight: 300;
+    font-size: 1rem;
+    margin-left: 1vw;
+}
+
+.mentor-section {
+    font-weight: normal;
+    font-size: 1rem;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.card-info {
+    font-weight: 500;
+    padding: 0;
+}
+
+.card-links {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.card-logo {
+    margin: 0.5vw;
+}
+
+.contact-logo {
+    height: 44px;
+    display: inline-block;
+    vertical-align: 0.1em;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}

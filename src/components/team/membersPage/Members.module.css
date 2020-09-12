@@ -10,9 +10,6 @@
   max-width: 1400px;
 }
 
-.title {
-}
-
 .filter {
   display: flex;
   flex-direction: row;
