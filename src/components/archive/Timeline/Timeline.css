@@ -1,0 +1,143 @@
+.timeline {
+	position: relative;
+	margin: 2em auto;
+	height: 20em;
+	width: 90%;
+}
+
+.timeline::before {
+	/* these are used to create the horizontal bar */
+	content: ' ';
+	position: absolute;
+	width: 90%;
+	top: 10em;
+	left: 5%;
+	height: 2px;
+	background: rgba(0, 0, 0, 0.2);
+}
+
+.events-wrapper::after, .events-wrapper::before {
+	/* these are used to create a shadow effect at the sides of the timeline */
+	content: '';
+	position: absolute;
+	z-index: 1;
+	top: 10em;
+	height: 2px;
+	width: 15%;
+}
+
+.events-wrapper::before {
+	left: 5%;
+	background-image: -webkit-linear-gradient( left , #f8f8f8, rgba(248, 248, 248, 0));
+	background-image: linear-gradient(to right, #f8f8f8, rgba(248, 248, 248, 0));
+}
+.events-wrapper::after {
+	right: 5%;
+	background-image: -webkit-linear-gradient( right , #f8f8f8, rgba(248, 248, 248, 0));
+	background-image: linear-gradient(to left, #f8f8f8, rgba(248, 248, 248, 0));
+}
+
+.events ol {
+	padding-inline-start: 0;
+}
+
+.events li {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.events .zoom-in-button {
+	margin: 0;
+}
+
+.events .prev {
+	top: -8px;
+	left: 3%;
+	margin: 0;
+}
+
+.events .next {
+	top: -8px;
+	right: 1%;
+	margin: 0;
+}
+
+.events a {
+  position: absolute;
+  top: 5em;
+  z-index: 2;
+  text-align: center;
+  font-size: 20px;
+  color: #393939;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.events a::after {
+	/* these are used to create the event dots */
+	content: ' ';
+	position: absolute;
+	left: 18px;
+	top: 3em;
+	height: 10px;
+	width: 12px;
+	border-radius: 50%;
+	border: none;
+	background-color: #393939;
+}
+
+.events .zoom-in-button a::after {
+	border: none;
+	border-radius: 0;
+	background-color: rgb(145, 145, 145);
+	border-top: 3em solid transparent;
+	border-left: 10vw solid transparent;
+    border-right: 10vw solid transparent;
+	border-bottom: 3em solid #4D4646;
+	opacity: 50%;
+	top: 0;
+}
+
+.events .zoom-in-button:nth-child(3) a::after {
+	left: 5vw;
+}
+
+.events .zoom-in-button:nth-child(5) a::after {
+	left: -22vw;
+}
+
+
+
+.events .prev, .events .next {
+	position: absolute;
+	top: 11em;
+}
+
+
+.disable a::after {
+	visibility: hidden;
+}
+
+.disable {
+	visibility: hidden;
+}
+
+.reset-button {
+	position: absolute;
+	left: 30%;
+	top: 13em;
+	width: 40%;
+	height: 3em;
+	border: none;
+	color: white;
+	background-color: #C4C4C4;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.events .prev a::after, .events .next a::after{
+	left: 0;
+}
+  
+.timeline {}

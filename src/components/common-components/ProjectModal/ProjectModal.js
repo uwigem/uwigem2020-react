@@ -15,12 +15,16 @@ import "./ProjectModal.css"
  * @param name project name
  * @param professor professor name
  * @param year the year of the project
+ * @param callback a callback function of the Archive component
  * @returns {React.Component}
  */
 const ProjectModal = (props) => { 
   const [show, setShow] = useState(false);
 
-  const handleClose = () => setShow(false);
+  const handleClose = () => {
+    setShow(false);
+    props.callback(null);
+  }
 
     return <>
         <Modal 

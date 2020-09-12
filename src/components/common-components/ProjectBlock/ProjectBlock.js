@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import './ProjectBlock.css';
 import ProjectModal from '../ProjectModal/ProjectModal'
 
@@ -12,12 +12,16 @@ import ProjectModal from '../ProjectModal/ProjectModal'
  * @param name project name
  * @param professor professor name
  * @param year the year of the project
+ * @param show if the project modal is shown
+ * @param callback a callback function of the Archive component
  * @returns {React.Component}
  */
 const ProjectBlock = (props) => {
-
     const [expanded, toggleExpand] = useState(false);
     const [hover, toggleHover] = useState(false);
+    useEffect(() => {
+        toggleExpand(props.show);
+     }, [props]);
 
     return <>
         <div 
@@ -54,6 +58,7 @@ const ProjectBlock = (props) => {
                             description={props.details}
                             awardWinning={props.awardWinning}
                             award={props.award}
+                            callback={props.callback}
                         />
                         :
                         null
