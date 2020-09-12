@@ -62,9 +62,10 @@ export default function TeamPageSideBar({ sectionList }) {
 }
 
 const sectionToLink = (section, currentId) => {
+  const className = section.id === currentId ? "team-page-side-bar-current" : ""
   return (
-    <li key={section.name} onClick={() => scrollToRef(section.ref)}>
-      {section.id === currentId ? <b>{section.name}</b> : section.name}
+    <li key={section.name} onClick={() => scrollToRef(section.ref)} className={className}>
+      {section.name}
     </li>
   )
 }

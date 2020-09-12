@@ -4,6 +4,7 @@
 }
 
 .team-page-side-bar ul {
+  min-width: 225px; /* Needs to be changed if there are longer titles */
   list-style: none;
   width: fit-content;
   position: sticky;
@@ -24,3 +25,7 @@
   cursor: pointer;
 }
 
+.team-page-side-bar-current {
+  font-size: 1.5em;
+  font-weight: bold;
+}
