@@ -7,7 +7,6 @@ import TeamMember from './teamMember';
 const Members = () => {
   const [memberData, setMemberData] = useState([]);
   const [allFilters, setAllFilters] = useState([
-    "All",
     "Drylab",
     "Wetlab",
     "Human Practices",

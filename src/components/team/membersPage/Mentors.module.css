@@ -8,6 +8,7 @@
 }
 
 .container {
+  width: 100%;
   max-width: 1400px;
 }
 
@@ -16,6 +17,8 @@
 }
 
 .list {
+  max-width: 95%;
+
   height: 350;
   margin: auto;
 
