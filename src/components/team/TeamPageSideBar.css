@@ -4,9 +4,9 @@
 }
 
 .team-page-side-bar ul {
-  min-width: 225px; /* Needs to be changed if there are longer titles */
   list-style: none;
   width: fit-content;
+  min-width: 205px; /* Needs to be changed if there are longer titles */
   position: sticky;
   position: -webkit-sticky; /* Safari */
   top: 30px;
