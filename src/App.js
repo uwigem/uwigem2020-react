@@ -28,7 +28,7 @@ function App() {
         <Route path='/archive' exact><ArchivePage /></Route>
         <Route path='/team' exact><TeamPage /></Route>
         <Route path='/endorsement' exact><UnderConstruction /></Route>
-        <Route path='/involvement' exact><UnderConstruction /></Route>
+        <Route path='/involvement' exact><GetInvolve /></Route>
       </Switch>
       <Footer />
     </HashRouter>
