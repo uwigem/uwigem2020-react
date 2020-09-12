@@ -21,9 +21,9 @@ const Mentors = () => {
       <div className={s.container}>
 
       <div className={s.title}>
-        <h2>
+        <h3>
           Mentors
-        </h2>
+        </h3>
       </div>
 
       <div className={s.list}>
