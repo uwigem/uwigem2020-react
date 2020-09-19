@@ -1,0 +1,78 @@
+.sponsor {
+    position: relative;
+	color: black;
+    cursor: pointer;
+	overflow: hidden;
+	text-align: center;
+	width: 45vw;
+}
+
+.sponsor-name {
+	height: 2rem;
+	color: black;
+}
+
+.hover-mask {
+	position: absolute;
+	top: 0px;
+	width: 35vw;
+	text-align: center;
+	margin: 0 5vw;
+	background-color: rgba(168, 168, 168, 0.87);
+	color: white;
+	visibility: visible;
+	font-weight: bold;
+	font-size: 24px;
+	animation: fadeInAnimation ease 1s 
+}
+
+.hidden-hover-mask {
+	position: absolute;
+	top: 0px;
+	visibility: hidden;
+}
+
+@keyframes fadeInAnimation { 
+    0% { 
+		opacity: 0;
+		visibility: visible;
+    } 
+    100% { 
+		opacity: 1;
+		visibility: hidden;
+     } 
+} 
+
+@keyframes fadeOutAnimation { 
+    0% { 
+		opacity: 1;
+		visibility: visible;
+    } 
+    100% { 
+		opacity: 0;
+		visibility: hidden;
+     } 
+} 
+
+.sponsor-wrapper:hover {
+	text-decoration: none;
+}
+
+.sponsor-img {
+	margin: auto;
+	display: block;
+	position: relative;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.active {
+	visibility: visible;
+	animation: fadeInAnimation ease 1s;
+}
+
+.hidden {
+	visibility: hidden;
+	animation: fadeOutAnimation ease 1s;
+}
