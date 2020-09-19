@@ -7,17 +7,17 @@ import TeamMember from './teamMember';
 const Members = () => {
   const [memberData, setMemberData] = useState([]);
   const [allFilters, setAllFilters] = useState([
+    "Advisor",
+    "Design",
     "Drylab",
-    "Wetlab",
+    "Fundraising",
     "Human Practices",
     "Outreach",
     "Web Development",
-    "Fundraising",
-    "Design",
-    "Adviser",
-    "PIs"
+    "Wetlab"
   ]);
-  const [currFilters, setCurrFilters] = useState([]);
+  
+  const [currFilter, setCurrFilter] = useState("All");
 
   useEffect(() => {
     let data = require('./team_members.json');
@@ -30,22 +30,12 @@ const Members = () => {
 
   // filter management
   const selectFilter = name => {
-    let newList = [...currFilters];
-    let index = newList.indexOf(name);
-    if (index == -1) {
-      newList.push(name);
+    if (currFilter === name) {
+      setCurrFilter("All");
     } else {
-      newList.splice(index, 1);
+      setCurrFilter(name);
     }
-    console.log(newList);
-    setCurrFilters(newList);
   }
-
-  const selected = name => {
-    let copy = [...currFilters];
-    return copy.includes(name);
-  }
-
   
   return (
     <div className={s.root}>
@@ -56,13 +46,13 @@ const Members = () => {
         </div>
 
         <div className={s.filter}>
-          <span>Filter:</span>
+          <span className={s.filterHeading}>Filter:</span>
           <div className={s.filterCardContainer}>
             {
               allFilters.map(f =>
                 <div
                   key={f}
-                  className={selected(f)? s.filterCardSelected : s.filterCard}
+                  className={currFilter == f? s.filterCardSelected : s.filterCard}
                   onClick={() => selectFilter(f)}>
                   <span>{f}</span>
                 </div>)
@@ -72,7 +62,7 @@ const Members = () => {
       
         <div className={s.body}>
           {
-            memberData.map(m => <TeamMember key={m.id} person={m} />)
+            memberData.map(m => m.teams.indexOf(currFilter) > -1? <TeamMember key={m.id} person={m} /> : null)
           }
         </div>
       
