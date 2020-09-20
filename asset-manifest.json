@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1ca036f9.chunk.css",
+    "main.js": "/static/js/main.27656c0c.chunk.js",
+    "main.js.map": "/static/js/main.27656c0c.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.d03fe0f2.js",
+    "runtime-main.js.map": "/static/js/runtime-main.d03fe0f2.js.map",
+    "static/css/2.451a169c.chunk.css": "/static/css/2.451a169c.chunk.css",
+    "static/js/2.1757dc43.chunk.js": "/static/js/2.1757dc43.chunk.js",
+    "static/js/2.1757dc43.chunk.js.map": "/static/js/2.1757dc43.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.51c9ad76c5df19006085eee6d809c3e4.js": "/precache-manifest.51c9ad76c5df19006085eee6d809c3e4.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.451a169c.chunk.css.map": "/static/css/2.451a169c.chunk.css.map",
+    "static/css/main.1ca036f9.chunk.css.map": "/static/css/main.1ca036f9.chunk.css.map",
+    "static/js/2.1757dc43.chunk.js.LICENSE.txt": "/static/js/2.1757dc43.chunk.js.LICENSE.txt",
+    "static/media/gmail.svg": "/static/media/gmail.282a92dc.svg",
+    "static/media/gmailInactive.svg": "/static/media/gmailInactive.1a91dffe.svg",
+    "static/media/HomeCarousel.module.css": "/static/media/pic2.89306e4b.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d03fe0f2.js",
+    "static/css/2.451a169c.chunk.css",
+    "static/js/2.1757dc43.chunk.js",
+    "static/css/main.1ca036f9.chunk.css",
+    "static/js/main.27656c0c.chunk.js"
+  ]
+}
