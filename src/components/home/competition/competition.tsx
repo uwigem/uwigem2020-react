@@ -5,7 +5,7 @@ import styles from './competition.module.css'
 
 const title: string = "Do you know iGEM?"
 const bodyText: string = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus rhoncus, ut facilisi condimentum nisi morbi in id. Orci, convallis dui urna, cursus."
-const imageSrc: string = "/logo512.png"
+const imageSrc: string = "logo512.png"
 const imageAlt: string = "React Logo"
 const linkLocation: string = "/about"
 
