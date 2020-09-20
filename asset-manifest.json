@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/%7Brepo-name%7D/static/css/main.126e1b08.chunk.css",
-    "main.js": "/%7Brepo-name%7D/static/js/main.ac1d372d.chunk.js",
-    "main.js.map": "/%7Brepo-name%7D/static/js/main.ac1d372d.chunk.js.map",
-    "runtime-main.js": "/%7Brepo-name%7D/static/js/runtime-main.b8b406f5.js",
-    "runtime-main.js.map": "/%7Brepo-name%7D/static/js/runtime-main.b8b406f5.js.map",
-    "static/css/2.451a169c.chunk.css": "/%7Brepo-name%7D/static/css/2.451a169c.chunk.css",
-    "static/js/2.1757dc43.chunk.js": "/%7Brepo-name%7D/static/js/2.1757dc43.chunk.js",
-    "static/js/2.1757dc43.chunk.js.map": "/%7Brepo-name%7D/static/js/2.1757dc43.chunk.js.map",
-    "index.html": "/%7Brepo-name%7D/index.html",
-    "precache-manifest.5af7a9b32be818bb4dd7fdf18a8c8fae.js": "/%7Brepo-name%7D/precache-manifest.5af7a9b32be818bb4dd7fdf18a8c8fae.js",
-    "service-worker.js": "/%7Brepo-name%7D/service-worker.js",
-    "static/css/2.451a169c.chunk.css.map": "/%7Brepo-name%7D/static/css/2.451a169c.chunk.css.map",
-    "static/css/main.126e1b08.chunk.css.map": "/%7Brepo-name%7D/static/css/main.126e1b08.chunk.css.map",
-    "static/js/2.1757dc43.chunk.js.LICENSE.txt": "/%7Brepo-name%7D/static/js/2.1757dc43.chunk.js.LICENSE.txt",
-    "static/media/gmail.svg": "/%7Brepo-name%7D/static/media/gmail.282a92dc.svg",
-    "static/media/gmailInactive.svg": "/%7Brepo-name%7D/static/media/gmailInactive.1a91dffe.svg",
-    "static/media/HomeCarousel.module.css": "/%7Brepo-name%7D/static/media/pic2.89306e4b.jpg"
+    "main.css": "/uwigem2020-react/static/css/main.02451c19.chunk.css",
+    "main.js": "/uwigem2020-react/static/js/main.706cdd04.chunk.js",
+    "main.js.map": "/uwigem2020-react/static/js/main.706cdd04.chunk.js.map",
+    "runtime-main.js": "/uwigem2020-react/static/js/runtime-main.3b2725cc.js",
+    "runtime-main.js.map": "/uwigem2020-react/static/js/runtime-main.3b2725cc.js.map",
+    "static/css/2.451a169c.chunk.css": "/uwigem2020-react/static/css/2.451a169c.chunk.css",
+    "static/js/2.1757dc43.chunk.js": "/uwigem2020-react/static/js/2.1757dc43.chunk.js",
+    "static/js/2.1757dc43.chunk.js.map": "/uwigem2020-react/static/js/2.1757dc43.chunk.js.map",
+    "index.html": "/uwigem2020-react/index.html",
+    "precache-manifest.fc1acba48063c2e06f223aaeb41f2840.js": "/uwigem2020-react/precache-manifest.fc1acba48063c2e06f223aaeb41f2840.js",
+    "service-worker.js": "/uwigem2020-react/service-worker.js",
+    "static/css/2.451a169c.chunk.css.map": "/uwigem2020-react/static/css/2.451a169c.chunk.css.map",
+    "static/css/main.02451c19.chunk.css.map": "/uwigem2020-react/static/css/main.02451c19.chunk.css.map",
+    "static/js/2.1757dc43.chunk.js.LICENSE.txt": "/uwigem2020-react/static/js/2.1757dc43.chunk.js.LICENSE.txt",
+    "static/media/gmail.svg": "/uwigem2020-react/static/media/gmail.282a92dc.svg",
+    "static/media/gmailInactive.svg": "/uwigem2020-react/static/media/gmailInactive.1a91dffe.svg",
+    "static/media/HomeCarousel.module.css": "/uwigem2020-react/static/media/pic2.89306e4b.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.b8b406f5.js",
+    "static/js/runtime-main.3b2725cc.js",
     "static/css/2.451a169c.chunk.css",
     "static/js/2.1757dc43.chunk.js",
-    "static/css/main.126e1b08.chunk.css",
-    "static/js/main.ac1d372d.chunk.js"
+    "static/css/main.02451c19.chunk.css",
+    "static/js/main.706cdd04.chunk.js"
   ]
 }
