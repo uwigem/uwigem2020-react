@@ -6,6 +6,7 @@
 
 .team-body main {
     flex-grow: 1;
+    width: 1px; /* Just so that flex grow works properly */
 }
 
 .team-header {

@@ -44,7 +44,7 @@ export default function TeamPageMembers({ onSwitchClick }) {
 
 
   return (
-    <main>
+    <div>
       <header className='team-header'>
         <div className='team-header-title'>
             <h1>Our Members</h1>
@@ -67,6 +67,6 @@ export default function TeamPageMembers({ onSwitchClick }) {
         </main>
 
       </div>  
-    </main>
+    </div>
   )
 }
