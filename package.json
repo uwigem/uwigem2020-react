@@ -1,6 +1,7 @@
 {
   "name": "uwigem2020-react",
   "version": "0.1.0",
+  "homepage": "/uwigem2020-react",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.28",
