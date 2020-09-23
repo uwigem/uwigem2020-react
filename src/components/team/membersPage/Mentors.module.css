@@ -1,15 +1,6 @@
 
 .root {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-
-  margin-top: 50px;
-}
-
-.container {
-  width: 100%;
-  max-width: 1400px;
+  margin: 20px;
 }
 
 .title {
@@ -17,23 +8,8 @@
 }
 
 .list {
-  max-width: 95%;
-
-  height: 350;
-  margin: auto;
-
+  width: 100%;
   display: flex;
-  overflow-x: auto;
-  align-items: center;
-}
-
-.card {
-  flex-shrink: 0;
-
-  width: 200px;
-  height: 300px;
-  margin: 10px;
-
-  background-color: grey;
-
+  flex-flow: row nowrap;
+  overflow: auto;
 }

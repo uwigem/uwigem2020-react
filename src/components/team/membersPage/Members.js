@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
+import { Paper } from '@material-ui/core';
+
 import s from './Members.module.css';
 
 import TeamMember from './teamMember';
@@ -52,7 +54,7 @@ const Members = () => {
       <div className={s.container}>
 
         <div className={s.title}>
-          <h2>Team Members</h2>
+          <h3>Team Members</h3>
         </div>
 
         <div className={s.filter}>
@@ -70,10 +72,16 @@ const Members = () => {
           </div>
         </div>
       
-        <div className={s.body}>
-          {
-            memberData.map(m => <TeamMember key={m.id} person={m} />)
-          }
+        <div className={s.listContainer}>
+        <Paper elevation={5}>
+        
+          <div className={s.list}>
+            {
+              memberData.map(m => <TeamMember key={m.id} person={m} />)
+            }
+          </div>
+
+        </Paper>
         </div>
       
       </div>
