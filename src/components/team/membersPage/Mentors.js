@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import ScrollMenu from 'react-horizontal-scrolling-menu';
+import { Paper } from '@material-ui/core';
 
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -31,28 +32,23 @@ const Mentors = () => {
 
   return (
     <div className={s.root}>
-      <div className={s.container}>
 
       <div className={s.title}>
-        <h2>
+        <h3>
           Mentors
-        </h2>
+        </h3>
       </div>
 
-      <div className={s.list}>
+      <div className={s.listContainer}>
+      <Paper elevation={5}>
+        <div className={s.list}>
 
-      <ScrollMenu
-        data={mentorElems}
-        itemsCount={mentorElems.length}
-        arrowLeft={<Arrow icon={faArrowLeft} />}
-        arrowRight={<Arrow icon={faArrowRight} />}
-        alignCenter={true}
-        wheel={true}
-        allowOuterScroll={true} />
+        {mentorElems}
 
+        </div>
+      </Paper>
       </div>
 
-      </div>
     </div>
   )
 }

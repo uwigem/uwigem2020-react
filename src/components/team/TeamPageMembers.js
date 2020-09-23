@@ -3,6 +3,7 @@ import TeamPageSideBar from './TeamPageSideBar';
 
 import Mentors from './membersPage/Mentors';
 import Members from './membersPage/Members';
+import { MAIN_SECTION_DESCRIPTION } from '../_data/HomepageData/HomepageConstants';
 
 export default function TeamPageMembers({ onSwitchClick }) {
 
