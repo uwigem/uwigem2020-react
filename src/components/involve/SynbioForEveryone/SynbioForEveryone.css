@@ -22,10 +22,6 @@
     right: 40%;
 }
 
-.synbio-text-main {
-    background: linear-gradient( #C4C4C4 50%, #ffffff 0%);
-}
-
 .synbio-view-more {
     background: linear-gradient(90deg, #ffffff 60%, #C4C4C4 0%);
     font-style: normal;
@@ -47,4 +43,8 @@
     font-style: normal;
     font-weight: 500;
     font-size: 60px;
+}
+
+.synbio-img {
+    object-fit: cover;
 }

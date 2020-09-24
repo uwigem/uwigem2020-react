@@ -5,7 +5,7 @@
         "year": [
             2020
         ],
-        "picture": "http://placekitten.com/380/380",
+        "picture": "https://placekitten.com/380/380",
         "pronouns": "she/her",
         "project": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
         "publications": [
@@ -22,7 +22,7 @@
         "year": [
             2020
         ],
-        "picture": "http://placekitten.com/380/380",
+        "picture": "https://placekitten.com/380/380",
         "pronouns": "she/her",
         "project": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
         "publications": [
@@ -38,7 +38,7 @@
         "year": [
             2020
         ],
-        "picture": "http://placekitten.com/380/380",
+        "picture": "https://placekitten.com/380/380",
         "pronouns": "she/her",
         "project": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
         "publications": null,
@@ -52,7 +52,7 @@
         "year": [
             2020
         ],
-        "picture": "http://placekitten.com/380/380",
+        "picture": "https://placekitten.com/380/380",
         "pronouns": null,
         "project": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
         "publications": null,
@@ -66,7 +66,21 @@
         "year": [
             2020
         ],
-        "picture": "http://placekitten.com/380/380",
+        "picture": "https://placekitten.com/380/380",
+        "pronouns": null,
+        "project": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "publications": null,
+        "linkedin": null,
+        "contact": null,
+        "github": null
+    },
+    {
+        "id": 6,
+        "name": "Mari Winkler",
+        "year": [
+            2020
+        ],
+        "picture": "https://placekitten.com/380/380",
         "pronouns": null,
         "project": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
         "publications": null,

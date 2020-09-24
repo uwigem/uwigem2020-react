@@ -1,16 +1,10 @@
 import React from 'react';
 import './SynbioForEveryone.css';
-import Image from 'react-bootstrap/Image'
-import Figure from 'react-bootstrap/Figure'
 
 /**
  * @returns {React.Component}
- *                         <img width="40%" height="auto" src="PlaceholderImage/arknights6.png"/>
-                            <img width="100%" height="auto" src="PlaceholderImage/arknights2.jpg"/>
-                        <div width="40%" class="ml-5 d-flex flex-column">
-
  */
-const SynbioForEveryone = (props) => {
+const Fundraising = (props) => {
     const title = "Synbio for Everyone";
 
     return <>
@@ -19,13 +13,11 @@ const SynbioForEveryone = (props) => {
                 <div class="container">
                     <div class="d-flex justify-content-between" style={{
                         width: 'auto',
-                        height: '100%'
+                        height: '400px'
                     }}>
-                        <img class="synbio-img" width="40%" height="auto" src="PlaceholderImage/arknights6.png"/>
-                        <div class="ml-5">
-                            <div height="80%">
-                                <img class="synbio-img" width="100%" height="auto" src="PlaceholderImage/arknights2.jpg"/>
-                            </div>
+                        <img width="40%" src="PlaceholderImage/arknights6.png"/>
+                        <div width="40%" class="ml-5 d-flex flex-column">
+                            <img width="100%" height="80%" src="PlaceholderImage/arknights2.jpg"/>
                             <div className="synbio-view-more mt-5">
                                 <a href="http://students.washington.edu/uwigem/">-{'>'}View More</a>
                             </div>
@@ -49,4 +41,4 @@ const SynbioForEveryone = (props) => {
     </>;
 }
 
-export default SynbioForEveryone;
+export default Fundraising;

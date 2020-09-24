@@ -9,6 +9,7 @@
 }
 
 .team-header {
+    margin-top: 20px;
     width: 100%;
     display: grid;
     grid-template-areas: ". heading button";

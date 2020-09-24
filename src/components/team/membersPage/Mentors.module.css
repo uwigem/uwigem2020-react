@@ -1,34 +1,15 @@
 
 .root {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin-top: 24px;
+  margin: 20px;
 }
 
-.container {
-  width: 100%;
-  max-width: 1400px;
+.title {
+
 }
 
 .list {
-  max-width: 94%;
-  height: 350;
-  margin: auto;
+  width: 100%;
   display: flex;
-  overflow-x: auto;
-  align-items: center;
-  margin-left: 0;
-  margin-bottom: 6vh;
-}
-
-.card {
-  flex-shrink: 0;
-
-  width: 200px;
-  height: 300px;
-  margin: 10px;
-
-  background-color: grey;
-
+  flex-flow: row nowrap;
+  overflow: auto;
 }
