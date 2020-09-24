@@ -69,7 +69,7 @@ const buildSections = (sections, currSection) => {
     return sectionToLink(section, currSection)
   })
   list.push(
-    <li style={{ fontSize: "1.5em", visibility: "hidden", height: "0px"}}>{maxLength}</li>
+    <li key={`placeholder-${maxLength}`} style={{ fontSize: "1.5em", visibility: "hidden", height: "0px"}}>{maxLength}</li>
   )
   return list
 }
@@ -78,7 +78,7 @@ const sectionToLink = (section, currentId) => {
   const className = section.id === currentId ? "team-page-side-bar-current" : ""
   return (
     <li
-      key={section.name}
+      key={section.id}
       onClick={() => scrollToRef(section.ref)}
       className={className}
     >
