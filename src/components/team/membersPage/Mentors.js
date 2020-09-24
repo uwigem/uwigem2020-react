@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import ScrollMenu from 'react-horizontal-scrolling-menu';
 import { Paper } from '@material-ui/core';
 
-import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
+// import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import TeamMentor from './teamMentor';

@@ -21,7 +21,7 @@ const Archive = (props) => {
             name="Project Name"
             year="2020"
             professor="XXXX XXXX"
-            img="PlaceholderImage/arknights1.jpg"
+            img="https://placekitten.com/503/303"
             description={project3}
             details={archive1}
             awardWinning={project2}
@@ -31,7 +31,7 @@ const Archive = (props) => {
             name="Project Name"
             year="2019"
             professor="XXXX XXXX"
-            img="PlaceholderImage/arknights2.jpg"
+            img="https://placekitten.com/503/303"
             description={project3}
             details={archive2}
             awardWinning={project2}
@@ -41,7 +41,7 @@ const Archive = (props) => {
             name="Project Name"
             year="2018"
             professor="XXXX XXXX"
-            img="PlaceholderImage/arknights3.png"
+            img="https://placekitten.com/503/303"
             description={project3}
             details={archive3}
             awardWinning={project2}
@@ -51,7 +51,7 @@ const Archive = (props) => {
             name="Project Name"
             year="2017"
             professor="XXXX XXXX"
-            img="PlaceholderImage/arknights4.jpg"
+            img="https://placekitten.com/503/303"
             description={project}
             details={longText}
             awardWinning={project2}
@@ -61,7 +61,7 @@ const Archive = (props) => {
             name="Project Name"
             year="2016"
             professor="XXXX XXXX"
-            img="PlaceholderImage/arknights6.png"
+            img="https://placekitten.com/503/303"
             description={project}
             details={longText}
             awardWinning={project2}

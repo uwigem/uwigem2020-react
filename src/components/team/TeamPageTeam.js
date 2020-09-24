@@ -43,7 +43,7 @@ export default function TeamPageTeam({ onSwitchClick }) {
           <section ref={overviewRef} id={overviewId}>
             <TeamOverview
               overview="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim integer sit lacinia ac tempus enim libero, sed nisl. Mattis integer consectetur vel, cursus lacus, consequat, adipiscing. Risus, id id bibendum turpis sit sit. Duis tortor sed erat sed arcu at."
-              imgSrc="PlaceholderImage/arknights5.jpg"
+              imgSrc="https://placekitten.com/970/431"
               imgAlt="Placeholder Image"
               caption="Caption: caption goes here"/>
           </section>

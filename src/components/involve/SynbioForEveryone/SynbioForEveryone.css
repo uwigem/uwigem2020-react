@@ -1,0 +1,50 @@
+/* Container holding the image and the text */
+.container {
+    position: relative;
+}
+  
+/* Bottom right text */
+.synbio-text-block-1 {
+    position: absolute;
+    bottom: 72%;
+    right: 55%;
+}
+
+.synbio-text-block-2 {
+    position: absolute;
+    bottom: 50%;
+    right: 55%;
+}
+
+.synbio-text-block-3 {
+    position: absolute;
+    bottom: 28%;
+    right: 40%;
+}
+
+.synbio-view-more {
+    background: linear-gradient(90deg, #ffffff 60%, #C4C4C4 0%);
+    font-style: normal;
+    font-weight: 200;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: right;
+}
+
+.synbio-view-more a {
+    text-decoration:none;
+    color: black;
+}
+
+.synbio-text-block-1 h2, .synbio-text-block-2 h2, .synbio-text-block-3 h2{
+    background: linear-gradient(#ffffff00 28%, #C4C4C4 0%);    
+    padding: 1px;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 60px;
+}
+
+.synbio-img {
+    object-fit: cover;
+}
