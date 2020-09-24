@@ -13,7 +13,7 @@ jobs:
         with:
           persist-credentials: false
       - name: Update Homepage key in package.json
-        run: mv package.json package.json.bkp && sed 's/"homepage": "\/\"/"homepage": "\/uwigem2020-react"/g' package.json.bkp > package.json
+        run: npm run updateHomepage
       - name: NPM Clean Install 🔧
         run: npm ci
       - name: NPM Build 🔧
