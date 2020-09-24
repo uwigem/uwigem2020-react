@@ -21,11 +21,9 @@ const SynbioForEveryone = (props) => {
                         width: 'auto',
                         height: '100%'
                     }}>
-                        <img class="synbio-img" width="40%" height="auto" src="PlaceholderImage/arknights6.png"/>
+                        <img class="synbio-img" width="40%" height="auto" src="https://placekitten.com/430/553"/>
                         <div class="ml-5">
-                            <div height="80%">
-                                <img class="synbio-img" width="100%" height="auto" src="PlaceholderImage/arknights2.jpg"/>
-                            </div>
+                            <img class="synbio-img" width="100%" height="80%" src="https://placekitten.com/417/439"/>
                             <div className="synbio-view-more mt-5">
                                 <a href="http://students.washington.edu/uwigem/">-{'>'}View More</a>
                             </div>
