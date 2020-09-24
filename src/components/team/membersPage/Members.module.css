@@ -1,4 +1,11 @@
 .root {
+  width: 100%;
+  display: flex;
+  margin-top: 50px;
+}
+
+.container {
+  max-width: 1400px;
   margin: 20px;
 }
 
@@ -9,6 +16,11 @@
   align-items: center;
 }
 
+.filterHeading {
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
 .filterCardContainer {
   display: flex;
   flex-direction: row;
@@ -16,20 +28,17 @@
 }
 
 .filterCard {
-  margin: 5px;
-  padding: 1px;
-  background-color: azure;
+  margin: 0.75vw;
+  padding: 0.5rem;
+  background-color:rgba(235, 235, 235, 0.5);
   cursor: pointer;
 }
 
 .filterCardSelected {
-  margin: 5px;
-  padding: 1px;
-  background-color: orange;
+  margin: 0.75vw;
+  padding: 0.5rem;
+  background-color: #C4C4C4;
   cursor: pointer;
-}
-
-.listContainer {
 }
 
 .list {
