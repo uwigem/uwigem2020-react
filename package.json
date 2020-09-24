@@ -1,12 +1,14 @@
 {
   "name": "uwigem2020-react",
   "version": "0.1.0",
+  "homepage": "/uwigem2020-react",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.28",
     "@fortawesome/free-brands-svg-icons": "^5.14.0",
     "@fortawesome/free-solid-svg-icons": "^5.14.0",
     "@fortawesome/react-fontawesome": "^0.1.10",
+    "@material-ui/core": "^4.11.0",
     "@testing-library/jest-dom": "^5.10.1",
     "@testing-library/react": "^10.2.1",
     "@types/react": "^16.9.49",

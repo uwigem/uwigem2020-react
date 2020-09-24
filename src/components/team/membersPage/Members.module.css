@@ -6,9 +6,11 @@
 
 .container {
   max-width: 1400px;
+  margin: 20px;
 }
 
 .filter {
+  margin: 10px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -39,9 +41,11 @@
   cursor: pointer;
 }
 
-.body {
-  width: 100%;
+.listContainer {
+}
 
+.list {
+  margin: auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

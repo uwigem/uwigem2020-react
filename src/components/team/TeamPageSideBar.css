@@ -18,7 +18,6 @@
 .team-page-side-bar ul li {
   width:fit-content;
   white-space: nowrap;
-  margin: 5px;
 }
 
 .team-page-side-bar ul li:hover {
@@ -26,6 +25,6 @@
 }
 
 .team-page-side-bar-current {
-  font-size: 1.5em;
+  font-size: 1.3em;
   font-weight: bold;
 }
