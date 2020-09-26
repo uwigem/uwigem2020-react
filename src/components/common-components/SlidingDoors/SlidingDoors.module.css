@@ -3,6 +3,7 @@
   flex-direction: row;
   position: absolute;
   height: 100%;
+  pointer-events: none;
 }
 
 .block {
