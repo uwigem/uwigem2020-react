@@ -7,19 +7,19 @@
 .synbio-text-block-1 {
     position: absolute;
     bottom: 72%;
-    right: 55%;
+    right: 45%;
 }
 
 .synbio-text-block-2 {
     position: absolute;
     bottom: 50%;
-    right: 55%;
+    right: 45%;
 }
 
 .synbio-text-block-3 {
     position: absolute;
     bottom: 28%;
-    right: 40%;
+    right: 30%;
 }
 
 .synbio-view-more {
@@ -45,6 +45,18 @@
     font-size: 60px;
 }
 
-.synbio-img {
-    object-fit: cover;
+.synbio-img-left {
+    width: 35vw;
+    height: 43vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.synbio-img-right {
+    width: 35vw;
+    height: 35vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
