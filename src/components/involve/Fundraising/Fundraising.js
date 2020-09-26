@@ -1,41 +1,43 @@
 import React from 'react';
-import './SynbioForEveryone.css';
+import './Fundraising.css';
 
 /**
  * @returns {React.Component}
  */
 const Fundraising = (props) => {
-    const title = "Synbio for Everyone";
+    const title = "FUNDRAISING";
 
     return <>
-        <div className="m-5">
-            <div className="mb-4">
-                <div class="container">
-                    <div class="d-flex justify-content-between" style={{
-                        width: 'auto',
-                        height: '400px'
-                    }}>
-                        <img width="40%" src="PlaceholderImage/arknights6.png"/>
-                        <div width="40%" class="ml-5 d-flex flex-column">
-                            <img width="100%" height="80%" src="PlaceholderImage/arknights2.jpg"/>
-                            <div className="synbio-view-more mt-5">
-                                <a href="http://students.washington.edu/uwigem/">-{'>'}View More</a>
+        <div class="m-5">
+            <div class="container">
+                <div class="d-flex justify-content-between" style={{
+                    width: 'auto',
+                    height: '100%'
+                }}>
+                    <div class="fundraising-left">
+                        <div>
+                            <div class="fundraising-text-block-1">
+                                {props.text}
+                            </div>
+                        </div>
+                        <div>
+                            <div class="fundraising-bottom-left-img" 
+                                style={{backgroundImage: 'url(https://placekitten.com/800/600)'}}/>
+                        </div>
+                    </div>
+                    <div class="fundraising-right">
+                        <div class="fundraising-top-right-img"
+                            style={{backgroundImage: 'url(https://placekitten.com/800/500)'}}/>
+                        <div>
+                            <div class="fundraising-text-block-2">
+                                {props.text}
                             </div>
                         </div>
                     </div>
-                    <div class="synbio-text-block-1">
-                        <h2>SynBio</h2>
-                    </div>
-                    <div class="synbio-text-block-2">
-                        <h2>for</h2>
-                    </div>
-                    <div class="synbio-text-block-3">
-                        <h2>Everyone</h2>
-                    </div>
                 </div>
-            </div>
-            <div class="synbio-text-main">
-                {props.text}
+                <div class="fundraising-text">
+                    <h2>{title}</h2>
+                </div>
             </div>
         </div>  
     </>;
