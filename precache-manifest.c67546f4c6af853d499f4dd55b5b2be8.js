@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "50283dbc60073bb8567ba5dd46dfc38b",
+    "revision": "2005487e5f2786ec660b571361fb1d71",
     "url": "/uwigem2020-react/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/uwigem2020-react/static/css/2.451a169c.chunk.css"
   },
   {
-    "revision": "57375f957d7ff6323392",
-    "url": "/uwigem2020-react/static/css/main.6b4f079d.chunk.css"
+    "revision": "0b2a492dcc066378c6db",
+    "url": "/uwigem2020-react/static/css/main.5c322b96.chunk.css"
   },
   {
     "revision": "68b38e6faae456fcf5b9",
@@ -20,7 +20,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/uwigem2020-react/static/js/2.a198ea8b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "57375f957d7ff6323392",
+    "revision": "0b2a492dcc066378c6db",
     "url": "/uwigem2020-react/static/js/main.d96ea392.chunk.js"
   },
   {
