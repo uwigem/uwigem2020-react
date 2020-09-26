@@ -30,16 +30,8 @@
   align-items: flex-start;
 }
 
-.divider {
-  width: 10%;
-}
-
 .layout {
   margin: 5vh 5vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   /* animation: fade-in 3s cubic-bezier(.65,.15,.59,.81); */
 }
 
