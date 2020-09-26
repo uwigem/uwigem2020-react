@@ -1,0 +1,24 @@
+.team-overview-div {
+    margin: 24px;
+}
+
+.team-overview-title {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.team-overview-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.team-overview-content {
+    margin: 2em 0 2em 0;
+    font-size: 18px;
+}
+
+.team-overview-img-caption {
+    margin: 1em;
+    text-align: center;
+    font-size: 18px;
+}

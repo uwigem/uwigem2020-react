@@ -1,19 +1,38 @@
-.nav-bar-container {
-  height: 50px;
-  padding-top: 15px;
-  background-color: #C1C1C1;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  text-align: right;
+#nav-bar-container {
+  display: flex;
+  background-color: white;
+  border-top: 1vw solid #4B2E83;
+  justify-content: space-between;
+  border-bottom: solid #C4C4C4;
+  min-width: 365px;
 }
 
 .nav-tab {
-  margin: 20px;
   text-decoration: none;
   color: black;
+  font-weight: bold;
+  white-space: nowrap;
+  font-size: calc(6px + 1vw);
+  padding-top: 2.5vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
 }
 
 .nav-tab:hover {
-  color: white;
+  color: #C4C4C4;
+}
+
+.logo {
+  height: 6vw;
+  padding-top: 1.5vw;
+}
+
+#logo-left {
+  padding-left: 2vw;
+  padding-right: 5vw;
+}
+
+#logo-right {
+  padding-left: 5vw;
+  padding-right: 2vw;
 }

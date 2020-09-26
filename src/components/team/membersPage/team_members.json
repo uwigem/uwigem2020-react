@@ -1,0 +1,134 @@
+[
+    {
+        "id": 1,
+        "name": "Chris",
+        "major": "Informatics",
+        "teams": [
+            "All",
+            "Web Development",
+            "Design"
+        ],
+        "year": [
+            2020
+        ],
+        "picture": "https://placekitten.com/380/380",
+        "pronouns": null,
+        "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "linkedin": "https://www.linkedin.com",
+        "contact": null,
+        "github": "https://github.com/"
+    },
+    {
+        "id": 2,
+        "name": "Diana",
+        "major": "Computer Science",
+        "teams": [
+            "All",
+            "Web Development"
+        ],
+        "year": [
+            2020
+        ],
+        "picture": "https://placekitten.com/380/380",
+        "pronouns": null,
+        "bio": null,
+        "contact": null,
+        "linkedin": "https://www.linkedin.com",
+        "github": "https://github.com/"
+    },
+    {
+        "id": 3,
+        "name": "Jaden",
+        "major":"Computer Science",
+        "teams": [
+            "All",
+            "Web Development",
+            "Human Practices"
+        ],
+        "year": [
+            2020
+        ],
+        "picture": "https://placekitten.com/380/380",
+        "pronouns": "he/him",
+        "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "linkedin": null,
+        "contact": "uwigem@uw.edu",
+        "github": "https://github.com/"
+    },
+    {
+        "id": 4,
+        "name": "Jennifer",
+        "major":"Computer Science",
+        "teams": [
+            "All",
+            "Web Development",
+            "Adviser"
+        ],
+        "year": [
+            2019,
+            2020
+        ],
+        "picture": "https://placekitten.com/380/380",
+        "pronouns": null,
+        "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "linkedin": "https://www.linkedin.com",
+        "contact": null,
+        "github": null
+    },
+    {
+        "id": 5,
+        "name": "Victor",
+        "major":"Computer Science",
+        "teams": [
+            "All",
+            "Web Development"
+        ],
+        "year": [
+            2020
+        ],
+        "picture": "https://placekitten.com/380/380",
+        "pronouns": null,
+        "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "linkedin": null,
+        "contact": null,
+        "github": null
+    },
+    {
+        "id": 6,
+        "name": "Max",
+        "major":"Computer Science",
+        "teams": [
+            "All",
+            "Web Development"
+        ],
+        "year": [
+            2019,
+            2020
+        ],
+        "picture": "https://placekitten.com/380/380",
+        "pronouns": null,
+        "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "linkedin": "https://www.linkedin.com",
+        "contact": null,
+        "github": "https://github.com/"
+    },
+    {
+        "id": 7,
+        "name": "Max",
+        "major":"Computer Science",
+        "teams": [
+            "All",
+            "Web Development"
+        ],
+        "year": [
+            2019,
+            2020
+        ],
+        "picture": "https://placekitten.com/380/380",
+        "pronouns": null,
+        "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "linkedin": "https://www.linkedin.com",
+        "contact": null,
+        "github": "https://github.com/"
+    }
+]

@@ -1,9 +1,9 @@
 import React from 'react';
 
-const ProjectPage = () => {
+const UnderConstruction = () => {
   return (
     <h1>Page under construction.</h1>
   );
 }
 
-export default ProjectPage;
+export default UnderConstruction;

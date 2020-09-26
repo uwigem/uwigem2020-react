@@ -1,0 +1,30 @@
+.team-page-side-bar {
+  width: fit-content;
+  padding: 10px;
+}
+
+.team-page-side-bar ul {
+  list-style: none;
+  width: fit-content;
+  min-width: 210px; /* Needs to be changed if there are longer titles */
+  position: sticky;
+  position: -webkit-sticky; /* Safari */
+  top: 30px;
+  padding: 15px;
+  margin: 10px;
+  border-right: 2px solid #aaaaaa;
+}
+
+.team-page-side-bar ul li {
+  width:fit-content;
+  white-space: nowrap;
+}
+
+.team-page-side-bar ul li:hover {
+  cursor: pointer;
+}
+
+.team-page-side-bar-current {
+  font-size: 1.3em;
+  font-weight: bold;
+}

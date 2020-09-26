@@ -1,0 +1,91 @@
+[
+    {
+        "id": 1,
+        "name": "Mari Winkler",
+        "year": [
+            2020
+        ],
+        "picture": "https://placekitten.com/380/380",
+        "pronouns": "she/her",
+        "project": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "publications": [
+            "Publication 1",
+            "Publication 2"
+        ],
+        "linkedin": "https://www.linkedin.com",
+        "contact": "uwigem@uw.edu",
+        "github": "https://github.com/"
+    },
+    {
+        "id": 2,
+        "name": "Mari Winkler",
+        "year": [
+            2020
+        ],
+        "picture": "https://placekitten.com/380/380",
+        "pronouns": "she/her",
+        "project": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "publications": [
+            "Publication 1"
+        ],
+        "linkedin": "https://www.linkedin.com",
+        "contact": null,
+        "github": "https://github.com/"
+    },
+    {
+        "id": 3,
+        "name": "Mari Winkler",
+        "year": [
+            2020
+        ],
+        "picture": "https://placekitten.com/380/380",
+        "pronouns": "she/her",
+        "project": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "publications": null,
+        "linkedin": null,
+        "contact": null,
+        "github": null
+    },
+    {
+        "id": 4,
+        "name": "Mari Winkler",
+        "year": [
+            2020
+        ],
+        "picture": "https://placekitten.com/380/380",
+        "pronouns": null,
+        "project": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "publications": null,
+        "linkedin": null,
+        "contact": null,
+        "github": null
+    },
+    {
+        "id": 5,
+        "name": "Mari Winkler",
+        "year": [
+            2020
+        ],
+        "picture": "https://placekitten.com/380/380",
+        "pronouns": null,
+        "project": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "publications": null,
+        "linkedin": null,
+        "contact": null,
+        "github": null
+    },
+    {
+        "id": 6,
+        "name": "Mari Winkler",
+        "year": [
+            2020
+        ],
+        "picture": "https://placekitten.com/380/380",
+        "pronouns": null,
+        "project": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "publications": null,
+        "linkedin": null,
+        "contact": null,
+        "github": null
+    }
+]

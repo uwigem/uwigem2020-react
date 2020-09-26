@@ -1,0 +1,58 @@
+
+.root {
+  width: 100%;
+}
+
+.container {
+  margin: 0px 10% 0px;
+}
+
+.title {
+  
+}
+
+.title h1 {
+  margin: 5%;
+  text-align: left;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  height: 1000px;
+}
+
+.left {
+  flex-grow: 1;
+
+  background-color: grey;
+  
+}
+
+.mid {
+  flex-grow: 1;
+
+  display: flex;
+  flex-direction: column;
+
+}
+
+.right {
+  flex-grow: 1;
+  background-color: grey;
+}
+
+.project {
+  width: inherit;
+
+}
+
+.project .year {
+}
+.project .name {
+
+} 
+.project .desc {
+} 
