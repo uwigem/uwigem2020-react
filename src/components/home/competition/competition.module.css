@@ -22,26 +22,25 @@
 }
 
 .articleStyle {
+  margin: 5%;
   display: flex;
   flex-flow: column nowrap;
+  justify-content: center;
+  align-content: center;
   align-items: flex-start;
-  max-width: 30vw;
-  /* margin: 10% 10% 10% 30%; */
 }
 
-.imageContainer {
-  text-align: center;
-  margin: 0.5em;
-  /* margin: 10% 30% 10% 10%; */
+.divider {
+  width: 10%;
 }
 
 .layout {
   margin: 5vh 5vw;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  animation: fade-in 3s cubic-bezier(.65,.15,.59,.81);
+  /* animation: fade-in 3s cubic-bezier(.65,.15,.59,.81); */
 }
 
 @keyframes scale-right {
