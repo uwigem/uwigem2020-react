@@ -1,7 +1,6 @@
 import './endorsement.css';
 import Sponsor from './sponsor';
 import React, {useState, useEffect} from 'react';
-import { Row, Col } from 'react-flexbox-grid';
 
 const EndorsementPage = () => {
   const sponsors = require('./sponsors.json');
@@ -22,14 +21,10 @@ const EndorsementPage = () => {
   
   const pastSponsor = sponsors.past.map((level) => 
 		<div className="sponsor-level">
-			<p>{level.level}</p>
 			<div className="sponsors">
 				{level.sponsors.map((sponsor) => {
-					if (level.level == "Bronze") {
-						return <Sponsor size={300} sponsor={sponsor}></Sponsor>;
-					} else {
 						return <Sponsor size={400} sponsor={sponsor}></Sponsor>;
-					}	
+					
 				})}
 			</div>
 		</div>
@@ -46,7 +41,7 @@ const EndorsementPage = () => {
       <h2>Current Sponsor</h2>
 			{currentSponsor}
 		</div>
-    <div className="inquery-wrapper">
+    <div className="contact-wrapper">
 
     </div>
     <div className="sponsors-wrapper">

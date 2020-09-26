@@ -78,7 +78,6 @@
 	],
 	"past": [ 
 		{
-			"level": "Gold",
 			"sponsors" : [
 				{
 					"logo": "https://2019.igem.org/wiki/images/8/88/T--Washington--BioChemLogo.png",
@@ -94,36 +93,6 @@
 					"logo": "https://2019.igem.org/wiki/images/1/1c/T--Washington--CSELogo.png",
 					"name": "UW PAUL G. ALLEN SCHOOL OF COMPUTER SCIENCE AND ENGINEERING",
 					"link": "https://www.cs.washington.edu/"
-				}
-			]
-		},
-		{
-			"level": "Silver",
-			"sponsors" : [
-				{
-					"logo": "http://placekitten.com/300/300",
-					"name": "Test",
-					"link": "http://placekitten.com/300/300"
-				}
-			]
-		},
-		{
-			"level": "Bronze",
-			"sponsors" : [
-				{
-					"logo": "http://placekitten.com/400/300",
-					"name": "Test",
-					"link": "http://placekitten.com/400/300"
-				},
-				{
-					"logo": "",
-					"name": "",
-					"link": ""
-				},
-				{
-					"logo": "",
-					"name": "",
-					"link": ""
 				}
 			]
 		}
