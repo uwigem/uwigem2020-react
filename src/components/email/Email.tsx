@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 
+import firebase from '../../Firebase';
+
 import s from 'Email.module.css';
 
-// firebase for email trigger
-import * as firebase from "firebase/app";
-import "firebase/firestore";
 
 export const Email = () => {
   const [addr, setAddr] = useState<string>('');
@@ -20,6 +19,9 @@ export const Email = () => {
   </div>
 }
 
+const db = firebase.firestore();
+const mailRef = db.collection('mail');
+
 const send = (
   e: React.FormEvent<HTMLFormElement>,
   addr: string,
@@ -28,20 +30,38 @@ const send = (
 ): void => {
   console.log('sending email');
   e.preventDefault();
-  if (check(addr, sbj, msg)) {
-
-  } else {
-    
+  if (valid(addr, sbj, msg)) {
+    mailRef.add({
+      to: [addr],
+      message: {
+        subject: sbj,
+        text: msg
+      }
+    });
   }
-  // TODO
 }
 
-
-const check = (
+const valid = (
   addr: string,
   sbj: string,
   msg: string
 ): boolean => {
   // TODO
-  return false;
+
+  // test email addr format
+  if (!/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(addr)) {
+    alert('Invalid email address');
+    return false;
+  }
+
+  if (sbj.length == 0) {
+    alert('Empty subject line');
+    return false;
+  }
+
+  if (msg.length == 0) {
+    alert('Empty message content');
+    return false;
+  }
+  return true;
 }
