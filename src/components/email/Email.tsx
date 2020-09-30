@@ -2,19 +2,28 @@ import React, { useState } from 'react';
 
 import firebase from '../../Firebase';
 
-import s from 'Email.module.css';
+import s from './Email.module.css';
 
 
-export const Email = () => {
+const Email = () => {
   const [addr, setAddr] = useState<string>('');
   const [msg, setMsg] = useState<string>('');
   const [sbj, setSbj] = useState<string>('');
   return <div className={s.root}>
     <form onSubmit={e => send(e, addr, sbj, msg)}>
-      <input type='email' value={addr} onChange={e => setAddr(e.target.value)} />
-      <input type='text' value={sbj} onChange={e => setSbj(e.target.value)} />
-      <input type='text' value={msg} onChange={e => setMsg(e.target.value)} />
-      <button type='submit' value='Submit' />
+      <div className={s.cell}>
+        Your Address: <input type='email' value={addr} onChange={e => setAddr(e.target.value)} />
+      </div>
+
+      <div className={s.cell}>
+        Subject: <input type='text' value={sbj} onChange={e => setSbj(e.target.value)} />
+      </div>
+
+      <div className={s.cell}>
+        Message: <input type='text' value={msg} onChange={e => setMsg(e.target.value)} />
+      </div>
+
+      <button type='submit' value='Submit'>Send</button>
     </form>
   </div>
 }
@@ -65,3 +74,5 @@ const valid = (
   }
   return true;
 }
+
+export default Email;

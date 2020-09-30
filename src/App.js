@@ -21,6 +21,7 @@ import UnderConstruction from './components/construction/UnderConstruction';
 
 import Mentors from './components/team/membersPage/Mentors';
 import Members from './components/team/membersPage/Members';
+import Email from './components/email/Email';
 
 function App() {
   return (
@@ -32,7 +33,7 @@ function App() {
         <Route path='/team' exact><TeamPage /></Route>
         <Route path='/endorsement' exact><UnderConstruction /></Route>
         <Route path='/involvement' exact><GetInvolve /></Route>
-        <Route path='/test' exact><Mentors /><Members /></Route>
+        <Route path='/email' exact><Email /></Route>
       </Switch>
       <Footer />
     </HashRouter>
