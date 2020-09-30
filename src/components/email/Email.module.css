@@ -4,22 +4,54 @@
   align-items: center;
 }
 
-form {
+.sheet {
   width: 500px;
-  height: 800px;
   margin: 50px;
+}
+
+form {
+  width: 100%;
+  padding: 30px;
+  background-color: white;
+
   display: flex;
   flex-direction: column;
 }
 
+form h2 {
+  color: grey;
+  font-weight: bolder;
+}
+
 form .cell {
+  margin: 15px;
   width: 100%;
   display: flex;
   flex-direction: row;
-  margin: 15px;
+  justify-content: space-between;
 }
 
-form button {
+.cell input {
+  width: 100%;
+  border: 2px solid #d3d3d3;
+}
+
+.cell textarea {
+  width: 100%;
+  border: 2px solid #d3d3d3;
+}
+
+.submitContainer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.submitContainer button {
   margin: 15px auto;
   width: 100px;
+
+  background-color: purple;
+  border: none;
+  color: white;
 }
