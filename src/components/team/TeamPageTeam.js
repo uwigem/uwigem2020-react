@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import TeamOverview from './teamOverview/teamOverview'
 import TeamStructure from './teamStructure/teamStructure'
 import TeamPageSideBar from './TeamPageSideBar';
-
+import TeamGallery from './gallery/gallery';
 
 /**
  * Displays team members page
@@ -49,6 +49,9 @@ export default function TeamPageTeam({ onSwitchClick }) {
           </section>
           <section ref={teamStructRef} id={teamStructureId}>
             <TeamStructure />
+          </section>
+          <section>
+            <TeamGallery />
           </section>
         </main>
       </div>
