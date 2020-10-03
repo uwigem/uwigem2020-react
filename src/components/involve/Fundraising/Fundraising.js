@@ -36,7 +36,7 @@ const Fundraising = (props) => {
                     </div>
                 </div>
                 <div class="fundraising-text">
-                    <h2>{title}</h2>
+                    <h2 style={{fontSize: "10vw"}}>{title}</h2>
                 </div>
             </div>
         </div>  
