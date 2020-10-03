@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import './Timeline.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { faCaretUp, faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 /**
  * 
@@ -33,24 +33,31 @@ const Timeline = props => {
 							<>
 							<li style={{margin: "0 5%"}}
 								onClick={() => {
-									props.callback(years[range[0]])}}
-							><a>{years[range[0]]}</a></li>
+									props.callback(years[range[0]])}}>
+								<a>{years[range[0]]}</a>
+							</li>
 							<li className="zoom-in-button"
+								style={{margin: "0 13%"}}
 								onClick={() => {
-								zoomIn(range[0], range[1] - Math.floor((range[1] - range[0])/2))
-								}}><a></a></li>
-							<li style={{margin: "0 38%"}}
+									zoomIn(range[0], range[1] - Math.floor((range[1] - range[0])/2))}}>
+								<a><FontAwesomeIcon icon={faCaretUp} size={"2x"}/></a>
+							</li>
+							<li style={{margin: "0 12%"}}
 								onClick={() => {
-									props.callback(years[Math.floor((range[1] - range[0])/2)])}}
-							><a>{years[Math.floor((range[1] - range[0])/2)]}</a></li>
+									props.callback(years[Math.floor((range[1] - range[0])/2)])}}>
+								<a>{years[Math.floor((range[1] - range[0])/2)]}</a>
+							</li>
 							<li className="zoom-in-button"
+								style={{margin: "0 13%"}}
 								onClick={() => {
-								zoomIn(range[0] + Math.floor((range[1] - range[0])/2), range[1])
-								}}><a></a></li>
+									zoomIn(range[0] + Math.floor((range[1] - range[0])/2), range[1])}}>
+								<a><FontAwesomeIcon icon={faCaretUp} size={"2x"}/></a>
+							</li>
 							<li style={{margin: "0 5%"}}
 								onClick={() => {
-									props.callback(years[range[1]])}}
-							><a>{years[range[1]]}</a></li>
+									props.callback(years[range[1]])}}>
+								<a>{years[range[1]]}</a>
+							</li>
 							</>
 							:
 							((range[1] - range[0] == 3)?
@@ -71,7 +78,7 @@ const Timeline = props => {
 								</>
 							)}
 
-						<li className={(range[1] >= years.length-2 || range[1] - range[0] > 3)?
+						<li className={(range[1] >= years.length-1 || range[1] - range[0] > 3)?
 										"next disable" : "next"}
 							onClick={() => {
 								setRange([range[0] + 1, range[1] + 1])
