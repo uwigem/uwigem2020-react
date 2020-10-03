@@ -23,7 +23,7 @@ const SynbioForEveryone = (props) => {
                     <div>
                         <div class="synbio-img-right"
                             style={{backgroundImage: 'url(https://placekitten.com/800/900)'}}/>
-                        <div className="synbio-view-more mt-5">
+                        <div className="synbio-view-more mt-5" style={{fontSize: '5vw'}}>
                             <a href="http://students.washington.edu/uwigem/">-{'>'}View More</a>
                         </div>
                     </div>
@@ -37,9 +37,9 @@ const SynbioForEveryone = (props) => {
                 <div class="synbio-text-block-3">
                     <h2>Everyone</h2>
                 </div>
-                <div class="synbio-text-main mt-3">
+            </div>
+            <div class="synbio-text-main mt-3">
                     {props.text}
-                </div>
             </div>
         </div>  
     </>;
