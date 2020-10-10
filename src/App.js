@@ -15,7 +15,8 @@ import TeamPage from './components/team/teamPage';
 import Footer from './components/footer/footer';
 import GetInvolve from './components/involve/involve';
 import ArchivePage from './components/archive/archive';
-import UnderConstruction from './components/construction/UnderConstruction';
+import Endorsement from './components/endorsement/endorsement';
+// import UnderConstruction from './components/construction/UnderConstruction';
 
 import Email from './components/email/Email';
 
@@ -27,7 +28,7 @@ function App() {
         <Route path='/' exact><HomePage /></Route>
         <Route path='/archive' exact><ArchivePage /></Route>
         <Route path='/team' exact><TeamPage /></Route>
-        <Route path='/endorsement' exact><UnderConstruction /></Route>
+        <Route path='/endorsement' exact><Endorsement /></Route>
         <Route path='/involvement' exact><GetInvolve /></Route>
         <Route path='/email' exact><Email /></Route>
       </Switch>
