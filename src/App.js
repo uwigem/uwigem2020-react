@@ -16,7 +16,7 @@ import Footer from './components/footer/footer';
 import GetInvolve from './components/involve/involve';
 import ArchivePage from './components/archive/archive';
 import Endorsement from './components/endorsement/endorsement';
-import UnderConstruction from './components/construction/UnderConstruction';
+// import UnderConstruction from './components/construction/UnderConstruction';
 
 import Email from './components/email/Email';
 
