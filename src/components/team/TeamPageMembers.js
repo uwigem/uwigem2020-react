@@ -1,16 +1,10 @@
-import React, { useState, useRef } from 'react'
+import React, { useRef } from 'react'
 import TeamPageSideBar from './TeamPageSideBar';
 
 import Mentors from './membersPage/Mentors';
 import Members from './membersPage/Members';
-import { MAIN_SECTION_DESCRIPTION } from '../_data/HomepageData/HomepageConstants';
 
 export default function TeamPageMembers({ onSwitchClick }) {
-
-  const currentYear = 2020;
-  const [teamMembers, setTeamMembers] = useState([]);
-  const [filter, setFilter] = useState('All');
-  const [year, setYear] = useState(currentYear);
 
   const mentorsRef = useRef(null);
   const membersRef = useRef(null);
@@ -28,21 +22,6 @@ export default function TeamPageMembers({ onSwitchClick }) {
       ref: membersRef
     }
   ]
-
-  let years = [2019, 2020];
-
-  let teams = [
-    "All",
-    "Drylab",
-    "Wetlab",
-    "Human Practices",
-    "Outreach",
-    "Web Development",
-    "Fundraising",
-    "Design",
-    "Adviser",
-    "PIs"]
-
 
   return (
     <div>
