@@ -9,7 +9,6 @@ import './SynbioForEveryone.css';
 
  */
 const SynbioForEveryone = (props) => {
-    const title = "Synbio for Everyone";
 
     return <>
         <div class="m-5">
