@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/uwigem2020-react/static/css/main.1a92fbb0.chunk.css",
+    "main.css": "/uwigem2020-react/static/css/main.bdc64c52.chunk.css",
     "main.js": "/uwigem2020-react/static/js/main.041a6bd4.chunk.js",
     "main.js.map": "/uwigem2020-react/static/js/main.041a6bd4.chunk.js.map",
     "runtime-main.js": "/uwigem2020-react/static/js/runtime-main.3b2725cc.js",
@@ -9,10 +9,10 @@
     "static/js/2.f8dfa818.chunk.js": "/uwigem2020-react/static/js/2.f8dfa818.chunk.js",
     "static/js/2.f8dfa818.chunk.js.map": "/uwigem2020-react/static/js/2.f8dfa818.chunk.js.map",
     "index.html": "/uwigem2020-react/index.html",
-    "precache-manifest.1c311913178257eaf16336ec68d5884a.js": "/uwigem2020-react/precache-manifest.1c311913178257eaf16336ec68d5884a.js",
+    "precache-manifest.937b0deeef95414f6540303be22d06c9.js": "/uwigem2020-react/precache-manifest.937b0deeef95414f6540303be22d06c9.js",
     "service-worker.js": "/uwigem2020-react/service-worker.js",
     "static/css/2.0527938a.chunk.css.map": "/uwigem2020-react/static/css/2.0527938a.chunk.css.map",
-    "static/css/main.1a92fbb0.chunk.css.map": "/uwigem2020-react/static/css/main.1a92fbb0.chunk.css.map",
+    "static/css/main.bdc64c52.chunk.css.map": "/uwigem2020-react/static/css/main.bdc64c52.chunk.css.map",
     "static/js/2.f8dfa818.chunk.js.LICENSE.txt": "/uwigem2020-react/static/js/2.f8dfa818.chunk.js.LICENSE.txt",
     "static/media/gmail.svg": "/uwigem2020-react/static/media/gmail.282a92dc.svg",
     "static/media/gmailInactive.svg": "/uwigem2020-react/static/media/gmailInactive.1a91dffe.svg",
@@ -22,7 +22,7 @@
     "static/js/runtime-main.3b2725cc.js",
     "static/css/2.0527938a.chunk.css",
     "static/js/2.f8dfa818.chunk.js",
-    "static/css/main.1a92fbb0.chunk.css",
+    "static/css/main.bdc64c52.chunk.css",
     "static/js/main.041a6bd4.chunk.js"
   ]
 }
