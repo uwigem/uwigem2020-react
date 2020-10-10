@@ -18,7 +18,7 @@ const TeamMentor = props => {
         {/* Mentor card */}
         <div className="person" onClick={() => toggleExpand(!expanded)}>
             <section className="person-image">
-                <img src={props.person.picture}></img>
+                <img src={props.person.picture} alt={props.person.name} />
             </section>
             <Modal
                 show={expanded}
@@ -28,7 +28,7 @@ const TeamMentor = props => {
             >
                 {/* Pop-up when clicking member */}
                 <Modal.Body className="card-body">
-                    <img className="card-image" src={props.person.picture}></img>
+                    <img className="card-image" src={props.person.picture} alt={props.person.name} />
                     <div className="card-content">
                         {
                             props.person.pronouns?
@@ -98,14 +98,14 @@ const TeamMentor = props => {
 
                             <>
                                 <a href={"mailto:" + props.person.contact}>
-                                    <img src={gmail} className='contact-logo'/>
+                                    <img src={gmail} className='contact-logo' alt={'gmail'}/>
                                 </a>
                             </>
 
                             :
 
                             <>
-                                <img src={gmailInactive} className='contact-logo'/>
+                                <img src={gmailInactive} className='contact-logo' alt={'gmail unavailable'}/>
                             </>
                         }
                         

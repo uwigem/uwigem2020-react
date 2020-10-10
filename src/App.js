@@ -15,12 +15,8 @@ import TeamPage from './components/team/teamPage';
 import Footer from './components/footer/footer';
 import GetInvolve from './components/involve/involve';
 import ArchivePage from './components/archive/archive';
-import OurTeamPage from './components/team/OurTeamPage';
-import ProjectPage from './components/construction/UnderConstruction';
 import UnderConstruction from './components/construction/UnderConstruction';
 
-import Mentors from './components/team/membersPage/Mentors';
-import Members from './components/team/membersPage/Members';
 import Email from './components/email/Email';
 
 function App() {
