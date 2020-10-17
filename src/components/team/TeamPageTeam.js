@@ -3,6 +3,8 @@ import TeamOverview from './teamOverview/teamOverview'
 import TeamStructure from './teamStructure/teamStructure'
 import TeamPageSideBar from './TeamPageSideBar';
 import TeamGallery from './gallery/gallery';
+import Col from 'react-bootstrap/Col'
+import Row from 'react-bootstrap/Row'
 
 /**
  * Displays team members page
@@ -37,22 +39,32 @@ export default function TeamPageTeam({ onSwitchClick }) {
           </div>
       </header>
       <hr className="team-header-linebar"></hr>
+      <div className={'team-body'}>
+        <Row md={12} sm={1}>
+          <Col md={2} className={'justify-content-center'}>
+            <TeamPageSideBar sectionList={sections} />
+          </Col>
+          <Col md={10}>
+            <section ref={overviewRef} id={overviewId}>
+              <TeamOverview
+                overview="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim integer sit lacinia ac tempus enim libero, sed nisl. Mattis integer consectetur vel, cursus lacus, consequat, adipiscing. Risus, id id bibendum turpis sit sit. Duis tortor sed erat sed arcu at."
+                imgSrc="https://placekitten.com/970/431"
+                imgAlt="Placeholder Image"
+                caption="Caption: caption goes here"/>
+            </section>
+            <section ref={teamStructRef} id={teamStructureId}>
+              <TeamStructure />
+            </section>
+            <section>
+              <TeamGallery />
+            </section>
+          </Col>
+        </Row>
+      </div>
       <div className='team-body'>
         <TeamPageSideBar sectionList={sections} />
         <main>
-          <section ref={overviewRef} id={overviewId}>
-            <TeamOverview
-              overview="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim integer sit lacinia ac tempus enim libero, sed nisl. Mattis integer consectetur vel, cursus lacus, consequat, adipiscing. Risus, id id bibendum turpis sit sit. Duis tortor sed erat sed arcu at."
-              imgSrc="https://placekitten.com/970/431"
-              imgAlt="Placeholder Image"
-              caption="Caption: caption goes here"/>
-          </section>
-          <section ref={teamStructRef} id={teamStructureId}>
-            <TeamStructure />
-          </section>
-          <section>
-            <TeamGallery />
-          </section>
+          
         </main>
       </div>
     </>
