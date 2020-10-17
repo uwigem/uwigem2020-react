@@ -83,7 +83,7 @@ const valid = (
     return false;
   }
 
-  if (msg.length == 0) {
+  if (msg.length === 0) {
     alert('Empty message content');
     return false;
   }

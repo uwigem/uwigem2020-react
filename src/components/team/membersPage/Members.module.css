@@ -34,6 +34,13 @@
   cursor: pointer;
 }
 
+.filterCard:hover {
+  margin: 0.75vw;
+  padding: 0.5rem;
+  background-color: #C4C4C4;
+  cursor: pointer;
+}
+
 .filterCardSelected {
   margin: 0.75vw;
   padding: 0.5rem;
