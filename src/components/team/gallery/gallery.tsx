@@ -5,7 +5,7 @@ import './gallery.css';
 /**
  * @returns {React.Component}
  */
-const TeamGallery = (props) => {
+export default function TeamGallery() {
     const images = [
         {
           original: 'https://placekitten.com/1000/600',
@@ -35,7 +35,7 @@ const TeamGallery = (props) => {
 
     return <>
         <div className="team-gallery">
-            <ImageGallery 
+            <ImageGallery
                 items={images}
                 lazyLoad={false}
                 additionalClass="app-image-gallery"
@@ -44,5 +44,3 @@ const TeamGallery = (props) => {
         </div>
     </>;
 }
-
-export default TeamGallery;
