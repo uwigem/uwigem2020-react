@@ -1,11 +1,16 @@
 import React, { useRef } from 'react'
-import TeamPageSideBar from './TeamPageSideBar';
+import TeamPageSideBar from './TeamPageSideBar'
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
-import Mentors from './membersPage/Mentors';
-import Members from './membersPage/Members';
+import Mentors from './membersPage/Mentors'
+import Members from './membersPage/Members'
+import { section } from './teamPage'
 
-export default function TeamPageMembers({ onSwitchClick }) {
+type propsType = {
+  handleSection: (sections: section[]) => void
+}
+
+export default function TeamPageMembers({ handleSection }: propsType) {
 
   const mentorsRef = useRef(null);
   const membersRef = useRef(null);
@@ -24,17 +29,10 @@ export default function TeamPageMembers({ onSwitchClick }) {
     }
   ]
 
+  handleSection(sections)
+
   return (
     <div>
-      <header className='team-header'>
-        <div className='team-header-title'>
-            <h1>Our Members</h1>
-          </div>
-          <div className='team-header-button'>
-            <button onClick={onSwitchClick}>View Team</button>
-          </div>
-      </header>
-      <hr className="team-header-linebar"></hr>
       <div className='team-body'>
       <Row md={12} sm={1}>
           <Col md={3} className={'justify-content-center'}>
@@ -52,11 +50,6 @@ export default function TeamPageMembers({ onSwitchClick }) {
           </Col>
         </Row>
         <TeamPageSideBar sectionList={sections} />
-        
-        
-          
-        
-
       </div>  
     </div>
   )
