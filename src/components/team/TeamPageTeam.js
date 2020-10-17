@@ -41,10 +41,10 @@ export default function TeamPageTeam({ onSwitchClick }) {
       <hr className="team-header-linebar"></hr>
       <div className={'team-body'}>
         <Row md={12} sm={1}>
-          <Col md={2} className={'justify-content-center'}>
+          <Col md={3} className={'justify-content-center'}>
             <TeamPageSideBar sectionList={sections} />
           </Col>
-          <Col md={10}>
+          <Col md={9}>
             <section ref={overviewRef} id={overviewId}>
               <TeamOverview
                 overview="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim integer sit lacinia ac tempus enim libero, sed nisl. Mattis integer consectetur vel, cursus lacus, consequat, adipiscing. Risus, id id bibendum turpis sit sit. Duis tortor sed erat sed arcu at."
@@ -60,12 +60,6 @@ export default function TeamPageTeam({ onSwitchClick }) {
             </section>
           </Col>
         </Row>
-      </div>
-      <div className='team-body'>
-        <TeamPageSideBar sectionList={sections} />
-        <main>
-          
-        </main>
       </div>
     </>
   )

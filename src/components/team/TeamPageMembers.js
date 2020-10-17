@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react'
 import TeamPageSideBar from './TeamPageSideBar';
-
+import Col from 'react-bootstrap/Col'
+import Row from 'react-bootstrap/Row'
 import Mentors from './membersPage/Mentors';
 import Members from './membersPage/Members';
 import { MAIN_SECTION_DESCRIPTION } from '../_data/HomepageData/HomepageConstants';
@@ -56,16 +57,26 @@ export default function TeamPageMembers({ onSwitchClick }) {
       </header>
       <hr className="team-header-linebar"></hr>
       <div className='team-body'>
+      <Row md={12} sm={1}>
+          <Col md={3} className={'justify-content-center'}>
+            <TeamPageSideBar sectionList={sections} />
+          </Col>
+          <Col md={9}>
+            <main>
+              <section ref={mentorsRef} id={mentorsId} >
+                <Mentors />
+              </section>
+              <section ref={membersRef} id={membersId}>
+                <Members />
+              </section>
+            </main>
+          </Col>
+        </Row>
         <TeamPageSideBar sectionList={sections} />
         
-        <main>
-          <section ref={mentorsRef} id={mentorsId} >
-            <Mentors />
-          </section>
-          <section ref={membersRef} id={membersId}>
-            <Members />
-          </section>
-        </main>
+        
+          
+        
 
       </div>  
     </div>
