@@ -19,6 +19,9 @@ import OurTeamPage from './components/team/OurTeamPage';
 import ProjectPage from './components/construction/UnderConstruction';
 import UnderConstruction from './components/construction/UnderConstruction';
 
+import Mentors from './components/team/membersPage/Mentors';
+import Members from './components/team/membersPage/Members';
+
 function App() {
   return (
     <HashRouter>
@@ -27,8 +30,9 @@ function App() {
         <Route path='/' exact><HomePage /></Route>
         <Route path='/archive' exact><ArchivePage /></Route>
         <Route path='/team' exact><TeamPage /></Route>
-        <Route path='/about' exact><UnderConstruction /></Route>
-        <Route path='/involvement' exact><UnderConstruction /></Route>
+        <Route path='/endorsement' exact><UnderConstruction /></Route>
+        <Route path='/involvement' exact><GetInvolve /></Route>
+        <Route path='/test' exact><Mentors /><Members /></Route>
       </Switch>
       <Footer />
     </HashRouter>

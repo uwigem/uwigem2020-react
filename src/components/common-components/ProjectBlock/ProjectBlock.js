@@ -1,68 +1,57 @@
 import React, {useState, useEffect} from 'react';
 import './ProjectBlock.css';
-import ProjectModal from '../ProjectModal/ProjectModal'
+import Image from '../../common-components/Image'
 
 /**
- * @param award award of the project (the best one)
- * @param awardWinning detail information about the awards
- * @param description description of the project
- * @param details details of the description, shown in modal only
- * @param awardWinning detail information about the awards
- * @param img image of the project
- * @param name project name
- * @param professor professor name
- * @param year the year of the project
- * @param show if the project modal is shown
+ * @param project a project object that conetains the following props
+ *   @param medal medal of the project (a number)
+ *   @param awards detail information about the awards
+ *   @param description description of the project
+ *   @param details details of the description, shown in modal only
+ *   @param img image of the project
+ *   @param name project name
+ *   @param professor professor name
+ *   @param year the year of the project
  * @param callback a callback function of the Archive component
  * @returns {React.Component}
  */
 const ProjectBlock = (props) => {
-    const [expanded, toggleExpand] = useState(false);
-    const [hover, toggleHover] = useState(false);
-    useEffect(() => {
-        toggleExpand(props.show);
-     }, [props]);
+    const [effect, setEffect] = useState({
+        expanded: false,
+        hover: false
+    });
+    const medals = ["Gold", "Silver", "Bronze"];
+
+    const handleClick = () => {
+        setEffect({expanded: true})
+        props.callback(props.project);
+    }
 
     return <>
         <div 
             className="project-block-div"
-            onClick={() => toggleExpand(!expanded)}
-            onMouseEnter={() => toggleHover(true)}
-            onMouseLeave={() => toggleHover(false)}
+            onClick={() => handleClick()}
+            onMouseEnter={() => setEffect({hover: true})}
+            onMouseLeave={() => setEffect({hover: false})}
             style={{
-                boxShadow: hover ? '2px 2px 2px 2px #dbdbdb' : '2px 2px 2px 2px white', }}
+                boxShadow: effect.hover ? '2px 2px 2px 2px #dbdbdb' : '2px 2px 2px 2px white',
+                cursor: effect.hover? 'pointer' : 'auto' }}
         >
             <section className="project-block-content">
                 <img 
                     className="project-block-img" 
-                    src={props.img}
-                    alt={props.name}
+                    src={props.project.img}
+                    alt={props.project.name}
                 />
                 <div className="project-block-main">
                     <div className="project-block-title">
-                        <h1>{props.name}</h1>
-                        <h2>{props.year}</h2>
+                        <h1>{props.project.name}</h1>
+                        <h2>{props.project.year}</h2>
                     </div>
-                    <h2 className="project-block-professor">PI: Professor {props.professor}</h2>
-                    <p className="project-block-description">{props.description}</p>
+                    <h2 className="project-block-professor">PI: Professor {props.project.professor}</h2>
+                    <p className="project-block-description">{props.project.description}</p>
                 </div>
-                <div className="project-block-award">{props.award}</div>
-                {
-                    expanded?
-                        <ProjectModal 
-                            show={true} 
-                            name={props.name}
-                            year={props.year}
-                            professor={props.professor}
-                            img={props.img}
-                            description={props.details}
-                            awardWinning={props.awardWinning}
-                            award={props.award}
-                            callback={props.callback}
-                        />
-                        :
-                        null
-                }
+                <div className="project-block-award">{medals[props.project.medal]}</div>
             </section>
 		</div>
     </>;

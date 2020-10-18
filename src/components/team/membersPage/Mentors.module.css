@@ -1,0 +1,15 @@
+
+.root {
+  margin: 20px;
+}
+
+.title {
+
+}
+
+.list {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  overflow: auto;
+}

@@ -6,9 +6,11 @@
 
 .team-body main {
     flex-grow: 1;
+    width: 1px; /* Just so that flex grow works properly */
 }
 
 .team-header {
+    margin-top: 20px;
     width: 100%;
     display: grid;
     grid-template-areas: ". heading button";
@@ -21,6 +23,20 @@
     justify-content: center;
 }
 
+.team-header-title h1{
+    color: #000000;
+    text-align: center;
+    font-size: 40px;
+    margin: 2rem;
+    font-style: normal;
+}
+
+.team-header-linebar {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 3rem;
+}
+
 .team-header-button {
     grid-area: button;
     display: flex;
@@ -31,19 +47,22 @@
     margin: auto auto auto;
     width: 150px;
     height: 40px;
-    background-color: purple;
+    background-color: #4b2e83;
     border: none;
     color: white;
 }
 
 
-/* mentors */
-.team-mentors-card-container {
+/* members */
+
+.team-members-container {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    overflow: scroll;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
 }
+
 
 /* old */
 .header {
@@ -120,70 +139,6 @@ body {
 .team-members {
     display: flex;
     flex-direction: column;
-}
-
-.person {
-    position: relative;
-    background-color: #4D2393;
-    box-shadow: 5px 5px 5px 0px #212121;
-    max-width: 300px;
-    max-height: 24rem;
-    padding-bottom: 4rem;
-    margin: 1rem;
-    cursor: pointer;
-    border-radius: 20px;
-    overflow: hidden;
-}
-
-.person-image img {
-    width: 300px;
-}
-
-.person-name {
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    padding: 5px;
-}
-
-.person-team {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    padding: 5px;
-    max-width: 300px;
-}
-
-.person-bio {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    position: absolute;
-    top: 0;
-    background-color: #4D2393;
-}
-
-.person-scrollbar {
-    position: absolute;
-    margin: auto;
-    left: 0;
-    right: 0;
-    text-align: center;
-    height: 100%;
-}
-
-.bio-icon {
-    padding: 0;
-    margin-top: 10px;
-    color: white;
-    text-decoration: none;
-    margin: 5px;
-}
-
-.bio-icon:hover {
-    color: #dab420;
-}
-
-.bio-icon a:visited {
-    color: inherit;
 }
 
 .team-members {
