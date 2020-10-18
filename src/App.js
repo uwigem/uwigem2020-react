@@ -13,11 +13,8 @@ import NavBar from './components/navbar/navbar';
 import HomePage from './components/home/home';
 import TeamPage from './components/team/teamPage';
 import Footer from './components/footer/footer';
-import GetInvolve from './components/involve/involve';
 import ArchivePage from './components/archive/archive';
-import OurTeamPage from './components/team/OurTeamPage';
 import EndorsementPage from './components/endorsement/endorsement';
-import ProjectPage from './components/construction/UnderConstruction';
 import UnderConstruction from './components/construction/UnderConstruction';
 
 function App() {
