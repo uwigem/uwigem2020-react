@@ -4,7 +4,6 @@ import { Button} from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./ProjectModal.css"
-import { faShower } from '@fortawesome/free-solid-svg-icons';
 
 /**
  * @param project a project object that conetains the following props
@@ -21,7 +20,7 @@ import { faShower } from '@fortawesome/free-solid-svg-icons';
  */
 const ProjectModal = (props) => { 
   const [show, setShow] = useState(true);
-  
+
   const handleClose = () => {
     setShow(false);
     props.callback(null);
