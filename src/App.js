@@ -15,7 +15,8 @@ import TeamPage from './components/team/teamPage';
 import Footer from './components/footer/footer';
 import ArchivePage from './components/archive/archive';
 import EndorsementPage from './components/endorsement/endorsement';
-import UnderConstruction from './components/construction/UnderConstruction';
+import GetInvolve from './components/involve/involve';
+// import UnderConstruction from './components/construction/UnderConstruction';
 
 function App() {
   return (
@@ -26,7 +27,7 @@ function App() {
         <Route path='/archive' exact><ArchivePage /></Route>
         <Route path='/team' exact><TeamPage /></Route>
         <Route path='/endorsement' exact><EndorsementPage /></Route>
-        <Route path='/involvement' exact><UnderConstruction /></Route>
+        <Route path='/involvement' exact><GetInvolve /></Route>
       </Switch>
       <Footer />
     </HashRouter>
