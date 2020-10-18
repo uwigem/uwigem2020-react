@@ -36,7 +36,7 @@ export default function TeamPage() {
   const [displayedPage, setDisplayedPage] = useState(teamPageData);
   const [sections, setSection] = useState<section[]>([])
 
-  const handleSection = (sections: section[]) => setSection(sections)
+  const getSections = (sections: section[]) => setSection(sections)
 
   const switchPage = () => {
     setDisplayedPage(oldPage => (oldPage === teamPageData ? membersPageData : teamPageData))
@@ -46,14 +46,14 @@ export default function TeamPage() {
     <div className='team-root'>
       <header className='team-header'>
         <div className='team-header-title'>
-            <h1>Our Members</h1>
+            <h1>{displayedPage.title}</h1>
           </div>
           <div className='team-header-button'>
-            <button onClick={switchPage}>View Team</button>
+            <button onClick={switchPage}>{displayedPage.switchBtnText}</button>
           </div>
       </header>
       <hr className="team-header-linebar"></hr>
-      {displayedPage.component}
+      {displayedPage.component(getSections)}
     </div>
   )
 }

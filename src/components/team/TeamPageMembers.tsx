@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useEffect, useRef } from 'react'
 import TeamPageSideBar from './TeamPageSideBar'
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
@@ -29,7 +29,9 @@ export default function TeamPageMembers({ handleSection }: propsType) {
     }
   ]
 
-  handleSection(sections)
+  useEffect(() => {
+    handleSection(sections)
+  }, [])
 
   return (
     <div>

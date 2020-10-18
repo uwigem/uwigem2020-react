@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import TeamOverview from './teamOverview/teamOverview'
 import TeamStructure from './teamStructure/teamStructure'
 import TeamPageSideBar from './TeamPageSideBar';
@@ -34,7 +34,9 @@ export default function TeamPageTeam({ handleSection }: propsType) {
     }
   ]
 
-  handleSection(sections)
+  useEffect(() => {
+    handleSection(sections)
+  }, [])
   
   return (
     <div className={'team-body'}>
