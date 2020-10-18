@@ -36,30 +36,23 @@ export default function TeamPageTeam({ handleSection }: propsType) {
 
   useEffect(() => {
     handleSection(sections)
-  }, [])
+  }, [sections, handleSection])
   
   return (
-    <div className={'team-body'}>
-      <Row md={12} sm={1}>
-        <Col md={3} className={'justify-content-center'}>
-          <TeamPageSideBar sectionList={sections} />
-        </Col>
-        <Col md={9}>
-          <section ref={overviewRef} id={overviewId}>
-            <TeamOverview
-              overview="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim integer sit lacinia ac tempus enim libero, sed nisl. Mattis integer consectetur vel, cursus lacus, consequat, adipiscing. Risus, id id bibendum turpis sit sit. Duis tortor sed erat sed arcu at."
-              imgSrc="https://placekitten.com/970/431"
-              imgAlt="Placeholder Image"
-              caption="Caption: caption goes here"/>
-          </section>
-          <section ref={teamStructRef} id={teamStructureId}>
-            <TeamStructure />
-          </section>
-          <section>
-            <TeamGallery />
-          </section>
-        </Col>
-      </Row>
-    </div>
+    <main>
+      <section ref={overviewRef} id={overviewId}>
+        <TeamOverview
+          overview="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim integer sit lacinia ac tempus enim libero, sed nisl. Mattis integer consectetur vel, cursus lacus, consequat, adipiscing. Risus, id id bibendum turpis sit sit. Duis tortor sed erat sed arcu at."
+          imgSrc="https://placekitten.com/970/431"
+          imgAlt="Placeholder Image"
+          caption="Caption: caption goes here"/>
+      </section>
+      <section ref={teamStructRef} id={teamStructureId}>
+        <TeamStructure />
+      </section>
+      <section>
+        <TeamGallery />
+      </section>
+    </main>
   )
 }

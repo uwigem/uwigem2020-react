@@ -3,6 +3,9 @@ import './teamPage.css';
 import React, { useState } from 'react';
 import TeamPageMembers from './TeamPageMembers';
 import TeamPageTeam from './TeamPageTeam';
+import TeamPageSideBar from './TeamPageSideBar'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 
 export type section = {
   name: string,
@@ -36,7 +39,7 @@ export default function TeamPage() {
   const [displayedPage, setDisplayedPage] = useState(teamPageData);
   const [sections, setSection] = useState<section[]>([])
 
-  const getSections = (sections: section[]) => setSection(sections)
+  const getSections = (sections: section[]) => setSection(old => !old ? sections : old)
 
   const switchPage = () => {
     setDisplayedPage(oldPage => (oldPage === teamPageData ? membersPageData : teamPageData))
@@ -53,7 +56,16 @@ export default function TeamPage() {
           </div>
       </header>
       <hr className="team-header-linebar"></hr>
-      {displayedPage.component(getSections)}
+      <div className='team-body'>
+        <Row md={12} sm={1}>
+          <Col md={3} className={'justify-content-center'}>
+            <TeamPageSideBar sectionList={sections} />
+          </Col>
+          <Col md={9}>
+            {displayedPage.component(getSections)}
+          </Col>
+        </Row>
+      </div>  
     </div>
   )
 }

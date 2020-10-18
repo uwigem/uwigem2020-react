@@ -31,28 +31,16 @@ export default function TeamPageMembers({ handleSection }: propsType) {
 
   useEffect(() => {
     handleSection(sections)
-  }, [])
+  }, [sections, handleSection])
 
   return (
-    <div>
-      <div className='team-body'>
-      <Row md={12} sm={1}>
-          <Col md={3} className={'justify-content-center'}>
-            <TeamPageSideBar sectionList={sections} />
-          </Col>
-          <Col md={9}>
-            <main>
-              <section ref={mentorsRef} id={mentorsId} >
-                <Mentors />
-              </section>
-              <section ref={membersRef} id={membersId}>
-                <Members />
-              </section>
-            </main>
-          </Col>
-        </Row>
-        <TeamPageSideBar sectionList={sections} />
-      </div>  
-    </div>
+    <main>
+      <section ref={mentorsRef} id={mentorsId} >
+        <Mentors />
+      </section>
+      <section ref={membersRef} id={membersId}>
+        <Members />
+      </section>
+    </main>
   )
 }
