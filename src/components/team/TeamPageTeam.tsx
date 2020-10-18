@@ -1,10 +1,7 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react'
 import TeamOverview from './teamOverview/teamOverview'
 import TeamStructure from './teamStructure/teamStructure'
-import TeamPageSideBar from './TeamPageSideBar';
-import TeamGallery from './gallery/gallery';
-import Col from 'react-bootstrap/Col'
-import Row from 'react-bootstrap/Row'
+import TeamGallery from './gallery/gallery'
 import { section } from './teamPage'
 
 type propsType = {

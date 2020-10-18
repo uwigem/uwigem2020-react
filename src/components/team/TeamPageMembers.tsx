@@ -1,7 +1,4 @@
 import React, { useEffect, useRef } from 'react'
-import TeamPageSideBar from './TeamPageSideBar'
-import Col from 'react-bootstrap/Col'
-import Row from 'react-bootstrap/Row'
 import Mentors from './membersPage/Mentors'
 import Members from './membersPage/Members'
 import { section } from './teamPage'
