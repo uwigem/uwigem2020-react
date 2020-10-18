@@ -1,6 +1,6 @@
 import './endorsement.css';
 import Sponsor from './sponsor';
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import BusinessCard from './BusinessCard/BusinessCard'
 
 const EndorsementPage = () => {
@@ -10,7 +10,7 @@ const EndorsementPage = () => {
 			<p>{level.level}</p>
 			<div className="sponsors">
 				{level.sponsors.map((sponsor) => {
-					if (level.level == "Plasmid") {
+					if (level.level === "Plasmid") {
 						return <Sponsor size={300} sponsor={sponsor}></Sponsor>;
 					} else {
 						return <Sponsor size={400} sponsor={sponsor}></Sponsor>;
@@ -19,17 +19,6 @@ const EndorsementPage = () => {
 			</div>
 		</div>
   );
-  
-  const pastSponsor = sponsors.past.map((level) => 
-		<div className="sponsor-level">
-			<div className="sponsors">
-				{level.sponsors.map((sponsor) => {
-						return <Sponsor size={400} sponsor={sponsor}></Sponsor>;
-					
-				})}
-			</div>
-		</div>
-	);
 
 	return <>
 		<div className="header">
