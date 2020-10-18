@@ -39,7 +39,7 @@ export default function TeamPage() {
   const [displayedPage, setDisplayedPage] = useState(teamPageData);
   const [sections, setSection] = useState<section[]>([])
 
-  const getSections = (sections: section[]) => setSection(old => !old.length ? sections : old)
+  const getSections = (sections: section[]) => setSection(old => old[0]?.id !== sections[0].id ? sections : old)
 
   const switchPage = () => {
     setDisplayedPage(oldPage => (oldPage === teamPageData ? membersPageData : teamPageData))

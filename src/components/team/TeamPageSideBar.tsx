@@ -15,6 +15,8 @@ export default function TeamPageSideBar({ sectionList }: propsType) {
   const [sectionRatios, setSectionRatios] = useState({})
   
   useEffect(() => {    
+    setSectionRatios({}) // Clears previous data from other pages
+    
     const handleObserve = (entries) => {
       const newEntries = {}
       for(let entry of entries) {
