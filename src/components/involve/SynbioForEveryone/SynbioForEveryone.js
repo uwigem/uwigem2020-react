@@ -9,7 +9,6 @@ import './SynbioForEveryone.css';
 
  */
 const SynbioForEveryone = (props) => {
-    const title = "Synbio for Everyone";
 
     return <>
         <div class="m-5">
@@ -37,9 +36,9 @@ const SynbioForEveryone = (props) => {
                 <div class="synbio-text-block-3">
                     <h2>Everyone</h2>
                 </div>
-            </div>
-            <div class="synbio-text-main mt-3">
+                <div class="synbio-text-main mt-3">
                     {props.text}
+                </div>
             </div>
         </div>  
     </>;

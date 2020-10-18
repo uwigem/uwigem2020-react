@@ -8,7 +8,7 @@ import TeamMember from './teamMember';
 
 const Members = () => {
   const [memberData, setMemberData] = useState([]);
-  const [allFilters, setAllFilters] = useState([
+  const [allFilters] = useState([
     "Advisor",
     "Design",
     "Drylab",
@@ -54,7 +54,7 @@ const Members = () => {
               allFilters.map(f =>
                 <div
                   key={f}
-                  className={currFilter == f? s.filterCardSelected : s.filterCard}
+                  className={currFilter === f? s.filterCardSelected : s.filterCard}
                   onClick={() => selectFilter(f)}>
                   <span>{f}</span>
                 </div>)

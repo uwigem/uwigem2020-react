@@ -1,11 +1,8 @@
 import React from 'react';
 
-import { Carousel } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import s from './HomeCarousel.module.css';
-import { faEnvira } from '@fortawesome/free-brands-svg-icons';
-
 
 const HomeCarousel = () => {
   return (
