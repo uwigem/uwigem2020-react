@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import Modal from "react-bootstrap/Modal";
-import { Header, Title, Body, Footer } from "react-bootstrap/Modal";
 import { Button} from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -18,13 +17,13 @@ import "./ProjectModal.css"
  * @returns {React.Component}
  */
 const ProjectModal = (props) => { 
-  const [show, setShow] = useState(false);
+  const [show, setShow] = useState(props.show);
 
   const handleClose = () => setShow(false);
 
     return <>
         <Modal 
-          show={props.show} 
+          show={show} 
           onHide={handleClose}
           size='xl'
         >

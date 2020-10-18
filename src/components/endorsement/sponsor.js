@@ -19,7 +19,7 @@ const Sponsor = props => {
 			}}
             onMouseLeave={() => toggleHover(false)}>
 			<section className={hover? "sponsor-img hidden" : "sponsor-img active"}
-				style={{width: props.size + 'px',
+				style={{maxWidth: props.size + 'px',
 					height: props.size - 150 + 'px',
 					backgroundImage: 'url("' + props.sponsor.logo + '")'}}>
 			</section>

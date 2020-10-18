@@ -4,26 +4,23 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { Modal } from 'react-bootstrap';
 import gmail from '../../../gmail.svg';
 import gmailInactive from '../../../gmailInactive.svg';
-import './teamMember.css';
+import './teamMentor.css';
 
 // expects a "person" prop
 
 /**
  * @returns {React.Component}
  */
-const TeamMember = props => {
+const TeamMentor = props => {
     const [expanded, toggleExpand] = useState(false);
     
     return <>
-        {/* Member card */}
+        {/* Mentor card */}
         <div className="person" onClick={() => toggleExpand(!expanded)}>
             <section className="person-image">
                 <img src={props.person.picture} alt={props.person.name} />
             </section>
-            <section className="person-name">{props.person.name}</section>
-            {/* first element of person.teams is always 'all' */}
             <Modal
-                className="member-card"
                 show={expanded}
                 onHide={() => toggleExpand(!expanded)}
                 size="lg"
@@ -36,12 +33,14 @@ const TeamMember = props => {
                         {
                             props.person.pronouns?
                             <>
-                                <p className='card-name'>
-                                    {props.person.name}
-                                    <span class='card-pronouns'>
-                                    {"(" + props.person.pronouns + ")"}  
-                                    </span>
-                                </p>
+                                <span>
+                                    <p className='card-name'>
+                                        {props.person.name}
+                                        <span class='card-pronouns'>
+                                        {"(" + props.person.pronouns + ")"}  
+                                        </span>
+                                    </p>
+                                </span>
                             </>
 
                             :
@@ -50,22 +49,26 @@ const TeamMember = props => {
                                 <p className='card-name'>{props.person.name}</p>
                             </>
                         }
-                        <p className="member-section">
-                            Major:
-                            <b className='card-info'>
-                                {" " + props.person.major}
-                            </b>
-                        </p>
-                        <p className="member-section">Focus:
-                            <b className='card-info'>
-                                {props.person.teams.slice(1).map(s => " " + s).toString()}
-                            </b>
-                        </p>
+                        
                         {
-                            props.person.bio?
+                            props.person.project?
                                 <>
-                                    <p className="card-bio">
-                                        {"\"" + props.person.bio + "\""}
+                                    <p className='mentor-section'>Related Project</p>
+                                    <p className='card-info'>
+                                        {props.person.project}
+                                    </p>
+                                </>
+                            :
+                                <>
+                                </>
+                        }
+
+                        {
+                            props.person.publications?
+                                <>
+                                    <p className='mentor-section'>Publications</p>
+                                    <p className="card-info">
+                                        {props.person.publications.map(s => " " + s).toString()}
                                     </p>
                                 </>
                             :
@@ -129,4 +132,4 @@ const TeamMember = props => {
     </>;
 }
 
-export default TeamMember;
+export default TeamMentor;

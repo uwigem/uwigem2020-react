@@ -1,0 +1,46 @@
+/* Container holding the image and the text */
+.container {
+    position: relative;
+}
+  
+/* Bottom right text */
+.fundraising-text {
+    position: absolute;
+    left: 15%;
+    right: auto;
+    top: 35%;
+    bottom: auto;
+}
+
+.fundraising-text h2 {
+    background-color:  rgba(196, 196, 196, 0.6);
+    padding: 1px;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 8rem;
+}
+
+.fundraising-bottom-left-img, .fundraising-top-right-img {
+    width: 36vw;
+    height: 24vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.fundraising-text-block-1 {
+    margin-right: 8vw;
+    margin-bottom: 5vw;
+    background: linear-gradient( rgba(196, 196, 196, 0.3) 90%, #ffffff00 0%);    
+}
+
+.fundraising-text-block-2 {
+    margin-left: 8vw;
+    margin-top: 5vw;
+    background: linear-gradient(#ffffff00 10%, rgba(196, 196, 196, 0.3) 0%);    
+}
+
+.fundraising-left, .fundraising-right {
+    width: 36vw;
+}

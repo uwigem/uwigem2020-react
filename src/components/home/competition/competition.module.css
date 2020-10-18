@@ -1,5 +1,5 @@
 .textTopBarStyle {
-  height: .75em;
+  height: 1rem;
   width: 35%;
   background-color: #4B2E83;
   transform-origin: left;
@@ -7,7 +7,7 @@
 }
 
 .linkStyle {
-  padding: 0.5em 1em;
+  padding: 0.5rem 1rem;
   align-self: flex-end;
   color:white;
   background-color: #4B2E83;
@@ -22,22 +22,17 @@
 }
 
 .articleStyle {
+  margin: 5%;
   display: flex;
   flex-flow: column nowrap;
+  justify-content: center;
+  align-content: center;
   align-items: flex-start;
-  margin: 10% 10% 10% 30%;
-  animation: fade-in 3s cubic-bezier(.65,.15,.59,.81);
-}
-
-.imageContainer {
-  text-align: center;
-  margin: 0.5em;
-  margin: 10% 30% 10% 10%;
-  animation: fade-in 3s cubic-bezier(.65,.15,.59,.81);
 }
 
 .layout {
-  margin: 5vh 5vw;
+  margin: 5vh 0;
+  /* animation: fade-in 3s cubic-bezier(.65,.15,.59,.81); */
 }
 
 @keyframes scale-right {

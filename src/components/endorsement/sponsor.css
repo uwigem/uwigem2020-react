@@ -2,22 +2,22 @@
     position: relative;
 	color: black;
     cursor: pointer;
-	overflow: hidden;
 	text-align: center;
-	width: 45vw;
+	width: 100%;
 }
 
 .sponsor-name {
-	height: 2rem;
+	height: 3rem;
 	color: black;
+	overflow: auto;
 }
 
 .hover-mask {
 	position: absolute;
 	top: 0px;
-	width: 35vw;
+	width: 80%;
+	margin: 0 10%;
 	text-align: center;
-	margin: 0 5vw;
 	background-color: rgba(168, 168, 168, 0.87);
 	color: white;
 	visibility: visible;
@@ -53,6 +53,10 @@
 		visibility: hidden;
      } 
 } 
+
+.sponsor-wrapper {
+	width: 50%;
+}
 
 .sponsor-wrapper:hover {
 	text-decoration: none;

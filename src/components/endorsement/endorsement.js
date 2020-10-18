@@ -1,6 +1,7 @@
 import './endorsement.css';
 import Sponsor from './sponsor';
 import React, {useState, useEffect} from 'react';
+import BusinessCard from './BusinessCard/BusinessCard'
 
 const EndorsementPage = () => {
   const sponsors = require('./sponsors.json');
@@ -44,10 +45,7 @@ const EndorsementPage = () => {
     <div className="contact-wrapper">
 
     </div>
-    <div className="sponsors-wrapper">
-      <h2>Past Sponsor</h2>
-			{pastSponsor}
-		</div>
+    <BusinessCard />
 	</>
 }
 

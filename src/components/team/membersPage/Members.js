@@ -1,23 +1,25 @@
 import React, { useState, useEffect } from 'react';
 
+import { Paper } from '@material-ui/core';
+
 import s from './Members.module.css';
 
 import TeamMember from './teamMember';
 
 const Members = () => {
   const [memberData, setMemberData] = useState([]);
-  const [allFilters, setAllFilters] = useState([
+  const [allFilters] = useState([
+    "Advisor",
+    "Design",
     "Drylab",
-    "Wetlab",
+    "Fundraising",
     "Human Practices",
     "Outreach",
     "Web Development",
-    "Fundraising",
-    "Design",
-    "Adviser",
-    "PIs"
+    "Wetlab"
   ]);
-  const [currFilters, setCurrFilters] = useState([]);
+  
+  const [currFilter, setCurrFilter] = useState("All");
 
   useEffect(() => {
     let data = require('./team_members.json');
@@ -30,39 +32,29 @@ const Members = () => {
 
   // filter management
   const selectFilter = name => {
-    let newList = [...currFilters];
-    let index = newList.indexOf(name);
-    if (index == -1) {
-      newList.push(name);
+    if (currFilter === name) {
+      setCurrFilter("All");
     } else {
-      newList.splice(index, 1);
+      setCurrFilter(name);
     }
-    console.log(newList);
-    setCurrFilters(newList);
   }
-
-  const selected = name => {
-    let copy = [...currFilters];
-    return copy.includes(name);
-  }
-
   
   return (
     <div className={s.root}>
       <div className={s.container}>
 
         <div className={s.title}>
-          <h2>Team Members</h2>
+          <h3>Team Members</h3>
         </div>
 
         <div className={s.filter}>
-          <span>Filter:</span>
+          <span className={s.filterHeading}>Filter:</span>
           <div className={s.filterCardContainer}>
             {
               allFilters.map(f =>
                 <div
                   key={f}
-                  className={selected(f)? s.filterCardSelected : s.filterCard}
+                  className={currFilter === f? s.filterCardSelected : s.filterCard}
                   onClick={() => selectFilter(f)}>
                   <span>{f}</span>
                 </div>)
@@ -70,10 +62,16 @@ const Members = () => {
           </div>
         </div>
       
-        <div className={s.body}>
-          {
-            memberData.map(m => <TeamMember key={m.id} person={m} />)
-          }
+        <div className={s.listContainer}>
+        <Paper elevation={5}>
+        
+          <div className={s.list}>
+            {
+              memberData.map(m => m.teams.indexOf(currFilter) > -1? <TeamMember key={m.id} person={m} /> : null)
+            }
+          </div>
+
+        </Paper>
         </div>
       
       </div>
