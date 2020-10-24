@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d7dc0cdd3fe23bb2ddfd015ab6ae74a3",
+    "revision": "2dce0b16c4b5fe091979eabb08f45718",
     "url": "/uwigem2020-react/index.html"
   },
   {
-    "revision": "0e2b49e9c0c5eb8d324d",
+    "revision": "2489c415ab25c252f687",
     "url": "/uwigem2020-react/static/css/2.0527938a.chunk.css"
   },
   {
-    "revision": "38b8988c976679adcbd7",
-    "url": "/uwigem2020-react/static/css/main.716b504b.chunk.css"
+    "revision": "b41b376ddbcf1569014a",
+    "url": "/uwigem2020-react/static/css/main.c3050672.chunk.css"
   },
   {
-    "revision": "0e2b49e9c0c5eb8d324d",
-    "url": "/uwigem2020-react/static/js/2.2d62d9a1.chunk.js"
+    "revision": "2489c415ab25c252f687",
+    "url": "/uwigem2020-react/static/js/2.ec424856.chunk.js"
   },
   {
     "revision": "5e9b6f5c16b720e8a86875f97734673e",
-    "url": "/uwigem2020-react/static/js/2.2d62d9a1.chunk.js.LICENSE.txt"
+    "url": "/uwigem2020-react/static/js/2.ec424856.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "38b8988c976679adcbd7",
-    "url": "/uwigem2020-react/static/js/main.549c7026.chunk.js"
+    "revision": "b41b376ddbcf1569014a",
+    "url": "/uwigem2020-react/static/js/main.6e9da331.chunk.js"
   },
   {
     "revision": "a8d2af4669823f4f9962",
