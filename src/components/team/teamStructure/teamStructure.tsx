@@ -6,7 +6,7 @@ import './teamStructure.css';
 /**
  * @returns {React.Component}
  */
-const TeamStructure = (props) => {
+export default function TeamStructure() {
 
     const [team, setTeam] = useState({ name: '', expanded: false});
 
@@ -75,11 +75,11 @@ const TeamStructure = (props) => {
                         <div className="team-structure-col-text">
                             <TeamInfo 
                             teamName="Wetlab"
-                            handleClick={handleClick}
+                            onClick={handleClick}
                             />
                             <TeamInfo 
                                 teamName="Drylab"
-                                handleClick={handleClick}
+                                onClick={handleClick}
                             />
                         </div>
                     </div>
@@ -91,15 +91,15 @@ const TeamStructure = (props) => {
                         <div className="team-structure-col-text">
                             <TeamInfo 
                             teamName="Fundraising"
-                            handleClick={handleClick}
+                            onClick={handleClick}
                             />
                             <TeamInfo 
                                 teamName="Human Practices"
-                                handleClick={handleClick}
+                                onClick={handleClick}
                             />
                             <TeamInfo 
                                 teamName="Synbio for Everyone"
-                                handleClick={handleClick}
+                                onClick={handleClick}
                             />
                         </div>
                     </div>
@@ -111,11 +111,11 @@ const TeamStructure = (props) => {
                         <div className="team-structure-col-text">
                             <TeamInfo 
                             teamName="Design"
-                            handleClick={handleClick}
+                            onClick={handleClick}
                             />
                             <TeamInfo 
                                 teamName="Web Development"
-                                handleClick={handleClick}
+                                onClick={handleClick}
                             />
                         </div>
                     </div>
@@ -133,7 +133,5 @@ const TeamStructure = (props) => {
                     : null
             }
         </div>
-    </>;
+    </>
 }
-
-export default TeamStructure;
