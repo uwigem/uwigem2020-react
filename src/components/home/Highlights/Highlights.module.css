@@ -1,58 +1,56 @@
-
 .root {
   width: 100%;
 }
 
-.container {
-  margin: 0px 10% 0px;
-}
-
 .title {
-  
-}
-
-.title h1 {
-  margin: 5%;
-  text-align: left;
+  text-align: center;
 }
 
 .main {
+  width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-
-  height: 1000px;
+  justify-content: space-evenly;
 }
 
 .left {
+  background-color: aliceblue;
   flex-grow: 1;
-
-  background-color: grey;
-  
-}
-
-.mid {
-  flex-grow: 1;
-
-  display: flex;
-  flex-direction: column;
-
 }
 
 .right {
+  background-color: aliceblue;
   flex-grow: 1;
-  background-color: grey;
 }
 
-.project {
-  width: inherit;
-
+.center {
+  flex-grow: 1;
 }
 
-.project .year {
+/* project card */
+.card {
+  width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: aliceblue;
+  font-size: larger;
 }
-.project .name {
 
-} 
-.project .desc {
-} 
+.card div {
+  margin: 20px;
+}
+
+.year {
+  font-weight: bolder;
+  padding: 0px 50px;
+}
+
+.projectTitle {
+  font-weight: bolder;
+  text-align: center;
+}
+
+.prize {
+  text-align: center;
+}
