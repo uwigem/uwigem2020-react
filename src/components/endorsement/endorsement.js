@@ -21,16 +21,16 @@ const EndorsementPage = () => {
   );
 
 	return <>
-		<div className="header">
-			<h1>Endorsement</h1>
-      <hr className="linebar"></hr>
-      <h2>Thank Notes</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim integer sit lacinia ac tempus enim libero, sed nisl. Mattis integer consectetur vel, cursus lacus, consequat, adipiscing. Risus, id id bibendum turpis sit sit. Duis tortor sed erat sed arcu at</p>
-		</div>
-		<div className="sponsors-wrapper">
-      <h2>Current Sponsor</h2>
-			{currentSponsor}
-		</div>
+	<h1 className="endorsement-title">Endorsement</h1>
+	<hr className="endorsement-linebar"></hr>
+	<div className="header">
+		<h2>Thank Notes</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim integer sit lacinia ac tempus enim libero, sed nisl. Mattis integer consectetur vel, cursus lacus, consequat, adipiscing. Risus, id id bibendum turpis sit sit. Duis tortor sed erat sed arcu at</p>
+	</div>
+	<div className="sponsors-wrapper m-5">
+    <h2>Current Sponsor</h2>
+		{currentSponsor}
+	</div>
     <div className="contact-wrapper">
 
     </div>
