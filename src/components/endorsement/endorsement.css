@@ -7,19 +7,19 @@
     font-style: normal;
 }
 
-.header h2 {
+.endorsement-thank-you h2 {
     color: #000000;
     font-size: 24px;
     margin: 2rem;
     font-style: normal;
 }
 
-.header p {
+.endorsement-thank-you p {
 	color: #000000;
 	margin: 2rem;
 }
 
-.linebar {
+.endorsement-linebar {
 	margin-left: 5rem;
     margin-right: 5rem;
     margin-bottom: 3rem;
@@ -41,9 +41,10 @@
 	margin: 20px;
 }
 
-.sponsor-level > p {
+.sponsor-level h3 {
 	font-size: 20px;
-	font-style: italic;
+    font-style: italic;
+    margin: 1rem;
 }
 
 .sponsors {

@@ -7,7 +7,7 @@ const EndorsementPage = () => {
   const sponsors = require('./sponsors.json');
 	const currentSponsor = sponsors.current.map((level) => 
 		<div className="sponsor-level">
-			<p>{level.level}</p>
+			<h3>{level.level}</h3>
 			<div className="sponsors">
 				{level.sponsors.map((sponsor) => {
 					if (level.level === "Plasmid") {
@@ -23,7 +23,7 @@ const EndorsementPage = () => {
 	return <>
 	<h1 className="endorsement-title">Endorsement</h1>
 	<hr className="endorsement-linebar"></hr>
-	<div className="header">
+	<div className="endorsement-thank-you m-5">
 		<h2>Thank Notes</h2>
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim integer sit lacinia ac tempus enim libero, sed nisl. Mattis integer consectetur vel, cursus lacus, consequat, adipiscing. Risus, id id bibendum turpis sit sit. Duis tortor sed erat sed arcu at</p>
 	</div>
