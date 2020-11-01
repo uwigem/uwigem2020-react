@@ -4,21 +4,32 @@ import React from 'react';
 import BusinessCard from './BusinessCard/BusinessCard'
 
 const EndorsementPage = () => {
-  const sponsors = require('./sponsors.json');
+	const sponsors = require('./sponsors.json');
+	  
 	const currentSponsor = sponsors.current.map((level) => 
 		<div className="sponsor-level">
 			<h3>{level.level}</h3>
 			<div className="sponsors">
 				{level.sponsors.map((sponsor) => {
 					if (level.level === "Plasmid") {
-						return <Sponsor size={300} sponsor={sponsor}></Sponsor>;
+						return <Sponsor size={300} hwdiff={150} ratio={50} sponsor={sponsor}></Sponsor>;
 					} else {
-						return <Sponsor size={400} sponsor={sponsor}></Sponsor>;
+						return <Sponsor size={400} hwdiff={150} ratio={50} sponsor={sponsor}></Sponsor>;
 					}	
 				})}
 			</div>
 		</div>
-  );
+	);
+
+	const pastSponsor = sponsors.past.map((level) => 
+		<div className="sponsor-level">
+			<div className="sponsors">
+				{level.sponsors.map((sponsor) => {
+					return <Sponsor size={200} hwdiff={50} ratio={25} sponsor={sponsor}></Sponsor>;
+				})}
+			</div>
+		</div>
+	);
 
 	return <>
 	<h1 className="endorsement-title">Endorsement</h1>
@@ -30,6 +41,8 @@ const EndorsementPage = () => {
 	<div className="sponsors-wrapper m-5">
     <h2>Current Sponsor</h2>
 		{currentSponsor}
+	<h2>Past Sponsor</h2>
+		{pastSponsor}
 	</div>
     <div className="contact-wrapper">
 
