@@ -11,11 +11,7 @@ const EndorsementPage = () => {
 			<h3>{level.level}</h3>
 			<div className="sponsors">
 				{level.sponsors.map((sponsor) => {
-					if (level.level === "Plasmid") {
-						return <Sponsor size={300} hwdiff={150} ratio={50} sponsor={sponsor}></Sponsor>;
-					} else {
-						return <Sponsor size={400} hwdiff={150} ratio={50} sponsor={sponsor}></Sponsor>;
-					}	
+					return <Sponsor size={400} hwdiff={150} ratio={50} sponsor={sponsor}></Sponsor>;
 				})}
 			</div>
 		</div>
