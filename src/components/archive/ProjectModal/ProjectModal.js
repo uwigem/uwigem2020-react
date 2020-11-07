@@ -1,9 +1,8 @@
 import React, {useState} from 'react';
 import Modal from "react-bootstrap/Modal";
-import { Button} from 'react-bootstrap';
+import {Button} from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./ProjectModal.css"
 
 /**
  *  @param project a project object that conetains the following props

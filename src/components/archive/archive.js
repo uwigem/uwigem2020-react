@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
-import ProjectBlock from '../common-components/ProjectBlock/ProjectBlock'
+import ProjectBlock from './ProjectBlock/ProjectBlock'
 import Timeline from './Timeline/Timeline'
-import ProjectModal from '../common-components/ProjectModal/ProjectModal'
+import ProjectModal from './ProjectModal/ProjectModal'
 import './archive.css';
 
 /**

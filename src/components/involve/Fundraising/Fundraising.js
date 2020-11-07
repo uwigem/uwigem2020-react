@@ -2,7 +2,9 @@ import React from 'react';
 import './Fundraising.css';
 
 /**
- * @returns {React.Component}
+ * @param text1 a description of the fundraising team (first part)
+ * @param text2 a description of the fundraising team (second part)
+ * @returns {React.Component} a fundraising subteam poster
  */
 const Fundraising = (props) => {
     const title = "FUNDRAISING";
@@ -17,7 +19,7 @@ const Fundraising = (props) => {
                     <div className="fundraising-left">
                         <div>
                             <div className="fundraising-text-block-1">
-                                {props.text}
+                                {props.text1}
                             </div>
                         </div>
                         <div>
@@ -30,7 +32,7 @@ const Fundraising = (props) => {
                             style={{backgroundImage: 'url(https://placekitten.com/800/500)'}}/>
                         <div>
                             <div className="fundraising-text-block-2">
-                                {props.text}
+                                {props.text2}
                             </div>
                         </div>
                     </div>
