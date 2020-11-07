@@ -2,11 +2,8 @@ import React from 'react';
 import './SynbioForEveryone.css';
 
 /**
- * @returns {React.Component}
- *                         <img width="40%" height="auto" src="PlaceholderImage/arknights6.png"/>
-                            <img width="100%" height="auto" src="PlaceholderImage/arknights2.jpg"/>
-                        <div width="40%" class="ml-5 d-flex flex-column">
-
+ * @param text description of the synbio team
+ * @returns {React.Component} a synbio subteam poster
  */
 const SynbioForEveryone = (props) => {
 
