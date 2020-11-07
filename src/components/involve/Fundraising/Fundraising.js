@@ -8,34 +8,34 @@ const Fundraising = (props) => {
     const title = "FUNDRAISING";
 
     return <>
-        <div class="m-5">
-            <div class="container">
-                <div class="d-flex justify-content-between" style={{
+        <div className="m-5">
+            <div className="container">
+                <div className="d-flex justify-content-between" style={{
                     width: 'auto',
                     height: '100%'
                 }}>
-                    <div class="fundraising-left">
+                    <div className="fundraising-left">
                         <div>
-                            <div class="fundraising-text-block-1">
+                            <div className="fundraising-text-block-1">
                                 {props.text}
                             </div>
                         </div>
                         <div>
-                            <div class="fundraising-bottom-left-img" 
+                            <div className="fundraising-bottom-left-img" 
                                 style={{backgroundImage: 'url(https://placekitten.com/800/600)'}}/>
                         </div>
                     </div>
-                    <div class="fundraising-right">
-                        <div class="fundraising-top-right-img"
+                    <div className="fundraising-right">
+                        <div className="fundraising-top-right-img"
                             style={{backgroundImage: 'url(https://placekitten.com/800/500)'}}/>
                         <div>
-                            <div class="fundraising-text-block-2">
+                            <div className="fundraising-text-block-2">
                                 {props.text}
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="fundraising-text">
+                <div className="fundraising-text">
                     <h2 style={{fontSize: "10vw"}}>{title}</h2>
                 </div>
             </div>

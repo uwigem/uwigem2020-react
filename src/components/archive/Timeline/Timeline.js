@@ -4,8 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretUp, faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 /**
- * 
  * @param callback a function that passes the current year to the parent component
+ * @returns {React.Component} a timeline component of showing different components
  */
 const Timeline = props => {
 	let data = [].concat(require('../archive.json'));
@@ -87,7 +87,7 @@ const Timeline = props => {
 							}}><FontAwesomeIcon icon={faArrowRight} size={"2x"}/></li>
 					</ol>
 				</div>
-				<button class={(range[0] !== 0 || range[1] !== data.length-1)?
+				<button className={(range[0] !== 0 || range[1] !== data.length-1)?
 								"reset-button": "reset-button disable"}
 					onClick={() => {setRange([0, data.length-1])}}
 					>View Back</button>

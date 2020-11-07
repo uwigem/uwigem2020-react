@@ -6,17 +6,17 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./ProjectModal.css"
 
 /**
- * @param project a project object that conetains the following props
- *   @param medal medal of the project (a number)
- *   @param awards detail information about the awards
- *   @param description description of the project
- *   @param details details of the description, shown in modal only
- *   @param img image of the project
- *   @param name project name
- *   @param professor professor name
- *   @param year the year of the project
- * @param callback a callback function of the Archive component
- * @returns {React.Component}
+ *  @param project a project object that conetains the following props
+ *  @param medal medal of the project (a number)
+ *  @param awards detail information about the awards
+ *  @param description description of the project
+ *  @param details details of the description, shown in modal only
+ *  @param img image of the project
+ *  @param name project name
+ *  @param professor professor name
+ *  @param year the year of the project
+ *  @param callback a callback function of the Archive component
+ *  @returns {React.Component} project modal (pop-up window of details)
  */
 const ProjectModal = (props) => { 
   const [show, setShow] = useState(true);
