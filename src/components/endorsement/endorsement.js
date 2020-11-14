@@ -38,13 +38,10 @@ const EndorsementPage = () => {
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim integer sit lacinia ac tempus enim libero, sed nisl. Mattis integer consectetur vel, cursus lacus, consequat, adipiscing. Risus, id id bibendum turpis sit sit. Duis tortor sed erat sed arcu at</p>
 		</div>
 		<div className="sponsors-wrapper m-5">
-		<h2>Current Sponsor</h2>
+		<h2>Current Sponsors</h2>
 			{currentSponsor}
-		<h2>Past Sponsor</h2>
+		<h2>Past Sponsors</h2>
 			{pastSponsor}
-		</div>
-		<div className="contact-wrapper">
-
 		</div>
 		<BusinessCard />
 	</>
