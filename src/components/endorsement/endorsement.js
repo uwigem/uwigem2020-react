@@ -4,7 +4,7 @@ import React from 'react';
 import BusinessCard from './BusinessCard/BusinessCard'
 
 /**
- * @returns {React.Component}
+ * @returns {React.Component} return the endorsment page
  */
 const EndorsementPage = () => {
 	const sponsors = require('./sponsors.json');
@@ -14,7 +14,7 @@ const EndorsementPage = () => {
 			<h3>{level.level}</h3>
 			<div className="sponsors">
 				{level.sponsors.map((sponsor) => {
-					return <Sponsor size={400} hwdiff={150} ratio={50} sponsor={sponsor}></Sponsor>;
+					return <Sponsor width={400} height={250} ratio={50} sponsor={sponsor}></Sponsor>;
 				})}
 			</div>
 		</div>
@@ -24,7 +24,7 @@ const EndorsementPage = () => {
 		<div className="sponsor-level">
 			<div className="sponsors">
 				{level.sponsors.map((sponsor) => {
-					return <Sponsor size={200} hwdiff={50} ratio={25} sponsor={sponsor}></Sponsor>;
+					return <Sponsor width={200} height={150} ratio={25} sponsor={sponsor}></Sponsor>;
 				})}
 			</div>
 		</div>

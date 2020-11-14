@@ -1,11 +1,11 @@
 import React, {useState, useEffect} from 'react';
-import ProjectBlock from '../common-components/ProjectBlock/ProjectBlock'
+import ProjectBlock from './ProjectBlock/ProjectBlock'
 import Timeline from './Timeline/Timeline'
-import ProjectModal from '../common-components/ProjectModal/ProjectModal'
+import ProjectModal from './ProjectModal/ProjectModal'
 import './archive.css';
 
 /**
- * @returns {React.Component}
+ *  @returns {React.Component} represents the archive page
  */
 const Archive = (props) => {
     const [projects, setProjects] = useState([]);
@@ -28,6 +28,7 @@ const Archive = (props) => {
         <hr className="archive-project-linebar"></hr>
         <Timeline callback={timelineCallback}></Timeline>
         {
+            // if there is something being displayed, show the project modal
             modalContent != null?
                 <ProjectModal 
                     project={modalContent}
@@ -36,7 +37,9 @@ const Archive = (props) => {
                 :
                 null
         }
-        {projects.map(project => {
+        {
+            // set the background to be all the projects available
+            projects.map(project => {
             return <ProjectBlock
                         project={project}
                         callback={timelineCallback}
