@@ -7,7 +7,6 @@
 }
 
 .sponsor-name {
-	/* height: 3rem; */
 	color: black;
 	overflow: auto;
 }
@@ -52,10 +51,6 @@
 		opacity: 0;
 		visibility: hidden;
      } 
-} 
-
-.sponsor-wrapper {
-	/* width: 50%; */
 }
 
 .sponsor-wrapper:hover {
