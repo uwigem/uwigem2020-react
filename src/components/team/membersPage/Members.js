@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-
+import { CSSTransition, TransitionGroup } from 'react-transition-group'
 import { Paper } from '@material-ui/core';
+import fadeStyle from './fadeStyle.module.css'
 
 import s from './Members.module.css';
 
@@ -65,11 +66,16 @@ const Members = () => {
         <div className={s.listContainer}>
         <Paper elevation={5}>
         
-          <div className={s.list}>
+          <TransitionGroup className={s.list} component={"div"}>
             {
-              memberData.map(m => m.teams.indexOf(currFilter) > -1? <TeamMember key={m.id} person={m} /> : null)
+              memberData.map(m => m.teams.indexOf(currFilter) > -1? 
+                <CSSTransition key={m.id} timeout={500} classNames={{ ...fadeStyle }}>
+                  <TeamMember person={m} /> 
+                </CSSTransition>
+                : 
+                null)
             }
-          </div>
+          </TransitionGroup>
 
         </Paper>
         </div>
