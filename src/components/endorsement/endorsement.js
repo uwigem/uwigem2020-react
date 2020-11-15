@@ -2,6 +2,7 @@ import './endorsement.css';
 import Sponsor from './sponsor';
 import React from 'react';
 import BusinessCard from './BusinessCard/BusinessCard'
+import Email from '../email/Email'
 
 /**
  * @returns {React.Component} return the endorsment page
@@ -44,6 +45,7 @@ const EndorsementPage = () => {
 			{pastSponsor}
 		</div>
 		<BusinessCard />
+		<Email />
 	</>
 }
 
