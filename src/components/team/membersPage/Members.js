@@ -98,10 +98,8 @@ export default Members;
 const observerCallback = (entries, observer) => {
   entries.forEach(entry => {
     const target = entry.target
-    const ratio = entry.intersectionRatio
     const rect = entry.intersectionRect
-    console.log(rect.height);
     target.style["min-height"] = `${rect.height}px`
-    // console.log(target.clientHeight, target.style["min-height"]);
+    target.style["min-width"] = `${rect.width}px`
   })
 }
