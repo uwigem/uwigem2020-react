@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { CSSTransition, TransitionGroup } from 'react-transition-group'
 import { Paper } from '@material-ui/core';
 import fadeStyle from './fadeStyle.module.css'
@@ -19,6 +19,7 @@ const Members = () => {
     "Web Development",
     "Wetlab"
   ]);
+  const containerRef = useRef()
   
   const [currFilter, setCurrFilter] = useState("All");
 
@@ -27,9 +28,16 @@ const Members = () => {
 
     // sort by name
     data.sort((a, b) => a.name.localeCompare(b.name));
-    
     setMemberData(data);
-    }, []);
+
+    const parts = 5
+    const observerOptions = {
+      threshold: Array(parts + 1).fill().map((_, i) => i / parts)
+    }
+    const observer = new IntersectionObserver(observerCallback, observerOptions)
+    observer.observe(containerRef.current)
+    return observer.disconnect
+  }, []);
 
   // filter management
   const selectFilter = name => {
@@ -64,7 +72,7 @@ const Members = () => {
         </div>
       
         <div className={s.listContainer}>
-        <Paper elevation={5}>
+        <Paper elevation={5} ref={containerRef} className={"d-flex"}>
         
           <TransitionGroup className={s.list} component={"div"}>
             {
@@ -86,3 +94,14 @@ const Members = () => {
 }
 
 export default Members;
+
+const observerCallback = (entries, observer) => {
+  entries.forEach(entry => {
+    const target = entry.target
+    const ratio = entry.intersectionRatio
+    const rect = entry.intersectionRect
+    console.log(rect.height);
+    target.style["min-height"] = `${rect.height}px`
+    // console.log(target.clientHeight, target.style["min-height"]);
+  })
+}
