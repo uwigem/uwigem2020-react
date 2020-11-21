@@ -50,8 +50,14 @@
 }
 
 .list {
-  margin: auto;
+  /* margin: auto; */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  align-items: flex-start;
+  flex-grow: 1;
+}
+
+.listContainer {
+  display:flex;
 }

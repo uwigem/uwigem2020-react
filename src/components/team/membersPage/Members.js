@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from 'react';
-
+import React, { useState, useEffect, useRef } from 'react';
+import { CSSTransition, TransitionGroup } from 'react-transition-group'
 import { Paper } from '@material-ui/core';
+import fadeStyle from './fadeStyle.module.css'
 
 import s from './Members.module.css';
 
@@ -18,6 +19,7 @@ const Members = () => {
     "Web Development",
     "Wetlab"
   ]);
+  const containerRef = useRef()
   
   const [currFilter, setCurrFilter] = useState("All");
 
@@ -26,9 +28,16 @@ const Members = () => {
 
     // sort by name
     data.sort((a, b) => a.name.localeCompare(b.name));
-    
     setMemberData(data);
-    }, []);
+
+    const parts = 5
+    const observerOptions = {
+      threshold: Array(parts + 1).fill().map((_, i) => i / parts)
+    }
+    const observer = new IntersectionObserver(observerCallback, observerOptions)
+    observer.observe(containerRef.current)
+    return observer.disconnect
+  }, []);
 
   // filter management
   const selectFilter = name => {
@@ -63,13 +72,18 @@ const Members = () => {
         </div>
       
         <div className={s.listContainer}>
-        <Paper elevation={5}>
+        <Paper elevation={5} ref={containerRef} className={"d-flex"}>
         
-          <div className={s.list}>
+          <TransitionGroup className={s.list} component={"div"}>
             {
-              memberData.map(m => m.teams.indexOf(currFilter) > -1? <TeamMember key={m.id} person={m} /> : null)
+              memberData.map(m => m.teams.indexOf(currFilter) > -1? 
+                <CSSTransition key={m.id} timeout={500} classNames={{ ...fadeStyle }}>
+                  <TeamMember person={m} /> 
+                </CSSTransition>
+                : 
+                null)
             }
-          </div>
+          </TransitionGroup>
 
         </Paper>
         </div>
@@ -80,3 +94,12 @@ const Members = () => {
 }
 
 export default Members;
+
+const observerCallback = (entries, observer) => {
+  entries.forEach(entry => {
+    const target = entry.target
+    const rect = entry.intersectionRect
+    target.style["min-height"] = `${rect.height}px`
+    target.style["min-width"] = `${rect.width}px`
+  })
+}
