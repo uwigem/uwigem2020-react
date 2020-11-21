@@ -4,8 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlusSquare, faArrowLeft, faArrowRight, faUndo, faCircle } from '@fortawesome/free-solid-svg-icons';
 
 /**
- * 
  * @param callback a function that passes the current year to the parent component
+ * @returns {React.Component} a timeline component of showing different components
  */
 const Timeline = props => {
 	let data = [].concat(require('../archive.json'));

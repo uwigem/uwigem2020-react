@@ -1,17 +1,22 @@
 import React,  { useEffect, useState } from 'react'
 import './TeamPageSideBar.css'
+import { section } from './teamPage'
+
+type propsType = {
+  sectionList: section[]
+}
 
 /*
  * section list in the form [{ name: 'name', id: 'id-tag', ref: React.Ref }]
  * all sections must have an id tag same with the id field
  */
-export default function TeamPageSideBar({ sectionList }) {
+export default function TeamPageSideBar({ sectionList }: propsType) {
   const [currSection, setCurrSection] = useState('')
   const [sectionRatios, setSectionRatios] = useState({})
   
-  
-  useEffect(() => {
-
+  useEffect(() => {    
+    setSectionRatios({}) // Clears previous data from other pages
+    
     const handleObserve = (entries) => {
       const newEntries = {}
       for(let entry of entries) {

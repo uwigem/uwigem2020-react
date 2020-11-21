@@ -5,7 +5,7 @@
 }
 
 .sheet {
-  width: 500px;
+  width: 90%;
   margin: 50px;
 }
 
@@ -32,26 +32,37 @@ form .cell {
 }
 
 .cell input {
+  padding: 10px;
   width: 100%;
   border: 2px solid #d3d3d3;
 }
 
 .cell textarea {
+  padding: 10px;
   width: 100%;
   border: 2px solid #d3d3d3;
 }
 
 .submitContainer {
   width: 100%;
+  padding: 20px;
   display: flex;
+  flex-direction: row;
   justify-content: flex-end;
+  
 }
 
 .submitContainer button {
-  margin: 15px auto;
-  width: 100px;
+  align-self: flex-end;
+  justify-self: flex-end;
 
-  background-color: purple;
+  
+  width: 120px;
+  height: 40px;
+
+  background-color: #4D2393;
   border: none;
+  border-radius: 5px;
+
   color: white;
 }
