@@ -2,7 +2,8 @@
 	position: relative;
 	margin: 1vw auto 4vw;
 	height: 20vw;
-	width: 90%;
+	width: 80%;
+	left: -5%;
 }
 
 .timeline::before {
@@ -42,7 +43,6 @@
 }
 
 .events li {
-	
 	display: inline-block;
 	cursor: pointer;
 }
@@ -65,7 +65,16 @@
 }
 
 .events .zoom-in-button button {
-	top: 10vw;
+	top: 9.5vw;
+	opacity: 20%;
+}
+
+.events .zoom-in-button button:hover {
+	opacity: 45%;
+}
+
+.events .zoom-in-button button:active {
+	opacity: 90%;
 }
 
 .events button::after {
@@ -85,10 +94,9 @@
 	position: absolute;
 	border: none;
 	border-radius: 0;
-	background-color: rgb(145, 145, 145);
 	width: 18vw;
 	height: 8vw;
-	opacity: 50%;
+	opacity: 0;
 	top: -4vw;
 	left: -8vw;
 }
@@ -103,8 +111,18 @@
 
 .events .prev, .events .next {
 	position: absolute;
-	top: 10vw;
+	top: 11vw;
 	margin: 0;
+	opacity: 20%;
+	font-size: 3vw;
+}
+
+.events .prev:hover, .events .next:hover {
+	opacity: 45%;
+}
+
+.events .prev:active, .events .next:active {
+	opacity: 90%;
 }
 
 .disable button::after {
@@ -116,23 +134,48 @@
 }
 
 .reset-button {
-	position: absolute;
-	left: 30%;
-	top: 18vw;
-	width: 40%;
+	position: relative;
+	left: 90%;
+	top: -15vw;
+	width: 5%;
 	height: 4vw;
 	border: none;
+	border-radius: 10%;
 	color: white;
-	background-color: #C4C4C4;
-	font-weight: bold;
+	background-color: #393939;
 	font-size: 2vw;
+	opacity: 20%;
+}
+
+.reset-button:hover {
+	opacity: 45%;
+}
+
+.reset-button:active {
+	opacity: 90%;
 }
 
 .reset-button:focus {
 	outline: none;
 }
 
-.events .prev button::after, .events .next button::after{
+.reset-button-default {
+	position: relative;
+	left: 90%;
+	top: -15vw;
+	width: 5%;
+	height: 4vw;
+	border: none;
+	background-color: transparent;
+	color: #393939;
+	opacity: 20%;
+}
+
+.reset-button-default:hover {
+	cursor: default;
+}
+
+.events .prev button::after, .events .next button::after {
 	left: 0;
 }
   
