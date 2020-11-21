@@ -14,6 +14,18 @@
     font-weight: 500;
 }
 
+.recruit-menu-description {
+    margin-left: 24px;
+    color: black;
+}
+
+.recruit-menu-link {
+    color: white;
+    width: 20%;
+    margin-left: 40%;
+    background-color: #4b2e83;
+}
+
 .recruit-menu-col-title {
     margin-bottom: 1em;
     font-style: italic;

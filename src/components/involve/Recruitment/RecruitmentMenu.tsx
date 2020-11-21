@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import TeamInfo from './RecruitTeamInfo'
 import RecruitPosition from './RecruitTeamPosition';
+import Button from 'react-bootstrap/Button';
 import './RecruitmentMenu.css';
 
 /**
@@ -83,6 +84,17 @@ export default function RecruitmentMenu() {
     return <>
         <div className="m-5">
             <h2 className="recruit-menu-title">Recruitment</h2>
+            <div className="recruit-menu-description">
+                {postionDescription}
+            </div>
+            <div className="mt-3 recruit-menu-link-container">
+                <Button 
+                    className="recruit-menu-link" 
+                    href="https://react-bootstrap.github.io/components/buttons/#api"
+                >
+                    Apply Here
+                </Button>
+            </div>
             <div className="recruit-menu-div">
                 <div className="recruit-menu-col">
                     <h3 className="recruit-menu-col-title">Research.</h3>
@@ -150,6 +162,14 @@ export default function RecruitmentMenu() {
                     />
                     : null
             }
+            <div className="recruit-menu-link-container">
+                <Button 
+                    className="recruit-menu-link" 
+                    href="https://react-bootstrap.github.io/components/buttons/#api"
+                >
+                    Apply Here
+                </Button>
+            </div>
         </div>
     </>
 }
