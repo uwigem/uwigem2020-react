@@ -1,14 +1,16 @@
 import React, {useState} from 'react';
-import TeamInfo from './teamInfo'
-import TeamStatement from './teamStatement';
-import './teamStructure.css';
+import TeamInfo from './RecruitTeamInfo'
+import RecruitPosition from './RecruitTeamPosition';
+import './RecruitmentMenu.css';
 
 /**
  * @returns {React.Component}
  */
-export default function TeamStructure() {
+export default function RecruitmentMenu() {
 
     const [team, setTeam] = useState({ name: '', expanded: false});
+    const testPosition = "Test Position";
+    const postionDescription = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio quis maiores assumenda incidunt voluptas fugiat, deserunt commodi? Sapiente, minus maxime dolorem nostrum quo non ipsam maiores corrupti reprehenderit veniam possimus.";
 
     // #region mock team info
     const teamInfoMap = new Map();
@@ -16,43 +18,57 @@ export default function TeamStructure() {
         statement: "Experiments ",
         highlight: "Experiments and Experiments",
         statementMore: " to show Experiments.",
-        example: "Experiments, Experiments, iGEM Experiments"
+        example: "Experiments, Experiments, iGEM Experiments",
+        position: testPosition,
+        requirement: postionDescription
     });
     teamInfoMap.set("Drylab", {
-        statement: "We are dedicated to Simulations ",
+        statement: "People who are dedicated to Simulations ",
         highlight: "Simulations and Simulations",
         statementMore: " to show Simulations.",
-        example: "Simulations, Simulations, iGEM Simulations"
+        example: "Simulations, Simulations, iGEM Simulations",
+        position: testPosition,
+        requirement: postionDescription
     });
     teamInfoMap.set("Fundraising", {
-        statement: "We are dedicated to Fundraising ",
+        statement: "People who are dedicated to Fundraising ",
         highlight: "Fundraising and Fundraising",
         statementMore: " to Fundraising.",
-        example: "Fundraising, Fundraising, iGEM Fundraising"
+        example: "Fundraising, Fundraising, iGEM Fundraising",
+        position: testPosition,
+        requirement: postionDescription
     });
     teamInfoMap.set("Synbio for Everyone", {
-        statement: "We are dedicated to Synbio ",
+        statement: "People who are dedicated to Synbio ",
         highlight: "Synbio and Synbio",
         statementMore: " to Synbio.",
-        example: "Synbio, Synbio, iGEM Synbio"
+        example: "Synbio, Synbio, iGEM Synbio",
+        position: testPosition,
+        requirement: postionDescription
     });
     teamInfoMap.set("Human Practices", {
-        statement: "We are dedicated to Outreach ",
+        statement: "People who are dedicated to Outreach ",
         highlight: "Outreach and Outreach",
         statementMore: " to Outreach.",
-        example: "Outreach, Outreach, iGEM Outreach"
+        example: "Outreach, Outreach, iGEM Outreach",
+        position: testPosition,
+        requirement: postionDescription
     });
     teamInfoMap.set("Design", {
-        statement: "We are dedicated to design meaningful ",
+        statement: "People who are dedicated to design meaningful ",
         highlight: "graphics and products",
         statementMore: " to show empathy to the iGEM competition.",
-        example: "Posters, Inforgraphics, iGEM merchandise"
+        example: "Posters, Inforgraphics, iGEM merchandise",
+        position: testPosition,
+        requirement: postionDescription
     });
     teamInfoMap.set("Web Development", {
-        statement: "We are dedicated to Web Development ",
+        statement: "People who are dedicated to Web Development ",
         highlight: "Web Development and Web Development",
         statementMore: " to Web Development.",
-        example: "Web Development, Web Development, iGEM Web Development"
+        example: "Web Development, Web Development, iGEM Web Development",
+        position: testPosition,
+        requirement: postionDescription
     });
     //#endregion
 
@@ -65,14 +81,14 @@ export default function TeamStructure() {
     }
 
     return <>
-        <div>
-            <h2 className="team-structure-title">Team Structure</h2>
-            <div className="team-structure-div">
-                <div className="team-structure-col">
-                    <h3 className="team-structure-col-title">Research.</h3>
-                    <div className="team-structure-col-main">
-                        <div className="team-structure-col-side"></div>
-                        <div className="team-structure-col-text">
+        <div className="m-5">
+            <h2 className="recruit-menu-title">Recruitment</h2>
+            <div className="recruit-menu-div">
+                <div className="recruit-menu-col">
+                    <h3 className="recruit-menu-col-title">Research.</h3>
+                    <div className="recruit-menu-col-main">
+                        <div className="recruit-menu-col-side"></div>
+                        <div className="recruit-menu-col-text">
                             <TeamInfo 
                             teamName="Wetlab"
                             onClick={handleClick}
@@ -84,11 +100,11 @@ export default function TeamStructure() {
                         </div>
                     </div>
                 </div>
-                <div className="team-structure-col">
-                    <h3 className="team-structure-col-title">Society.</h3>
-                    <div className="team-structure-col-main">
-                        <div className="team-structure-col-side"></div>
-                        <div className="team-structure-col-text">
+                <div className="recruit-menu-col">
+                    <h3 className="recruit-menu-col-title">Society.</h3>
+                    <div className="recruit-menu-col-main">
+                        <div className="recruit-menu-col-side"></div>
+                        <div className="recruit-menu-col-text">
                             <TeamInfo 
                             teamName="Fundraising"
                             onClick={handleClick}
@@ -97,18 +113,18 @@ export default function TeamStructure() {
                                 teamName="Human Practices"
                                 onClick={handleClick}
                             />
-                            <TeamInfo 
+                            {/* <TeamInfo 
                                 teamName="Synbio for Everyone"
                                 onClick={handleClick}
-                            />
+                            /> */}
                         </div>
                     </div>
                 </div>
-                <div className="team-structure-col">
-                    <h3 className="team-structure-col-title">Information.</h3>
-                    <div className="team-structure-col-main">
-                        <div className="team-structure-col-side"></div>
-                        <div className="team-structure-col-text">
+                <div className="recruit-menu-col">
+                    <h3 className="recruit-menu-col-title">Information.</h3>
+                    <div className="recruit-menu-col-main">
+                        <div className="recruit-menu-col-side"></div>
+                        <div className="recruit-menu-col-text">
                             <TeamInfo 
                             teamName="Design"
                             onClick={handleClick}
@@ -123,12 +139,14 @@ export default function TeamStructure() {
             </div>
             {
                     team.expanded?
-                    <TeamStatement 
+                    <RecruitPosition 
                         teamName={team.name}
                         statement={teamInfoMap.get(team.name).statement}
                         highlight={teamInfoMap.get(team.name).highlight}
                         statementMore={teamInfoMap.get(team.name).statementMore}
                         example={teamInfoMap.get(team.name).example}
+                        position={teamInfoMap.get(team.name).position}
+                        description={teamInfoMap.get(team.name).requirement}
                     />
                     : null
             }
