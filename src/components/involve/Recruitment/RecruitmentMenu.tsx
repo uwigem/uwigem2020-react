@@ -12,7 +12,7 @@ export default function RecruitmentMenu() {
 
     const [team, setTeam] = useState({ name: '', expanded: false});
     const testPosition = "Test Position";
-    const postionDescription = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio quis maiores assumenda incidunt voluptas fugiat, deserunt commodi? Sapiente, minus maxime dolorem nostrum quo non ipsam maiores corrupti reprehenderit veniam possimus.";
+    const postionDescription = "All skill levels, class standing, and major (intended or declared) are eligible. Our recruitment is from late Autumn quarter to Winter quarter. UW iGEM is a serious time commitment, requiring 5-10 hours/week in spring quarter and 10-20 hours/week in the summer and fall. We expect all members to dedicate themselves to the team for the entire season. Subteams include teams performing biological labwork (wetlab), hardware + software development (drylab), funding, human practices, design and website development.";
 
     // #region mock team info
     const teamInfoMap = new Map();
@@ -166,14 +166,14 @@ export default function RecruitmentMenu() {
                     />
                     : null
             }
-            <div className="recruit-menu-link-container">
+            {/* <div className="recruit-menu-link-container">
                 <Button 
                     className="recruit-menu-link" 
                     href="https://react-bootstrap.github.io/components/buttons/#api"
                 >
                     Apply Here
                 </Button>
-            </div>
+            </div> */}
         </div>
     </>
 }

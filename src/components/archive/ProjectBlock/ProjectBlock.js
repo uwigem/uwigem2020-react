@@ -48,7 +48,7 @@ const ProjectBlock = (props) => {
                         <h1>{props.project.name}</h1>
                         <h2>{props.project.year}</h2>
                     </div>
-                    <h2 className="project-block-professor">PI: Professor {props.project.professor}</h2>
+                    <h2 className="project-block-professor"><a href={props.project.link}>Wiki Page</a></h2>
                     <p className="project-block-description">{props.project.description}</p>
                 </div>
                 <div className="project-block-award">{medals[props.project.medal]}</div>

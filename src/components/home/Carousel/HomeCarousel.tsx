@@ -15,9 +15,10 @@ const HomeCarousel = () => {
         </div>
         <div className={s.right}>
           <div>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit cursus eleifend tincidunt tempor, mauris lobortis viverra id. Scelerisque et sit elementum in sed tincidunt at.
+          International Genetically Engineering Machine (iGEM) is the premiere international synthetic biology student research competition.
+          Founded in 2008, Washington iGEM is entirely operated by a team of dedicated undergraduate students. 
           </div>
-          <button>Current Wiki</button>
+          <button><a href="https://2019.igem.org/Team:Washington">Current Wiki</a></button>
         </div>
       </div>
     </div>
