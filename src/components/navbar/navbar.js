@@ -8,6 +8,9 @@ const paths = ['/', '/archive', '/involvement', '/team', '/endorsement'];
 const leftLogo = "https://2019.igem.org/wiki/images/3/32/T--Washington--HLogo2.png";
 const rightLogo = "https://2019.igem.org/wiki/images/3/32/T--Washington--HLogo2.png";
 
+/**
+ * @returns {React.Component}
+ */
 const NavBar = () => {
 	const [tab, setTab] = useState(paths.indexOf(window.location.hash.substring(1)));
 	let links = [];
