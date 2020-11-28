@@ -1,6 +1,8 @@
 import React from 'react';
 import Synbio from './SynbioForEveryone/SynbioForEveryone'
 import Fundraising from './Fundraising/Fundraising'
+// import TeamStructure from '../team/teamStructure/teamStructure'
+import RecruitmentMenu from './Recruitment/RecruitmentMenu'
 import './involve.css';
 
 /**
@@ -13,6 +15,7 @@ const GetInvolve = (props) => {
     return <>
         <h1 className="get-involve-title">Get Involved</h1>
         <hr className="get-involve-linebar"></hr>
+        <RecruitmentMenu />
         <Synbio text={text} />
         <Fundraising text1={text2} text2={text2}/>
     </>;

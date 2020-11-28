@@ -15,43 +15,43 @@ export default function TeamStructure() {
     teamInfoMap.set("Wetlab", {
         statement: "Experiments ",
         highlight: "Experiments and Experiments",
-        statmentMore: " to show Experiments.",
+        statementMore: " to show Experiments.",
         example: "Experiments, Experiments, iGEM Experiments"
     });
     teamInfoMap.set("Drylab", {
         statement: "We are dedicated to Simulations ",
         highlight: "Simulations and Simulations",
-        statmentMore: " to show Simulations.",
+        statementMore: " to show Simulations.",
         example: "Simulations, Simulations, iGEM Simulations"
     });
     teamInfoMap.set("Fundraising", {
         statement: "We are dedicated to Fundraising ",
         highlight: "Fundraising and Fundraising",
-        statmentMore: " to Fundraising.",
+        statementMore: " to Fundraising.",
         example: "Fundraising, Fundraising, iGEM Fundraising"
     });
     teamInfoMap.set("Synbio for Everyone", {
         statement: "We are dedicated to Synbio ",
         highlight: "Synbio and Synbio",
-        statmentMore: " to Synbio.",
+        statementMore: " to Synbio.",
         example: "Synbio, Synbio, iGEM Synbio"
     });
     teamInfoMap.set("Human Practices", {
         statement: "We are dedicated to Outreach ",
         highlight: "Outreach and Outreach",
-        statmentMore: " to Outreach.",
+        statementMore: " to Outreach.",
         example: "Outreach, Outreach, iGEM Outreach"
     });
     teamInfoMap.set("Design", {
         statement: "We are dedicated to design meaningful ",
         highlight: "graphics and products",
-        statmentMore: " to show empathy to the iGEM competition.",
+        statementMore: " to show empathy to the iGEM competition.",
         example: "Posters, Inforgraphics, iGEM merchandise"
     });
     teamInfoMap.set("Web Development", {
         statement: "We are dedicated to Web Development ",
         highlight: "Web Development and Web Development",
-        statmentMore: " to Web Development.",
+        statementMore: " to Web Development.",
         example: "Web Development, Web Development, iGEM Web Development"
     });
     //#endregion
