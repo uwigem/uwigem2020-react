@@ -7,8 +7,8 @@ import Image from '../../common-components/Image'
 import styles from './competition.module.css'
 
 const title: string = "Do you know iGEM?"
-const bodyText: string = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus rhoncus, ut facilisi condimentum nisi morbi in id. Orci, convallis dui urna, cursus."
-const imageSrc: string = `/PlaceholderImage/arknights3.png`
+const bodyText: string = "iGEM, International Genetically Engineered Machine, is an international competition in synthetic biology among undergraduate students as well high schoolers, “overgraduates,” entrepreneurs, and community labs. Every fall, teams from around the world will meet to present their projects from the past year in the Giant Jamboree. iGEM and synthetic biology are very interdisciplinary: apart from wetlab (bench) research, iGEM teams incorporate drylab (computational), web development, bioethics, entrepreneurship, community outreach and more into their project design."
+const imageSrc: string = `/2016-iGEM_From_Above.png`
 const imageAlt: string = "React Logo"
 const linkLocation: string = "/team"
 

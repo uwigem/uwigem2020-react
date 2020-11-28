@@ -39,10 +39,12 @@ export default function TeamPageTeam({ handleSection }: propsType) {
     <main>
       <section ref={overviewRef} id={overviewId}>
         <TeamOverview
-          overview="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim integer sit lacinia ac tempus enim libero, sed nisl. Mattis integer consectetur vel, cursus lacus, consequat, adipiscing. Risus, id id bibendum turpis sit sit. Duis tortor sed erat sed arcu at."
-          imgSrc="https://placekitten.com/970/431"
-          imgAlt="Placeholder Image"
-          caption="Caption: caption goes here"/>
+          overview="International Genetically Engineering Machine (iGEM) is the premiere international synthetic biology student research competition. Started at MIT in 2004, it now includes over 300 student teams from all over the world. UW's iGEM team has been attending the iGEM competition since 2008. In 2011, we won the grand prize.
+          
+          Each annual season, starting in late winter and ending in late fall culminating in the international conference event, UW iGEM creates, plans, and executes a research project related to synthetic biology. Synthetic biology is a cutting-edge field of biotechnology that is extremely interdisciplinary, requiring not just biologists and chemists, but also electrical engineers, programmers, machinists, designers, business-oriented students, and many more. We welcome all disciplines into the team and take pride in how its interdisciplinary nature. Besides the research project, a large aspect of each project is scientific outreach and involvement of the greater public."
+          imgSrc="https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/74355244_2550244068554119_5313862172881715200_o.jpg?_nc_cat=107&ccb=2&_nc_sid=8024bb&_nc_ohc=WLkaFpu3OWYAX9Kyn6C&_nc_ht=scontent-sea1-1.xx&oh=d17e0bbf5be6accdaa7206c9f3a95cb0&oe=5FE9D82A"
+          imgAlt="iGEM Team"
+          caption="UW iGEM Team"/>
       </section>
       <section ref={teamStructRef} id={teamStructureId}>
         <TeamStructure />

@@ -31,9 +31,9 @@ const ProjectModal = (props) => {
           onHide={handleClose}
           size='xl'
         >
-        <Modal.Header closeButton>
+        {/* <Modal.Header closeButton>
           <Modal.Title>{props.project.name}</Modal.Title>
-        </Modal.Header>
+        </Modal.Header> */}
         <Modal.Body>
           <section className="project-block-content">
           <Fade duration={500}>
@@ -47,11 +47,11 @@ const ProjectModal = (props) => {
                     <h1>{props.project.name}</h1>
                     <h2>{props.project.year}</h2>
                 </div>
-                <h2 className="project-block-professor">PI: Professor {props.project.professor}</h2>
-                <p className="project-block-description">{props.project.description}</p>
+                <h2 className="project-block-professor"><a href={props.project.link}>Wiki Page</a></h2>
+                <p className="project-block-description">{props.project.details}</p>
                 <div className="project-block-details">
-                    <h2>Award Winning</h2>
-                    {props.project.awards.map(award => <li>{award}</li>)}
+                  <h2>Award Winning</h2>
+                  {props.project.awards.map(award => <li>{award}</li>)}
                 </div> 
             </div>
             </Fade>

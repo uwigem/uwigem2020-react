@@ -166,14 +166,14 @@ export default function RecruitmentMenu() {
                     />
                     : null
             }
-            <div className="recruit-menu-link-container">
+            {/* <div className="recruit-menu-link-container">
                 <Button 
                     className="recruit-menu-link" 
                     href="https://react-bootstrap.github.io/components/buttons/#api"
                 >
                     Apply Here
                 </Button>
-            </div>
+            </div> */}
         </div>
     </>
 }

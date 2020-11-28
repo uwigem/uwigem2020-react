@@ -15,12 +15,12 @@ const SynbioForEveryone = (props) => {
                     height: '100%'
                 }}>
                     <div className="synbio-img-left" 
-                        style={{backgroundImage: 'url(https://placekitten.com/700/800)'}}/>
+                        style={{backgroundImage: 'url(https://depts.washington.edu/advis104/wordpress/wp-content/uploads/2020/04/T-Washington-SSF1-1024x768.jpg)'}}/>
                     <div>
                         <div className="synbio-img-right"
-                            style={{backgroundImage: 'url(https://placekitten.com/800/900)'}}/>
+                            style={{backgroundImage: 'url(http://students.washington.edu/uwigem/sitdownsynbio/img/sitdown2018.png)'}}/>
                         <div className="synbio-view-more mt-5" style={{fontSize: '5vw'}}>
-                            <a href="http://students.washington.edu/uwigem/">-{'>'}View More</a>
+                            <a href="http://students.washington.edu/uwigem/sitdownsynbio/">-{'>'}View More</a>
                         </div>
                     </div>
                 </div>
