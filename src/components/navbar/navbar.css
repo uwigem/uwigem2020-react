@@ -4,7 +4,7 @@
   border-top: 1vw solid #4B2E83;
   justify-content: space-between;
   border-bottom: solid #C4C4C4;
-  min-width: 365px;
+  min-width: 335px;
 }
 
 .nav-tab {
@@ -12,7 +12,7 @@
   color: black;
   font-weight: bold;
   white-space: nowrap;
-  font-size: min(calc(6px + 1vw), 24px);
+  font-size: calc(6px + 1vw);
   padding-top: 2.5vw;
   margin-left: 1vw;
   margin-right: 1vw;
