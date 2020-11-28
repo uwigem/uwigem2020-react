@@ -22,7 +22,8 @@ export default function RecruitTeamInfo({ teamName, onClick }: propsType) {
             onMouseEnter={() => toggleHover(true)}
             onMouseLeave={() => toggleHover(false)}
             style={{
-                backgroundColor: hover ? '#dbdbdb' : 'white'
+                backgroundColor: hover ? '#dbdbdb' : 'white',
+                cursor: hover? 'pointer' : 'default'
             }}
         >
             <h4 className="recruit-team-info-title">{teamName}</h4>
