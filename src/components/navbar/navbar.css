@@ -36,3 +36,14 @@
   padding-left: 5vw;
   padding-right: 2vw;
 }
+
+.recruit-banner {
+  background-color: #4B2E83;
+  color:white;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.recruit-banner a {
+  color: #dccbff;
+}

@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import TeamInfo from './RecruitTeamInfo'
 import RecruitPosition from './RecruitTeamPosition';
 import Button from 'react-bootstrap/Button';
+import Alert from 'react-bootstrap/Alert'
 import './RecruitmentMenu.css';
 
 /**
@@ -94,6 +95,9 @@ export default function RecruitmentMenu() {
                 >
                     Apply Here
                 </Button>
+                <Alert variant='light' className="recruit-menu-link-more">
+                    Click on the team names below to learn more about the positions!
+                </Alert>
             </div>
             <div className="recruit-menu-div">
                 <div className="recruit-menu-col">
