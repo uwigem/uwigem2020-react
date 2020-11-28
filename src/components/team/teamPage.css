@@ -1,11 +1,6 @@
 .team-body {
-    display: flex;
-    flex-direction: row;
     position: relative;
-}
-
-.team-body main {
-    flex-grow: 1;
+    margin: 0 20px;
 }
 
 .team-header {

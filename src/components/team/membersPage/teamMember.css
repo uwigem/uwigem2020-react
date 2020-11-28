@@ -20,6 +20,11 @@
     padding: 5px;
 }
 
+.person:hover .person-name {
+    transition-duration: 0.3s;
+    background-color: #4D2393;
+}
+
 .person-image {
     width: 300px;
 }

@@ -1,3 +1,5 @@
+The site is hosted on Github Pages at [https://uwigem.github.io/uwigem2020-react/](https://uwigem.github.io/uwigem2020-react/).
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

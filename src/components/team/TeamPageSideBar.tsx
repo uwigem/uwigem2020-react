@@ -1,17 +1,22 @@
 import React,  { useEffect, useState } from 'react'
 import './TeamPageSideBar.css'
+import { section } from './teamPage'
+
+type propsType = {
+  sectionList: section[]
+}
 
 /*
  * section list in the form [{ name: 'name', id: 'id-tag', ref: React.Ref }]
  * all sections must have an id tag same with the id field
  */
-export default function TeamPageSideBar({ sectionList }) {
+export default function TeamPageSideBar({ sectionList }: propsType) {
   const [currSection, setCurrSection] = useState('')
   const [sectionRatios, setSectionRatios] = useState({})
   
-  
-  useEffect(() => {
-
+  useEffect(() => {    
+    setSectionRatios({}) // Clears previous data from other pages
+    
     const handleObserve = (entries) => {
       const newEntries = {}
       for(let entry of entries) {
@@ -54,17 +59,34 @@ export default function TeamPageSideBar({ sectionList }) {
     {sectionList && sectionList.length > 0 &&
       <nav className={'team-page-side-bar'}>
         <ul>
-          {sectionList.map(section => sectionToLink(section, currSection))}
+          {buildSections(sectionList, currSection)}
         </ul>
       </nav>}
     </> 
   )
 }
 
+const buildSections = (sections, currSection) => {
+  let maxLength = sections[0].name
+  let list = sections.map(section => {
+    if (section.name.length > maxLength.length)
+      maxLength = section.name
+    return sectionToLink(section, currSection)
+  })
+  list.push(
+    <li key={`placeholder-${maxLength}`} style={{ fontSize: "1.5em", visibility: "hidden", height: "0px"}}>{maxLength}</li>
+  )
+  return list
+}
+
 const sectionToLink = (section, currentId) => {
   const className = section.id === currentId ? "team-page-side-bar-current" : ""
   return (
-    <li key={section.name} onClick={() => scrollToRef(section.ref)} className={className}>
+    <li
+      key={section.id}
+      onClick={() => scrollToRef(section.ref)}
+      className={className}
+    >
       {section.name}
     </li>
   )

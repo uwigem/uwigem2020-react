@@ -1,0 +1,68 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sheet {
+  width: 90%;
+  margin: 50px;
+}
+
+form {
+  width: 100%;
+  padding: 30px;
+  background-color: white;
+
+  display: flex;
+  flex-direction: column;
+}
+
+form h2 {
+  color: grey;
+  font-weight: bolder;
+}
+
+form .cell {
+  margin: 15px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.cell input {
+  padding: 10px;
+  width: 100%;
+  border: 2px solid #d3d3d3;
+}
+
+.cell textarea {
+  padding: 10px;
+  width: 100%;
+  border: 2px solid #d3d3d3;
+}
+
+.submitContainer {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  
+}
+
+.submitContainer button {
+  align-self: flex-end;
+  justify-self: flex-end;
+
+  
+  width: 120px;
+  height: 40px;
+
+  background-color: #4D2393;
+  border: none;
+  border-radius: 5px;
+
+  color: white;
+}

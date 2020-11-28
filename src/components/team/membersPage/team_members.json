@@ -11,7 +11,7 @@
         "year": [
             2020
         ],
-        "picture": "http://placekitten.com/380/380",
+        "picture": "https://placekitten.com/380/380",
         "pronouns": null,
         "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         "linkedin": "https://www.linkedin.com",
@@ -29,7 +29,7 @@
         "year": [
             2020
         ],
-        "picture": "http://placekitten.com/380/380",
+        "picture": "https://placekitten.com/380/380",
         "pronouns": null,
         "bio": null,
         "contact": null,
@@ -48,7 +48,7 @@
         "year": [
             2020
         ],
-        "picture": "http://placekitten.com/380/380",
+        "picture": "https://placekitten.com/380/380",
         "pronouns": "he/him",
         "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         "linkedin": null,
@@ -68,7 +68,7 @@
             2019,
             2020
         ],
-        "picture": "http://placekitten.com/380/380",
+        "picture": "https://placekitten.com/380/380",
         "pronouns": null,
         "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         "linkedin": "https://www.linkedin.com",
@@ -86,7 +86,7 @@
         "year": [
             2020
         ],
-        "picture": "http://placekitten.com/380/380",
+        "picture": "https://placekitten.com/380/380",
         "pronouns": null,
         "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         "linkedin": null,
@@ -105,7 +105,26 @@
             2019,
             2020
         ],
-        "picture": "http://placekitten.com/380/380",
+        "picture": "https://placekitten.com/380/380",
+        "pronouns": null,
+        "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "linkedin": "https://www.linkedin.com",
+        "contact": null,
+        "github": "https://github.com/"
+    },
+    {
+        "id": 7,
+        "name": "Max",
+        "major":"Computer Science",
+        "teams": [
+            "All",
+            "Web Development"
+        ],
+        "year": [
+            2019,
+            2020
+        ],
+        "picture": "https://placekitten.com/380/380",
         "pronouns": null,
         "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         "linkedin": "https://www.linkedin.com",

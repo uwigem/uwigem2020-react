@@ -28,6 +28,7 @@ const NavBar = () => {
 			className='nav-tab'
 			to={paths[i]}
 			style={{borderBottom: tab === i ? '0.75vw solid #4B2E83' : 'none'}}
+			key={paths[i]}
 		>
 			{tabs[i]}
 		</Link>)

@@ -1,7 +1,6 @@
 import React from 'react';
 import TeamStructure from './teamStructure/teamStructure'
 import TeamOverview from './teamOverview/teamOverview'
-import __ReactFlexboxGrid from 'react-flexbox-grid';
 import './OurTeamPage.css';
 
 /**

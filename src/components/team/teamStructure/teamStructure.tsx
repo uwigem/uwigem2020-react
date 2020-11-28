@@ -6,19 +6,19 @@ import './teamStructure.css';
 /**
  * @returns {React.Component}
  */
-const TeamStructure = (props) => {
+export default function TeamStructure() {
 
     const [team, setTeam] = useState({ name: '', expanded: false});
 
     // #region mock team info
     const teamInfoMap = new Map();
-    teamInfoMap.set("Experiments", {
+    teamInfoMap.set("Wetlab", {
         statement: "Experiments ",
         highlight: "Experiments and Experiments",
         statmentMore: " to show Experiments.",
         example: "Experiments, Experiments, iGEM Experiments"
     });
-    teamInfoMap.set("Simulations", {
+    teamInfoMap.set("Drylab", {
         statement: "We are dedicated to Simulations ",
         highlight: "Simulations and Simulations",
         statmentMore: " to show Simulations.",
@@ -36,13 +36,13 @@ const TeamStructure = (props) => {
         statmentMore: " to Synbio.",
         example: "Synbio, Synbio, iGEM Synbio"
     });
-    teamInfoMap.set("Education Outreach", {
+    teamInfoMap.set("Human Practices", {
         statement: "We are dedicated to Outreach ",
         highlight: "Outreach and Outreach",
         statmentMore: " to Outreach.",
         example: "Outreach, Outreach, iGEM Outreach"
     });
-    teamInfoMap.set("Graphic Design", {
+    teamInfoMap.set("Design", {
         statement: "We are dedicated to design meaningful ",
         highlight: "graphics and products",
         statmentMore: " to show empathy to the iGEM competition.",
@@ -53,12 +53,6 @@ const TeamStructure = (props) => {
         highlight: "Web Development and Web Development",
         statmentMore: " to Web Development.",
         example: "Web Development, Web Development, iGEM Web Development"
-    });
-    teamInfoMap.set("Publication", {
-        statement: "We are dedicated to Publication ",
-        highlight: "Publication and Publication",
-        statmentMore: " to Publication.",
-        example: "Publication, Publication, iGEM Publication"
     });
     //#endregion
 
@@ -80,32 +74,32 @@ const TeamStructure = (props) => {
                         <div className="team-structure-col-side"></div>
                         <div className="team-structure-col-text">
                             <TeamInfo 
-                            teamName="Experiments"
-                            handleClick={handleClick}
+                            teamName="Wetlab"
+                            onClick={handleClick}
                             />
                             <TeamInfo 
-                                teamName="Simulations"
-                                handleClick={handleClick}
+                                teamName="Drylab"
+                                onClick={handleClick}
                             />
                         </div>
                     </div>
                 </div>
                 <div className="team-structure-col">
-                    <h3 className="team-structure-col-title">Human Practice.</h3>
+                    <h3 className="team-structure-col-title">Society.</h3>
                     <div className="team-structure-col-main">
                         <div className="team-structure-col-side"></div>
                         <div className="team-structure-col-text">
                             <TeamInfo 
                             teamName="Fundraising"
-                            handleClick={handleClick}
+                            onClick={handleClick}
+                            />
+                            <TeamInfo 
+                                teamName="Human Practices"
+                                onClick={handleClick}
                             />
                             <TeamInfo 
                                 teamName="Synbio for Everyone"
-                                handleClick={handleClick}
-                            />
-                            <TeamInfo 
-                                teamName="Education Outreach"
-                                handleClick={handleClick}
+                                onClick={handleClick}
                             />
                         </div>
                     </div>
@@ -116,16 +110,12 @@ const TeamStructure = (props) => {
                         <div className="team-structure-col-side"></div>
                         <div className="team-structure-col-text">
                             <TeamInfo 
-                            teamName="Graphic Design"
-                            handleClick={handleClick}
+                            teamName="Design"
+                            onClick={handleClick}
                             />
                             <TeamInfo 
                                 teamName="Web Development"
-                                handleClick={handleClick}
-                            />
-                            <TeamInfo 
-                                teamName="Publication"
-                                handleClick={handleClick}
+                                onClick={handleClick}
                             />
                         </div>
                     </div>
@@ -143,7 +133,5 @@ const TeamStructure = (props) => {
                     : null
             }
         </div>
-    </>;
+    </>
 }
-
-export default TeamStructure;

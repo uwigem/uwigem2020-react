@@ -4,7 +4,7 @@ import './card.css';
 
 const Cards = () => {
   return (
-   <Grid className = 'announcements' fliud>
+   <Grid className = 'announcements' fluid>
       <Row lg={12}>
         <Col xs>
           <Card title="Title 1" date="January 1, 2019"

@@ -1,24 +1,28 @@
 {
   "name": "uwigem2020-react",
   "version": "0.1.0",
+  "homepage": "/uwigem2020-react",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.28",
     "@fortawesome/free-brands-svg-icons": "^5.14.0",
     "@fortawesome/free-solid-svg-icons": "^5.14.0",
     "@fortawesome/react-fontawesome": "^0.1.10",
+    "@material-ui/core": "^4.11.0",
     "@testing-library/jest-dom": "^5.10.1",
     "@testing-library/react": "^10.2.1",
     "@types/react": "^16.9.49",
     "@types/react-router-dom": "^5.1.5",
     "bootstrap": "^4.5.2",
     "eslint-config-react-app": "^5.2.1",
+    "firebase": "^7.24.0",
     "react": "^16.13.1",
     "react-bootstrap": "^1.3.0",
     "react-custom-scrollbars": "^4.2.1",
     "react-dom": "^16.13.1",
     "react-flexbox-grid": "^2.1.2",
     "react-horizontal-scrolling-menu": "^0.7.7",
+    "react-image-gallery": "^1.0.8",
     "react-modal": "^3.11.2",
     "react-overlays": "^4.1.0",
     "react-reveal": "^1.2.2",
@@ -48,6 +52,8 @@
     ]
   },
   "devDependencies": {
+    "css-loader": "^4.2.2",
+    "style-loader": "^1.2.1",
     "@types/react-router-dom": "^5.1.5"
   }
 }
