@@ -32,10 +32,16 @@ const NavBar = () => {
 	}
 
 	return (
-		<div id='nav-bar-container'>
-			<img id='logo-left' className='logo' src={leftLogo} alt='Logo'/>
-			{links}
-			<img id='logo-right' className='logo' src={rightLogo} alt='Logo'/>
+		<div>
+			<div id='nav-bar-container'>
+				<img id='logo-left' className='logo' src={leftLogo} alt='Logo'/>
+				{links}
+				<img id='logo-right' className='logo' src={rightLogo} alt='Logo'/>
+			</div>
+			<div className="recruit-banner p-3">
+				We are recruiting! Click
+				<a href="#involvement"> HERE </a> to learn more about available positions.
+			</div>
 		</div>
 	)
 }
