@@ -32,8 +32,8 @@
 	{
 		"year": 2011,
 		"name": "Make it or Break it :  Diesel Production and Gluten Destruction, the Synthetic Biology Way",
-		"link": "archive/2011.png",
-		"img": "PlaceholderImage/arknights4.jpg",
+		"link": "http://2011.igem.org/Team:Washington",
+		"img": "archive/2011.png",
 		"description": "Synthetic biology holds great promise regarding the production of important compounds, and the degradation of harmful ones. This summer, we harnessed the power of synthetic biology to meet the world’s needs for fuel and medicine.",
 		"details": "We constructed a strain of Escherichia coli that produces a variety of alkanes, the main constituents of diesel fuel, by introducing a pair of genes recently shown to convert fatty acid synthesis intermediates into alkanes.We identified a protease with gluten-degradation potential, and then reengineered it to have greatly increased gluten-degrading activity, allowing for the breakdown of gluten in the digestive track when taken in pill form.",
 		"awards": ["Grand Prize"],
