@@ -40,7 +40,8 @@ const ProjectBlock = (props) => {
             <section className="project-block-content">
                 <img 
                     className="project-block-img" 
-                    src={props.project.img}
+                    // src={props.project.img}
+                    src="https://uwigem.github.io/uwigem2020-react/archive/2017.gif"
                     alt={props.project.name}
                 />
                 <div className="project-block-main">
