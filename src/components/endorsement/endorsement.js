@@ -41,11 +41,11 @@ const EndorsementPage = () => {
 		<div className="sponsors-wrapper m-5">
 		<h2>Current Sponsors</h2>
 			{currentSponsor}
-		<h2>Past Sponsors</h2>
-			{pastSponsor}
-		</div>
 		<BusinessCard />
 		<Email />
+		<h2>Past Sponsors</h2>
+			{pastSponsor}
+		</div>	
 	</>
 }
 
