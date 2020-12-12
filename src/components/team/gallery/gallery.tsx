@@ -6,32 +6,7 @@ import './gallery.css';
  * @returns {React.Component}
  */
 export default function TeamGallery() {
-    const images = [
-        {
-          original: 'https://placekitten.com/1000/600',
-          thumbnail: 'https://placekitten.com/1000/600',
-        },
-        {
-            original: 'https://placekitten.com/600/400',
-            thumbnail: 'https://placekitten.com/600/400',
-        },
-        {
-            original: 'https://placekitten.com/600/350',
-            thumbnail: 'https://placekitten.com/600/350',
-        },
-        {
-            original: 'https://placekitten.com/600/450',
-            thumbnail: 'https://placekitten.com/600/450',
-        },
-        {
-            original: 'https://placekitten.com/500/250',
-            thumbnail: 'https://placekitten.com/500/250',
-        },
-        {
-            original: 'https://placekitten.com/600/300',
-            thumbnail: 'https://placekitten.com/600/300',
-        },
-      ];
+    const images = require('./images.json');
 
     return <>
         <div className="team-gallery">

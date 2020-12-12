@@ -2,7 +2,9 @@ import React from 'react';
 
 const UnderConstruction = () => {
   return (
-    <h1>Page under construction.</h1>
+    <>
+        <h1>Page under construction.</h1>
+    </>
   );
 }
 

@@ -4,7 +4,7 @@
   border-top: 1vw solid #4B2E83;
   justify-content: space-between;
   border-bottom: solid #C4C4C4;
-  min-width: 365px;
+  min-width: 335px;
 }
 
 .nav-tab {
@@ -35,4 +35,15 @@
 #logo-right {
   padding-left: 5vw;
   padding-right: 2vw;
+}
+
+.recruit-banner {
+  background-color: #4B2E83;
+  color:white;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.recruit-banner a {
+  color: #dccbff;
 }

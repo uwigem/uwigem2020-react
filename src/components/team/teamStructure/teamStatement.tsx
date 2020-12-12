@@ -28,10 +28,11 @@ export default function TeamStatement({ teamName, statement, highlight, statemen
                 {statement}
                 <b><i>{highlight}</i></b>
                 {statementMore}</div>
-            <div className="team-statement-example">
-                <b>Our Deliverable Examples: </b>
-                {example}</div>
-            <div className="team-statement-link">View Our Team Members</div>
+            {/* <div className="team-statement-example">
+            <b>Our Deliverable Examples: </b>
+            {example}    
+            </div> */}
+            {/* <div className="team-statement-link" a>View Our Team Members</div> */}
             </Fade>
 		</div>
     </>;

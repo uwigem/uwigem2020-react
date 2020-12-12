@@ -7,7 +7,6 @@
 }
 
 .sponsor-name {
-	height: 3rem;
 	color: black;
 	overflow: auto;
 }
@@ -15,8 +14,8 @@
 .hover-mask {
 	position: absolute;
 	top: 0px;
-	width: 80%;
-	margin: 0 10%;
+	width: 90%;
+	margin: 0 5%;
 	text-align: center;
 	background-color: rgba(168, 168, 168, 0.87);
 	color: white;
@@ -52,10 +51,6 @@
 		opacity: 0;
 		visibility: hidden;
      } 
-} 
-
-.sponsor-wrapper {
-	width: 50%;
 }
 
 .sponsor-wrapper:hover {

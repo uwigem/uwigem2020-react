@@ -1,0 +1,92 @@
+.project-block-div {
+  margin-left: 5em;
+  margin-right: 5em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  background-color: #ffffff;
+}
+
+.project-block-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.project-block-img {
+  width: 35%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.project-block-main {
+  width: 50%;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 1em;
+}
+
+.project-block-award {
+  width: 15%;
+}
+
+.project-block-main h2 {
+  font-size: 15px;
+  color: black;
+}
+
+.project-block-title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+.project-block-title h1 {
+  font-size: 22px;
+  color: black;
+}
+
+.project-block-title h2 {
+  color: lightslategray;
+  margin-left: 2em;
+}
+
+.project-block-main {
+  padding-left: 2em;
+  padding-top: 2em;
+}
+
+.project-block-main p,
+.project-block-main li {
+  font-size: 15px;
+  font-weight: lighter;
+  padding: 0em;
+}
+
+.project-block-main li {
+  list-style: none;
+}
+
+.project-block-award {
+  font-size: 48px;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+  color: #c7c3c3;
+}
+
+.project-block-details h2 {
+  font-style: italic;
+}
+
+#overlay {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+}

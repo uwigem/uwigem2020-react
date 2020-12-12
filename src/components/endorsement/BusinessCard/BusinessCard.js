@@ -2,7 +2,7 @@ import React from 'react';
 import './BusinessCard.css';
 
 /**
- * @returns {React.Component}
+ * @returns {React.Component} return a business card for iGEM
  */
 const BusinessCard = (props) => {   
     return <>

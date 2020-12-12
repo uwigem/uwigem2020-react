@@ -1,0 +1,45 @@
+.recruit-menu-div, .recruit-menu-col-main {
+    display: flex;
+}
+
+.recruit-menu-div {
+    margin: 3em;
+    justify-content: space-between;
+}
+
+.recruit-menu-title {
+    margin-left: 24px;
+    color: black;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.recruit-menu-description {
+    margin-left: 24px;
+    color: black;
+}
+
+.recruit-menu-link {
+    color: white;
+    width: 20%;
+    margin-left: 40%;
+    background-color: #4b2e83;
+}
+
+.recruit-menu-link-more {
+    width: 50%;
+    margin-left: 25%;
+}
+
+.recruit-menu-col-title {
+    margin-bottom: 1em;
+    font-style: italic;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.recruit-menu-col-side {
+    width: 0.5em;
+    background-color: #4b2e83;
+    margin-right: 1em;
+}
