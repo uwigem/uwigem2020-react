@@ -5,7 +5,13 @@ import s from './Highlights.module.css';
 const Highlights = () => {
   return (
     <div className={s.root}>
-      <div className={s.title}><h1>------ UW iGEM Team ------</h1></div>
+      
+      <div className={s.title}><div className={s.hr}></div><h1>UW iGEM Team</h1><div className={s.hr}></div></div>
+
+      <div className={s.intro}>
+        Our team dedicates to apply syntethc biology to solve real problems and to understand the concept
+      </div>
+
       <div className={s.main}>
         <div className={s.left}>
 

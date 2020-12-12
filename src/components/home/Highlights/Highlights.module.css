@@ -1,9 +1,31 @@
 .root {
   width: 100%;
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .title {
+  margin: 50px;
+
   text-align: center;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.hr {
+  width: 200px;
+  height: 3px;
+  margin: auto 20px;
+  padding: auto;
+  background-color: #888888;
+}
+
+.intro {
+  height: 50px;
+  text-align: center;
+  font-weight: 100;
 }
 
 .main {
@@ -35,6 +57,8 @@
   padding: 20px;
   background-color: aliceblue;
   font-size: larger;
+
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .card div {
