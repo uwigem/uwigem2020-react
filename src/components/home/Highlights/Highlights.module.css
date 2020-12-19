@@ -34,15 +34,15 @@
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-evenly;
+
+  background: url('./bw_background.jpeg') no-repeat center center;
 }
 
 .left {
-  background-color: aliceblue;
   flex-grow: 1;
 }
 
 .right {
-  background-color: aliceblue;
   flex-grow: 1;
 }
 
@@ -55,26 +55,32 @@
   width: 500px;
   margin: 50px auto;
   padding: 20px;
+  /*
   background-color: aliceblue;
+  */
+  background-color: white;
   font-size: larger;
 
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
+  display: flex;
+  justify-content: center;
 }
 
-.card div {
-  margin: 20px;
+.cardCenter {
 }
 
 .year {
-  font-weight: bolder;
-  padding: 0px 50px;
+  
+  
 }
 
 .projectTitle {
-  font-weight: bolder;
-  text-align: center;
+  margin: 10px 0px;
+
+  font-weight: bold;
 }
 
 .prize {
-  text-align: center;
+  
 }
