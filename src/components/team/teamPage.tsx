@@ -57,14 +57,12 @@ export default function TeamPage() {
       </header>
       <hr className="team-header-linebar"></hr>
       <div className='team-body'>
-        <Row md={12} sm={1}>
-          <Col md={3} className={'justify-content-center'}>
+          <div className={"sidebar-container"}>
             <TeamPageSideBar sectionList={sections} />
-          </Col>
-          <Col md={9}>
+          </div>
+          <div className={"body-container"}>
             {displayedPage.component(getSections)}
-          </Col>
-        </Row>
+          </div>
       </div>  
     </div>
   )
