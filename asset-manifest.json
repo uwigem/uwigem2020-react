@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/uwigem2020-react/static/css/main.61eea607.chunk.css",
-    "main.js": "/uwigem2020-react/static/js/main.27c8a2c0.chunk.js",
-    "main.js.map": "/uwigem2020-react/static/js/main.27c8a2c0.chunk.js.map",
+    "main.js": "/uwigem2020-react/static/js/main.65cfdf2b.chunk.js",
+    "main.js.map": "/uwigem2020-react/static/js/main.65cfdf2b.chunk.js.map",
     "runtime-main.js": "/uwigem2020-react/static/js/runtime-main.3b2725cc.js",
     "runtime-main.js.map": "/uwigem2020-react/static/js/runtime-main.3b2725cc.js.map",
     "static/css/2.0527938a.chunk.css": "/uwigem2020-react/static/css/2.0527938a.chunk.css",
     "static/js/2.a925c614.chunk.js": "/uwigem2020-react/static/js/2.a925c614.chunk.js",
     "static/js/2.a925c614.chunk.js.map": "/uwigem2020-react/static/js/2.a925c614.chunk.js.map",
     "index.html": "/uwigem2020-react/index.html",
-    "precache-manifest.334d9a6ddab8854c8671247f0ca9adac.js": "/uwigem2020-react/precache-manifest.334d9a6ddab8854c8671247f0ca9adac.js",
+    "precache-manifest.246287084ad840b1bae6179eeb2378fe.js": "/uwigem2020-react/precache-manifest.246287084ad840b1bae6179eeb2378fe.js",
     "service-worker.js": "/uwigem2020-react/service-worker.js",
     "static/css/2.0527938a.chunk.css.map": "/uwigem2020-react/static/css/2.0527938a.chunk.css.map",
     "static/css/main.61eea607.chunk.css.map": "/uwigem2020-react/static/css/main.61eea607.chunk.css.map",
@@ -24,6 +24,6 @@
     "static/css/2.0527938a.chunk.css",
     "static/js/2.a925c614.chunk.js",
     "static/css/main.61eea607.chunk.css",
-    "static/js/main.27c8a2c0.chunk.js"
+    "static/js/main.65cfdf2b.chunk.js"
   ]
 }
