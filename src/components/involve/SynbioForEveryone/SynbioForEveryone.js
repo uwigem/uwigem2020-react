@@ -28,7 +28,7 @@ const SynbioForEveryone = (props) => {
                     <h2>SynBio</h2>
                 </div>
                 <div className="synbio-text-block-2">
-                    <h2>for</h2>
+                    <h2>For</h2>
                 </div>
                 <div className="synbio-text-block-3">
                     <h2>Everyone</h2>
