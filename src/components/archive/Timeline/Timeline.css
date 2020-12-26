@@ -1,9 +1,14 @@
+.timeline-wrapper {
+	position: relative;
+}
+
 .timeline {
 	position: relative;
 	margin: 1vw auto 4vw;
 	height: 20vw;
 	width: 80%;
 	left: -5%;
+	max-height: 200px;
 }
 
 .timeline::before {
@@ -133,12 +138,20 @@
 	visibility: hidden;
 }
 
-.reset-button {
-	position: relative;
+.reset-wrapper {
+	position: absolute;
+	margin: 1vw auto 4vw;
 	left: 90%;
-	top: -15vw;
-	width: 5%;
-	height: 4vw;
+	top: 0;
+	height: 20vw;
+	width: 10%;
+	max-height: 200px;
+}
+
+.reset-button {
+	position: absolute;
+	top: 8vw;
+	width: 40%;
 	border: none;
 	border-radius: 10%;
 	color: white;
@@ -160,11 +173,10 @@
 }
 
 .reset-button-default {
-	position: relative;
-	left: 90%;
-	top: -15vw;
-	width: 5%;
-	height: 4vw;
+	position: absolute;
+	top: 8vw;
+	width: 40%;
+
 	border: none;
 	background-color: transparent;
 	color: #393939;
