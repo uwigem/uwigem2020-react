@@ -1,6 +1,20 @@
 .team-body {
     position: relative;
     margin: 0 20px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.sidebar-container {
+    text-align: center;
+    width: 200px;
+    padding-left: 10px;
+}
+
+.body-container {
+    flex-grow: 1;
+    width: 450px;
+    min-width: 450px;
 }
 
 .team-header {

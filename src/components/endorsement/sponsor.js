@@ -42,7 +42,7 @@ const Sponsor = props => {
 				</section>
 				
 				<section className="sponsor-name">
-					{props.sponsor.name}
+					{props.sponsor.name.toUpperCase()}
 				</section>
 			</div>
 		</a>

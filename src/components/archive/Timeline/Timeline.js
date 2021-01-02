@@ -89,13 +89,15 @@ const Timeline = props => {
 				</div>
 			</div>
 		</div>
-		{(range[0] !== 0 || range[1] !== data.length-1)?
-			<button class={"reset-button"}
-				onClick={() => {setRange([0, data.length-1])}}
-				><FontAwesomeIcon icon={faUndo}/></button>
-			:
-			<FontAwesomeIcon class={"reset-button-default"} icon={faCircle}/>
-		}
+		<div className="reset-wrapper">
+			{(range[0] !== 0 || range[1] !== data.length-1)?
+				<button class={"reset-button"}
+					onClick={() => {setRange([0, data.length-1])}}
+					><FontAwesomeIcon icon={faUndo}/></button>
+				:
+				<FontAwesomeIcon class={"reset-button-default"} icon={faCircle}/>
+			}
+		</div>
 	</div>
 	</>
 }

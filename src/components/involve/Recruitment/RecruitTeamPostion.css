@@ -1,8 +1,10 @@
 .recruit-team-position-div {
     background-color: #dbdbdb;
-    margin: 2em;
+    margin: 2em, 200px, 2em, 200px;
     padding: 1.5em 2em 1.5em 2em;
     font-size: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
 }
 
 .recruit-team-position-title {

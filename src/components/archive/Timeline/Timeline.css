@@ -1,9 +1,14 @@
+.timeline-wrapper {
+	position: relative;
+}
+
 .timeline {
 	position: relative;
 	margin: 1vw auto 4vw;
 	height: 20vw;
 	width: 80%;
 	left: -5%;
+	max-height: 200px;
 }
 
 .timeline::before {
@@ -11,7 +16,7 @@
 	content: ' ';
 	position: absolute;
 	width: 90%;
-	top: 11vw;
+	top: 6vw;
 	left: 5%;
 	height: 2px;
 	background: rgba(0, 0, 0, 0.2);
@@ -22,7 +27,7 @@
 	content: '';
 	position: absolute;
 	z-index: 1;
-	top: 11vw;
+	top: 6vw;
 	height: 2px;
 	width: 15%;
 }
@@ -49,7 +54,7 @@
 
 .events button {
 	position: absolute;
-	top: 6vw;
+	top: 1vw;
 	z-index: 2;
 	text-align: center;
 	font-size: 1.5vw;
@@ -65,7 +70,7 @@
 }
 
 .events .zoom-in-button button {
-	top: 9.5vw;
+	top: 4.5vw;
 	opacity: 0.2;
 }
 
@@ -82,7 +87,7 @@
 	content: ' ';
 	position: absolute;
 	left: 1.5vw;
-	top: 7vw;
+	top: 8vw;
 	height: 1vw;
 	width: 1.5vw;
 	border-radius: 50%;
@@ -111,7 +116,7 @@
 
 .events .prev, .events .next {
 	position: absolute;
-	top: 11vw;
+	top: 6vw;
 	margin: 0;
 	opacity: 0.2;
 	font-size: 3vw;
@@ -133,12 +138,20 @@
 	visibility: hidden;
 }
 
-.reset-button {
-	position: relative;
+.reset-wrapper {
+	position: absolute;
+	margin: 1vw auto 4vw;
 	left: 90%;
-	top: -15vw;
-	width: 5%;
-	height: 4vw;
+	top: 0;
+	height: 20vw;
+	width: 10%;
+	max-height: 200px;
+}
+
+.reset-button {
+	position: absolute;
+	top: 3.5vw;
+	width: 40%;
 	border: none;
 	border-radius: 10%;
 	color: white;
@@ -160,11 +173,9 @@
 }
 
 .reset-button-default {
-	position: relative;
-	left: 90%;
-	top: -15vw;
-	width: 5%;
-	height: 4vw;
+	position: absolute;
+	top: 3vw;
+	width: 40%;
 	border: none;
 	background-color: transparent;
 	color: #393939;

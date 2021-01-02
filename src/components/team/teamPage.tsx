@@ -3,9 +3,7 @@ import './teamPage.css';
 import React, { useState } from 'react';
 import TeamPageMembers from './TeamPageMembers';
 import TeamPageTeam from './TeamPageTeam';
-import TeamPageSideBar from './TeamPageSideBar'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
+import TeamPageSideBar from './TeamPageSideBar';
 
 export type section = {
   name: string,
@@ -57,14 +55,12 @@ export default function TeamPage() {
       </header>
       <hr className="team-header-linebar"></hr>
       <div className='team-body'>
-        <Row md={12} sm={1}>
-          <Col md={3} className={'justify-content-center'}>
+          <div className={"sidebar-container"}>
             <TeamPageSideBar sectionList={sections} />
-          </Col>
-          <Col md={9}>
+          </div>
+          <div className={"body-container"}>
             {displayedPage.component(getSections)}
-          </Col>
-        </Row>
+          </div>
       </div>  
     </div>
   )

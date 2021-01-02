@@ -8,18 +8,21 @@
     position: absolute;
     bottom: 72%;
     right: 45%;
+    opacity: 75%;
 }
 
 .synbio-text-block-2 {
     position: absolute;
     bottom: 50%;
     right: 45%;
+    opacity: 75%;
 }
 
 .synbio-text-block-3 {
     position: absolute;
     bottom: 28%;
     right: 30%;
+    opacity: 75%;
 }
 
 .synbio-view-more {
@@ -43,6 +46,7 @@
     font-style: normal;
     font-weight: 500;
     font-size: 7vw;
+    background-size: cover;
 }
 
 .synbio-img-left {
@@ -60,3 +64,4 @@
     background-position: center;
     background-size: cover;
 }
+

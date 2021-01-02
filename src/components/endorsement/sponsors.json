@@ -1,7 +1,7 @@
 {
 	"current": [ 
 		{
-			"level": "Eukaryote",
+			"level": "Diamond",
 			"sponsors" : [
 				{
 					"logo": "https://2019.igem.org/wiki/images/8/88/T--Washington--BioChemLogo.png",
@@ -9,21 +9,6 @@
 					"link": "https://depts.washington.edu/biowww/"
 				},
 				{
-					"logo": "https://2019.igem.org/wiki/images/c/c7/T--Washington--IPDLogo.png",
-					"name": "INSTITUTE FOR PROTEIN DESIGN",
-					"link": "https://www.ipd.uw.edu/"
-				},
-				{
-					"logo": "https://2019.igem.org/wiki/images/1/1c/T--Washington--CSELogo.png",
-					"name": "UW PAUL G. ALLEN SCHOOL OF COMPUTER SCIENCE AND ENGINEERING",
-					"link": "https://www.cs.washington.edu/"
-				},
-				{
-					"logo": "https://2019.igem.org/wiki/images/c/c7/T--Washington--IPDLogo.png",
-					"name": "INSTITUTE FOR PROTEIN DESIGN",
-					"link": "https://www.ipd.uw.edu/"
-				},
-				{
 					"logo": "https://2019.igem.org/wiki/images/1/1c/T--Washington--CSELogo.png",
 					"name": "UW PAUL G. ALLEN SCHOOL OF COMPUTER SCIENCE AND ENGINEERING",
 					"link": "https://www.cs.washington.edu/"
@@ -31,47 +16,62 @@
 			]
 		},
 		{
-			"level": "Prokaryote",
+			"level": "Gold",
 			"sponsors" : [
 				{
-					"logo": "http://placekitten.com/300/300",
-					"name": "Test",
-					"link": "http://placekitten.com/300/300"
+					"logo": "https://2019.igem.org/wiki/images/c/c7/T--Washington--IPDLogo.png",
+					"name": "INSTITUTE FOR PROTEIN DESIGN",
+					"link": "https://www.ipd.uw.edu/"
+				},
+				{
+					"logo": "http://2018.igem.org/wiki/images/d/d3/T--Washington--PvPlogo.png",
+					"name": "PVP Biologics",
+					"link": "https://www.pvpbio.com/"
+				},
+				{
+					"logo": "http://2016.igem.org/wiki/images/b/b6/T--Washington--Sponsor_CollegeEngineering.png ",
+					"name": "UW College of Engineering",
+					"link": "https://www.engr.washington.edu/"
 				}
 			]
 		},
 		{
-			"level": "Plasmid",
+			"level": "Silver",
 			"sponsors" : [
 				{
-					"logo": "http://placekitten.com/400/300",
-					"name": "Test",
-					"link": "http://placekitten.com/400/300"
+					"logo": "http://2017.igem.org/wiki/images/f/f4/T--Washington--BioELogo.png",
+					"name": "UW Bioengineering Department",
+					"link": "https://bioe.uw.edu/"
 				},
 				{
-					"logo": "http://placekitten.com/400/300",
-					"name": "Test",
-					"link": "http://placekitten.com/400/300"
+					"logo": "http://2017.igem.org/wiki/images/4/4a/T--Washington--DepBio.png",
+					"name": "UW Biology Department",
+					"link": "https://www.biology.washington.edu/"
 				},
 				{
-					"logo": "http://placekitten.com/400/300",
-					"name": "Test",
-					"link": "http://placekitten.com/400/300"
+					"logo": "http://2017.igem.org/wiki/images/5/58/T--Washington--ChemLogo.png",
+					"name": "UW Chemistry Department",
+					"link": "http://depts.washington.edu/chem/"
+				}
+			]
+		},
+		{
+			"level": "Bronze",
+			"sponsors" : [
+				{
+					"logo": "https://2019.igem.org/wiki/images/8/84/T--Washington--Promega.png",
+					"name": "Promega",
+					"link": "https://www.promega.com/"
 				},
 				{
-					"logo": "http://placekitten.com/400/300",
-					"name": "Test",
-					"link": "http://placekitten.com/400/300"
+					"logo": "http://2017.igem.org/wiki/images/2/2c/T--Washington--amathlogo.png",
+					"name": "UW Applied Math Department",
+					"link": "https://amath.washington.edu/"
 				},
 				{
-					"logo": "",
-					"name": "Test",
-					"link": ""
-				},
-				{
-					"logo": "",
-					"name": "Test",
-					"link": ""
+					"logo": "http://2017.igem.org/wiki/images/6/6a/T--Washington--Microbio.png",
+					"name": "UW Microbiology Department",
+					"link": "https://microbiology.washington.edu/"
 				}
 			]
 		}
@@ -80,49 +80,74 @@
 		{
 			"sponsors" : [
 				{
-					"logo": "https://2019.igem.org/wiki/images/8/88/T--Washington--BioChemLogo.png",
-					"name": "UW DEPARTMENT OF BIOCHEMISTRY",
-					"link": "https://depts.washington.edu/biowww/"
+					"logo": "http://2018.igem.org/wiki/images/e/e7/T--Washington--Genscriptlogo.png",
+					"name": "GenScript",
+					"link": "https://www.genscript.com/"
 				},
 				{
-					"logo": "https://2019.igem.org/wiki/images/c/c7/T--Washington--IPDLogo.png",
-					"name": "INSTITUTE FOR PROTEIN DESIGN",
-					"link": "https://www.ipd.uw.edu/"
+					"logo": "http://2018.igem.org/wiki/images/9/9e/T--Washington--IDTlogo.png",
+					"name": "IDT",
+					"link": "https://www.idtdna.com/"
 				},
 				{
-					"logo": "https://2019.igem.org/wiki/images/1/1c/T--Washington--CSELogo.png",
-					"name": "UW PAUL G. ALLEN SCHOOL OF COMPUTER SCIENCE AND ENGINEERING",
-					"link": "https://www.cs.washington.edu/"
+					"logo": "http://2018.igem.org/wiki/images/0/00/T--Washington--Zuliplogo.png",
+					"name": "Zulip",
+					"link": "https://zulipchat.com/"
 				},
 				{
-					"logo": "https://2019.igem.org/wiki/images/8/88/T--Washington--BioChemLogo.png",
-					"name": "UW DEPARTMENT OF BIOCHEMISTRY",
-					"link": "https://depts.washington.edu/biowww/"
+					"logo": "http://2017.igem.org/wiki/images/3/3a/T--Washington--BiomedicalInfoLogo.png",
+					"name": "UW Department of Biomedical Informatics and Medical Education",
+					"link": "http://bime.uw.edu/"
 				},
 				{
-					"logo": "https://2019.igem.org/wiki/images/c/c7/T--Washington--IPDLogo.png",
-					"name": "INSTITUTE FOR PROTEIN DESIGN",
-					"link": "https://www.ipd.uw.edu/"
+					"logo": "http://2017.igem.org/wiki/images/7/76/T--Washington--NEBLogo.png",
+					"name": "NEB",
+					"link": "https://www.neb.com/"
 				},
 				{
-					"logo": "https://2019.igem.org/wiki/images/1/1c/T--Washington--CSELogo.png",
-					"name": "UW PAUL G. ALLEN SCHOOL OF COMPUTER SCIENCE AND ENGINEERING",
-					"link": "https://www.cs.washington.edu/"
+					"logo": "http://2018.igem.org/wiki/images/0/0d/T--Washington--msebiologo.png",
+					"name": "UW Material Science and Engineering Department",
+					"link": "https://mse.washington.edu/"
 				},
 				{
-					"logo": "https://2019.igem.org/wiki/images/8/88/T--Washington--BioChemLogo.png",
-					"name": "UW DEPARTMENT OF BIOCHEMISTRY",
-					"link": "https://depts.washington.edu/biowww/"
+					"logo": "http://2016.igem.org/wiki/images/6/62/T--Washington--Sponsor_ElectricalEngineering.png",
+					"name": "UW Electrical Engineering Department",
+					"link": "https://www.ece.uw.edu/"
 				},
 				{
-					"logo": "https://2019.igem.org/wiki/images/c/c7/T--Washington--IPDLogo.png",
-					"name": "INSTITUTE FOR PROTEIN DESIGN",
-					"link": "https://www.ipd.uw.edu/"
+					"logo": "http://2015.igem.org/wiki/images/d/d1/UW_geneiousLogo.png",
+					"name": "Geneious",
+					"link": "https://www.geneious.com/"
 				},
 				{
-					"logo": "https://2019.igem.org/wiki/images/1/1c/T--Washington--CSELogo.png",
-					"name": "UW PAUL G. ALLEN SCHOOL OF COMPUTER SCIENCE AND ENGINEERING",
-					"link": "https://www.cs.washington.edu/"
+					"logo": "http://2016.igem.org/wiki/images/8/86/T--Washington--Sponsor_JunoTheurapeutics.png",
+					"name": "juno Therapeutics",
+					"link": "https://www.bms.com/"
+				},
+				{
+					"logo": "http://2016.igem.org/wiki/images/f/f1/T--Washington--Sponsor_SnapGene.png",
+					"name": "SnapGene",
+					"link": "https://www.snapgene.com/"
+				},
+				{
+					"logo": "http://2017.igem.org/wiki/images/8/82/T--Washington--Benchling.png",
+					"name": "Benchling",
+					"link": "https://www.benchling.com/"
+				},
+				{
+					"logo": "http://2017.igem.org/wiki/images/e/e1/T--Washington--JJuiceLogo.png",
+					"name": "Jamba Juice",
+					"link": "http://www.jambajuice.com/"
+				},
+				{
+					"logo": "http://2017.igem.org/wiki/images/b/be/T--Washington--Chipotle.png",
+					"name": "Chipotle",
+					"link": "https://www.chipotle.com/"
+				},
+				{
+					"logo": "http://2017.igem.org/wiki/images/9/91/T--Washington--NordsonMedical.png",
+					"name": "Nordson Medical",
+					"link": "http://www.nordsonmedical.com/"
 				}
 			]
 		}
