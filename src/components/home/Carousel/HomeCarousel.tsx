@@ -2,6 +2,8 @@ import React from 'react';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+import Button from '../../common-components/Button/Button';
+
 import s from './HomeCarousel.module.css';
 
 const HomeCarousel = () => {
@@ -18,7 +20,9 @@ const HomeCarousel = () => {
           International Genetically Engineering Machine (iGEM) is the premiere international synthetic biology student research competition.
           Founded in 2008, Washington iGEM is entirely operated by a team of dedicated undergraduate students. 
           </div>
-          <button><a href="https://2019.igem.org/Team:Washington">Current Wiki</a></button>
+          <Button
+            text='Current Wiki'
+            link='https://2019.igem.org/Team:Washington' />
         </div>
       </div>
     </div>
