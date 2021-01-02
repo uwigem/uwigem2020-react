@@ -3,9 +3,7 @@ import './teamPage.css';
 import React, { useState } from 'react';
 import TeamPageMembers from './TeamPageMembers';
 import TeamPageTeam from './TeamPageTeam';
-import TeamPageSideBar from './TeamPageSideBar'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
+import TeamPageSideBar from './TeamPageSideBar';
 
 export type section = {
   name: string,
