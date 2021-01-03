@@ -2,25 +2,25 @@
 .container {
     position: relative;
 }
-  
+
 /* Bottom right text */
 .synbio-text-block-1 {
     position: absolute;
-    bottom: 72%;
+    top: 5vw;
     right: 45%;
     opacity: 75%;
 }
 
 .synbio-text-block-2 {
     position: absolute;
-    bottom: 50%;
+    top: 15vw;
     right: 45%;
     opacity: 75%;
 }
 
 .synbio-text-block-3 {
     position: absolute;
-    bottom: 28%;
+    top: 25vw;
     right: 30%;
     opacity: 75%;
 }
@@ -39,7 +39,7 @@
     color: black;
 }
 
-.synbio-text-block-1 h2, .synbio-text-block-2 h2, .synbio-text-block-3 h2{
+.synbio-text-block-1 p, .synbio-text-block-2 p, .synbio-text-block-3 p{
     background: linear-gradient(#ffffff00 28%, #C4C4C4 0%);    
     padding: 1px;
     font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;

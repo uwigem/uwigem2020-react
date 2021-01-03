@@ -25,7 +25,7 @@ export default function Competition() {
           </article>
         </Col>
         <Col md={1}/>
-        <Col md={5} className={"justify-content-md-center align-items-center"}>
+        <Col md={5} className={"d-flex justify-content-center align-items-center"}>
           <Image src={imageSrc} alt={imageAlt} fluid local/>
         </Col>
       </Row>

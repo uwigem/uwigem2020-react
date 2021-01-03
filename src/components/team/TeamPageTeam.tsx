@@ -3,6 +3,7 @@ import TeamOverview from './teamOverview/teamOverview'
 import TeamStructure from './teamStructure/teamStructure'
 import TeamGallery from './gallery/gallery'
 import { section } from './teamPage'
+import SynbioForEveryone from '../involve/SynbioForEveryone/SynbioForEveryone'
 
 type propsType = {
   handleSection: (sections: section[]) => void
@@ -16,8 +17,11 @@ export default function TeamPageTeam({ handleSection }: propsType) {
   
   const overviewRef = useRef(null)
   const teamStructRef = useRef(null)
+  const synbioRef = useRef(null)
   const overviewId = 'team-page-team-overview'
   const teamStructureId = 'team-page-team-structure'
+  const synbioId = 'team-page-synbio'
+  
   // eslint-disable-next-line
   const sections = [
     {
@@ -29,6 +33,11 @@ export default function TeamPageTeam({ handleSection }: propsType) {
       name: 'Team Structure',
       id: teamStructureId,
       ref: teamStructRef
+    },
+    {
+      name: 'SFE',
+      id: synbioId,
+      ref: synbioRef
     }
   ]
 
@@ -52,6 +61,9 @@ export default function TeamPageTeam({ handleSection }: propsType) {
       </section>
       <section>
         <TeamGallery />
+      </section>
+      <section ref={synbioRef} id={synbioId}>
+        <SynbioForEveryone />
       </section>
     </main>
   )
