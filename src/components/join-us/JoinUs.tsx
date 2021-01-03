@@ -51,7 +51,7 @@ export default function JoinUs() {
     <article id={"join-us"} className={styles.article}>
       <header className={styles.header}>
           <div className={styles.topBar}></div>
-          <h3>Join Us</h3>
+          <h3>Check Us Out</h3>
       </header>
       <section className={styles.section}>
         <SlidingDoors 
@@ -60,7 +60,7 @@ export default function JoinUs() {
           progress={animationProg(animationProgress)}/>
         <SocialMediaLinks 
           animationProgress={animationProg(animationProgress)}
-          linksList={[links.github, links.facebook, links.placeHolder]}/>
+          linksList={links}/>
       </section>
     </article>
   )
