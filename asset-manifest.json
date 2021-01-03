@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/uwigem2020-react/static/css/main.770e6caf.chunk.css",
-    "main.js": "/uwigem2020-react/static/js/main.b9ec6e3b.chunk.js",
-    "main.js.map": "/uwigem2020-react/static/js/main.b9ec6e3b.chunk.js.map",
+    "main.css": "/uwigem2020-react/static/css/main.8ff08f29.chunk.css",
+    "main.js": "/uwigem2020-react/static/js/main.16b70a3a.chunk.js",
+    "main.js.map": "/uwigem2020-react/static/js/main.16b70a3a.chunk.js.map",
     "runtime-main.js": "/uwigem2020-react/static/js/runtime-main.4b7e373d.js",
     "runtime-main.js.map": "/uwigem2020-react/static/js/runtime-main.4b7e373d.js.map",
     "static/css/2.4a586fb5.chunk.css": "/uwigem2020-react/static/css/2.4a586fb5.chunk.css",
@@ -10,7 +10,7 @@
     "static/js/2.1358a1c0.chunk.js.map": "/uwigem2020-react/static/js/2.1358a1c0.chunk.js.map",
     "index.html": "/uwigem2020-react/index.html",
     "static/css/2.4a586fb5.chunk.css.map": "/uwigem2020-react/static/css/2.4a586fb5.chunk.css.map",
-    "static/css/main.770e6caf.chunk.css.map": "/uwigem2020-react/static/css/main.770e6caf.chunk.css.map",
+    "static/css/main.8ff08f29.chunk.css.map": "/uwigem2020-react/static/css/main.8ff08f29.chunk.css.map",
     "static/js/2.1358a1c0.chunk.js.LICENSE.txt": "/uwigem2020-react/static/js/2.1358a1c0.chunk.js.LICENSE.txt",
     "static/media/Highlights.module.css": "/uwigem2020-react/static/media/bw_background.a2355e3d.jpeg",
     "static/media/gmail.c03ff4b0.svg": "/uwigem2020-react/static/media/gmail.c03ff4b0.svg",
@@ -21,7 +21,7 @@
     "static/js/runtime-main.4b7e373d.js",
     "static/css/2.4a586fb5.chunk.css",
     "static/js/2.1358a1c0.chunk.js",
-    "static/css/main.770e6caf.chunk.css",
-    "static/js/main.b9ec6e3b.chunk.js"
+    "static/css/main.8ff08f29.chunk.css",
+    "static/js/main.16b70a3a.chunk.js"
   ]
 }
