@@ -1,29 +1,27 @@
 {
   "files": {
-    "main.css": "/uwigem2020-react/static/css/main.f9eacd2e.chunk.css",
-    "main.js": "/uwigem2020-react/static/js/main.42a26242.chunk.js",
-    "main.js.map": "/uwigem2020-react/static/js/main.42a26242.chunk.js.map",
-    "runtime-main.js": "/uwigem2020-react/static/js/runtime-main.3b2725cc.js",
-    "runtime-main.js.map": "/uwigem2020-react/static/js/runtime-main.3b2725cc.js.map",
-    "static/css/2.0527938a.chunk.css": "/uwigem2020-react/static/css/2.0527938a.chunk.css",
-    "static/js/2.b7f2dd80.chunk.js": "/uwigem2020-react/static/js/2.b7f2dd80.chunk.js",
-    "static/js/2.b7f2dd80.chunk.js.map": "/uwigem2020-react/static/js/2.b7f2dd80.chunk.js.map",
+    "main.css": "/uwigem2020-react/static/css/main.ba8c8208.chunk.css",
+    "main.js": "/uwigem2020-react/static/js/main.10b8d35b.chunk.js",
+    "main.js.map": "/uwigem2020-react/static/js/main.10b8d35b.chunk.js.map",
+    "runtime-main.js": "/uwigem2020-react/static/js/runtime-main.4b7e373d.js",
+    "runtime-main.js.map": "/uwigem2020-react/static/js/runtime-main.4b7e373d.js.map",
+    "static/css/2.4a586fb5.chunk.css": "/uwigem2020-react/static/css/2.4a586fb5.chunk.css",
+    "static/js/2.1358a1c0.chunk.js": "/uwigem2020-react/static/js/2.1358a1c0.chunk.js",
+    "static/js/2.1358a1c0.chunk.js.map": "/uwigem2020-react/static/js/2.1358a1c0.chunk.js.map",
     "index.html": "/uwigem2020-react/index.html",
-    "precache-manifest.a6bdcd59cc2b431a173e7652948c13a4.js": "/uwigem2020-react/precache-manifest.a6bdcd59cc2b431a173e7652948c13a4.js",
-    "service-worker.js": "/uwigem2020-react/service-worker.js",
-    "static/css/2.0527938a.chunk.css.map": "/uwigem2020-react/static/css/2.0527938a.chunk.css.map",
-    "static/css/main.f9eacd2e.chunk.css.map": "/uwigem2020-react/static/css/main.f9eacd2e.chunk.css.map",
-    "static/js/2.b7f2dd80.chunk.js.LICENSE.txt": "/uwigem2020-react/static/js/2.b7f2dd80.chunk.js.LICENSE.txt",
-    "static/media/Highlights.module.css": "/uwigem2020-react/static/media/bw_background.38333bf7.jpeg",
-    "static/media/gmail.svg": "/uwigem2020-react/static/media/gmail.282a92dc.svg",
-    "static/media/gmailInactive.svg": "/uwigem2020-react/static/media/gmailInactive.1a91dffe.svg",
-    "static/media/HomeCarousel.module.css": "/uwigem2020-react/static/media/pic2.89306e4b.jpg"
+    "static/css/2.4a586fb5.chunk.css.map": "/uwigem2020-react/static/css/2.4a586fb5.chunk.css.map",
+    "static/css/main.ba8c8208.chunk.css.map": "/uwigem2020-react/static/css/main.ba8c8208.chunk.css.map",
+    "static/js/2.1358a1c0.chunk.js.LICENSE.txt": "/uwigem2020-react/static/js/2.1358a1c0.chunk.js.LICENSE.txt",
+    "static/media/Highlights.module.css": "/uwigem2020-react/static/media/bw_background.a2355e3d.jpeg",
+    "static/media/gmail.c03ff4b0.svg": "/uwigem2020-react/static/media/gmail.c03ff4b0.svg",
+    "static/media/gmailInactive.a811ca64.svg": "/uwigem2020-react/static/media/gmailInactive.a811ca64.svg",
+    "static/media/HomeCarousel.module.css": "/uwigem2020-react/static/media/pic2.785962fd.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.3b2725cc.js",
-    "static/css/2.0527938a.chunk.css",
-    "static/js/2.b7f2dd80.chunk.js",
-    "static/css/main.f9eacd2e.chunk.css",
-    "static/js/main.42a26242.chunk.js"
+    "static/js/runtime-main.4b7e373d.js",
+    "static/css/2.4a586fb5.chunk.css",
+    "static/js/2.1358a1c0.chunk.js",
+    "static/css/main.ba8c8208.chunk.css",
+    "static/js/main.10b8d35b.chunk.js"
   ]
 }
