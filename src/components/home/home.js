@@ -11,9 +11,9 @@ const HomePage = props => {
   return (
     <>
       <HomeCarousel />
-      <div className="recruit-menu-description">
+      <div className="recruit-menu-info-session">
         We are holding a <b>virtual information session on Saturday, January 9th, 11:00am - 12:30pm</b>. 
-        This will be held on zoom, <a href="https://igem-org.zoom.us/j/98707180183?pwd=RUdDMlhYQXJHSmZSTGJLd3dLS2w3QT09">click here for link to join</a>. 
+        This will be held on zoom, got to the <a href="https://www.facebook.com/WashingtoniGEM">Facebook event</a> and join with link in the description. 
         A recording will be posted here shortly afterwards if you are unable to attend.
       </div>
       <Hightlights />

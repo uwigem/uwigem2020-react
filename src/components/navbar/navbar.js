@@ -52,7 +52,7 @@ const NavBar = () => {
 				We are recruiting! Click
 				<a href="#involvement"> HERE </a> to learn more about available positions.
 				<br/>
-				General questions about these recruitment positions can be directed to <a href="mailto:uwigem@uw.edu">uwigem@uw.edu</a>.
+				General questions about these recruitment positions can be directed to uwigem@uw.edu.
 			</div>
 		</div>
 	)

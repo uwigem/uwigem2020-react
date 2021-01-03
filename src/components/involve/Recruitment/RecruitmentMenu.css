@@ -26,6 +26,17 @@
   margin-bottom: 1.5rem;
 }
 
+.recruit-menu-info-session {
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 30px;
+  font-size: 1.2rem;
+  color: black;
+  margin-bottom: 1.5rem;
+  background-color: #cbb1ff71;
+  padding: 20px;
+}
+
 .recruit-menu-link {
   color: white;
   width: 20%;
