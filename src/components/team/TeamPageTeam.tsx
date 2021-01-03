@@ -18,6 +18,7 @@ export default function TeamPageTeam({ handleSection }: propsType) {
   const teamStructRef = useRef(null)
   const overviewId = 'team-page-team-overview'
   const teamStructureId = 'team-page-team-structure'
+  // eslint-disable-next-line
   const sections = [
     {
       name: 'Overview',
