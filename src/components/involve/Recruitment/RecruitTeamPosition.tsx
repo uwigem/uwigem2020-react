@@ -1,55 +1,41 @@
 import React from 'react';
-import Fade from 'react-reveal/Fade';
+// import Fade from 'react-reveal/Fade';
 import './RecruitTeamPostion.css';
 
 type propsType = {
     teamName: string,
-    statement: string,
-    highlight: string,
-    statementMore: string,
-    example: string,
-    position: string,
-    description: string
+    positions: any
 }
 
 /**
  * @param teamName the name of the team to be displayed
- * @param statement the team statment, what they says
- * @param highlight highlighted portion of the team statement
- * @param statementMore the rest of the team statment after the highlights
- * @param example the deliverable examples of the team
+ * @param positions positions provided
  * @returns {React.Component}
  */
 export default function RecruitTeamPostion(
     { 
-        teamName, 
-        statement, 
-        highlight, 
-        statementMore, 
-        example,
-        position,
-        description,
+        teamName,
+        positions
     }: propsType) {
 
-    return <>
-        <div className="recruit-team-position-div">
-            <Fade duration={1200}>
-            <div className="recruit-team-position-title">{teamName} Team Wants:</div>
-            <div className="recruit-team-position-main">
-                {statement}
-                <b><i>{highlight}</i></b>
-                {statementMore}</div>
+    console.log(positions);
+
+    const allPositions = positions.map((element) => 
+		<div>
             <div className="recruit-team-position-name">
-                <b>Position Name: </b> {position}
+                <b>Position Name: </b> {element.name}
             </div>
             <div className="recruit-team-position-description">
                 <b>Position Description: </b> 
-                <div>{description}</div>
+                <div>{element.description}</div>
             </div>
-            <div className="recruit-team-position-example">
-                <b>Our Deliverable Examples: </b>
-                {example}</div>
-            </Fade>
+            <br/>
+        </div>
+	);
+
+    return <>
+        <div className="recruit-team-position-div">
+        {allPositions}
 		</div>
     </>;
 }
