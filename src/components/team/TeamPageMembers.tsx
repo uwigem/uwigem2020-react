@@ -13,6 +13,7 @@ export default function TeamPageMembers({ handleSection }: propsType) {
   const membersRef = useRef(null);
   const mentorsId = 'team-page-mentors'
   const membersId = 'team-page-members'
+  // eslint-disable-next-line
   const sections = [
     {
       name: 'Mentors',
