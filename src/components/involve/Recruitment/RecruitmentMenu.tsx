@@ -15,66 +15,6 @@ export default function RecruitmentMenu() {
     const recruitmentNote = "Note: we are recruiting manager roles and member (non-manager) roles. The managers are expected to be full-time roles, that is, little to no direct involvement in other subteams. Team members, however, are encouraged to participate in more than one subteam (we recommend two). ";
 
     const openingPositions = require('./openingPositions.json');
-    console.log(openingPositions);
-    // #region mock team info
-    // const teamInfoMap = new Map();
-    // teamInfoMap.set("Wetlab", {
-    //     statement: "Experiments ",
-    //     highlight: "Experiments and Experiments",
-    //     statementMore: " to show Experiments.",
-    //     example: "Experiments, Experiments, iGEM Experiments",
-    //     position: testPosition,
-    //     requirement: postionDescription
-    // });
-    // teamInfoMap.set("Drylab", {
-    //     statement: "People who are dedicated to Simulations ",
-    //     highlight: "Simulations and Simulations",
-    //     statementMore: " to show Simulations.",
-    //     example: "Simulations, Simulations, iGEM Simulations",
-    //     position: testPosition,
-    //     requirement: postionDescription
-    // });
-    // teamInfoMap.set("Fundraising", {
-    //     statement: "People who are dedicated to Fundraising ",
-    //     highlight: "Fundraising and Fundraising",
-    //     statementMore: " to Fundraising.",
-    //     example: "Fundraising, Fundraising, iGEM Fundraising",
-    //     position: testPosition,
-    //     requirement: postionDescription
-    // });
-    // teamInfoMap.set("Synbio for Everyone", {
-    //     statement: "People who are dedicated to Synbio ",
-    //     highlight: "Synbio and Synbio",
-    //     statementMore: " to Synbio.",
-    //     example: "Synbio, Synbio, iGEM Synbio",
-    //     position: testPosition,
-    //     requirement: postionDescription
-    // });
-    // teamInfoMap.set("Human Practices", {
-    //     statement: "People who are dedicated to Outreach ",
-    //     highlight: "Outreach and Outreach",
-    //     statementMore: " to Outreach.",
-    //     example: "Outreach, Outreach, iGEM Outreach",
-    //     position: testPosition,
-    //     requirement: postionDescription
-    // });
-    // teamInfoMap.set("Design", {
-    //     statement: "People who are dedicated to design meaningful ",
-    //     highlight: "graphics and products",
-    //     statementMore: " to show empathy to the iGEM competition.",
-    //     example: "Posters, Inforgraphics, iGEM merchandise",
-    //     position: testPosition,
-    //     requirement: postionDescription
-    // });
-    // teamInfoMap.set("Web Development", {
-    //     statement: "People who are dedicated to Web Development ",
-    //     highlight: "Web Development and Web Development",
-    //     statementMore: " to Web Development.",
-    //     example: "Web Development, Web Development, iGEM Web Development",
-    //     position: testPosition,
-    //     requirement: postionDescription
-    // });
-    //#endregion
 
     const handleClick = (teamName) => {
         if (teamName === team.name) {
