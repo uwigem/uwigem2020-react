@@ -1,0 +1,25 @@
+.managers-div {
+    margin-top: 3rem;
+    justify-content: space-around;
+    margin-left: 6rem;
+    margin-right: 2rem;
+    margin-bottom: 5em;
+  }
+  
+  .managers-col {
+    margin: auto;
+    width: 70%;
+  }
+
+  .managers-title {
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+
+  .managers-section {
+    margin-bottom: 2rem;
+  }
+
+  .managers-section-title {
+    font-weight: bold;
+  }
