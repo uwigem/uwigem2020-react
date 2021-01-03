@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/uwigem2020-react/precache-manifest.4a9dd1e12ace376955dd52e9d3269225.js"
+  "/uwigem2020-react/precache-manifest.a6bdcd59cc2b431a173e7652948c13a4.js"
 );
 
 self.addEventListener('message', (event) => {
