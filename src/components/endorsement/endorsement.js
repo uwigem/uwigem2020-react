@@ -9,6 +9,7 @@ import Email from '../email/Email'
  */
 const EndorsementPage = () => {
 	const sponsors = require('./sponsors.json');
+	const thankNote = "Thank you for taking out time in understanding our purpose and able to decide to sponsor us, as this partnership will certainly bare fruits of success.";
 	  
 	const currentSponsor = sponsors.current.map((level) => 
 		<div className="sponsor-level">
@@ -36,7 +37,7 @@ const EndorsementPage = () => {
 		<hr className="endorsement-linebar"></hr>
 		<div className="endorsement-thank-you m-5">
 			<h2>Thank Notes</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim integer sit lacinia ac tempus enim libero, sed nisl. Mattis integer consectetur vel, cursus lacus, consequat, adipiscing. Risus, id id bibendum turpis sit sit. Duis tortor sed erat sed arcu at</p>
+			<p>{thankNote}</p>
 		</div>
 		<div className="sponsors-wrapper m-5">
 		<h2>Current Sponsors</h2>
