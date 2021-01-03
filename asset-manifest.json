@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/uwigem2020-react/static/css/main.73842b25.chunk.css",
-    "main.js": "/uwigem2020-react/static/js/main.38feaee0.chunk.js",
-    "main.js.map": "/uwigem2020-react/static/js/main.38feaee0.chunk.js.map",
+    "main.js": "/uwigem2020-react/static/js/main.4c8fd28e.chunk.js",
+    "main.js.map": "/uwigem2020-react/static/js/main.4c8fd28e.chunk.js.map",
     "runtime-main.js": "/uwigem2020-react/static/js/runtime-main.4b7e373d.js",
     "runtime-main.js.map": "/uwigem2020-react/static/js/runtime-main.4b7e373d.js.map",
     "static/css/2.4a586fb5.chunk.css": "/uwigem2020-react/static/css/2.4a586fb5.chunk.css",
@@ -22,6 +22,6 @@
     "static/css/2.4a586fb5.chunk.css",
     "static/js/2.1a4c0ee2.chunk.js",
     "static/css/main.73842b25.chunk.css",
-    "static/js/main.38feaee0.chunk.js"
+    "static/js/main.4c8fd28e.chunk.js"
   ]
 }
