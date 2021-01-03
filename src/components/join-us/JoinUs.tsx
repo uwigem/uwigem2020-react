@@ -26,16 +26,18 @@ export default function JoinUs() {
       if (entry.isIntersecting) {
         setAnimationProgress(entry.intersectionRatio)
       } else {
-        if (animationProgress !== 0) {
-          setAnimationProgress(0)
-        }
+        setAnimationProgress(0)
+        // if (animationProgress !== 0) {
+        //   setAnimationProgress(0)
+        // }
       }
     })
   }
 
-  const viewportObserver = new IntersectionObserver(handleRatioChange, observerOption)
+ 
   
   useEffect(() => {
+    const viewportObserver = new IntersectionObserver(handleRatioChange, observerOption)
     let target = document.querySelector("#join-us section")
     if (target)
       viewportObserver.observe(target)
@@ -43,7 +45,7 @@ export default function JoinUs() {
     return function cleanup() {
       viewportObserver.disconnect()
     }
-  }, [viewportObserver]);
+  }, [setAnimationProgress]);
  
   return (
     <article id={"join-us"} className={styles.article}>
