@@ -10,17 +10,14 @@ export default function ManagerInfo() {
                 <div className="managers-col">
                     <h3 className="managers-title">Managers:</h3>
                     <div>
-
                         <div className='managers-section'>
                             <div className='managers-section-title'>We are recruiting Subteam Managers!</div>
                             We are recruiting for Subteam Managers. Subteam Managers oversee a subteam to ensure successful project completion, specifically focusing on improving accountability, operations, and communications between subteams. Together, they help the entire team work efficiently with clear understanding of our project at any point.
                         </div>
-
                         <div className='managers-section'>
                             <div className='managers-section-title'>Subteam Manager</div>
                             The subteam manager oversees a subteam - such as wetlab, drylab, human practices, or fundraising - to ensure successful project completion, specifically focusing on improving accountability, operations, and communications between subteams. Together, they help the entire team work efficiently with clear understanding of our project at any point.
                         </div>
-
                         <div className='managers-section'>
                             <div className='managers-section-title'>Details:</div>
                             <ul>
@@ -49,7 +46,6 @@ export default function ManagerInfo() {
                                 <li>Communicate with other subteam/subteam managers when collaboration is needed.</li>
                             </ul>
                         </div>
-
                     </div>
                 </div>
         </div>
