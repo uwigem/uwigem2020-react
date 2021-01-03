@@ -6,7 +6,7 @@ const links = [
   },
   {
     label: "Instagram",
-    url: "",
+    url: "https://www.instagram.com/washington_igem/",
     iconSrc: "https://www.flaticon.com/svg/static/icons/svg/174/174855.svg"
   },
   {
