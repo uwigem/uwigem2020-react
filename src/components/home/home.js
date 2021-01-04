@@ -16,7 +16,7 @@ const HomePage = props => {
         This will be held on zoom, go to the <a href="https://www.facebook.com/events/851619972292709">Facebook event</a> and join with link in the description. 
         A recording will be posted here shortly afterwards if you are unable to attend.
       </div>
-      <Hightlights />
+      
       <Competition />
       <JoinUs />
       <FirstTimePopup/>
