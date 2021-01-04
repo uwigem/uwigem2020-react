@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import TeamInfo from './RecruitTeamInfo'
 import RecruitPosition from './RecruitTeamPosition';
+import ManagerInfo from './RecruitmentManagerInfo';
 import Button from 'react-bootstrap/Button';
 import Alert from 'react-bootstrap/Alert'
 import styles from './RecruitmentMenu.module.css'
@@ -131,6 +132,7 @@ export default function RecruitmentMenu() {
                     Apply Here
                 </Button>
             </div> */}
+            <ManagerInfo/>
         </div>
     )
 }
