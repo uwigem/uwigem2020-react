@@ -4,7 +4,7 @@ import RecruitPosition from './RecruitTeamPosition';
 import Button from 'react-bootstrap/Button';
 import Alert from 'react-bootstrap/Alert'
 import styles from './RecruitmentMenu.module.css'
-import './RecruitmentMenu.css';
+// import './RecruitmentMenu.css';
 
 /**
  * @returns {React.Component}
@@ -57,10 +57,10 @@ export default function RecruitmentMenu() {
             </div>
             <div className={styles.menuDiv}>
                 <div className={styles.menuCol}>
-                    <h3 className="recruit-menu-col-title">Research.</h3>
-                    <div className="recruit-menu-col-main">
-                        <div className="recruit-menu-col-side"></div>
-                        <div className="recruit-menu-col-text">
+                    <h3 className={styles.menuColTitle}>Research</h3>
+                    <div className={styles.menuColMain}>
+                        <div className={styles.menuColSide}></div>
+                        <div className={styles.menuColText}>
                             <TeamInfo 
                             teamName="Wetlab"
                             onClick={handleClick}
@@ -73,10 +73,10 @@ export default function RecruitmentMenu() {
                     </div>
                 </div>
                 <div className={styles.menuCol}>
-                    <h3 className={styles.menuColTitle}>Society.</h3>
-                    <div className="recruit-menu-col-main">
-                        <div className="recruit-menu-col-side"></div>
-                        <div className="recruit-menu-col-text">
+                    <h3 className={styles.menuColTitle}>Society</h3>
+                    <div className={styles.menuColMain}>
+                        <div className={styles.menuColSide}></div>
+                        <div className={styles.menuColText}>
                             <TeamInfo 
                                 teamName="Fundraising"
                                 onClick={handleClick}
@@ -93,10 +93,10 @@ export default function RecruitmentMenu() {
                     </div>
                 </div>
                 <div className={styles.menuCol}>
-                    <h3 className={styles.menuColTitle}>Information.</h3>
-                    <div className="recruit-menu-col-main">
-                        <div className="recruit-menu-col-side"></div>
-                        <div className="recruit-menu-col-text">
+                    <h3 className={styles.menuColTitle}>Information</h3>
+                    <div className={styles.menuColMain}>
+                        <div className={styles.menuColSide}></div>
+                        <div className={styles.menuColText}>
                             <TeamInfo 
                                 teamName="Design"
                                 onClick={handleClick}
