@@ -5,6 +5,7 @@ import { Modal } from 'react-bootstrap';
 import gmail from '../../../gmail.svg';
 import gmailInactive from '../../../gmailInactive.svg';
 import './teamMember.css';
+import logo from './web-logo.png';
 
 // expects a "person" prop
 
@@ -13,12 +14,13 @@ import './teamMember.css';
  */
 const TeamMember = props => {
     const [expanded, toggleExpand] = useState(false);
+    const placeholderImage = `./web-logo.png`;
     
     return <>
         {/* Member card */}
         <div className="person" onClick={() => toggleExpand(!expanded)}>
             <section className="person-image">
-                <img src={props.person.picture} alt={props.person.name} />
+                <img src={props.person.picture? props.person.picture : logo} alt={props.person.name} />
             </section>
             <section className="person-name">{props.person.name}</section>
             {/* first element of person.teams is always 'all' */}
@@ -31,7 +33,8 @@ const TeamMember = props => {
             >
                 {/* Pop-up when clicking member */}
                 <Modal.Body className="card-body">
-                    <img className="card-image" src={props.person.picture} alt={props.person.name} />
+                    <img className="card-image" src={props.person.picture? props.person.picture : logo} alt={props.person.name} />
+                    
                     <div className="card-content">
                         {
                             props.person.pronouns?
