@@ -14,7 +14,6 @@ import logo from './web-logo.png';
  */
 const TeamMember = props => {
     const [expanded, toggleExpand] = useState(false);
-    const placeholderImage = `./web-logo.png`;
     
     return <>
         {/* Member card */}
