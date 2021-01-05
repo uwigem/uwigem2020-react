@@ -1,9 +1,11 @@
 import React, {useState} from 'react';
 import TeamInfo from './RecruitTeamInfo'
 import RecruitPosition from './RecruitTeamPosition';
+import ManagerInfo from './RecruitmentManagerInfo';
 import Button from 'react-bootstrap/Button';
 import Alert from 'react-bootstrap/Alert'
-import './RecruitmentMenu.css';
+import styles from './RecruitmentMenu.module.css'
+// import './RecruitmentMenu.css';
 
 /**
  * @returns {React.Component}
@@ -28,38 +30,42 @@ export default function RecruitmentMenu() {
         return openingPositions[teamName].positions;
     }
 
-    return <>
-        <div className="m-5">
-            <h2 className="recruit-menu-title">Recruitment</h2>
-            <div className="recruit-menu-info-session">
+    return (
+        <div className={styles.container}>
+            <h2 className={styles.title}>Recruitment</h2>
+            <div className={styles.infoSession}>
                     We are holding a <b>virtual information session on Saturday, January 9th, 11:00am - 12:30pm</b>. 
+<<<<<<< HEAD
                 This will be held on zoom, go to the <a href="https://www.facebook.com/WashingtoniGEM">Facebook event</a> and join with link in the description. 
+=======
+                This will be held on zoom, go to the <a href="https://www.facebook.com/events/851619972292709">Facebook event</a> and join with link in the description. 
+>>>>>>> fd067706753eea0c9a76e78cf0d1d07386ffb6d2
                 A recording will be posted here shortly afterwards if you are unable to attend.
             </div>
-            <div className="recruit-menu-description">
+            <div className={styles.description}>
                 <hr/>
                 {recruitmentDescription}
                 <br/>
                 <br/>
                 {recruitmentNote}
             </div>
-            <div className="mt-3 recruit-menu-link-container">
+            <div className={styles.applyLinkContainer}>
                 <Button 
-                    className="recruit-menu-link" 
+                    className={styles.applyLink} 
                     href="https://forms.gle/rgyAy9JMLTFPaHDe6 "
                 >
                     Apply Here
                 </Button>
-                <Alert variant='light' className="recruit-menu-link-more">
+                <Alert variant='light' className={styles.menuLinkMore}>
                     Click on the team names below to learn more about the positions!
                 </Alert>
             </div>
-            <div className="recruit-menu-div">
-                <div className="recruit-menu-col">
-                    <h3 className="recruit-menu-col-title">Research.</h3>
-                    <div className="recruit-menu-col-main">
-                        <div className="recruit-menu-col-side"></div>
-                        <div className="recruit-menu-col-text">
+            <div className={styles.menuDiv}>
+                <div className={styles.menuCol}>
+                    <h3 className={styles.menuColTitle}>Research</h3>
+                    <div className={styles.menuColMain}>
+                        <div className={styles.menuColSide}></div>
+                        <div className={styles.menuColText}>
                             <TeamInfo 
                             teamName="Wetlab"
                             onClick={handleClick}
@@ -71,11 +77,11 @@ export default function RecruitmentMenu() {
                         </div>
                     </div>
                 </div>
-                <div className="recruit-menu-col">
-                    <h3 className="recruit-menu-col-title">Society.</h3>
-                    <div className="recruit-menu-col-main">
-                        <div className="recruit-menu-col-side"></div>
-                        <div className="recruit-menu-col-text">
+                <div className={styles.menuCol}>
+                    <h3 className={styles.menuColTitle}>Society</h3>
+                    <div className={styles.menuColMain}>
+                        <div className={styles.menuColSide}></div>
+                        <div className={styles.menuColText}>
                             <TeamInfo 
                                 teamName="Fundraising"
                                 onClick={handleClick}
@@ -91,11 +97,11 @@ export default function RecruitmentMenu() {
                         </div>
                     </div>
                 </div>
-                <div className="recruit-menu-col">
-                    <h3 className="recruit-menu-col-title">Information.</h3>
-                    <div className="recruit-menu-col-main">
-                        <div className="recruit-menu-col-side"></div>
-                        <div className="recruit-menu-col-text">
+                <div className={styles.menuCol}>
+                    <h3 className={styles.menuColTitle}>Information</h3>
+                    <div className={styles.menuColMain}>
+                        <div className={styles.menuColSide}></div>
+                        <div className={styles.menuColText}>
                             <TeamInfo 
                                 teamName="Design"
                                 onClick={handleClick}
@@ -130,6 +136,7 @@ export default function RecruitmentMenu() {
                     Apply Here
                 </Button>
             </div> */}
+            <ManagerInfo/>
         </div>
-    </>
+    )
 }
