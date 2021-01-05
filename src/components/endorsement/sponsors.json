@@ -37,7 +37,12 @@
 					"logo": "http://2017.igem.org/wiki/images/6/6a/T--Washington--Microbio.png",
 					"name": "UW Microbiology Department",
 					"link": "https://microbiology.washington.edu/"
-				}	
+				},
+				{
+					"logo": "http://2018.igem.org/wiki/images/0/00/T--Washington--Zuliplogo.png",
+					"name": "Zulip",
+					"link": "https://zulipchat.com/"
+				}
 			]
 		}	
 	],
@@ -53,11 +58,6 @@
 					"logo": "http://2018.igem.org/wiki/images/9/9e/T--Washington--IDTlogo.png",
 					"name": "IDT",
 					"link": "https://www.idtdna.com/"
-				},
-				{
-					"logo": "http://2018.igem.org/wiki/images/0/00/T--Washington--Zuliplogo.png",
-					"name": "Zulip",
-					"link": "https://zulipchat.com/"
 				},
 				{
 					"logo": "http://2017.igem.org/wiki/images/3/3a/T--Washington--BiomedicalInfoLogo.png",
