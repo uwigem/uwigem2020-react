@@ -18,7 +18,7 @@ export default function SynbioForEveryone() {
                         style={{backgroundImage: 'url(https://depts.washington.edu/advis104/wordpress/wp-content/uploads/2020/04/T-Washington-SSF1-1024x768.jpg)'}}/>
                     <div>
                         <div className="synbio-img-right"
-                            style={{backgroundImage: 'url(http://students.washington.edu/uwigem/sitdownsynbio/img/sitdown2018.png)'}}/>
+                            style={{backgroundImage: 'url(https://synbioforeveryone.org/img/Home/mentorship.png)'}}/>
                         <div className="synbio-view-more mt-5" style={{fontSize: '5vw'}}>
                             <a href="https://synbioforeveryone.org/Home">-{'>'}View More</a>
                         </div>
