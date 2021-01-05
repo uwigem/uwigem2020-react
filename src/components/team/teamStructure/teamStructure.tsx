@@ -13,19 +13,19 @@ export default function TeamStructure() {
     // #region mock team info
     const teamInfoMap = new Map();
     teamInfoMap.set("Wetlab", {
-        statement: "The Washington iGEM wetlab team is in charge of the hands-on parts of synthetic biology. This subteam realizes our project, iterating the organis Fm, running experiments, and collecting data. We collaborate directly with experts in the field too.",
+        statement: "The Washington iGEM wetlab team is in charge of the hands-on parts of synthetic biology. We typically focus on executing experiments, analyzing data, and sending back parameters for drylab modeling. This year’s lab restrictions have limited the ability to conduct lab work so we instead led the strategy and future implementation of our project. We design the biological system and plan future experiments once the lab work becomes possible. The size of this team is currently reduced due to lab restrictions and is tightly integrated with drylab providing biological interpretation of the math models.",
         // highlight: "Experiments and Experiments",
         // statementMore: " to show Experiments.",
         // example: "Experiments, Experiments, iGEM Experiments"
     });
     teamInfoMap.set("Drylab", {
-        statement: "Washington iGEM’s projects involve the creation of complex systems with many moving parts and experiments that generate large amounts of data to collect and analyze. This necessitates a need for mathematical models and computer simulations. Our drylab, or simulations subteam, builds computational models to influence the direction of the project and assist other subteams. To do this, drylab analyzes data and builds models to make predictions, identify improvements, and assess the performance of biological systems. ",
+        statement: "Washington iGEM’s projects involve the creation of complex systems that require extensive computational modeling of proteins and reaction kinetics. Utilizing cutting edge software and applying biochemical knowledge, we aim to optimally improve the function of existing proteins and design novel proteins to robustly develop our projects. By applying mathematical models and computer simulations, we seek to provide key insights to evaluate/modify project direction, and forecast performance metrics. As needed, we look to design/engineer hardware implementations to complement our wetlab efforts to create deliverable proof of concepts. ",
         // highlight: "Simulations and Simulations",
         // statementMore: " to show Simulations.",
         // example: "Simulations, Simulations, iGEM Simulations"
     });
     teamInfoMap.set("Fundraising", {
-        statement: "The fundraising subteam manages all the finances of Washington iGEM and is responsible for raising money for the project. To reach our goal, we contact potential sponsors, such as UW departments and companies that have a similar vision as us, while applying to grants and presenting on crowdfunding platforms.",
+        statement: "The fundraising subteam manages all the finances of Washington iGEM and is responsible for raising money for the project. To reach our goal, we contact potential sponsors, such as UW departments and companies that have a similar vision as us, while applying to grants and presenting on crowdfunding platforms. ",
         // highlight: "Fundraising and Fundraising",
         // statementMore: " to Fundraising.",
         // example: "Fundraising, Fundraising, iGEM Fundraising"
@@ -49,7 +49,7 @@ export default function TeamStructure() {
         // example: "Posters, Inforgraphics, iGEM merchandise"
     });
     teamInfoMap.set("Web Development", {
-        statement: "The web development team creates and maintains the portal between the team and the rest of the world. One of the most important parts of the competition is creating the project wiki that will be presented to the judges. This wiki doesn’t only summarize the project, it also needs to have style and flair to capture the reader's attention and clear visualizations of experimental data. But most of all, it needs to be clear and informative about the entire project from conception to development to completion. ",
+        statement: "The web development team creates and maintains the portal between the team and the rest of the world. One of the most important parts of the competition is creating the project wiki that will be presented to the judges. This wiki isn’t only a summary of the project, it also needs to have style and flair to capture the reader's attention while maintaining clear visualizations of experimental data and processes. Most of all, it needs to be clear and informative about the entire project from conception, to development, to completion. The presentation of our project wiki will be used by judges to determine our score for the competition.",
         // highlight: "Web Development and Web Development",
         // statementMore: " to Web Development.",
         // example: "Web Development, Web Development, iGEM Web Development"

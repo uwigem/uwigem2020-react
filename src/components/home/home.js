@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './home.module.css';
 
 import HomeCarousel from './Carousel/HomeCarousel';
-import Hightlights from './Highlights/Highlights';
+// import Hightlights from './Highlights/Highlights';
 import Competition from './competition/competition';
 import JoinUs from '../join-us/JoinUs';
 import FirstTimePopup from './Popup/FirstTimePopup';
