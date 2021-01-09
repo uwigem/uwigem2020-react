@@ -19,7 +19,7 @@ export default function TeamStructure() {
         // example: "Experiments, Experiments, iGEM Experiments"
     });
     teamInfoMap.set("Drylab", {
-        statement: "Washington iGEM’s projects involve the creation of complex systems that require extensive computational modeling of proteins and reaction kinetics. Utilizing cutting edge software and applying biochemical knowledge, we aim to optimally improve the function of existing proteins and design novel proteins to robustly develop our projects. By applying mathematical models and computer simulations, we seek to provide key insights to evaluate/modify project direction, and forecast performance metrics. As needed, we look to design/engineer hardware implementations to complement our wetlab efforts to create deliverable proof of concepts. ",
+        statement: "Washington iGEM’s projects involve the creation of complex systems that require extensive computational modeling of proteins and reaction kinetics. Utilizing cutting edge software and applying biochemical knowledge, we aim to optimally improve the function of existing proteins and design novel proteins to robustly develop our projects. By applying mathematical models and computer simulations, we seek to provide key insights to evaluate/modify project direction, and forecast performance metrics. As needed, we look to design/engineer hardware implementations to complement our wetlab efforts to create deliverable proof of concepts.",
         // highlight: "Simulations and Simulations",
         // statementMore: " to show Simulations.",
         // example: "Simulations, Simulations, iGEM Simulations"

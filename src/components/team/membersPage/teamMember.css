@@ -1,7 +1,7 @@
 .person {
     flex-shrink: 0;
     position: relative;
-    background-color: #4D2393;
+    background-color: white;
     max-width: 300px;
     max-height: 24rem;
     margin: 1rem;
@@ -27,6 +27,11 @@
 
 .person-image {
     width: 300px;
+}
+
+.person-image img {
+    margin: auto;
+    width: 100%;
 }
 
 .modal-content {

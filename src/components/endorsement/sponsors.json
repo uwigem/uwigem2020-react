@@ -1,7 +1,7 @@
 {
 	"current": [ 
 		{
-			"level": "Diamond",
+			"level": "Eukaryote",
 			"sponsors" : [
 				{
 					"logo": "https://2019.igem.org/wiki/images/8/88/T--Washington--BioChemLogo.png",
@@ -12,57 +12,22 @@
 					"logo": "https://2019.igem.org/wiki/images/1/1c/T--Washington--CSELogo.png",
 					"name": "UW PAUL G. ALLEN SCHOOL OF COMPUTER SCIENCE AND ENGINEERING",
 					"link": "https://www.cs.washington.edu/"
-				}
-			]
-		},
-		{
-			"level": "Gold",
-			"sponsors" : [
+				},
 				{
 					"logo": "https://2019.igem.org/wiki/images/c/c7/T--Washington--IPDLogo.png",
 					"name": "INSTITUTE FOR PROTEIN DESIGN",
 					"link": "https://www.ipd.uw.edu/"
-				},
-				{
-					"logo": "http://2018.igem.org/wiki/images/d/d3/T--Washington--PvPlogo.png",
-					"name": "PVP Biologics",
-					"link": "https://www.pvpbio.com/"
-				},
-				{
-					"logo": "http://2016.igem.org/wiki/images/b/b6/T--Washington--Sponsor_CollegeEngineering.png ",
-					"name": "UW College of Engineering",
-					"link": "https://www.engr.washington.edu/"
 				}
 			]
 		},
 		{
-			"level": "Silver",
+			"level": "Prokaryote",
 			"sponsors" : [
-				{
-					"logo": "http://2017.igem.org/wiki/images/f/f4/T--Washington--BioELogo.png",
-					"name": "UW Bioengineering Department",
-					"link": "https://bioe.uw.edu/"
-				},
-				{
-					"logo": "http://2017.igem.org/wiki/images/4/4a/T--Washington--DepBio.png",
-					"name": "UW Biology Department",
-					"link": "https://www.biology.washington.edu/"
-				},
-				{
-					"logo": "http://2017.igem.org/wiki/images/5/58/T--Washington--ChemLogo.png",
-					"name": "UW Chemistry Department",
-					"link": "http://depts.washington.edu/chem/"
-				}
 			]
 		},
 		{
-			"level": "Bronze",
+			"level": "Plasmid",
 			"sponsors" : [
-				{
-					"logo": "https://2019.igem.org/wiki/images/8/84/T--Washington--Promega.png",
-					"name": "Promega",
-					"link": "https://www.promega.com/"
-				},
 				{
 					"logo": "http://2017.igem.org/wiki/images/2/2c/T--Washington--amathlogo.png",
 					"name": "UW Applied Math Department",
@@ -72,9 +37,14 @@
 					"logo": "http://2017.igem.org/wiki/images/6/6a/T--Washington--Microbio.png",
 					"name": "UW Microbiology Department",
 					"link": "https://microbiology.washington.edu/"
+				},
+				{
+					"logo": "http://2018.igem.org/wiki/images/0/00/T--Washington--Zuliplogo.png",
+					"name": "Zulip",
+					"link": "https://zulipchat.com/"
 				}
 			]
-		}
+		}	
 	],
 	"past": [ 
 		{
@@ -88,11 +58,6 @@
 					"logo": "http://2018.igem.org/wiki/images/9/9e/T--Washington--IDTlogo.png",
 					"name": "IDT",
 					"link": "https://www.idtdna.com/"
-				},
-				{
-					"logo": "http://2018.igem.org/wiki/images/0/00/T--Washington--Zuliplogo.png",
-					"name": "Zulip",
-					"link": "https://zulipchat.com/"
 				},
 				{
 					"logo": "http://2017.igem.org/wiki/images/3/3a/T--Washington--BiomedicalInfoLogo.png",
@@ -148,6 +113,36 @@
 					"logo": "http://2017.igem.org/wiki/images/9/91/T--Washington--NordsonMedical.png",
 					"name": "Nordson Medical",
 					"link": "http://www.nordsonmedical.com/"
+				},
+				{
+					"logo": "http://2018.igem.org/wiki/images/d/d3/T--Washington--PvPlogo.png",
+					"name": "PVP Biologics",
+					"link": "https://www.pvpbio.com/"
+				},
+				{
+					"logo": "http://2016.igem.org/wiki/images/b/b6/T--Washington--Sponsor_CollegeEngineering.png ",
+					"name": "UW College of Engineering",
+					"link": "https://www.engr.washington.edu/"
+				},
+				{
+					"logo": "https://2019.igem.org/wiki/images/8/84/T--Washington--Promega.png",
+					"name": "Promega",
+					"link": "https://www.promega.com/"
+				},
+				{
+					"logo": "http://2017.igem.org/wiki/images/f/f4/T--Washington--BioELogo.png",
+					"name": "UW Bioengineering Department",
+					"link": "https://bioe.uw.edu/"
+				},
+				{
+					"logo": "http://2017.igem.org/wiki/images/4/4a/T--Washington--DepBio.png",
+					"name": "UW Biology Department",
+					"link": "https://www.biology.washington.edu/"
+				},
+				{
+					"logo": "http://2017.igem.org/wiki/images/5/58/T--Washington--ChemLogo.png",
+					"name": "UW Chemistry Department",
+					"link": "http://depts.washington.edu/chem/"
 				}
 			]
 		}
