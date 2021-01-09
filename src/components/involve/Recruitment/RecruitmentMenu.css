@@ -5,22 +5,21 @@
 .recruit-menu-div {
     margin-top: 3rem;
     justify-content: space-around;
-    margin-left: 6rem;
-    margin-right: 2rem;
+    margin-left: 1rem;
     margin-bottom: 5em;
 }
 
 .recruit-menu-title {
-    margin-left: 200px;
+    margin-left: 10rem;
     color: black;
     font-size: 32px;
     font-weight: 500;
 }
 
 .recruit-menu-description {
-    margin-left: 200px;
-    margin-right: 200px;
-    margin-top: 30px;
+    margin-left: 10rem;
+    margin-right: 9rem;
+    margin-top: 2rem;
     color: black;
     margin-bottom: 1.5rem;
 }
@@ -33,9 +32,11 @@
 }
 
 .recruit-menu-link-more {
-    width: 50%;
-    margin-left: 11.5rem;
-    margin-top: 60px;
+    width: 75%;
+    margin-left: 8rem;
+    margin-right: 8rem;
+    margin-top: 3rem;
+    height: auto;
 }
 
 .recruit-menu-col-title {
