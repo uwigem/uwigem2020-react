@@ -39,7 +39,6 @@ jobs:
           script: |
             rm -rf public_html/*
             cd uwigem2020-react
-            git checkout gh-pages
             git pull
             cd ..
-            cp -r uwigem2020-react/build/* public_html/
+            cp -r uwigem2020-react/* public_html/
