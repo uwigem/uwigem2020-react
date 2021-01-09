@@ -12,9 +12,11 @@ const HomePage = props => {
     <>
       <HomeCarousel />
       <div className={styles.infoSession}>
-        We are holding a <b>virtual information session on Saturday, January 9th, 11:00am - 12:30pm</b>. 
-        This will be held on zoom, go to the <a href="https://www.facebook.com/events/851619972292709">Facebook event</a> and join with link in the description. 
-        A recording will be posted here shortly afterwards if you are unable to attend.
+        We had a recruitmegnt info session for the 2021 season!
+        <br/>
+        See the recording here: <a href="">Link</a>
+        <br/>
+        See the slides here: <a href="https://docs.google.com/presentation/d/1bCkQujJGBAyKfE3P7g6NP8DPPTTflzFzg3rek41Q3vE/edit?usp=sharing">Link</a>
       </div>
       
       <Competition />
