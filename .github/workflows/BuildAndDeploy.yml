@@ -41,4 +41,4 @@ jobs:
             cd uwigem2020-react
             git pull
             cd ..
-            cp -r uwigem2020-react/build/* public_html/
+            cp -r uwigem2020-react/* public_html/
