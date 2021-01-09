@@ -14,7 +14,7 @@ const HomePage = props => {
       <div className={styles.infoSession}>
         We had a recruitmegnt info session for the 2021 season!
         <br/>
-        See the recording here: <a href="">Link</a>
+        See the recording here: Link
         <br/>
         See the slides here: <a href="https://docs.google.com/presentation/d/1bCkQujJGBAyKfE3P7g6NP8DPPTTflzFzg3rek41Q3vE/edit?usp=sharing">Link</a>
       </div>
