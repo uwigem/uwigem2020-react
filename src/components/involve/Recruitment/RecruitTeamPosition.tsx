@@ -4,7 +4,12 @@ import './RecruitTeamPostion.css';
 
 type propsType = {
     teamName: string,
-    positions: any
+    positions: position[]
+}
+
+type position = {
+    name: string,
+    description: string,
 }
 
 /**
@@ -27,7 +32,7 @@ export default function RecruitTeamPostion(
             </div>
             <div className="recruit-team-position-description">
                 <b>Position Description: </b> 
-                <div>{element.description}</div>
+                <div dangerouslySetInnerHTML={{__html: element.description}}></div>
             </div>
             <br/>
         </div>
