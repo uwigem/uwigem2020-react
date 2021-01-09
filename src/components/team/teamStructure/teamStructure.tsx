@@ -25,7 +25,7 @@ export default function TeamStructure() {
         // example: "Simulations, Simulations, iGEM Simulations"
     });
     teamInfoMap.set("Fundraising", {
-        statement: "The fundraising subteam manages all the finances of Washington iGEM and is responsible for raising money for the project. To reach our goal, we contact potential sponsors, such as UW departments and companies that have a similar vision as us, while applying to grants and presenting on crowdfunding platforms.",
+        statement: "The fundraising subteam manages all the finances of Washington iGEM and is responsible for raising money for the project. To reach our goal, we contact potential sponsors, such as UW departments and companies that have a similar vision as us, while applying to grants and presenting on crowdfunding platforms. ",
         // highlight: "Fundraising and Fundraising",
         // statementMore: " to Fundraising.",
         // example: "Fundraising, Fundraising, iGEM Fundraising"
