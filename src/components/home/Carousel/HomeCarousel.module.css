@@ -47,16 +47,17 @@
   flex-direction: column;
   align-content: center;
   align-items: center;
-  justify-items: space-around;
-  justify-content: space-around;
+  justify-content: space-evenly;
 
-  margin-bottom: 5%;
+  margin-top: 75px;
+
+  margin-bottom: 20px;
 }
 
 .right div {
   margin: 10% auto;
 
-  max-width: 300px;
+  max-width: 80%;
 
   font-family: 'Roboto';
   font-size: x-large;

@@ -1,9 +1,11 @@
 import React, {useState} from 'react';
 import TeamInfo from './RecruitTeamInfo'
 import RecruitPosition from './RecruitTeamPosition';
+import ManagerInfo from './RecruitmentManagerInfo';
 import Button from 'react-bootstrap/Button';
 import Alert from 'react-bootstrap/Alert'
-import './RecruitmentMenu.css';
+import styles from './RecruitmentMenu.module.css'
+// import './RecruitmentMenu.css';
 
 /**
  * @returns {React.Component}
@@ -11,68 +13,10 @@ import './RecruitmentMenu.css';
 export default function RecruitmentMenu() {
 
     const [team, setTeam] = useState({ name: '', expanded: false});
-    const testPosition = "Test Position";
-    const postionDescription = "All skill levels, class standing, and major (intended or declared) are eligible. Our recruitment is from late Autumn quarter to Winter quarter. UW iGEM is a serious time commitment, requiring 5-10 hours/week in spring quarter and 10-20 hours/week in the summer and fall. We expect all members to dedicate themselves to the team for the entire season. Subteams include teams performing biological labwork (wetlab), hardware + software development (drylab), funding, human practices, design and website development.";
+    const recruitmentDescription = "Washington iGEM is recruiting for several positions in 2021 for our interdisciplinary, undergraduate-driven, synthetic biology research and entrepreneurship competition team! All skill levels, class standing, and major (intended or declared) are eligible. Our recruitment is from late Autumn quarter to Winter quarter. UW iGEM is a serious time commitment, requiring 10-15 hours/week in winter and spring quarter and 10-20 hours/week in the summer and fall. We expect all members to dedicate themselves to the team for the entire season. Subteams include teams performing biological labwork (wetlab), hardware + software development (drylab), fundraising, human practices, design, and website development." 
+    const recruitmentNote = "Note: we are recruiting manager roles and member (non-manager) roles. The managers are expected to be full-time roles, that is, little to no direct involvement in other subteams. Team members, however, are encouraged to participate in more than one subteam (we recommend two). ";
 
-    // #region mock team info
-    const teamInfoMap = new Map();
-    teamInfoMap.set("Wetlab", {
-        statement: "Experiments ",
-        highlight: "Experiments and Experiments",
-        statementMore: " to show Experiments.",
-        example: "Experiments, Experiments, iGEM Experiments",
-        position: testPosition,
-        requirement: postionDescription
-    });
-    teamInfoMap.set("Drylab", {
-        statement: "People who are dedicated to Simulations ",
-        highlight: "Simulations and Simulations",
-        statementMore: " to show Simulations.",
-        example: "Simulations, Simulations, iGEM Simulations",
-        position: testPosition,
-        requirement: postionDescription
-    });
-    teamInfoMap.set("Fundraising", {
-        statement: "People who are dedicated to Fundraising ",
-        highlight: "Fundraising and Fundraising",
-        statementMore: " to Fundraising.",
-        example: "Fundraising, Fundraising, iGEM Fundraising",
-        position: testPosition,
-        requirement: postionDescription
-    });
-    teamInfoMap.set("Synbio for Everyone", {
-        statement: "People who are dedicated to Synbio ",
-        highlight: "Synbio and Synbio",
-        statementMore: " to Synbio.",
-        example: "Synbio, Synbio, iGEM Synbio",
-        position: testPosition,
-        requirement: postionDescription
-    });
-    teamInfoMap.set("Human Practices", {
-        statement: "People who are dedicated to Outreach ",
-        highlight: "Outreach and Outreach",
-        statementMore: " to Outreach.",
-        example: "Outreach, Outreach, iGEM Outreach",
-        position: testPosition,
-        requirement: postionDescription
-    });
-    teamInfoMap.set("Design", {
-        statement: "People who are dedicated to design meaningful ",
-        highlight: "graphics and products",
-        statementMore: " to show empathy to the iGEM competition.",
-        example: "Posters, Inforgraphics, iGEM merchandise",
-        position: testPosition,
-        requirement: postionDescription
-    });
-    teamInfoMap.set("Web Development", {
-        statement: "People who are dedicated to Web Development ",
-        highlight: "Web Development and Web Development",
-        statementMore: " to Web Development.",
-        example: "Web Development, Web Development, iGEM Web Development",
-        position: testPosition,
-        requirement: postionDescription
-    });
-    //#endregion
+    const openingPositions = require('./openingPositions.json');
 
     const handleClick = (teamName) => {
         if (teamName === team.name) {
@@ -82,29 +26,42 @@ export default function RecruitmentMenu() {
         }
     }
 
-    return <>
-        <div className="m-5">
-            <h2 className="recruit-menu-title">Recruitment</h2>
-            <div className="recruit-menu-description">
-                {postionDescription}
+    const getPositions = (teamName) => {
+        return openingPositions[teamName].positions;
+    }
+
+    return (
+        <div className={styles.container}>
+            <h2 className={styles.title}>Recruitment</h2>
+            <div className={styles.infoSession}>
+                    We are holding a <b>virtual information session on Saturday, January 9th, 11:00am - 12:30pm</b>. 
+                This will be held on zoom, go to the <a href="https://www.facebook.com/events/851619972292709">Facebook event</a> and join with link in the description. 
+                A recording will be posted here shortly afterwards if you are unable to attend.
             </div>
-            <div className="mt-3 recruit-menu-link-container">
+            <div className={styles.description}>
+                <hr/>
+                {recruitmentDescription}
+                <br/>
+                <br/>
+                {recruitmentNote}
+            </div>
+            <div className={styles.applyLinkContainer}>
                 <Button 
-                    className="recruit-menu-link" 
-                    href="https://react-bootstrap.github.io/components/buttons/#api"
+                    className={styles.applyLink} 
+                    href="https://forms.gle/rgyAy9JMLTFPaHDe6 "
                 >
                     Apply Here
                 </Button>
-                <Alert variant='light' className="recruit-menu-link-more">
+                <Alert variant='light' className={styles.menuLinkMore}>
                     Click on the team names below to learn more about the positions!
                 </Alert>
             </div>
-            <div className="recruit-menu-div">
-                <div className="recruit-menu-col">
-                    <h3 className="recruit-menu-col-title">Research.</h3>
-                    <div className="recruit-menu-col-main">
-                        <div className="recruit-menu-col-side"></div>
-                        <div className="recruit-menu-col-text">
+            <div className={styles.menuDiv}>
+                <div className={styles.menuCol}>
+                    <h3 className={styles.menuColTitle}>Research</h3>
+                    <div className={styles.menuColMain}>
+                        <div className={styles.menuColSide}></div>
+                        <div className={styles.menuColText}>
                             <TeamInfo 
                             teamName="Wetlab"
                             onClick={handleClick}
@@ -116,14 +73,14 @@ export default function RecruitmentMenu() {
                         </div>
                     </div>
                 </div>
-                <div className="recruit-menu-col">
-                    <h3 className="recruit-menu-col-title">Society.</h3>
-                    <div className="recruit-menu-col-main">
-                        <div className="recruit-menu-col-side"></div>
-                        <div className="recruit-menu-col-text">
+                <div className={styles.menuCol}>
+                    <h3 className={styles.menuColTitle}>Society</h3>
+                    <div className={styles.menuColMain}>
+                        <div className={styles.menuColSide}></div>
+                        <div className={styles.menuColText}>
                             <TeamInfo 
-                            teamName="Fundraising"
-                            onClick={handleClick}
+                                teamName="Fundraising"
+                                onClick={handleClick}
                             />
                             <TeamInfo 
                                 teamName="Human Practices"
@@ -136,14 +93,14 @@ export default function RecruitmentMenu() {
                         </div>
                     </div>
                 </div>
-                <div className="recruit-menu-col">
-                    <h3 className="recruit-menu-col-title">Information.</h3>
-                    <div className="recruit-menu-col-main">
-                        <div className="recruit-menu-col-side"></div>
-                        <div className="recruit-menu-col-text">
+                <div className={styles.menuCol}>
+                    <h3 className={styles.menuColTitle}>Information</h3>
+                    <div className={styles.menuColMain}>
+                        <div className={styles.menuColSide}></div>
+                        <div className={styles.menuColText}>
                             <TeamInfo 
-                            teamName="Design"
-                            onClick={handleClick}
+                                teamName="Design"
+                                onClick={handleClick}
                             />
                             <TeamInfo 
                                 teamName="Web Development"
@@ -157,12 +114,13 @@ export default function RecruitmentMenu() {
                     team.expanded?
                     <RecruitPosition 
                         teamName={team.name}
-                        statement={teamInfoMap.get(team.name).statement}
-                        highlight={teamInfoMap.get(team.name).highlight}
-                        statementMore={teamInfoMap.get(team.name).statementMore}
-                        example={teamInfoMap.get(team.name).example}
-                        position={teamInfoMap.get(team.name).position}
-                        description={teamInfoMap.get(team.name).requirement}
+                        positions={getPositions(team.name)}
+                        // statement={teamInfoMap.get(team.name).statement}
+                        // highlight={teamInfoMap.get(team.name).highlight}
+                        // statementMore={teamInfoMap.get(team.name).statementMore}
+                        // example={teamInfoMap.get(team.name).example}
+                        // position={teamInfoMap.get(team.name).position}
+                        // description={teamInfoMap.get(team.name).requirement}
                     />
                     : null
             }
@@ -174,6 +132,7 @@ export default function RecruitmentMenu() {
                     Apply Here
                 </Button>
             </div> */}
+            <ManagerInfo/>
         </div>
-    </>
+    )
 }

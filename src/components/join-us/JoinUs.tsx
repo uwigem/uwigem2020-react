@@ -26,16 +26,18 @@ export default function JoinUs() {
       if (entry.isIntersecting) {
         setAnimationProgress(entry.intersectionRatio)
       } else {
-        if (animationProgress !== 0) {
-          setAnimationProgress(0)
-        }
+        setAnimationProgress(0)
+        // if (animationProgress !== 0) {
+        //   setAnimationProgress(0)
+        // }
       }
     })
   }
 
-  const viewportObserver = new IntersectionObserver(handleRatioChange, observerOption)
+ 
   
   useEffect(() => {
+    const viewportObserver = new IntersectionObserver(handleRatioChange, observerOption)
     let target = document.querySelector("#join-us section")
     if (target)
       viewportObserver.observe(target)
@@ -43,13 +45,13 @@ export default function JoinUs() {
     return function cleanup() {
       viewportObserver.disconnect()
     }
-  }, [viewportObserver]);
+  }, [setAnimationProgress]);
  
   return (
     <article id={"join-us"} className={styles.article}>
       <header className={styles.header}>
           <div className={styles.topBar}></div>
-          <h3>Join Us</h3>
+          <h3>Check Us Out</h3>
       </header>
       <section className={styles.section}>
         <SlidingDoors 
@@ -58,7 +60,7 @@ export default function JoinUs() {
           progress={animationProg(animationProgress)}/>
         <SocialMediaLinks 
           animationProgress={animationProg(animationProgress)}
-          linksList={[links.github, links.facebook, links.placeHolder]}/>
+          linksList={links}/>
       </section>
     </article>
   )

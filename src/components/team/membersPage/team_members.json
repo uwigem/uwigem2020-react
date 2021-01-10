@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "name": "Chris",
+        "name": "Chris Cheng",
         "major": "Informatics",
         "teams": [
             "All",
@@ -11,16 +11,16 @@
         "year": [
             2020
         ],
-        "picture": "https://placekitten.com/380/380",
-        "pronouns": null,
-        "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "linkedin": "https://www.linkedin.com",
+        "picture": "",
+        "pronouns": "She/Her",
+        "bio": "",
+        "linkedin": "",
         "contact": null,
-        "github": "https://github.com/"
+        "github": ""
     },
     {
         "id": 2,
-        "name": "Diana",
+        "name": "Diana Dai",
         "major": "Computer Science",
         "teams": [
             "All",
@@ -29,16 +29,16 @@
         "year": [
             2020
         ],
-        "picture": "https://placekitten.com/380/380",
-        "pronouns": null,
-        "bio": null,
-        "contact": null,
-        "linkedin": "https://www.linkedin.com",
-        "github": "https://github.com/"
+        "picture": "",
+        "pronouns": "She/Her",
+        "bio": "Diana is a junior obtaining a BS in Computer Science. Her focus on the team was to produce the team Wikis. In her spare time, she enjoys playing video games, listening to music, and teaching kids from kindergarten to high school.",
+        "contact": "dy2018@uw.edu",
+        "linkedin": "https://www.linkedin.com/in/diana-dai/",
+        "github": "https://github.com/MoSummers-dy"
     },
     {
         "id": 3,
-        "name": "Jaden",
+        "name": "Jaden Stetler",
         "major":"Computer Science",
         "teams": [
             "All",
@@ -48,36 +48,35 @@
         "year": [
             2020
         ],
-        "picture": "https://placekitten.com/380/380",
-        "pronouns": "he/him",
-        "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "linkedin": null,
-        "contact": "uwigem@uw.edu",
-        "github": "https://github.com/"
+        "picture": "",
+        "pronouns": "He/Him",
+        "bio": "I am a Computer Science major at UW involved in Web Development and previously involved with Human Practices.",
+        "linkedin": "https://www.linkedin.com/in/jadenstetler/",
+        "contact": "jadens3@uw.edu",
+        "github": null
     },
     {
         "id": 4,
-        "name": "Jennifer",
+        "name": "Jennifer Tao",
         "major":"Computer Science",
         "teams": [
             "All",
-            "Web Development",
-            "Adviser"
+            "Web Development"
         ],
         "year": [
             2019,
             2020
         ],
-        "picture": "https://placekitten.com/380/380",
-        "pronouns": null,
-        "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "linkedin": "https://www.linkedin.com",
-        "contact": null,
-        "github": null
+        "picture": "",
+        "pronouns": "She/Her",
+        "bio": "Jennifer is a junior studying Computer Science. She is passionate about web development and software engineering. She also enjoys painting, dancing and playing video games.",
+        "linkedin": "https://www.linkedin.com/in/tingjia-tao-5bba31147/",
+        "contact": "jentao@uw.edu",
+        "github": "https://github.com/jentao"
     },
     {
         "id": 5,
-        "name": "Victor",
+        "name": "Victor Shan",
         "major":"Computer Science",
         "teams": [
             "All",
@@ -86,16 +85,16 @@
         "year": [
             2020
         ],
-        "picture": "https://placekitten.com/380/380",
-        "pronouns": null,
-        "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "linkedin": null,
-        "contact": null,
-        "github": null
+        "picture": "",
+        "pronouns": "He/Him",
+        "bio": "I am sophomore at UW's Paul G. Allen School of Computer Science.  On the iGEM team, I worked on the \"Join Us\" section on the homepage and the sidebar on the team page. I'm interested in making PWAs with machine learning.  I like listening to music and audiobooks on walks/runs and playing StarCraft 2.",
+        "linkedin": "https://www.linkedin.com/in/victorshanvs/",
+        "contact": "vshan@uw.edu",
+        "github": "https://github.com/VictorShan"
     },
     {
         "id": 6,
-        "name": "Max",
+        "name": "Max Zhou",
         "major":"Computer Science",
         "teams": [
             "All",
@@ -105,30 +104,209 @@
             2019,
             2020
         ],
-        "picture": "https://placekitten.com/380/380",
-        "pronouns": null,
-        "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "linkedin": "https://www.linkedin.com",
-        "contact": null,
-        "github": "https://github.com/"
+        "picture": "",
+        "pronouns": "He/Him",
+        "bio": "Max is from Hangzhou, China and is currently a senior studying computer science. He works on the Washington iGEM websites. Outside of iGEM he enjoys cooking and Ping Pong.",
+        "linkedin": "https://www.linkedin.com/in/yifan-zhou-99913217a/",
+        "contact": "zhouyf98@uw.edu",
+        "github": "https://github.com/zhouyifan0904"
     },
     {
         "id": 7,
-        "name": "Max",
-        "major":"Computer Science",
+        "name": "Delaney Wilde",
+        "major":"Bioengineering",
         "teams": [
             "All",
-            "Web Development"
+            "Design",
+            "Advisor"
         ],
         "year": [
             2019,
             2020
         ],
-        "picture": "https://placekitten.com/380/380",
-        "pronouns": null,
-        "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "linkedin": "https://www.linkedin.com",
-        "contact": null,
-        "github": "https://github.com/"
+        "picture": "",
+        "pronouns": "",
+        "bio": "Delaney is a junior majoring in Bioengineering and minoring in Math. She currently works on design and advises the team, and she was previously a simulations member as well. In addition to iGEM, Delaney participates in other research on campus, is on the Bioengineering Diversity Committe, and is the Treasurer of the Tau Beta Pi chapter at UW.",
+        "linkedin": "www.linkedin.com/in/delaneywilde",
+        "contact": "dwilde@uw.edu",
+        "github": ""
+    },
+    {
+        "id": 8,
+        "name": "Forrest Hsu",
+        "major":"Biology (MCD)",
+        "teams": [
+            "All",
+            "Drylab", 
+            "Wetlab",
+            "Human Practices"
+        ],
+        "year": [
+            2019,
+            2020
+        ],
+        "picture": "",
+        "pronouns": "",
+        "bio": "Forrest is a current senior studying Molecular Biology. Outside of the lab, he plays baritone horn for the m9, dances, and bakes bread.",
+        "linkedin": "https://www.linkedin.com/in/forrest-hsu/",
+        "contact": "",
+        "github": "https://github.com/HForrest"
+    },
+    {
+        "id": 9,
+        "name": "Jasmine Wee",
+        "major":"MCD Biology",
+        "teams": [
+            "All",
+            "Drylab",
+            "Design"
+        ],
+        "year": [
+            2019,
+            2020
+        ],
+        "picture": "",
+        "pronouns": "She/Her",
+        "bio": "Hello! My reasons for joining iGEM is not only to learn more about biology, but being able to apply what I've learnt in class to real world problems. In my free time, I'm an amateur photographer and love exploring the outdoors. ",
+        "linkedin": "www.linkedin.com/in/jasminewee7",
+        "contact": "weejas22@uw.edu",
+        "github": ""
+    },
+    {
+        "id": 10,
+        "name": "Vrishabhadev Sathish Kumar",
+        "major":"Computer Science",
+        "teams": [
+            "All",
+            "Drylab",
+            "Human Practices"
+        ],
+        "year": [
+            2019,
+            2020
+        ],
+        "picture": "",
+        "pronouns": "He/Him",
+        "bio": "Hey, Vrishab here!  Inspired by the intersections of CS and Data Science in synthetic biology and genetics, I am truly excited to explore and generate meaningful impacts on communities in need through iGEM! ",
+        "linkedin": "https://www.linkedin.com/in/v-s-k/",
+        "contact": "skvdev17@cs.washington.edu",
+        "github": "https://github.com/vsk-1167"
+    },
+    {
+        "id": 11,
+        "name": "Karl Anderson",
+        "major":"Biochemistry and Biology",
+        "teams": [
+            "All",
+            "Advisor"
+        ],
+        "year": [
+            2019,
+            2020
+        ],
+        "picture": "",
+        "pronouns": "He/Him",
+        "bio": "Karl has been a member of Washington iGEM since 2017, and from 2019 onwards has continued as an advisor. He graduated UW in 2020, and now works at a company focusing on immunotherapy research. ",
+        "linkedin": "https://www.linkedin.com/in/karlbanderson/",
+        "contact": "karl.anderson980@gmail.com",
+        "github": ""
+    },
+    {
+        "id": 12,
+        "name": "Shean Fu Phen",
+        "major":"Physiology",
+        "teams": [
+            "All",
+            "Design"
+        ],
+        "year": [
+            2019,
+            2020
+        ],
+        "picture": "",
+        "pronouns": "He/Him",
+        "bio": "As a wet lab researcher turned designer, I work on the team's visuals. Having been on the team for two years, my favorite part of iGEM is the supportive community.",
+        "linkedin": "https://www.linkedin.com/in/shean-fu-phen/",
+        "contact": "sphen803@uw.edu",
+        "github": ""
+    },
+    {
+        "id": 13,
+        "name": "Christina Chen",
+        "major":"Biochemistry",
+        "teams": [
+            "All",
+            "Drylab",
+            "Wetlab",
+            "Fundraising"
+        ],
+        "year": [
+            2019,
+            2020
+        ],
+        "picture": "",
+        "pronouns": "She/Her",
+        "bio": "Christina is a graduating junior. Outside of iGEM, she’s an officer for AED Pre-health honors society and works with the Wang Lab in the CSE department, researching Skeletal Muscle Stem Cells. In her free time, she volunteers with COPE and enjoys playing tennis. ",
+        "linkedin": "",
+        "contact": "ziyuanc@uw.edu",
+        "github": ""
+    },
+    {
+        "id": 14,
+        "name": "Ellen Xu",
+        "major":"Biochemistry/Microbiology",
+        "teams": [
+            "All",
+            "Wetlab", 
+            "Synbio for Everyone"
+        ],
+        "year": [
+            2019,
+            2020
+        ],
+        "picture": "",
+        "pronouns": "She/Her",
+        "bio": "I joined iGEM to explore more about the Synthetic Biology field. It was excited to move to learn about computational Biology in this year's project. ",
+        "linkedin": "",
+        "contact": "ellenxyy@uw.edu",
+        "github": ""
+    },
+    {
+        "id": 15,
+        "name": "Emily Xu",
+        "major":"Molecular, Cellular, and Developmental Biology",
+        "teams": [
+            "All",
+            "Design"
+        ],
+        "year": [
+            2019,
+            2020
+        ],
+        "picture": "",
+        "pronouns": "She/Her",
+        "bio": "Emily Xu is an undergraduate at UW pursuing a B.S. in Molecular, Cellular, and Developmental Biology and a Data Science minor. In her free time, she enjoys drawing, hiking, and watching cooking videos. ",
+        "linkedin": "",
+        "contact": "ex2@uw.edu",
+        "github": ""
+    },
+    {
+        "id": 16,
+        "name": "Jay Yung",
+        "major":"Plant Biology",
+        "teams": [
+            "All",
+            "Advisor"
+        ],
+        "year": [
+            2019,
+            2020
+        ],
+        "picture": "",
+        "pronouns": "He/Him",
+        "bio": "Jay has been involved with iGEM since 2018 and currently serves as an advisor. He graduated from UW in 2020 and currently studies photosynthesis with the Niyogi Lab at UC Berkeley.",
+        "linkedin": "",
+        "contact": "jaycy@uw.edu",
+        "github": ""
     }
 ]

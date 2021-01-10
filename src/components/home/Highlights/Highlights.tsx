@@ -18,6 +18,7 @@ const Highlights = () => {
         </div>
         <div className={s.center}>
           <ProjectCard />
+          <ProjectCard />
         </div>
         <div className={s.right}>
           
@@ -32,9 +33,14 @@ export default Highlights;
 const ProjectCard = () => {
   return (
     <div className={s.card}>
-      <div className={s.year}>2013</div>
-      <div className={s.projectTitle}>Project Name</div>
-      <div className={s.prize}><span>Best Public Relations</span><br/><span>Gold Medal Prject</span></div>
+      <div className={s.cardCenter}>
+        <div className={s.year}>2013</div>
+        <div className={s.projectTitle}>Project Name</div>
+        <div className={s.prize}>
+          <span>Best Public Relations</span>
+          <br/>
+          <span>Gold Medal Project</span></div>
+      </div>
     </div>
   )
 }

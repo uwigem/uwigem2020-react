@@ -1,0 +1,23 @@
+.root {
+  height: 46px;
+  width: 209px;
+  background-color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.root a {
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.0357143em;
+
+  color: #4B2E83;
+  
+}
