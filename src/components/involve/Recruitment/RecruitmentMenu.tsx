@@ -14,7 +14,8 @@ export default function RecruitmentMenu() {
 
     const [team, setTeam] = useState({ name: '', expanded: false});
     const recruitmentDescription = "Washington iGEM is recruiting for several positions in 2021 for our interdisciplinary, undergraduate-driven, synthetic biology research and entrepreneurship competition team! All skill levels, class standing, and major (intended or declared) are eligible. Our recruitment is from late Autumn quarter to Winter quarter. UW iGEM is a serious time commitment, requiring 10-15 hours/week in winter and spring quarter and 10-20 hours/week in the summer and fall. We expect all members to dedicate themselves to the team for the entire season. Subteams include teams performing biological labwork (wetlab), hardware + software development (drylab), fundraising, human practices, design, and website development." 
-    const recruitmentNote = "Note: we are recruiting manager roles and member (non-manager) roles. The managers are expected to be full-time roles, that is, little to no direct involvement in other subteams. Team members, however, are encouraged to participate in more than one subteam (we recommend two). ";
+    const managerNote = "Note: we are recruiting manager roles and member (non-manager) roles. The managers are expected to be full-time roles, that is, little to no direct involvement in other subteams. Team members, however, are encouraged to participate in more than one subteam (we recommend two). ";
+    const webdevNote = "UI/UX Deisgner and Web Developer candidates will receive an application in addition to the Washington iGEM Team application."
 
     const openingPositions = require('./openingPositions.json');
 
@@ -43,7 +44,9 @@ export default function RecruitmentMenu() {
                 {recruitmentDescription}
                 <br/>
                 <br/>
-                {recruitmentNote}
+                {managerNote}
+                <br/>
+                {webdevNote}
             </div>
             <div className={styles.applyLinkContainer}>
                 <Button 
