@@ -64,7 +64,7 @@ const TeamMentor = props => {
                         }
 
                         {
-                            props.person.publications?
+                            (props.person.publications) ?
                                 <>
                                     <p className='mentor-section'>Publications</p>
                                     <p className="card-info">

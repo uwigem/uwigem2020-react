@@ -25,6 +25,7 @@
 .card-image {
     float: left;
     margin-right: 2vw;
+    width: 500px;
 }
 
 .card-name {
