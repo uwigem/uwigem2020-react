@@ -1,14 +1,11 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 .root {
-  
 }
 
 .container {
-
   /* background */
-  background: url('./pic2.jpg') no-repeat center center fixed;
+  background: url("./pic2.jpg") no-repeat center center fixed;
   background-size: cover;
   height: 100%;
   overflow: hidden;
@@ -17,7 +14,6 @@
   display: flex;
   flex-direction: row;
 }
-
 
 .left {
   flex-basis: 50%;
@@ -32,7 +28,7 @@
 
   max-width: 200px;
 
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-size: xx-large;
   font-weight: 900;
   color: white;
@@ -56,10 +52,9 @@
 
 .right div {
   margin: 10% auto;
-
   max-width: 80%;
 
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-size: x-large;
   color: white;
 }
@@ -71,5 +66,17 @@
   height: 50px;
   width: 200px;
 
-  color: #4B2E83;
+  color: #4b2e83;
+}
+
+@media (max-width: 800px) {
+  .right div {
+    font-size: large;
+  }
+}
+
+@media (max-width: 600px) {
+  .right div {
+    font-size: medium;
+  }
 }

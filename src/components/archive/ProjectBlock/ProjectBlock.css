@@ -90,3 +90,29 @@
   background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
   z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
 }
+
+@media (max-width: 700px) {
+  .project-block-div {
+    margin: 3rem;
+    background-color: #ffffff;
+  }
+
+  .project-block-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-block-img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .project-block-main {
+    width: 100%;
+    padding: 1.5rem 0rem;
+  }
+
+  .project-block-award {
+    display: none;
+  }
+}
