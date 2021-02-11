@@ -1,10 +1,10 @@
 #nav-bar-container {
   display: flex;
   background-color: white;
-  border-top: 1vw solid #4B2E83;
+  border-top: 1vw solid #4b2e83;
   justify-content: space-between;
-  border-bottom: solid #C4C4C4;
-  min-width: 335px;
+  border-bottom: solid #c4c4c4;
+  padding-top: 0;
 }
 
 .nav-tab {
@@ -12,14 +12,18 @@
   color: black;
   font-weight: bold;
   white-space: nowrap;
-  font-size: calc(6px + 1vw);
+  font-size: large;
   padding-top: 2.5vw;
   margin-left: 1vw;
   margin-right: 1vw;
 }
 
+#nav-bar-navbar {
+  justify-content: center;
+}
+
 .nav-tab:hover {
-  color: #C4C4C4;
+  color: #c4c4c4;
 }
 
 .logo {
@@ -29,21 +33,34 @@
 
 #logo-left {
   padding-left: 2vw;
-  padding-right: 5vw;
 }
 
 #logo-right {
-  padding-left: 5vw;
   padding-right: 2vw;
 }
 
 .recruit-banner {
-  background-color: #4B2E83;
-  color:white;
+  background-color: #4b2e83;
+  color: white;
   text-align: center;
   font-size: 1rem;
 }
 
 .recruit-banner a {
   color: #dccbff;
+}
+
+@media (max-width: 573px) {
+  #logo-left {
+    display: none;
+  }
+
+  #logo-right {
+    display: none;
+  }
+
+  #nav-bar-navbar {
+    justify-content: flex-start;
+    font-size: medium;
+  }
 }

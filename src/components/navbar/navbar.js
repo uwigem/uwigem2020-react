@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import './navbar.css';
+import {Navbar, Nav} from 'react-bootstrap';
 
 // Names of navbar tabs
 const tabs = ['Homepage', 'Archive', 'Get Involved', 'Team', 'Endorsements'];
@@ -43,9 +44,16 @@ const NavBar = () => {
 
 	return (
 		<div>
-			<div id='nav-bar-container'>
+			<div  id='nav-bar-container'>
 				<img id='logo-left' className='logo' src={leftLogo} alt='Logo'/>
-				{links}
+				<Navbar id='nav-bar-navbar' collapseOnSelect expand="sm" bg="light" variant="light" style={{backgroundColor:'white'}}>
+					<Navbar.Toggle aria-controls="responsive-navbar-nav" />
+					<Navbar.Collapse id="responsive-navbar-nav">
+					<Nav>
+						{links}
+					</Nav>
+					</Navbar.Collapse>
+				</Navbar>
 				<img id='logo-right' className='logo' src={rightLogo} alt='Logo'/>
 			</div>
 			<div className="recruit-banner p-3">
