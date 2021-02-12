@@ -84,17 +84,17 @@
 }
 
 .card-links {
-    vertical-align: bottom;
-    float: right;
+    position: absolute;
+    bottom: 2vh;
+    right: 0;
     height: 5vh;
     margin-top: 2vh;
-    margin-bottom: 1vh;
 }
 
 .card-logo {
     height: 100%;
     vertical-align: middle;
-    margin: .5vw;
+    margin: .75vw;
 }
 
 .card-bio {
@@ -104,5 +104,6 @@
 
 .card-content {
     margin-right: 0.5vw;
+    margin-bottom: 5vh;
     flex-grow: 1;
 }
