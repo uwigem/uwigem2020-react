@@ -86,19 +86,15 @@
 .card-links {
     vertical-align: bottom;
     float: right;
-    margin: 1vw;
+    height: 5vh;
+    margin-top: 2vh;
+    margin-bottom: 1vh;
 }
 
 .card-logo {
-    margin: 0.75vw;
-}
-
-.contact-logo {
-    height: 44px;
-    display: inline-block;
-    vertical-align: 0.1em;
-    padding-left: 1vw;
-    padding-right: 1vw;
+    height: 100%;
+    vertical-align: middle;
+    margin: .5vw;
 }
 
 .card-bio {
@@ -107,6 +103,6 @@
 }
 
 .card-content {
-    margin: 0.5vw;
+    margin-right: 0.5vw;
     flex-grow: 1;
 }

@@ -97,14 +97,14 @@ const TeamMember = props => {
 
                                 <>
                                     <a href={"mailto:" + props.person.contact}>
-                                        <img src={gmail} className='contact-logo' alt={'gmail'}/>
+                                        <img src={gmail} className='card-logo' alt={'gmail'}/>
                                     </a>
                                 </>
 
                                 :
 
                                 <>
-                                    <img src={gmailInactive} className='contact-logo' alt={'gmail unavailable'}/>
+                                    <img src={gmailInactive} className='card-logo' alt={'gmail unavailable'}/>
                                 </>
                             }
                             
