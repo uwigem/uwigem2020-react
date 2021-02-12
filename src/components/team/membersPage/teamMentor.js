@@ -28,7 +28,9 @@ const TeamMentor = props => {
             >
                 {/* Pop-up when clicking member */}
                 <Modal.Body className="card-body">
-                    <img className="card-image" src={props.person.picture} alt={props.person.name} />
+                    <div className="card-image">
+                        <img src={props.person.picture} alt={props.person.name} />
+                    </div>
                     <div className="card-content">
                         {
                             props.person.pronouns?
@@ -75,56 +77,56 @@ const TeamMentor = props => {
                                 <>
                                 </>
                         }
-                    </div>
-                    <div className='card-links'>
-                        {
-                            props.person.linkedin?
+                        <div className='card-links'>
+                            {
+                                props.person.linkedin?
 
-                            <>
-                                <a href={props.person.linkedin}>
-                                    <FontAwesomeIcon icon={faLinkedin} size={"3x"} color={"black"} className='card-logo'/>
-                                </a>
-                            </>
+                                <>
+                                    <a href={props.person.linkedin}>
+                                        <FontAwesomeIcon icon={faLinkedin} size={"3x"} color={"black"} className='card-logo'/>
+                                    </a>
+                                </>
 
-                            :
+                                :
 
-                            <>
-                                <FontAwesomeIcon icon={faLinkedin} size={"3x"} color={"grey"} className='card-logo'/>
-                            </>
-                        }
+                                <>
+                                    <FontAwesomeIcon icon={faLinkedin} size={"3x"} color={"grey"} className='card-logo'/>
+                                </>
+                            }
 
-                        {
-                            props.person.contact?
+                            {
+                                props.person.contact?
 
-                            <>
-                                <a href={"mailto:" + props.person.contact}>
-                                    <img src={gmail} className='contact-logo' alt={'gmail'}/>
-                                </a>
-                            </>
+                                <>
+                                    <a href={"mailto:" + props.person.contact}>
+                                        <img src={gmail} className='contact-logo' alt={'gmail'}/>
+                                    </a>
+                                </>
 
-                            :
+                                :
 
-                            <>
-                                <img src={gmailInactive} className='contact-logo' alt={'gmail unavailable'}/>
-                            </>
-                        }
-                        
+                                <>
+                                    <img src={gmailInactive} className='contact-logo' alt={'gmail unavailable'}/>
+                                </>
+                            }
+                            
 
-                        {
-                            props.person.github?
+                            {
+                                props.person.github?
 
-                            <>
-                                <a href={props.person.github}>
-                                    <FontAwesomeIcon icon={faGithub} size={"3x"} color={"black"} className='card-logo'/>
-                                </a>
-                            </>
+                                <>
+                                    <a href={props.person.github}>
+                                        <FontAwesomeIcon icon={faGithub} size={"3x"} color={"black"} className='card-logo'/>
+                                    </a>
+                                </>
 
-                            :
+                                :
 
-                            <>
-                                <FontAwesomeIcon icon={faGithub} size={"3x"} color={"grey"} className='card-logo'/>
-                            </>
-                        }
+                                <>
+                                    <FontAwesomeIcon icon={faGithub} size={"3x"} color={"grey"} className='card-logo'/>
+                                </>
+                            }
+                        </div>
                     </div>
                 </Modal.Body>
             </Modal>
