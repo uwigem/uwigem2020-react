@@ -1,4 +1,5 @@
 import './sponsor.css';
+import styles from './sponsor.module.css'
 import React, {useState} from 'react';
 
 /**
@@ -13,35 +14,34 @@ const Sponsor = props => {
 	const [loaded, toggleLoaded] = useState(false);
 
 	return <>
-		<a className="sponsor-wrapper mb-5" 
+		<a className={styles.sponsorWrapper}
 			href={props.sponsor.link}
-			style={{ width: props.ratio + '%'}}
+			// style={{ width: props.ratio + '%'}}
 			>
-			<div className={"sponsor"}
+			<div className={styles.sponsor}
 				onMouseEnter={() => {
 					toggleHover(true);
 					toggleLoaded(true);
 				}}
 				onMouseLeave={() => toggleHover(false)}
-				style={{ maxWidth: props.width * 1.5 + 'px'}}
+				// style={{ maxWidth: props.width * 1.5 + 'px'}}
 				>
-				<section className={hover? "sponsor-img hidden" : "sponsor-img active"}
+				<section className={`${styles.sponsorImg} ${hover ? styles.hidden : styles.active}`}
 					style={{
-						maxWidth: props.width + 'px',
-						height: props.height + 'px',
+						// height: props.height + 'px',
 						backgroundImage: 'url("' + props.sponsor.logo + '")'
 						}}>
 				</section>
-				<section className={!loaded? "hidden-hover-mask" : 
-					(hover? "hover-mask active" : "hover-mask hidden")}
+				<section className={!loaded? styles.hiddenHoverMask : 
+					(`hover-mask ${styles.hoverMask}1 ${hover ? styles.active : styles.hidden}`)}
 					style={{
-						lineHeight:  props.height + 'px',
+						// lineHeight:  props.height + 'px',
 						height: props.height + 'px'
 						}}>
 					VIEW MORE
 				</section>
 				
-				<section className="sponsor-name">
+				<section className={styles.name}>
 					{props.sponsor.name.toUpperCase()}
 				</section>
 			</div>

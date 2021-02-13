@@ -1,0 +1,60 @@
+.card {
+    background-color: #e0e0e0;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0 5vw;
+    padding: 5% 10%;
+}
+
+.logoImg {
+    height: 50px;
+    width: 50px;
+    padding: 1px;
+}
+
+.logos {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.logo {
+    margin: 0 10px;
+}
+
+.contact {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+
+    color: #7b7b7b;
+    font-size: 2rem;
+    font-style: normal;
+    margin-top: 10%;
+}
+
+.cardTitle {
+    color: #767676;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.cardDescription {
+    color: #7b7b7b;
+    font-size: 1.5rem;
+    font-style: normal;
+
+    margin-top: 5%;
+}
+
+.more {
+    color: #7a7a7a;
+    font-size: 1.3rem;
+    font-style: italic;
+}
+
+@media only screen and (max-width: 500px) {
+    .cardTitle {
+        font-size: 2rem;
+    }
+}

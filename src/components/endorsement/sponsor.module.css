@@ -1,0 +1,87 @@
+.sponsorWrapper:hover {
+    text-decoration: none;
+}
+
+.sponsorWrapper {
+    width: 20%;
+    min-width: 150px;
+    max-width: 275px;
+    min-height: 275px;
+    margin: 20px;
+}
+
+.sponsor {
+    position: relative;
+	color: black;
+    cursor: pointer;
+	text-align: center;
+	width: 100%;
+}
+
+.sponsorImg {
+    height: 150px;
+    margin: auto;
+	display: block;
+	position: relative;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.name {
+    color: black;
+	overflow: auto;
+    margin: 10px 0;
+}
+
+.active {
+    visibility: visible;
+	animation: fadeInAnimation ease 1s;
+}
+
+.hidden {
+    visibility: hidden;
+	animation: fadeOutAnimation ease 1s;
+}
+
+.hiddenHoverMask {
+    position: absolute;
+	top: 0px;
+	visibility: hidden;
+}
+
+.hoverMask {
+    position: absolute;
+	top: 0px;
+	width: 90%;
+	margin: 0 5%;
+	text-align: center;
+	background-color: rgba(168, 168, 168, 0.87);
+	color: white;
+	visibility: visible;
+	font-weight: bold;
+	font-size: 24px;
+	animation: fadeInAnimation ease 1s 
+}
+
+@keyframes fadeInAnimation { 
+    0% { 
+		opacity: 0;
+		visibility: visible;
+    } 
+    100% { 
+		opacity: 1;
+		visibility: hidden;
+     } 
+} 
+
+@keyframes fadeOutAnimation { 
+    0% { 
+		opacity: 1;
+		visibility: visible;
+    } 
+    100% { 
+		opacity: 0;
+		visibility: hidden;
+     } 
+}
