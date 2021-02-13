@@ -50,6 +50,10 @@
   color: #dccbff;
 }
 
+#nav-bar-brand {
+  display: none;
+}
+
 @media (max-width: 573px) {
   #logo-left {
     display: none;
@@ -60,7 +64,20 @@
   }
 
   #nav-bar-navbar {
-    justify-content: flex-start;
+    width: 100%;
+    justify-content: space-between;
     font-size: medium;
+  }
+
+  #nav-bar-brand {
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    white-space: nowrap;
+    font-size: x-large;
+    padding-top: 2.5vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
   }
 }

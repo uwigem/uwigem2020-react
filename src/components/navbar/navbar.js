@@ -45,16 +45,17 @@ const NavBar = () => {
 	return (
 		<div>
 			<div  id='nav-bar-container'>
-				<img id='logo-left' className='logo' src={leftLogo} alt='Logo'/>
-				<Navbar id='nav-bar-navbar' collapseOnSelect expand="sm" bg="light" variant="light" style={{backgroundColor:'white'}}>
+			<img id='logo-left' className='logo' src={leftLogo} alt='Logo'/>	
+				<Navbar id='nav-bar-navbar' collapseOnSelect expand="sm" bg="white" variant="light" style={{backgroundColor:'white'}}>
+					<Navbar.Brand href="/" id="nav-bar-brand">Washington IGEM 2021</Navbar.Brand>
 					<Navbar.Toggle aria-controls="responsive-navbar-nav" />
-					<Navbar.Collapse id="responsive-navbar-nav">
+					<Navbar.Collapse id="basic-navbar-nav">
 					<Nav>
 						{links}
 					</Nav>
 					</Navbar.Collapse>
 				</Navbar>
-				<img id='logo-right' className='logo' src={rightLogo} alt='Logo'/>
+			<img id='logo-right' className='logo' src={rightLogo} alt='Logo'/>
 			</div>
 			<div className="recruit-banner p-3">
 				We are recruiting! Click
