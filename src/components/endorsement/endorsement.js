@@ -1,8 +1,9 @@
-import './endorsement.css';
+// import './endorsement.css';
 import Sponsor from './sponsor';
 import React from 'react';
 import BusinessCard from './BusinessCard/BusinessCard'
 import Email from '../email/Email'
+import styles from './endorsement.module.css'
 
 /**
  * @returns {React.Component} return the endorsment page
@@ -12,34 +13,34 @@ const EndorsementPage = () => {
 	const thankNote = "Thank you for taking out time in understanding our purpose and able to decide to sponsor us, as this partnership will certainly bare fruits of success.";
 	  
 	const currentSponsor = sponsors.current.map((level) => 
-		<div className="sponsor-level">
+		<div className={styles.sponsorLevel}>
 			<h3>{level.level}</h3>
-			<div className="sponsors">
+			<div className={styles.sponsors}>
 				{level.sponsors.map((sponsor) => {
-					return <Sponsor width={400} height={250} ratio={50} sponsor={sponsor}></Sponsor>;
+					return <Sponsor sponsor={sponsor}></Sponsor>;
 				})}
 			</div>
 		</div>
 	);
 
 	const pastSponsor = sponsors.past.map((level) => 
-		<div className="sponsor-level">
-			<div className="sponsors">
+		<div className={styles.sponsorLevel}>
+			<div className={styles.sponsors}>
 				{level.sponsors.map((sponsor) => {
-					return <Sponsor width={200} height={150} ratio={25} sponsor={sponsor}></Sponsor>;
+					return <Sponsor sponsor={sponsor}></Sponsor>;
 				})}
 			</div>
 		</div>
 	);
 
-	return <>
-		<h1 className="endorsement-title">Endorsement</h1>
-		<hr className="endorsement-linebar"></hr>
-		<div className="endorsement-thank-you m-5">
+	return <div className={styles.page}>
+		<h1 className={styles.title}>Endorsement</h1>
+		<hr className={styles.linebar}></hr>
+		<div className={styles.thankYou}>
 			<h2>Thank Notes</h2>
 			<p>{thankNote}</p>
 		</div>
-		<div className="sponsors-wrapper m-5">
+		<div className="sponsors-wrapper">
 		<h2>Current Sponsors</h2>
 			{currentSponsor}
 		<BusinessCard />
@@ -47,7 +48,7 @@ const EndorsementPage = () => {
 		<h2>Past Sponsors</h2>
 			{pastSponsor}
 		</div>	
-	</>
+	</div>
 }
 
 export default EndorsementPage;

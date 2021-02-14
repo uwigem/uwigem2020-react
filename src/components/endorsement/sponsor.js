@@ -1,4 +1,4 @@
-import './sponsor.css';
+// import './sponsor.css';
 import styles from './sponsor.module.css'
 import React, {useState} from 'react';
 
@@ -15,29 +15,20 @@ const Sponsor = props => {
 
 	return <>
 		<a className={styles.sponsorWrapper}
-			href={props.sponsor.link}
-			// style={{ width: props.ratio + '%'}}
-			>
+			href={props.sponsor.link}>
 			<div className={styles.sponsor}
 				onMouseEnter={() => {
 					toggleHover(true);
 					toggleLoaded(true);
 				}}
 				onMouseLeave={() => toggleHover(false)}
-				// style={{ maxWidth: props.width * 1.5 + 'px'}}
 				>
-				<section className={`${styles.sponsorImg} ${hover ? styles.hidden : styles.active}`}
+				<section className={styles.sponsorImg}
 					style={{
-						// height: props.height + 'px',
 						backgroundImage: 'url("' + props.sponsor.logo + '")'
 						}}>
 				</section>
-				<section className={!loaded? styles.hiddenHoverMask : 
-					(`hover-mask ${styles.hoverMask}1 ${hover ? styles.active : styles.hidden}`)}
-					style={{
-						// lineHeight:  props.height + 'px',
-						height: props.height + 'px'
-						}}>
+				<section className={styles.hoverMask}>
 					VIEW MORE
 				</section>
 				
