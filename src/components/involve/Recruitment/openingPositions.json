@@ -38,20 +38,8 @@
 			"team": "Human Practices",
 			"positions" : [
 				{
-					"name": "Subteam Manager",
-					"description": "In addition to the expectations outlined in the subteam manager general description, the HP Manager is expected to guide the HP team in ideation, execution, and application of Human Practices in our project. Through Human Practices, teams consider whether their projects are responsible and good for the world. They creatively engage with issues in ethics, sustainability, inclusion, security, and many other areas. Human Practices questions are complex and don’t have simple answers. The HP subteam manager should have a strong interest in exploring how synthetic biology can impact the greater society and have the ability to help build cohesion among many disparate ideas for the Human Practices components of the project."
-				},
-				{
 					"name": "Researcher, Bioethics focus",
 					"description": "Through Human Practices, iGEM teams consider whether their projects are responsible and good for the world. Synthetic biology is a nascent field in biotechnology and thus still is unclear about certain bioethical implications. Genetic engineering has a controversial history about its ethical use. As a Researcher, Bioethics focus for the iGEM team, you would be tasked with exploring the bioethical problems and implications of our project through engagement with bioethicists, project stakeholders, creating an ethics review of our project, and inculcating a bioethical perspective into Human Practices activities."
-				},
-				{
-					"name": "Researcher, Policy focus",
-					"description": "Through Human Practices, iGEM teams consider whether their projects are responsible and good for the world. Synthetic biology is already being accepted in the governmental sphere as a new technology that requires oversight. In 2010, President Obama ordered a <a href='https://www.wired.com/2010/05/congress-obama-synthetic-bio/' target='_blank' rel='noopener noreferrer'>Bioethics Commission to review Synthetic biology</a>. As a Researcher, Policy focus for the iGEM team, you would be tasked with exploring and implementing policy or legislation related to synthetic biology or aspects specific to our project, and involving the local, state, and national governmental bodies in Human Practices activities."
-				},
-				{
-					"name": "Researcher, Outreach focus",
-					"description": "Through Human Practices, iGEM teams consider whether their projects are responsible and good for the world. Educating the general public about this nascent field is important as we consider engaging the general public with our project. In past years, the Washington iGEM team has had considerable focus and success with public engagement and education, spinning out a separate non-profit organization called <a href='https://synbioforeveryone.org/Home' target='_blank' rel='noopener noreferrer'>Synbio for Everyone</a>. As a Researcher, Outreach focus for the iGEM team, you would be tasked with proposing, planning, and executing outreach events advantageous to our project. While these events may educate people broadly about synthetic biology, it should also seek to provide validation and feedback from the general public on our project."
 				},
 				{
 					"name": "Researcher, Business focus",
