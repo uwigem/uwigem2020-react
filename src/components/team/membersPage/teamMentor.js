@@ -5,6 +5,7 @@ import { Modal } from 'react-bootstrap';
 import gmail from '../../../gmail.svg';
 import gmailInactive from '../../../gmailInactive.svg';
 import './teamMentor.css';
+import './membersPageCardsShared.css';
 
 // expects a "person" prop
 
@@ -13,7 +14,7 @@ import './teamMentor.css';
  */
 const TeamMentor = props => {
     const [expanded, toggleExpand] = useState(false);
-    
+
     return <>
         {/* Mentor card */}
         <div className="person" onClick={() => toggleExpand(!expanded)}>
@@ -39,7 +40,7 @@ const TeamMentor = props => {
                                     <p className='card-name'>
                                         {props.person.name}
                                         <span class='card-pronouns'>
-                                        {"(" + props.person.pronouns + ")"}  
+                                        {"(" + props.person.pronouns + ")"}
                                         </span>
                                     </p>
                                 </span>
@@ -51,7 +52,7 @@ const TeamMentor = props => {
                                 <p className='card-name'>{props.person.name}</p>
                             </>
                         }
-                        
+
                         {
                             props.person.project?
                                 <>
@@ -109,7 +110,7 @@ const TeamMentor = props => {
                                     <img src={gmailInactive} className='card-logo' alt={'gmail unavailable'}/>
                                 </>
                             }
-                            
+
 
                             {
                                 props.person.github?
