@@ -1,0 +1,88 @@
+.person {
+  flex-shrink: 0;
+  position: relative;
+  background-color: white;
+  max-width: 300px;
+  max-height: 24rem;
+  margin: 1rem;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.person-image {
+  width: 300px;
+  height: 300px;
+}
+
+.person-image img {
+  margin: auto;
+  width: 100%;
+}
+
+.modal-content {
+  border-radius: 0px;
+  border: none;
+}
+
+.card-body {
+  padding: 0;
+  display:flex;
+  flex-direction:row;
+}
+
+.card-image {
+  min-width: 45%;
+  max-width: 45%;
+  float: left;
+  margin-right: 2vw;
+}
+
+.card-image img {
+  margin: auto;
+  overflow: hidden;
+  width: 100%;
+}
+
+.card-name {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-pronouns {
+  font-weight: 300;
+  font-size: 1rem;
+  margin-left: 1vw;
+}
+
+.card-info {
+  font-weight: 500;
+  padding: 0;
+}
+
+
+.card-links {
+  position: absolute;
+  bottom: 2vh;
+  right: 0;
+  height: 5vh;
+  margin-top: 2vh;
+}
+
+.card-logo {
+  height: 100%;
+  vertical-align: middle;
+  margin: .75vw;
+}
+
+.card-bio {
+  margin-top: 1rem;
+  color: #8C8C8C;
+}
+
+.card-content {
+  margin-right: 0.5vw;
+  margin-bottom: 5vh;
+  flex-grow: 1;
+}

@@ -6,6 +6,7 @@ import gmail from '../../../gmail.svg';
 import gmailInactive from '../../../gmailInactive.svg';
 import './teamMember.css';
 import logo from './web-logo.png';
+import './membersPageCardsShared.css';
 
 // expects a "person" prop
 
@@ -14,7 +15,7 @@ import logo from './web-logo.png';
  */
 const TeamMember = props => {
     const [expanded, toggleExpand] = useState(false);
-    
+
     return <>
         {/* Member card */}
         <div className="person" onClick={() => toggleExpand(!expanded)}>
@@ -42,7 +43,7 @@ const TeamMember = props => {
                                 <p className='card-name'>
                                     {props.person.name}
                                     <span class='card-pronouns'>
-                                    {"(" + props.person.pronouns + ")"}  
+                                    {"(" + props.person.pronouns + ")"}
                                     </span>
                                 </p>
                             </>
@@ -107,7 +108,7 @@ const TeamMember = props => {
                                     <img src={gmailInactive} className='card-logo' alt={'gmail unavailable'}/>
                                 </>
                             }
-                            
+
 
                             {
                                 props.person.github?
