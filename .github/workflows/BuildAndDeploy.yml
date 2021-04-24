@@ -31,10 +31,12 @@ jobs:
       # deploy on uw student web server
       - name: Deploy on student server
         uses: appleboy/ssh-action@master
+        env:
+          vergil_pswd: ${{ secrets.VERGIL_PSWD }}
         with:
           host: vergil.u.washington.edu
           username: uwigem
-          password: ${{ secrets.VERGIL_PSWD }}
+          password: "$vergil_pswd"
           port: 22
           script: |
             rm -rf public_html/*
