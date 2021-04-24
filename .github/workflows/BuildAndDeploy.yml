@@ -34,7 +34,7 @@ jobs:
         with:
           host: vergil.u.washington.edu
           username: uwigem
-          password: mTnTySt!4
+          password: ${{ secrets.VERGIL_PSWD }}
           port: 22
           script: |
             rm -rf public_html/*
