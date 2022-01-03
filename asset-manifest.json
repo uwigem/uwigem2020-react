@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "./static/css/main.dd1db6ab.chunk.css",
-    "main.js": "./static/js/main.06bdd975.chunk.js",
-    "main.js.map": "./static/js/main.06bdd975.chunk.js.map",
+    "main.js": "./static/js/main.71b2d3d9.chunk.js",
+    "main.js.map": "./static/js/main.71b2d3d9.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.68200581.js",
     "runtime-main.js.map": "./static/js/runtime-main.68200581.js.map",
     "static/css/2.4a586fb5.chunk.css": "./static/css/2.4a586fb5.chunk.css",
-    "static/js/2.624f9686.chunk.js": "./static/js/2.624f9686.chunk.js",
-    "static/js/2.624f9686.chunk.js.map": "./static/js/2.624f9686.chunk.js.map",
+    "static/js/2.0c1f4f93.chunk.js": "./static/js/2.0c1f4f93.chunk.js",
+    "static/js/2.0c1f4f93.chunk.js.map": "./static/js/2.0c1f4f93.chunk.js.map",
     "index.html": "./index.html",
     "static/css/2.4a586fb5.chunk.css.map": "./static/css/2.4a586fb5.chunk.css.map",
     "static/css/main.dd1db6ab.chunk.css.map": "./static/css/main.dd1db6ab.chunk.css.map",
-    "static/js/2.624f9686.chunk.js.LICENSE.txt": "./static/js/2.624f9686.chunk.js.LICENSE.txt",
+    "static/js/2.0c1f4f93.chunk.js.LICENSE.txt": "./static/js/2.0c1f4f93.chunk.js.LICENSE.txt",
     "static/media/gmail.c03ff4b0.svg": "./static/media/gmail.c03ff4b0.svg",
     "static/media/gmailInactive.a811ca64.svg": "./static/media/gmailInactive.a811ca64.svg",
     "static/media/HomeCarousel.module.css": "./static/media/pic2.785962fd.jpg",
@@ -20,8 +20,8 @@
   "entrypoints": [
     "static/js/runtime-main.68200581.js",
     "static/css/2.4a586fb5.chunk.css",
-    "static/js/2.624f9686.chunk.js",
+    "static/js/2.0c1f4f93.chunk.js",
     "static/css/main.dd1db6ab.chunk.css",
-    "static/js/main.06bdd975.chunk.js"
+    "static/js/main.71b2d3d9.chunk.js"
   ]
 }
