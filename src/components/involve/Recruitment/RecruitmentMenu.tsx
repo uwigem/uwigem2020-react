@@ -13,7 +13,7 @@ import styles from './RecruitmentMenu.module.css'
 export default function RecruitmentMenu() {
 
     const [team, setTeam] = useState({ name: '', expanded: false});
-    const recruitmentDescription = "Washington iGEM is recruiting for several positions in 2021 for our interdisciplinary, undergraduate-driven, synthetic biology research and entrepreneurship competition team! All skill levels, class standing, and major (intended or declared) are eligible. Our recruitment is from late Autumn quarter to Winter quarter. UW iGEM is a serious time commitment, requiring 10-15 hours/week in winter and spring quarter and 10-20 hours/week in the summer and fall. We expect all members to dedicate themselves to the team for the entire season. Subteams include teams performing biological labwork (wetlab), hardware + software development (drylab), fundraising, human practices, design, and website development." 
+    const recruitmentDescription = "Washington iGEM is recruiting for several positions in 2022 for our interdisciplinary, undergraduate-driven, synthetic biology research and entrepreneurship competition team! All skill levels, class standing, and major (intended or declared) are eligible. Our recruitment is from late Autumn quarter to Winter quarter. UW iGEM is a serious time commitment, requiring 10-15 hours/week in winter and spring quarter and 10-20 hours/week in the summer and fall. We expect all members to dedicate themselves to the team for the entire season. Subteams include teams performing biological labwork (wetlab), hardware + software development (drylab), fundraising, human practices, design, and website development." 
     const managerNote = "Note: we are recruiting manager roles and member (non-manager) roles. The managers are expected to be full-time roles, that is, little to no direct involvement in other subteams. Team members, however, are encouraged to participate in more than one subteam (we recommend two). ";
     const webdevNote = "UI/UX Deisgner and Web Developer candidates will receive an application in addition to the Washington iGEM Team application."
 
@@ -35,7 +35,7 @@ export default function RecruitmentMenu() {
         <div className={styles.container}>
             <h2 className={styles.title}>Recruitment</h2>
             <div className={styles.infoSession}>
-            We had a recruitment info session for the 2021 season.
+            We had a recruitment info session for the 2022 season.
             Click the links to see the <a href="https://www.youtube.com/watch?v=aa1j4rEWhDM&feature=youtu.be">recording</a> and the <a href="https://docs.google.com/presentation/d/1bCkQujJGBAyKfE3P7g6NP8DPPTTflzFzg3rek41Q3vE/edit?usp=sharing">slides</a>!
             </div>
             <div className={styles.description}>
@@ -50,7 +50,7 @@ export default function RecruitmentMenu() {
             <div className={styles.applyLinkContainer}>
                 <Button 
                     className={styles.applyLink} 
-                    href="https://forms.gle/rgyAy9JMLTFPaHDe6 "
+                    href="https://forms.gle/TyvKxe38qizpuy2u8"
                 >
                     Apply Here
                 </Button>
@@ -59,7 +59,7 @@ export default function RecruitmentMenu() {
                 </Alert>
             </div>
             <div className={styles.menuDiv}>
-                {/* <div className={styles.menuCol}>
+                { <div className={styles.menuCol}>
                     <h3 className={styles.menuColTitle}>Research</h3>
                     <div className={styles.menuColMain}>
                         <div className={styles.menuColSide}></div>
@@ -74,7 +74,7 @@ export default function RecruitmentMenu() {
                             />
                         </div>
                     </div>
-                </div> */}
+                </div> }
                 <div className={styles.menuCol}>
                     <h3 className={styles.menuColTitle}>Society</h3>
                     <div className={styles.menuColMain}>
