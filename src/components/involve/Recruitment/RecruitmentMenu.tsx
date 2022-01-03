@@ -13,7 +13,7 @@ import styles from './RecruitmentMenu.module.css'
 export default function RecruitmentMenu() {
 
     const [team, setTeam] = useState({ name: '', expanded: false});
-    const recruitmentDescription = "Washington iGEM is recruiting for several positions in 2021 for our interdisciplinary, undergraduate-driven, synthetic biology research and entrepreneurship competition team! All skill levels, class standing, and major (intended or declared) are eligible. Our recruitment is from late Autumn quarter to Winter quarter. UW iGEM is a serious time commitment, requiring 10-15 hours/week in winter and spring quarter and 10-20 hours/week in the summer and fall. We expect all members to dedicate themselves to the team for the entire season. Subteams include teams performing biological labwork (wetlab), hardware + software development (drylab), fundraising, human practices, design, and website development." 
+    const recruitmentDescription = "Washington iGEM is recruiting for several positions in 2022 for our interdisciplinary, undergraduate-driven, synthetic biology research and entrepreneurship competition team! All skill levels, class standing, and major (intended or declared) are eligible. Our recruitment is from late Autumn quarter to Winter quarter. UW iGEM is a serious time commitment, requiring 10-15 hours/week in winter and spring quarter and 10-20 hours/week in the summer and fall. We expect all members to dedicate themselves to the team for the entire season. Subteams include teams performing biological labwork (wetlab), hardware + software development (drylab), fundraising, human practices, design, and website development."
     const managerNote = "Note: we are recruiting manager roles and member (non-manager) roles. The managers are expected to be full-time roles, that is, little to no direct involvement in other subteams. Team members, however, are encouraged to participate in more than one subteam (we recommend two). ";
     const webdevNote = "UI/UX Deisgner and Web Developer candidates will receive an application in addition to the Washington iGEM Team application."
 
@@ -48,8 +48,8 @@ export default function RecruitmentMenu() {
                 {webdevNote}
             </div>
             <div className={styles.applyLinkContainer}>
-                <Button 
-                    className={styles.applyLink} 
+                <Button
+                    className={styles.applyLink}
                     href="https://forms.gle/rgyAy9JMLTFPaHDe6 "
                 >
                     Apply Here
@@ -59,36 +59,36 @@ export default function RecruitmentMenu() {
                 </Alert>
             </div>
             <div className={styles.menuDiv}>
-                {/* <div className={styles.menuCol}>
+                <div className={styles.menuCol}>
                     <h3 className={styles.menuColTitle}>Research</h3>
                     <div className={styles.menuColMain}>
                         <div className={styles.menuColSide}></div>
                         <div className={styles.menuColText}>
-                            <TeamInfo 
+                            <TeamInfo
                             teamName="Wetlab"
                             onClick={handleClick}
                             />
-                            <TeamInfo 
+                            <TeamInfo
                                 teamName="Drylab"
                                 onClick={handleClick}
                             />
                         </div>
                     </div>
-                </div> */}
+                </div>
                 <div className={styles.menuCol}>
                     <h3 className={styles.menuColTitle}>Society</h3>
                     <div className={styles.menuColMain}>
                         <div className={styles.menuColSide}></div>
                         <div className={styles.menuColText}>
-                            <TeamInfo 
+                            <TeamInfo
                                 teamName="Fundraising"
                                 onClick={handleClick}
                             />
-                            <TeamInfo 
+                            <TeamInfo
                                 teamName="Human Practices"
                                 onClick={handleClick}
                             />
-                            {/* <TeamInfo 
+                            {/* <TeamInfo
                                 teamName="Synbio for Everyone"
                                 onClick={handleClick}
                             /> */}
@@ -100,11 +100,11 @@ export default function RecruitmentMenu() {
                     <div className={styles.menuColMain}>
                         <div className={styles.menuColSide}></div>
                         <div className={styles.menuColText}>
-                            <TeamInfo 
+                            <TeamInfo
                                 teamName="Design"
                                 onClick={handleClick}
                             />
-                            <TeamInfo 
+                            <TeamInfo
                                 teamName="Web Development"
                                 onClick={handleClick}
                             />
@@ -114,7 +114,7 @@ export default function RecruitmentMenu() {
             </div>
             {
                     team.expanded?
-                    <RecruitPosition 
+                    <RecruitPosition
                         teamName={team.name}
                         positions={getPositions(team.name)}
                         // statement={teamInfoMap.get(team.name).statement}
@@ -127,8 +127,8 @@ export default function RecruitmentMenu() {
                     : null
             }
             {/* <div className="recruit-menu-link-container">
-                <Button 
-                    className="recruit-menu-link" 
+                <Button
+                    className="recruit-menu-link"
                     href="https://react-bootstrap.github.io/components/buttons/#api"
                 >
                     Apply Here
