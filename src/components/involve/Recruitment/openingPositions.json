@@ -4,11 +4,7 @@
 			"team": "Wetlab",
 			"positions" : [
 				{
-					"name": "Subteam Manager",
-					"description": "In addition to the expectations outlined in the subteam manager general description, the subteam manager for wetlab ensures wetlab’s research aligns with drylab’s computational experimentation. This position will require close collaboration with the drylab team (and subteam manager). A strong wetlab background is preferred but not required, and an interest and willingness to learn is essential."
-				},
-				{
-					"name": "Researcher",
+					"name": "Wetlab Researcher",
 					"description": "Wetlab researchers focus on developing experiments and scientific theory of the project alongside drylab. Lab work may be performed later in 2021 if lab restrictions ease, but this is not guaranteed yet. In the meantime, our project requires significant research to design our biological system and plan future experimentation. This position requires background in wetlab(such as molecular and cell biology, microbiology), including experimental design, literature review, and lab experience."
 				}
 			]
@@ -17,10 +13,6 @@
         {
 			"team": "Drylab",
 			"positions" : [
-				{
-					"name": "Subteam Manager",
-					"description": "In addition to the expectations outlined in the subteam manager general description, the drylab manager ensures the kinetic and protein modeling projects are in alignment. They also must coordinate with wetlab so that both lab subteams are cohesive. A strong drylab background is preferred but not required, and an interest and willingness to learn is essential."
-				},
 				{
 					"name": "Kinetic Modeling Researcher",
                     "description": "Kinetic Modeling Researchers use computational methods to investigate topics like biofilm interactions, gene expression, and bioreactor and biofilter design. Ideal candidates have a strong background in differential equations and programming (particularly Python, R, or Matlab), as well as molecular biology. We will still consider applicants with only a programming/computational or biology background, but they must be willing and interested in learning both.",
@@ -44,6 +36,10 @@
 				{
 					"name": "Researcher, Business focus",
 					"description": "One of the most important factors to consider for an iGEM project is its application to the world. Given the rise of synthetic biology as an interdisciplinary domain for tackling problems ranging in a multitude of fields, iGEM research projects have the unique potential to scale into fully-fledged startups when successful. As a researcher with business focus, you will perform market analysis to help the team better understand what factors need to be addressed in order to be successful. You will help find target customers, and determine any unmet needs due to ineffective current solutions. Determining the industrial feasibility and scalability of the project will be a crucial focus, and through doing so, you will outline timelines for our solution both in the short and long term. As a key deliverable, a fully-fledged business plan will be made through culminating research. Focusing on the business side of the project will allow you to think like an entrepreneur, and consider all the factors necessary to start a successful venture."
+				},
+				{
+					"name": "Researcher, Education and Outreach",
+					"description": "Innovative educational tools and outreach activities have the ability to establish a two-way dialogue with new communities by discussing public values and the science behind synthetic biology. Researchers in this position will develop and implement science communication, education, and/or outreach materials related to synthetic biology as well as develop partnerships with other iGEM teams."
 				}
 			]
 		},
@@ -53,7 +49,7 @@
 			"positions" : [
 				{
 					"name": "Subteam Manager",
-					"description": "In addition to the expectations outlined in the subteam manager general description, the Fundraising Subteam manager is expected to guide the Fundraising team in raising funds through varied and creative means for the team. Running an iGEM team is expensive. We hope to be able to create sustained and stable funding sources for the current and future years ahead to ensure project success. The Fundraising subteam manager should have a strong interest in helping the fundraising team accomplish its goal of finding project funds and establishing connections with donors and sponsors. "
+					"description": "In addition to the expectations outlined in the subteam manager general description, the Fundraising Subteam manager is expected to guide the Fundraising team in raising funds through varied and creative means for the team. Running an iGEM team is expensive. We hope to be able to create sustained and stable funding sources for the current and future years ahead to ensure project success. The Fundraising subteam manager should have a strong interest in helping the fundraising team accomplish its goal of finding project funds and establishing connections with donors and sponsors."
 				},
 				{
 					"name": "Subteam Member",
@@ -65,6 +61,10 @@
         {
 			"team": "Design",
 			"positions" : [
+				{
+				"name": "Subteam Manager",
+					"description": "In addition to the expectations outlined in the subteam manager general description, the Design Subteam manager is expected to guide the Design team and convey the needs of the project to the design subteam. The Design subteam manager should have a strong interest in helping the team accomplish its goal of effectively conveying our project's theme, goals, and metrics as efficiently as possible. "
+				},
 				{
 					"name": "Videographer",
 					"description": "We are actively seeking a motivated undergraduate to join the Design subteam as a videographer and/or video editor to help create videos for marketing and presentation purposes. This member will attend weekly design meetings as well as main-team meetings and collaborate with other subteams as necessary. Participation in another subteam (see above roles) is welcomed, but not required. Most of the videographer work will be concentrated in two projects: a short (3 minute) project pitch video and longer (20 minute) project presentation. The videographer may be involved in other design team tasks when not working on a video (see general subteam member description). Knowledge of Adobe Premiere Pro or Filmora X is preferred; knowledge of Final Cut or Davinci Resolve are acceptable. Foundational understanding of lighting is preferred. Please include a portfolio, or links to prior work. If you have no work you can share, here is a sample task: go to <a href=\"https://pixabay.com/\">Pixabay</a>, or another website with free stock videos and create a 45 sec video with a subject of your choice (e.g. tell a story, highlight an issue, or advertise a product)."
