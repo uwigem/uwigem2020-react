@@ -22,7 +22,7 @@ const HomeCarousel = () => {
           </div>
           <Button
             text='Current Wiki'
-            link='https://2019.igem.org/Team:Washington' />
+            link='https://2021.igem.org/Team:Washington' />
         </div>
       </div>
     </div>
