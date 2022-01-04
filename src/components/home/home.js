@@ -12,7 +12,7 @@ const HomePage = props => {
     <>
       <HomeCarousel />
       <div className={styles.infoSession}>
-        We had a recruitment info session for the 2021 season.
+        Check out our previous recruitment session!
         Click the links to see the <a href="https://www.youtube.com/watch?v=aa1j4rEWhDM&feature=youtu.be">recording</a> and the <a href="https://docs.google.com/presentation/d/1bCkQujJGBAyKfE3P7g6NP8DPPTTflzFzg3rek41Q3vE/edit?usp=sharing">slides</a>!
       </div>
       
