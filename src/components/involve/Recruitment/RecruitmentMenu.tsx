@@ -35,8 +35,8 @@ export default function RecruitmentMenu() {
         <div className={styles.container}>
             <h2 className={styles.title}>Recruitment</h2>
             <div className={styles.infoSession}>
-            Our next recruitment session is on 1/14/22 at 6pm (Zoom ID: 673 998 2327). Check out our previous recruitment session!
-            Click the links to see the <a href="https://www.youtube.com/watch?v=WS-_LD2kbUM">recording</a> and the <a href="https://docs.google.com/presentation/d/1bCkQujJGBAyKfE3P7g6NP8DPPTTflzFzg3rek41Q3vE/edit?usp=sharing">slides</a>!
+                Our last recruitment session was on 1/14/22.
+                Click the links to see the <a href="https://www.youtube.com/watch?v=WS-_LD2kbUM">recording</a>!
             </div>
             <div className={styles.description}>
                 <hr/>
