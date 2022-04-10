@@ -5,7 +5,6 @@ import HomeCarousel from './Carousel/HomeCarousel';
 // import Hightlights from './Highlights/Highlights';
 import Competition from './competition/competition';
 import JoinUs from '../join-us/JoinUs';
-import FirstTimePopup from './Popup/FirstTimePopup';
 
 const HomePage = props => {
   return (
@@ -18,7 +17,6 @@ const HomePage = props => {
       
       <Competition />
       <JoinUs />
-      <FirstTimePopup/>
     </>
   )
 }

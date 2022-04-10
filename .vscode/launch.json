@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "type": "pwa-chrome",
+            "name": "enter",
+            "request": "launch",
+            "url": "enter"
+        }
+    ]
+}
