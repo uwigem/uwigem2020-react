@@ -1,23 +1,18 @@
-.img {
-  width: 2em;
-  height: 2em;
-  margin-right: 1em;
-}
-
 .link {
   display: flex;
   flex-direction: row;
-  min-width: 10em;
+  min-width: 9em;
   padding: .5em;
   margin: .5em;
   border: solid 3px indigo;
+  border-radius: 5px;
+  justify-content: flex-start;
   align-items: center;
 }
 
 .p {
-  padding: 0;
+  padding-left: 0.75em;
   margin: 0;
   color: black;
   height: fit-content;
 }
-
