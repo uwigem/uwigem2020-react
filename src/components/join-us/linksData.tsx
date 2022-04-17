@@ -7,12 +7,12 @@ const links = [
   {
     label: "Instagram",
     url: "https://www.instagram.com/washington_igem/",
-    iconSrc: "https://www.flaticon.com/svg/static/icons/svg/174/174855.svg"
+    iconSrc: "https://cdn2.iconfinder.com/data/icons/social-media-applications/64/social_media_applications_3-instagram-512.png"
   },
   {
     label: "Twitter",
     url: "https://twitter.com/uw_igem_team",
-    iconSrc: "https://www.flaticon.com/svg/static/icons/svg/124/124021.svg"
+    iconSrc: "https://cdn-icons-png.flaticon.com/512/733/733579.png"
   },
   {
     label: "Github",
