@@ -2,7 +2,7 @@ const links = [
   {
     label: "Facebook",
     url: "https://www.facebook.com/WashingtoniGEM",
-    iconSrc: "https://image.flaticon.com/icons/svg/124/124010.svg"
+    iconSrc: "https://cdn-icons-png.flaticon.com/512/174/174848.png"
   },
   {
     label: "Instagram",
