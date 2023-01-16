@@ -35,8 +35,9 @@ export default function RecruitmentMenu() {
         <div className={styles.container}>
             <h2 className={styles.title}>Recruitment</h2>
             <div className={styles.infoSession}>
-                Please come check out our info session on 1/23/2023, 4.30pm at the HUB room 332. The application for iGEM is due on 1/27/23. Apply below!
-                Click the links to see our previous session from 1/14/22 <a href="https://www.youtube.com/watch?v=WS-_LD2kbUM">recording</a>!
+                Check out our info session on 1/23/2023, 4:30pm @ HUB 332. Click the link to see our previous session <a href="https://www.youtube.com/watch?v=WS-_LD2kbUM">recording</a>!
+The application for iGEM is due on 1/27/23. Apply below!
+                
             </div>
             <div className={styles.description}>
                 <hr/>
