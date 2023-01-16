@@ -58,7 +58,7 @@ const NavBar = () => {
 			<img id='logo-right' className='logo' src={rightLogo} alt='Logo'/>
 			</div>
 			<div className="recruit-banner p-3">
-				We are recruiting. More information and the application can be found on the 'Get Involved' tab General questions about recruitment can be directed to uwigem@uw.edu.
+				We are recruiting! More info and the application can be found on the 'Get Involved' tab. Questions? Contact uwigem@uw.edu.
 			</div>
 		</div>
 	)
