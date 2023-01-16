@@ -35,9 +35,8 @@ export default function RecruitmentMenu() {
         <div className={styles.container}>
             <h2 className={styles.title}>Recruitment</h2>
             <div className={styles.infoSession}>
-                Please come check out our info session on 1/23/2023, 4.30pm at the HUB room 332. The application for iGEM is due on 1/27/23. https://docs.google.com/forms/d/e/1FAIpQLSdCBPl0D39nJFICRpT8ekxHFindfz4e05YfRabK_jJQBYEiIg/viewform
-                Our last recruitment session was on 1/14/22.
-                Click the links to see the <a href="https://www.youtube.com/watch?v=WS-_LD2kbUM">recording</a>!
+                Please come check out our info session on 1/23/2023, 4.30pm at the HUB room 332. The application for iGEM is due on 1/27/23. Apply below!
+                Click the links to see our previous session from 1/14/22 <a href="https://www.youtube.com/watch?v=WS-_LD2kbUM">recording</a>!
             </div>
             <div className={styles.description}>
                 <hr/>
@@ -51,7 +50,7 @@ export default function RecruitmentMenu() {
             <div className={styles.applyLinkContainer}>
                 <Button 
                     className={styles.applyLink} 
-                    href="https://forms.gle/TyvKxe38qizpuy2u8"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSdCBPl0D39nJFICRpT8ekxHFindfz4e05YfRabK_jJQBYEiIg/viewform"
                 >
                     Apply Here
                 </Button>
