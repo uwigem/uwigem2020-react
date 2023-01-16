@@ -13,7 +13,7 @@ import styles from './RecruitmentMenu.module.css'
 export default function RecruitmentMenu() {
 
     const [team, setTeam] = useState({ name: '', expanded: false});
-    const recruitmentDescription = "Washington iGEM is recruiting for several positions in 2022 for our interdisciplinary, undergraduate-driven, synthetic biology research and entrepreneurship competition team! All skill levels, class standing, and major (intended or declared) are eligible. Our recruitment is from late Autumn quarter to Winter quarter. UW iGEM is a serious time commitment, requiring 10-15 hours/week in winter and spring quarter and 10-20 hours/week in the summer and fall. We expect all members to dedicate themselves to the team for the entire season. Subteams include teams performing biological labwork (wetlab), hardware + software development (drylab), fundraising, human practices, design, and website development." 
+    const recruitmentDescription = "Washington iGEM is recruiting for several positions in 2023 for our interdisciplinary, undergraduate-driven, synthetic biology research and entrepreneurship competition team! All skill levels, class standing, and major (intended or declared) are eligible. Our recruitment is from late Autumn quarter to Winter quarter. UW iGEM is a serious time commitment, requiring 10-15 hours/week in winter and spring quarter and 10-20 hours/week in the summer and fall. We expect all members to dedicate themselves to the team for the entire season. Subteams include teams performing biological labwork (wetlab), hardware + software development (drylab), fundraising, human practices, design, and website development." 
     const managerNote = "Note: we are recruiting manager roles and member (non-manager) roles. The managers are expected to be full-time roles, that is, little to no direct involvement in other subteams. Team members, however, are encouraged to participate in more than one subteam (we recommend two). ";
     const webdevNote = "UI/UX Deisgner and Web Developer candidates will receive an application in addition to the Washington iGEM Team application."
 
@@ -35,6 +35,7 @@ export default function RecruitmentMenu() {
         <div className={styles.container}>
             <h2 className={styles.title}>Recruitment</h2>
             <div className={styles.infoSession}>
+                Please come check out our info session on 1/23/2023, 4.30pm at the HUB room 332. The application for iGEM is due on 1/27/23. https://docs.google.com/forms/d/e/1FAIpQLSdCBPl0D39nJFICRpT8ekxHFindfz4e05YfRabK_jJQBYEiIg/viewform
                 Our last recruitment session was on 1/14/22.
                 Click the links to see the <a href="https://www.youtube.com/watch?v=WS-_LD2kbUM">recording</a>!
             </div>
