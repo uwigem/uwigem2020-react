@@ -11,8 +11,8 @@ const HomePage = props => {
     <>
       <HomeCarousel />
       <div className={styles.infoSession}>
-        Our last recruitment session was on 1/14/22.
-        Click the links to see the <a href="https://www.youtube.com/watch?v=WS-_LD2kbUM">recording</a>!
+        Check out our info session on 1/23/2023, 4:30pm @ HUB 332. Click the link to see our previous session <a href="https://www.youtube.com/watch?v=WS-_LD2kbUM">recording</a>!
+The application for iGEM is due on 1/27/23. Apply below!
       </div>
       
       <Competition />
